@@ -1,0 +1,134 @@
+<template>
+  <div>
+    <script src="js/facebook.js"></script>
+    <div id="fbplikebox" style="display:none;">
+      <div class="fbplbadge" />
+      <iframe
+        src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Ffacebook.com%2FQPlay.cz&amp;width=320&amp;height=500&amp;colorscheme=light&amp;show_faces=false&amp;border_color=%23C4C4C4&amp;stream=true&amp;header=false"
+        scrolling="no"
+        frameborder="0"
+        style="border:none; overflow:hidden; width:320px; height:500px;background:#FFFFFF;"
+        allowtransparency="true"
+      />
+    </div>
+
+    <div id="page-wrapper">
+      <!-- Header -->
+      <div id="header">
+        <!-- Logo -->
+        <h1>
+          <a id="logo" href="/">
+            <img src="~assets/images/logo.png" alt="QPlay" />
+          </a>
+        </h1>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <nuxt-link tag="li" to="/">
+              <a>Domů</a>
+            </nuxt-link>
+            <nuxt-link tag="li" to="jak-se-pripojit">
+              <a>Jak se připojit?</a>
+            </nuxt-link>
+            <li><a href="https://registrace.qplay.cz">Zaregistrovat se</a></li>
+            <nuxt-link tag="li" to="vip">
+              <a>Jak si koupit VIP?</a>
+            </nuxt-link>
+            <nuxt-link tag="li" to="pravidla">
+              <a>Pravidla</a>
+            </nuxt-link>
+            <li>
+              <a>Nábor</a>
+              <ul>
+                <li><a href="naborHelper">Helper</a></li>
+                <li><a href="naborBuilder">Builder</a></li>
+              </ul>
+            </li>
+            <nuxt-link tag="li" to="faq">
+              <a>FAQ</a>
+            </nuxt-link>
+            <nuxt-link tag="li" to="yt">
+              <a>YouTuber</a>
+            </nuxt-link>
+            <li>
+              <a>Návody</a>
+              <ul>
+                <li>
+                  <a href="overeni-originalky">
+                    Můj nick je již zaregistrovaný
+                  </a>
+                </li>
+                <li>
+                  <a href="prihlaseni-bez-hesla">
+                    Přihlašování bez hesla/skin na serveru
+                  </a>
+                </li>
+                <li><a href="https://heslo.qplay.cz">Změna hesla</a></li>
+                <!--  <li><a href="?page=zmena-jmena">Změna jména</a></li>          -->
+              </ul>
+            </li>
+            <nuxt-link tag="li" to="kontakt">
+              <a>Kontakt</a>
+            </nuxt-link>
+          </ul>
+        </nav>
+      </div>
+
+      <nuxt />
+
+      <!-- Footer -->
+      <div id="footer">
+        <!-- Icons -->
+        <ul class="icons">
+          <li><a href="http://minecraft-server-list.cz" target="_blank" /></li>
+        </ul>
+
+        <!-- Copyright -->
+        <div class="copyright">
+          <ul class="menu">
+            <li>&copy; QPlay.cz. Všechna práva vyhrazena</li>
+            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/util.js"></script>
+    <!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+    <script src="js/main.js"></script>
+  </div>
+</template>
+
+<style>
+#fbplikebox {
+  display: block;
+  padding: 0;
+  z-index: 99999;
+  position: fixed;
+}
+
+.fbplbadge {
+  background-color: #3b5998;
+  display: block;
+  height: 150px;
+  top: 50%;
+  margin-top: -75px;
+  position: absolute;
+  left: -47px;
+  width: 47px;
+  background-image: url('~assets/images/w2b_vertical-right.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+</style>
