@@ -1,8 +1,3 @@
-/* nuxt.config.js */
-// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES' ? { base: '/qplay_frontpage/' } : {}
-
 export default {
   mode: 'universal',
   /*
@@ -71,6 +66,6 @@ export default {
   },
   router: {
     linkActiveClass: 'current',
-    ...routerBase
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/qplay_frontpage/' : ''
   }
 }
