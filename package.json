@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "push-dir": "^0.4.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
