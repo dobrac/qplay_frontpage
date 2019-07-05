@@ -265,25 +265,28 @@
         bankovním převodem (online i standardním), platební kartou...
         <br /><br />
         <div>
-          <img src="imgBrana/1.png" style="height:40px;margin-right:10px" /><img
-            src="imgBrana/2.png"
+          <img
+            src="/imgBrana/1.png"
             style="height:40px;margin-right:10px"
           /><img
-            src="imgBrana/3.png"
+            src="/imgBrana/2.png"
             style="height:40px;margin-right:10px"
           /><img
-            src="imgBrana/4.png"
+            src="/imgBrana/3.png"
             style="height:40px;margin-right:10px"
           /><img
-            src="imgBrana/5.png"
+            src="/imgBrana/4.png"
             style="height:40px;margin-right:10px"
           /><img
-            src="imgBrana/6.png"
+            src="/imgBrana/5.png"
             style="height:40px;margin-right:10px"
           /><img
-            src="imgBrana/7.png"
+            src="/imgBrana/6.png"
             style="height:40px;margin-right:10px"
-          /><img src="imgBrana/8.png" style="height:40px;margin-right:10px" />
+          /><img
+            src="/imgBrana/7.png"
+            style="height:40px;margin-right:10px"
+          /><img src="/imgBrana/8.png" style="height:40px;margin-right:10px" />
         </div>
 
         <hr />
