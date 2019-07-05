@@ -13,7 +13,7 @@
       <div class="container">
         <header class="major">
           <h2>mc.qplay.cz</h2>
-          <p>Online Players: 376/1400</p>
+          <p>Online Players: {{ playersShow }}/1400</p>
         </header>
       </div>
     </section>
@@ -177,5 +177,34 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      players: -1,
+      timer: null
+    }
+  },
+  computed: {
+    playersShow() {
+      return this.players > -1 ? this.players : '---'
+    }
+  },
+  mounted() {
+    this.fetchPlayers()
+    this.timer = setInterval(this.fetchPlayers, 5000)
+  },
+  beforeDestroy() {
+    clearInterval(this.timer)
+  },
+  methods: {
+    async fetchPlayers() {
+      const data = await this.$axios.$get(
+        'https://info.qplay.cz/playersCount.aspx'
+      )
+      if (data) {
+        this.players = data
+      }
+    }
+  }
+}
 </script>

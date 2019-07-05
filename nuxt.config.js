@@ -58,7 +58,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/eslint-module'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/eslint-module'],
   /*
    ** Build configuration
    */
@@ -72,5 +72,8 @@ export default {
     linkActiveClass: 'current',
     linkExactActiveClass: 'current'
     // base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/qplay_frontpage/' : ''
+  },
+  axios: {
+    progress: false
   }
 }
