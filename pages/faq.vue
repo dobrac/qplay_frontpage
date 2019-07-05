@@ -67,7 +67,7 @@ export default {
         ),
         new Question(
           'Jak si mohu převést coiny na jiný účet?',
-          'Coiny si můžeš přeposlat příkazem /coins convert jménohráče částka (50% daň). Nabízíme i migraci celého účtu/změnu jména (coiny, statistiky, VIP, kity). Více nalezneš na <a href="https://qplay.cz/zmena-jmena" target="_blank">Změna jména</a>.'
+          'Coiny si můžeš přeposlat příkazem /coins convert jménohráče částka (50% daň). Nabízíme i migraci celého účtu/změnu jména (coiny, statistiky, VIP, kity). Více nalezneš na <a href="https://qplay.cz/navod/overeni-originalky" target="_blank">Změna jména</a>.'
         ),
         new Question(
           'Chci se stát člen A-Teamu, jak toho mohu docílit?',
@@ -95,7 +95,7 @@ export default {
         ),
         new Question(
           'Někdo je za mě již zaregistrovaný, co mám dělat?',
-          'Stačí postupovat podle návodu na <a href="https://qplay.cz/overeni-originalky" target="_blank">Ověření originálky</a>. Zde zadáš, že neznáš heslo a vytvoří se ti nový účet na kterém budeš moct již hrát.'
+          'Stačí postupovat podle návodu na <a href="https://qplay.cz/navod/overeni-originalky" target="_blank">Ověření originálky</a>. Zde zadáš, že neznáš heslo a vytvoří se ti nový účet na kterém budeš moct již hrát.'
         )
       ]
     }
