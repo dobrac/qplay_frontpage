@@ -1,6 +1,6 @@
 <template>
   <div>
-    <script src="js/facebook.js"></script>
+    <script src="/js/facebook.js"></script>
     <div id="fbplikebox" style="display:none;">
       <div class="fbplbadge" />
       <iframe
@@ -28,47 +28,47 @@
             <nuxt-link tag="li" to="/">
               <a>Domů</a>
             </nuxt-link>
-            <nuxt-link tag="li" to="jak-se-pripojit">
+            <nuxt-link tag="li" to="/jak-se-pripojit">
               <a>Jak se připojit?</a>
             </nuxt-link>
             <li><a href="https://registrace.qplay.cz">Zaregistrovat se</a></li>
-            <nuxt-link tag="li" to="vip">
+            <nuxt-link tag="li" to="/vip" class="vip">
               <a>Jak si koupit VIP?</a>
             </nuxt-link>
-            <nuxt-link tag="li" to="pravidla">
+            <nuxt-link tag="li" to="/pravidla">
               <a>Pravidla</a>
             </nuxt-link>
             <li>
               <a>Nábor</a>
               <ul>
-                <li><a href="naborHelper">Helper</a></li>
-                <li><a href="naborBuilder">Builder</a></li>
+                <nuxt-link tag="li" to="/nabor/helper">
+                  <a>Helper</a>
+                </nuxt-link>
+                <nuxt-link tag="li" to="/nabor/builder">
+                  <a>Builder</a>
+                </nuxt-link>
               </ul>
             </li>
-            <nuxt-link tag="li" to="faq">
+            <nuxt-link tag="li" to="/faq">
               <a>FAQ</a>
             </nuxt-link>
-            <nuxt-link tag="li" to="yt">
+            <nuxt-link tag="li" to="/yt">
               <a>YouTuber</a>
             </nuxt-link>
             <li>
               <a>Návody</a>
               <ul>
-                <li>
-                  <a href="overeni-originalky">
-                    Můj nick je již zaregistrovaný
-                  </a>
-                </li>
-                <li>
-                  <a href="prihlaseni-bez-hesla">
-                    Přihlašování bez hesla/skin na serveru
-                  </a>
-                </li>
+                <nuxt-link tag="li" to="/navod/overeni-originalky">
+                  <a>Můj nick je již zaregistrovaný</a>
+                </nuxt-link>
+                <nuxt-link tag="li" to="/navod/prihlaseni-bez-hesla">
+                  <a>Přihlašování bez hesla/skin na serveru</a>
+                </nuxt-link>
                 <li><a href="https://heslo.qplay.cz">Změna hesla</a></li>
                 <!--  <li><a href="?page=zmena-jmena">Změna jména</a></li>          -->
               </ul>
             </li>
-            <nuxt-link tag="li" to="kontakt">
+            <nuxt-link tag="li" to="/kontakt">
               <a>Kontakt</a>
             </nuxt-link>
           </ul>
@@ -95,12 +95,12 @@
     </div>
 
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.dropotron.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/util.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
     <!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
   </div>
 </template>
 

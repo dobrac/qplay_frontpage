@@ -19,12 +19,12 @@ export default {
         src:
           'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js?ver=3'
       },
-      { src: 'js/google-analytics.js' },
+      { src: '/js/google-analytics.js' },
       {
         src:
           '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js'
       },
-      { src: 'js/cookies.js' }
+      { src: '/js/cookies.js' }
     ],
     link: [
       {
