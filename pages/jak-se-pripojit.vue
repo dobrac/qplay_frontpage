@@ -19,7 +19,7 @@
         <strong>BONUS</strong> - Pokud vlastníte originální účet, můžete využít
         našeho návodu na ověření:
         <strong>
-          <a href="/overeni-originalky">
+          <a href="/navod/prihlaseni-bez-hesla">
             KLIKNI
           </a>
         </strong>
