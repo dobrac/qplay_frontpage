@@ -43,7 +43,7 @@
 /* Basic */
 
 body {
-	background: _palette(bg) url('~assets/images/bg01.png');
+	background: _palette(bg) url('~static/images/bg01.png');
 
 	&.is-loading {
 		* {
@@ -319,7 +319,7 @@ label {
 		text-align: center;
 		cursor: default;
 		// background-color: _palette(accent, bg);
-		@include vendor('background-image', ('linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("~assets/images/bg01.png")'));
+		@include vendor('background-image', ('linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("~static/images/bg01.png")'));
 		color: _palette(accent, fg);
 		// border-radius: 100%;
 		display: inline-block;
@@ -454,7 +454,7 @@ table {
 
 		thead {
 			background-color: #555555;
-			@include vendor('background-image', ('linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("~assets/images/bg01.png")'));
+			@include vendor('background-image', ('linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("~static/images/bg01.png")'));
 			color: #fff;
 		}
 	}
@@ -468,7 +468,7 @@ input[type="button"],
 .button {
 	@include vendor('appearance', 'none');
 	@include vendor('transition', 'background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out');
-	@include vendor('background-image', ('linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("~assets/images/bg01.png")'));
+	@include vendor('background-image', ('linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("~static/images/bg01.png")'));
 	background-color: _palette(accent, bg);
 	border-radius: _size(radius);
 	border: 0;
@@ -559,7 +559,7 @@ input[type="button"],
 	text-align: center;
 	// padding: 3em 0 0 0;
 	background-color: #fff;
-	background-image: url('~assets/images/bg02.png'), url('~assets/images/bg02.png'), url('~assets/images/bg01.png');
+	background-image: url('~static/images/bg02.png'), url('~static/images/bg02.png'), url('~static/images/bg01.png');
 	background-position: top left, top left, top left;
 	background-size: 100% 6em, 100% 6em, auto;
 	background-repeat: no-repeat, no-repeat, repeat;
@@ -583,7 +583,7 @@ input[type="button"],
 #nav {
 	cursor: default;
 	background-color: #333;
-	@include vendor('background-image', ('linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.3))', 'url("~assets/images/bg01.png")'));
+	@include vendor('background-image', ('linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.3))', 'url("~static/images/bg01.png")'));
 	padding: 0;
 
 	&:after {
@@ -592,7 +592,7 @@ input[type="button"],
 		width: 100%;
 		height: 0.75em;
 		background-color: _palette(accent, bg);
-		background-image: url("~assets/images/bg01.png");
+		background-image: url("~static/images/bg01.png");
 	}
 
 	>ul {
@@ -643,7 +643,7 @@ input[type="button"],
 					left: 50%;
 					margin-left: -0.375em;
 					background-color: _palette(accent, bg);
-					background-image: url("~assets/images/bg01.png");
+					background-image: url("~static/images/bg01.png");
 				}
 
 				a {
@@ -694,7 +694,7 @@ input[type="button"],
 
 .dropotron {
 	background-color: #333;
-	@include vendor('background-image', ('linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0))', 'url("~assets/images/bg01.png")'));
+	@include vendor('background-image', ('linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0))', 'url("~static/images/bg01.png")'));
 	border-radius: _size(radius);
 	color: #fff;
 	min-width: 10em;
@@ -731,7 +731,7 @@ input[type="button"],
 /* Banner */
 
 #banner {
-	background-image: url("~assets/images/banner.png");
+	background-image: url("~static/images/banner.png");
 	background-position: center bottom;
 	background-size: cover;
 	height: 28em;
@@ -786,7 +786,7 @@ input[type="button"],
 	&.style2 {
 		padding: 1em 0 1em 0;
 		background-color: #fff;
-		background-image: url('~assets/images/bg02.png'), url('~assets/images/bg03.png'), url('~assets/images/bg01.png');
+		background-image: url('~static/images/bg02.png'), url('~static/images/bg03.png'), url('~static/images/bg01.png');
 		background-position: top left, bottom left, top left;
 		background-size: 100% 6em, 100% 6em, auto;
 		background-repeat: no-repeat, no-repeat, repeat;
@@ -794,7 +794,7 @@ input[type="button"],
 
 	&.style3 {
 		background-color: _palette(accent, bg);
-		@include vendor('background-image', ('linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("~assets/images/bg01.png")'));
+		@include vendor('background-image', ('linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("~static/images/bg01.png")'));
 		color: _palette(accent, fg);
 
 		.button {
@@ -1128,7 +1128,7 @@ input[type="button"],
 		width: 100%;
 		z-index: _misc(z-index-base) + 1;
 		background-color: #333;
-		@include vendor('background-image', ('linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.3))', 'url("~assets/images/bg01.png")'));
+		@include vendor('background-image', ('linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.3))', 'url("~static/images/bg01.png")'));
 		height: 44px;
 		line-height: 44px;
 		box-shadow: 0 4px 0 0 _palette(accent, bg);
@@ -1182,7 +1182,7 @@ input[type="button"],
 	#navPanel {
 		background-color: #1f1f1f;
 		box-shadow: inset -1px 0 3px 0 rgba(0, 0, 0, 0.5);
-		@include vendor('background-image', ('linear-gradient(to right, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15))', 'url("~assets/images/bg01.png")'));
+		@include vendor('background-image', ('linear-gradient(to right, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15))', 'url("~static/images/bg01.png")'));
 		@include vendor('backface-visibility', 'hidden');
 		@include vendor('transform', 'translateX(#{_size(navPanel) * -1})');
 		@include vendor('transition', ('transform #{_duration(navPanel)} ease'));

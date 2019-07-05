@@ -18,7 +18,7 @@
         <!-- Logo -->
         <h1>
           <a id="logo" href="/">
-            <img src="~assets/images/logo.png" alt="QPlay" />
+            <img src="~static/images/logo.png" alt="QPlay" />
           </a>
         </h1>
 
@@ -101,7 +101,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/jquery.min.js"></script>
+    <!-- <script src="/js/jquery.min.js"></script> -->
     <script src="/js/jquery.dropotron.min.js"></script>
     <script src="/js/skel.min.js"></script>
     <script src="/js/util.js"></script>
@@ -127,7 +127,7 @@
   position: absolute;
   left: -47px;
   width: 47px;
-  background-image: url('~assets/images/w2b_vertical-right.png');
+  background-image: url('~static/images/w2b_vertical-right.png');
   background-repeat: no-repeat;
   overflow: hidden;
   -webkit-border-top-left-radius: 8px;

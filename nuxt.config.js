@@ -16,8 +16,7 @@ export default {
     ],
     script: [
       {
-        src:
-          'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js?ver=3'
+        src: 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'
       },
       { src: '/js/google-analytics.js' },
       {
