@@ -19,7 +19,7 @@
         <strong>BONUS</strong> - Pokud vlastníte originální účet, můžete využít
         našeho návodu na ověření:
         <strong>
-          <a href="https://qplay.cz/?page=overeni-originalky">
+          <a href="/overeni-originalky">
             KLIKNI
           </a>
         </strong>
