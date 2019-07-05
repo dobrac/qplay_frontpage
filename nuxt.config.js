@@ -65,7 +65,7 @@ export default {
     extend(config, ctx) {}
   },
   router: {
-    linkActiveClass: 'current',
-    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/qplay_frontpage/' : ''
+    linkActiveClass: 'current'
+    // base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/qplay_frontpage/' : ''
   }
 }
