@@ -36,6 +36,10 @@ export default {
         rel: 'stylesheet',
         href:
           '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: '/css/font-awesome.min.css'
       }
     ]
   },
@@ -65,7 +69,8 @@ export default {
     extend(config, ctx) {}
   },
   router: {
-    linkActiveClass: 'current'
+    linkActiveClass: 'current',
+    linkExactActiveClass: 'current'
     // base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/qplay_frontpage/' : ''
   }
 }

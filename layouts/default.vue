@@ -25,20 +25,24 @@
         <!-- Nav -->
         <nav id="nav">
           <ul>
-            <nuxt-link tag="li" to="/">
+            <nuxt-link tag="li" to="/" exact>
               <a>Domů</a>
             </nuxt-link>
             <nuxt-link tag="li" to="/jak-se-pripojit">
               <a>Jak se připojit?</a>
             </nuxt-link>
-            <li><a href="https://registrace.qplay.cz">Zaregistrovat se</a></li>
+            <li class="external">
+              <a href="https://registrace.qplay.cz">
+                Zaregistrovat se
+              </a>
+            </li>
             <nuxt-link tag="li" to="/vip" class="vip">
               <a>Jak si koupit VIP?</a>
             </nuxt-link>
             <nuxt-link tag="li" to="/pravidla">
               <a>Pravidla</a>
             </nuxt-link>
-            <li>
+            <nuxt-link tag="li" to="/nabor">
               <a>Nábor</a>
               <ul>
                 <nuxt-link tag="li" to="/nabor/helper">
@@ -48,14 +52,14 @@
                   <a>Builder</a>
                 </nuxt-link>
               </ul>
-            </li>
+            </nuxt-link>
             <nuxt-link tag="li" to="/faq">
               <a>FAQ</a>
             </nuxt-link>
             <nuxt-link tag="li" to="/yt">
               <a>YouTuber</a>
             </nuxt-link>
-            <li>
+            <nuxt-link tag="li" to="/navod">
               <a>Návody</a>
               <ul>
                 <nuxt-link tag="li" to="/navod/overeni-originalky">
@@ -64,10 +68,12 @@
                 <nuxt-link tag="li" to="/navod/prihlaseni-bez-hesla">
                   <a>Přihlašování bez hesla/skin na serveru</a>
                 </nuxt-link>
-                <li><a href="https://heslo.qplay.cz">Změna hesla</a></li>
+                <li class="external">
+                  <a href="https://heslo.qplay.cz">Změna hesla</a>
+                </li>
                 <!--  <li><a href="?page=zmena-jmena">Změna jména</a></li>          -->
               </ul>
-            </li>
+            </nuxt-link>
             <nuxt-link tag="li" to="/kontakt">
               <a>Kontakt</a>
             </nuxt-link>

@@ -649,7 +649,7 @@ input[type="button"],
 				a {
 					color: #fff;
 				}
-			}
+			}			
 
 			&.active {
 				a {
@@ -666,6 +666,26 @@ input[type="button"],
 			>ul {
 				display: none;
 			}
+		}
+	}
+}
+
+.external {
+	a {
+		&:after {
+			content: '\f14c';
+			display: inline-block;
+			margin-left: 8px;
+			text-align: center;
+			color: #fff;
+			opacity: 0.5;
+
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
 		}
 	}
 }

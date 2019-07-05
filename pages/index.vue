@@ -2,10 +2,10 @@
   <div>
     <!-- Banner -->
     <section id="banner">
-      <header>
-        <form action="https://info.qplay.cz/" method="get" target="_blank">
-          <input id="" type="submit" value="Přihlášení do Info Panelu" />
-        </form>
+      <header class="external">
+        <a href="https://info.qplay.cz/" target="_blank" class="button">
+          Přihlášení do Info Panelu
+        </a>
       </header>
     </section>
     <!-- Gigantic Heading -->
@@ -13,6 +13,7 @@
       <div class="container">
         <header class="major">
           <h2>mc.qplay.cz</h2>
+          <p>Online Players: 376/1400</p>
         </header>
       </div>
     </section>
@@ -21,7 +22,7 @@
       <div class="container">
         <header>
           <h2>Chceš se také připojit?</h2>
-          <a href="?page=jak-se-pripojit" class="button">Klikni zde</a>
+          <a href="/jak-se-pripojit" class="button">Klikni zde</a>
         </header>
       </div>
     </section>
