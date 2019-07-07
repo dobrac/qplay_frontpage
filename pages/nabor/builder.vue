@@ -21,8 +21,7 @@
           </li>
           <li>
             <span style="color: #000000;">
-              Může se připojit do plného týmu na minihře Annihilation,
-              MiniAnnihilation, Crystals.
+              Může se připojit do plného týmu na minihře MiniAnnihilation a Crystals.
             </span>
           </li>
         </ul>
