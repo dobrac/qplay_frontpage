@@ -1,4 +1,4 @@
-# QPlayWeb
+# QPlayWeb [![Build Status](https://travis-ci.org/dobrac/qplay_frontpage.svg?branch=master)](https://travis-ci.org/dobrac/qplay_frontpage)
 
 > QPlay website
 
