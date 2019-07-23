@@ -8,7 +8,8 @@
         <h4><span style="color: #000000;">Jak se stát Helperem?</span></h4>
         <ul>
           <span style="color: #000000;">
-            Pokud je zrovna otevřený formulář, tak se svými herními údaji přihlásíte na
+            Pokud je zrovna otevřený formulář, tak se svými herními údaji
+            přihlásíte na
             <a href="http://info.qplay.cz/" target="_blank">Informační Panel</a>
             . Kliknete na sekci "Žádost o Helpera". Formulář vyplníte a
             odešlete.
@@ -21,7 +22,8 @@
           </li>
           <li>
             <span style="color: #000000;">
-              Může se připojit do plného týmu na minihře MiniAnnihilation a Crystals.
+              Může se připojit do plného týmu na minihře MiniAnnihilation a
+              Crystals.
             </span>
           </li>
         </ul>

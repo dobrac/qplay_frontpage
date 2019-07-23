@@ -8,19 +8,17 @@ module.exports = {
     parser: 'babel-eslint'
   },
   extends: [
-    'prettier',
-    'prettier/vue',
-    'plugin:prettier/recommended',
     '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'plugin:nuxt/recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+    'prettier/vue'
   ],
   plugins: [
     'prettier'
   ],
   // add your custom rules here
   rules: {
-    "vue/html-closing-bracket-spacing": "never",
-    "vue/html-self-closing": "never",
-    "vue/no-v-html": "never"
+    "vue/no-v-html": "off"
   }
 }

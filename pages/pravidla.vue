@@ -69,8 +69,9 @@
           ho nahlásit A-týmu.<br />
           Hráč nesmí používat ani vlastnit upravené klienty, které mu ulehčují
           hru v Minecraftu (různé podpůrné nástroje, hacky, double click, multi
-          click...). Butterfly click je povolen, avšak je zde vysoké riziko, 
-          že budete blokováni od Anti-Cheatu, proto jeho používání nedoporučujeme.<br />
+          click...). Butterfly click je povolen, avšak je zde vysoké riziko,
+          budete blokováni od Anti-Cheatu, proto jeho používání
+          nedoporučujeme.<br />
           Hráč nesmí podvádět (žádným způsobem).<br />
           Hráč nesmí spamovat chat. Za spam může být považována jakákoliv
           nevhodná zpráva do chatu - reklama, opakování stejné zprávy, nadávky
@@ -125,7 +126,8 @@
           bez sdílení obsahu pro dospělé.<br />
           Každý má právo na své soukromí, a proto nesmí nikdo na serveru
           sdělovat ostatním hráčům jakékoliv osobní údaje, ani své.<br />
-          Hráč nesmí projevovat žádné prvky provokace, diskriminace, rasismu a posměšku.
+          Hráč nesmí projevovat žádné prvky provokace, diskriminace, rasismu a
+          posměšku.
         </p>
 
         <p>

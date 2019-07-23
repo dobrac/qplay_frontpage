@@ -38,7 +38,7 @@
         <!--<h2><b><center><font color=indianred>Speciální VÁNOČNÍ Crate pro všechna VIP!</font></b></center></h2>
         <h2><b><center><font color=firebrick>SILVESTROVSKÁ AKCE: Ke všem VIP + 1 Crate!</font></b></center></h2>-->
 
-        <A n-a-m-e="zakoupeniVIP"></A>
+        <A n-a-m-e="zakoupeniVIP" />
         <div class="row 200%">
           <div class="4u 12u(narrower)">
             <div id="sidebar">
@@ -292,7 +292,7 @@
         <hr />
 
         <div>
-          <A n-a-m-e="darkovyPoukaz"></A>
+          <A n-a-m-e="darkovyPoukaz" />
           <h2 style="margin-bottom: 0px">
             Zakoupení dárkového poukazu na VIP
           </h2>

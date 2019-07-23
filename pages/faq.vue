@@ -17,10 +17,10 @@
         <br />
 
         <div v-for="(q, index) in questions" :key="index">
-          <a :name="q.question"></a>
+          <a :name="q.question" />
           <span style="font-weight: bold">{{ q.question }}</span>
           <br />
-          <span v-html="q.answer"></span>
+          <span v-html="q.answer" />
           <br />
           <br />
         </div>
