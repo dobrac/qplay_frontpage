@@ -42,6 +42,11 @@
             <nuxt-link tag="li" to="/pravidla">
               <a>Pravidla</a>
             </nuxt-link>
+            <li class="external">
+              <a href="https://changelog.qplay.cz">
+                Seznam změn
+              </a>
+            </li>
             <nuxt-link tag="li" to="/nabor">
               <a>Nábor</a>
               <ul>
