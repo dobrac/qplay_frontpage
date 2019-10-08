@@ -37,6 +37,13 @@
         </header>
         <!--<h2><b><center><font color=indianred>Speciální VÁNOČNÍ Crate pro všechna VIP!</font></b></center></h2>
         <h2><b><center><font color=firebrick>SILVESTROVSKÁ AKCE: Ke všem VIP + 1 Crate!</font></b></center></h2>-->
+        <h2>
+          <center>
+            <font color="red" style="font-weight: bold;">
+              AKCE na všechna VIP!
+            </font>
+          </center>
+        </h2>
 
         <A n-a-m-e="zakoupeniVIP" />
         <div class="row 200%">
@@ -59,14 +66,12 @@
                   </li>
                   <b>
                     <li>
-                      Dostane 10 000
-                      <span style="color: red;display: none;">(6 000)</span>
+                      Dostane <Sale :obj="VIPBasic.coins" />
                       Coinu
                     </li>
                     <li>Ve hře získává o 10% více Coinů</li>
                     <li>
-                      Dostane 1
-                      <span style="color: red;display: none;">(4)</span>
+                      Dostane <Sale :obj="VIPBasic.mysteryCrates" />
                       MYSTERY CRATE
                     </li>
                     <!--<li><span style="color: indianred;">Dostane 1 VÁNOČNÍ CRATE</span></li>-->
@@ -123,15 +128,15 @@
                   </li>
                   <b>
                     <li>
-                      Dostane 25 000
-                      <span style="color: red;display: none;"> (6 000) </span>
+                      Dostane
+                      <Sale :obj="VIPMedium.coins" />
                       Coinu
                     </li>
                     <li>Ve hře získává o 15% více Coinů</li>
                     <li>
-                      Dostane 3
-                      <span style="color: red;display: none;">(4) </span>MYSTERY
-                      CRATE
+                      Dostane
+                      <Sale :obj="VIPMedium.mysteryCrates" />
+                      MYSTERY CRATE
                     </li>
                     <!--<li><span style="color: indianred;">Dostane 2 VÁNOČNÍ CRATE</span></li>-->
                   </b>
@@ -186,9 +191,17 @@
                     <span style="color: #ffcc00;">MASTER</span>
                   </li>
                   <b>
-                    <li>Dostane 50 000 Coinu</li>
+                    <li>
+                      Dostane
+                      <Sale :obj="VIPMaster.coins" />
+                      Coinu
+                    </li>
                     <li>Ve hře získává o 20% více Coinů</li>
-                    <li>Dostane 6 MYSTERY CRATE</li>
+                    <li>
+                      Dostane
+                      <Sale :obj="VIPBasic.mysteryCrates" />
+                      MYSTERY CRATE
+                    </li>
                     <!--<li><span style="color: indianred;">Dostane 3 VÁNOČNÍ CRATE</span></li>-->
                   </b>
                   <li>Může si zrodit mazlíčka a starat se o něho.</li>
@@ -392,3 +405,53 @@
     </section>
   </div>
 </template>
+
+<script>
+import Sale from '@/components/vip/sale'
+
+function VIPCoins(def, sale) {
+  return {
+    def,
+    sale
+  }
+}
+
+function VIPMysteryCrates(def, sale) {
+  return {
+    def,
+    sale
+  }
+}
+
+export default {
+  components: {
+    Sale
+  },
+  data() {
+    return {}
+  },
+  computed: {
+    VIPBasic() {
+      return {
+        name: 'basic',
+        coins: VIPCoins(10000, 20000),
+        mysteryCrates: VIPMysteryCrates(1, 2)
+      }
+    },
+    VIPMedium() {
+      return {
+        name: 'medium',
+        coins: VIPCoins(25000, 50000),
+        mysteryCrates: VIPMysteryCrates(3, 5)
+      }
+    },
+    VIPMaster() {
+      return {
+        name: 'master',
+        coins: VIPCoins(50000, 80000),
+        mysteryCrates: VIPMysteryCrates(6, 10)
+      }
+    }
+  }
+}
+</script>
