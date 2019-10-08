@@ -407,7 +407,7 @@
 </template>
 
 <script>
-import Sale from '@/components/vip/sale'
+import Sale from '@/components/vip/Sale'
 
 function VIPCoins(def, sale) {
   return {
