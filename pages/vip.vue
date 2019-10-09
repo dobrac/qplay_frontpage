@@ -199,7 +199,7 @@
                     <li>Ve hře získává o 20% více Coinů</li>
                     <li>
                       Dostane
-                      <Sale :obj="VIPBasic.mysteryCrates" />
+                      <Sale :obj="VIPMaster.mysteryCrates" />
                       MYSTERY CRATE
                     </li>
                     <!--<li><span style="color: indianred;">Dostane 3 VÁNOČNÍ CRATE</span></li>-->
