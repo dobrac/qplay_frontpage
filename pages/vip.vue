@@ -37,13 +37,13 @@
         </header>
         <!--<h2><b><center><font color=indianred>Speciální VÁNOČNÍ Crate pro všechna VIP!</font></b></center></h2>
         <h2><b><center><font color=firebrick>SILVESTROVSKÁ AKCE: Ke všem VIP + 1 Crate!</font></b></center></h2>-->
-        <h2>
+        <!-- <h2>
           <center>
             <font color="red" style="font-weight: bold;">
               AKCE na všechna VIP!
             </font>
           </center>
-        </h2>
+        </h2> -->
 
         <A n-a-m-e="zakoupeniVIP" />
         <div class="row 200%">
@@ -434,22 +434,22 @@ export default {
     VIPBasic() {
       return {
         name: 'basic',
-        coins: VIPCoins(10000, 20000),
-        mysteryCrates: VIPMysteryCrates(1, 2)
+        coins: VIPCoins(10000, null),
+        mysteryCrates: VIPMysteryCrates(1, null)
       }
     },
     VIPMedium() {
       return {
         name: 'medium',
-        coins: VIPCoins(25000, 50000),
-        mysteryCrates: VIPMysteryCrates(3, 5)
+        coins: VIPCoins(25000, null),
+        mysteryCrates: VIPMysteryCrates(3, null)
       }
     },
     VIPMaster() {
       return {
         name: 'master',
-        coins: VIPCoins(50000, 80000),
-        mysteryCrates: VIPMysteryCrates(6, 10)
+        coins: VIPCoins(50000, null),
+        mysteryCrates: VIPMysteryCrates(6, null)
       }
     }
   }
