@@ -37,13 +37,13 @@
         </header>
         <!--<h2><b><center><font color=indianred>Speciální VÁNOČNÍ Crate pro všechna VIP!</font></b></center></h2>
         <h2><b><center><font color=firebrick>SILVESTROVSKÁ AKCE: Ke všem VIP + 1 Crate!</font></b></center></h2>-->
-        <!-- <h2>
+        <h2>
           <center>
-            <font color="red" style="font-weight: bold;">
-              AKCE na všechna VIP!
+            <font color="orange" style="font-weight: bold;">
+              Speciální HALLOWEEN Crate všechna VIP!
             </font>
           </center>
-        </h2> -->
+        </h2>
 
         <A n-a-m-e="zakoupeniVIP" />
         <div class="row 200%">
@@ -73,6 +73,11 @@
                     <li>
                       Dostane <Sale :obj="VIPBasic.mysteryCrates" />
                       MYSTERY CRATE
+                    </li>
+                    <li>
+                      <span style="color: orange;">
+                        Dostane 1 HALLOWEEN CRATE
+                      </span>
                     </li>
                     <!--<li><span style="color: indianred;">Dostane 1 VÁNOČNÍ CRATE</span></li>-->
                   </b>
@@ -138,6 +143,11 @@
                       <Sale :obj="VIPMedium.mysteryCrates" />
                       MYSTERY CRATE
                     </li>
+                    <li>
+                      <span style="color: orange;">
+                        Dostane 2 HALLOWEEN CRATE
+                      </span>
+                    </li>
                     <!--<li><span style="color: indianred;">Dostane 2 VÁNOČNÍ CRATE</span></li>-->
                   </b>
                   <li>Může si zrodit mazlíčka a starat se o něho.</li>
@@ -201,6 +211,11 @@
                       Dostane
                       <Sale :obj="VIPMaster.mysteryCrates" />
                       MYSTERY CRATE
+                    </li>
+                    <li>
+                      <span style="color: orange;">
+                        Dostane 3 HALLOWEEN CRATE
+                      </span>
                     </li>
                     <!--<li><span style="color: indianred;">Dostane 3 VÁNOČNÍ CRATE</span></li>-->
                   </b>
