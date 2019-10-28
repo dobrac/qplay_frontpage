@@ -48,7 +48,7 @@
           <section class="4u 12u(narrower)">
             <div class="box highlight">
               <i
-                STYLE="background-image: url(icons/enderpearl.png);background-size: contain; background-repeat: no-repeat;"
+                STYLE="background-image: url(icons/ender_pearl.png);background-size: contain; background-repeat: no-repeat;"
                 class="icon major"
               />
               <h3>SkyWars</h3>
