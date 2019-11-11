@@ -74,11 +74,11 @@
                       Dostane <Sale :obj="VIPBasic.mysteryCrates" />
                       MYSTERY CRATE
                     </li>
-                    <li>
+                    <!--<li>
                       <span style="color: orange;">
                         Dostane 1 HALLOWEEN CRATE
                       </span>
-                    </li>
+                    </li>-->
                     <!--<li><span style="color: indianred;">Dostane 1 VÁNOČNÍ CRATE</span></li>-->
                   </b>
                   <li>Může si zrodit mazlíčka a starat se o něho.</li>
@@ -143,11 +143,11 @@
                       <Sale :obj="VIPMedium.mysteryCrates" />
                       MYSTERY CRATE
                     </li>
-                    <li>
+                    <!--<li>
                       <span style="color: orange;">
                         Dostane 2 HALLOWEEN CRATE
                       </span>
-                    </li>
+                    </li>-->
                     <!--<li><span style="color: indianred;">Dostane 2 VÁNOČNÍ CRATE</span></li>-->
                   </b>
                   <li>Může si zrodit mazlíčka a starat se o něho.</li>
@@ -212,11 +212,11 @@
                       <Sale :obj="VIPMaster.mysteryCrates" />
                       MYSTERY CRATE
                     </li>
-                    <li>
+                    <!--<li>
                       <span style="color: orange;">
                         Dostane 3 HALLOWEEN CRATE
                       </span>
-                    </li>
+                    </li>-->
                     <!--<li><span style="color: indianred;">Dostane 3 VÁNOČNÍ CRATE</span></li>-->
                   </b>
                   <li>Může si zrodit mazlíčka a starat se o něho.</li>
