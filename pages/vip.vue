@@ -100,7 +100,7 @@
                   <li>45% daň při převodu Coinů</li>
                 </ul>
                 <span style="color: firebrick; font-size: 20px; ">
-                  > <strong>Délka trvání výhod: </strong>30 dní (Coiny jsou
+                  <strong>Délka trvání výhod: </strong>30 dní (Coiny jsou
                   přičteny jednorázově)
                 </span>
                 <br />
