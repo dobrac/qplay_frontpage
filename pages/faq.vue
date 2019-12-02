@@ -87,7 +87,7 @@ export default {
         ),
         new Question(
           'Jaké výhody získám s Permanentním VIP (PVIP)?',
-          'Permanentní VIP vlastní veškeré výhody jako Medium VIP. Každý měsíc také navíc obdrží 15 000 coinů.'
+          'Permanentní VIP vlastní veškeré výhody jako Medium VIP, kromě týdenních odměn, které má oddělené. Každý týden si může vyzvednout 4 000 coinů u Rewards postavičky, jenž se nachází na hlavním lobby.'
         ),
         new Question(
           'Jak se připojím na TS3?',
