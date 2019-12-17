@@ -15,7 +15,7 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.8.0",
+    "@nuxtjs/axios": "^5.9.0",
     "cross-env": "^6.0.3",
     "nuxt": "^2.10.2",
     "push-dir": "^0.4.1"
