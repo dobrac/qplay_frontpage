@@ -154,7 +154,7 @@
           Člen A-týmu má právo zabanovat hráče, jestliže porušuje jakákoliv
           pravidla serveru.<br />
           Člen A-týmu musí uchovat důkaz, trvá-li ban déle jak 7 dní. Výjimkou
-          jsou bany na 60 dní. Vedení serveru důkazy uchovávat nemusí.<br />
+          jsou bany na 30 a 60 dní. Vedení serveru důkazy uchovávat nemusí.<br />
         </p>
 
         <h3>Zabezpečení a sdílení herního účtu</h3>
