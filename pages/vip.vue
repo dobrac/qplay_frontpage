@@ -2,12 +2,12 @@
   <div>
     <section class="wrapper style1" style="padding: 2em 0 1em 0">
       <div id="test" class="container">
-        <center>
+        <!--<center>
           <a href="#darkovyPoukaz" style="text-decoration:none;border:none;"
             ><img src="images/BannerPNGFinal.png" style="max-width:100%"/></a
           ><br />
           <br />
-        </center>
+        </center>-->
         <!--
   <center>
           <a href="#naramekAkce" style="text-decoration:none;border:none;"><img src="images/WebNaramkyAkce.png?ver=2" ></a><br> <br><br>
@@ -77,11 +77,6 @@
                       Dostane <Sale :obj="VIPBasic.mysteryCrates" />
                       MYSTERY CRATE
                     </li>
-                    <li>
-                      <span style="color: indianred;">
-                        Dostane 1 VÁNOČNÍ CRATE
-                      </span>
-                    </li>
                     <!--<li><span style="color: indianred;">Dostane 1 VÁNOČNÍ CRATE</span></li>-->
                   </b>
                   <li>Může si zrodit mazlíčka a starat se o něho.</li>
@@ -146,11 +141,6 @@
                       <Sale :obj="VIPMedium.mysteryCrates" />
                       MYSTERY CRATE
                     </li>
-                    <li>
-                      <span style="color: indianred;">
-                        Dostane 2 VÁNOČNÍ CRATE
-                      </span>
-                    </li>
                     <!--<li><span style="color: indianred;">Dostane 2 VÁNOČNÍ CRATE</span></li>-->
                   </b>
                   <li>Může si zrodit mazlíčka a starat se o něho.</li>
@@ -214,11 +204,6 @@
                       Dostane
                       <Sale :obj="VIPMaster.mysteryCrates" />
                       MYSTERY CRATE
-                    </li>
-                    <li>
-                      <span style="color: indianred;">
-                        Dostane 3 VÁNOČNÍ CRATE
-                      </span>
                     </li>
                     <!--<li><span style="color: indianred;">Dostane 3 VÁNOČNÍ CRATE</span></li>-->
                   </b>
