@@ -105,14 +105,14 @@
           <section class="4u 12u(narrower)">
             <div class="box highlight">
               <i
-                STYLE="background-image: url(icons/bow.png);background-size: contain; background-repeat: no-repeat;"
+                STYLE="background-image: url(icons/crystals.png);background-size: contain; background-repeat: no-repeat;"
                 class="icon major"
               />
-              <h3>Islands</h3>
+              <h3>Crystals</h3>
               <p>
-                Natěž si na svém ostrově suroviny, ze kterých získáš brnění a
-                útočné věci, které ti poslouží k zabití všech protihráčů na
-                mapě.
+                Natěž si na svém ostrově suroviny, zakup si u vesničana
+                speciální předměty a připrav se k boji. Jakmile budeš připraven,
+                znič srdce ostatním týmům.
               </p>
             </div>
           </section>
@@ -154,22 +154,6 @@
               <p>
                 Běhej po mapě a obarvi svou barvou týmu co nejvíce bloků. Dej si
                 pozor, aby ti bloky nepřebarvil jiný hráč.
-              </p>
-            </div>
-          </section>
-        </div>
-        <div class="row 200%">
-          <section class="4u 12u(narrower)">
-            <div class="box highlight">
-              <i
-                STYLE="background-image: url(icons/crystals.png);background-size: contain; background-repeat: no-repeat;"
-                class="icon major"
-              />
-              <h3>Crystals</h3>
-              <p>
-                Natěž si na svém ostrově suroviny, zakup si u vesničana
-                speciální předměty a připrav se k boji. Jakmile budeš připraven,
-                znič srdce ostatním týmům.
               </p>
             </div>
           </section>
