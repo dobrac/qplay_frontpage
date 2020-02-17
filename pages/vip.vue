@@ -54,13 +54,13 @@
             </font>
           </center>
         </h2> -->
-        <h2>
+        <!--<h2>
           <center>
             <font color="#e75480" style="font-weight: bold;">
               Valentýnská akce na všechna VIP!
             </font>
           </center>
-        </h2>
+        </h2>-->
 
         <A n-a-m-e="zakoupeniVIP" />
         <div class="row 200%">
@@ -91,11 +91,11 @@
                       Dostane <Sale :obj="VIPBasic.mysteryCrates" />
                       MYSTERY CRATE
                     </li>
-                    <li>
+                    <!--<li>
                       <span style="color: #e75480;"
                         >Dostane 1 VALENTÝNSKOU CRATE</span
                       >
-                    </li>
+                    </li>-->
                   </b>
                   <li>Může si zrodit mazlíčka a starat se o něho.</li>
                   <li>Nepůsobí na něj SlowMode</li>
@@ -159,11 +159,11 @@
                       <Sale :obj="VIPMedium.mysteryCrates" />
                       MYSTERY CRATE
                     </li>
-                    <li>
+                    <!--<li>
                       <span style="color: #e75480;"
                         >Dostane 2 VALENTÝNSKÉ CRATE</span
                       >
-                    </li>
+                    </li>-->
                   </b>
                   <li>Může si zrodit mazlíčka a starat se o něho.</li>
                   <li>Nepůsobí na něj SlowMode</li>
@@ -227,11 +227,11 @@
                       <Sale :obj="VIPMaster.mysteryCrates" />
                       MYSTERY CRATE
                     </li>
-                    <li>
+                    <!--<li>
                       <span style="color: #e75480;"
                         >Dostane 3 VALENTÝNSKÉ CRATE</span
                       >
-                    </li>
+                    </li>-->
                   </b>
                   <li>Může si zrodit mazlíčka a starat se o něho.</li>
                   <li>Může si svého mazlíčka pojmenovat.</li>
