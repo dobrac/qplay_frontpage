@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.9.5",
-    "cross-env": "^7.0.0",
+    "cross-env": "^7.0.1",
     "nuxt": "^2.11.0",
     "push-dir": "^0.4.1"
   },
