@@ -86,7 +86,7 @@
                       Dostane <Sale :obj="VIPBasic.coins" />
                       Coinu
                     </li>
-                    <li>Ve hře získává o 10% více Coinů</li>
+                    <li>Ve hře získává o 10 % více Coinů</li>
                     <li>
                       Dostane <Sale :obj="VIPBasic.mysteryCrates" />
                       MYSTERY CRATE
@@ -153,7 +153,7 @@
                       <Sale :obj="VIPMedium.coins" />
                       Coinu
                     </li>
-                    <li>Ve hře získává o 15% více Coinů</li>
+                    <li>Ve hře získává o 15 % více Coinů</li>
                     <li>
                       Dostane
                       <Sale :obj="VIPMedium.mysteryCrates" />
@@ -221,7 +221,7 @@
                       <Sale :obj="VIPMaster.coins" />
                       Coinu
                     </li>
-                    <li>Ve hře získává o 20% více Coinů</li>
+                    <li>Ve hře získává o 20 % více Coinů</li>
                     <li>
                       Dostane
                       <Sale :obj="VIPMaster.mysteryCrates" />
