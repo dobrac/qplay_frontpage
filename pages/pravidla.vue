@@ -18,7 +18,7 @@
             href="https://qplay.cz/VOP/ZasadyZpracovaniDat.pdf"
             target="_blank"
           >
-            Zásady zpracování osobních údajů
+            Zásady zpracování osobních údajů test
           </a>
         </div>
         <br /><br />
