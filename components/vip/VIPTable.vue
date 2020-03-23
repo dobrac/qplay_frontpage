@@ -475,6 +475,14 @@ export default {
             {
               name: 'Hodnost na TS3',
               default: false,
+              basic: true,
+              medium: true,
+              master: true,
+              legend: true,
+            },
+            {
+              name: 'Vytváření reportů zdarma (/report)',
+              default: false,
               basic: false,
               medium: false,
               master: false,
