@@ -483,9 +483,9 @@ export default {
             {
               name: 'Hodnost na TS3',
               default: false,
-              basic: true,
-              medium: true,
-              master: true,
+              basic: false,
+              medium: false,
+              master: false,
               legend: true,
             },
             {
