@@ -2,7 +2,7 @@
   <div>
     <section class="wrapper style1">
       <div class="container">
-        <h1 style="text-align: center;font-size: xx-large">
+        <h1 style="text-align: center; font-size: xx-large;">
           <span style="color: #000000;"><b>Nábor na Buildera</b></span>
         </h1>
         <h4><span style="color: #000000;">Jak se stát Builderem?</span></h4>

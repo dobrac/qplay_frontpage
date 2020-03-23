@@ -5,7 +5,7 @@
         <a
           href="https://info.qplay.cz"
           target="_blank"
-          style="text-decoration:none;color: black;"
+          style="text-decoration: none; color: black;"
         >
           <h2>info.qplay.cz (informační portál)</h2>
         </a>
@@ -30,7 +30,7 @@
           <a
             href="https://www.facebook.com/QPlay.cz"
             target="_blank"
-            style="color: inherit"
+            style="color: inherit;"
           >
             <b>Klikni</b>
           </a>
@@ -52,7 +52,7 @@
         <a
           href="https://net-inout.cz"
           target="_blank"
-          style="border-bottom: 0px;color: inherit"
+          style="border-bottom: 0px; color: inherit;"
         >
           https://net-inout.cz
         </a>

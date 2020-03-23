@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="wrapper style1" style="padding: 2em 0 1em 0">
+    <section class="wrapper style1" style="padding: 2em 0 1em 0;">
       <div id="test" class="container">
         <!--<center>
           <a href="#darkovyPoukaz" style="text-decoration:none;border:none;"
@@ -112,12 +112,12 @@
                   <li>Speciální doplňky na ModernBedWars</li>
                   <li>45% daň při převodu Coinů</li>
                 </ul>
-                <span style="color: firebrick; font-size: 20px; ">
+                <span style="color: firebrick; font-size: 20px;">
                   <strong>Délka trvání výhod: </strong>30 dní (Coiny jsou
                   přičteny jednorázově)
                 </span>
                 <br />
-                <span style="color: firebrick; font-size: 25px; ">
+                <span style="color: firebrick; font-size: 25px;">
                   <strong>Cena: </strong>50 Kč nebo 2 € (včetně DPH)
                 </span>
                 <br /><br />
@@ -180,12 +180,12 @@
                   <li>Speciální doplňky na ModernBedWars</li>
                   <li>40% daň při převodu Coinů</li>
                 </ul>
-                <span style="color: firebrick; font-size: 20px; ">
+                <span style="color: firebrick; font-size: 20px;">
                   <strong>Délka trvání výhod: </strong>30 dní (Coiny jsou
                   přičteny jednorázově)
                 </span>
                 <br />
-                <span style="color: firebrick; font-size: 25px; ">
+                <span style="color: firebrick; font-size: 25px;">
                   <strong>Cena: </strong>99 Kč nebo 4 € (včetně DPH)
                 </span>
                 <br /><br />
@@ -250,12 +250,12 @@
                   <li>Speciální doplňky na ModernBedWars</li>
                   <li>35% daň při převodu Coinů</li>
                 </ul>
-                <span style="color: firebrick; font-size: 20px; ">
+                <span style="color: firebrick; font-size: 20px;">
                   <strong>Délka trvání výhod: </strong>30 dní (Coiny jsou
                   přičteny jednorázově)
                 </span>
                 <br />
-                <span style="color: firebrick; font-size: 25px; ">
+                <span style="color: firebrick; font-size: 25px;">
                   <strong>Cena: </strong>189 Kč nebo 7,5 € (včetně DPH)
                 </span>
                 <br /><br />
@@ -300,7 +300,7 @@
 
         <br />
         <br />
-        <h2 style="margin-bottom: 0px">
+        <h2 style="margin-bottom: 0px;">
           GoPay
         </h2>
         GoPay je platební brána, umožňující platbu pomocí PayPal, PaySafeCard,
@@ -309,33 +309,36 @@
         <div>
           <img
             src="/imgBrana/1.png"
-            style="height:40px;margin-right:10px"
+            style="height: 40px; margin-right: 10px;"
           /><img
             src="/imgBrana/2.png"
-            style="height:40px;margin-right:10px"
+            style="height: 40px; margin-right: 10px;"
           /><img
             src="/imgBrana/3.png"
-            style="height:40px;margin-right:10px"
+            style="height: 40px; margin-right: 10px;"
           /><img
             src="/imgBrana/4.png"
-            style="height:40px;margin-right:10px"
+            style="height: 40px; margin-right: 10px;"
           /><img
             src="/imgBrana/5.png"
-            style="height:40px;margin-right:10px"
+            style="height: 40px; margin-right: 10px;"
           /><img
             src="/imgBrana/6.png"
-            style="height:40px;margin-right:10px"
+            style="height: 40px; margin-right: 10px;"
           /><img
             src="/imgBrana/7.png"
-            style="height:40px;margin-right:10px"
-          /><img src="/imgBrana/8.png" style="height:40px;margin-right:10px" />
+            style="height: 40px; margin-right: 10px;"
+          /><img
+            src="/imgBrana/8.png"
+            style="height: 40px; margin-right: 10px;"
+          />
         </div>
 
         <hr />
 
         <div>
           <A n-a-m-e="darkovyPoukaz" />
-          <h2 style="margin-bottom: 0px">
+          <h2 style="margin-bottom: 0px;">
             Zakoupení dárkového poukazu na VIP
           </h2>
           <p>
@@ -441,20 +444,20 @@ import Sale from '@/components/vip/Sale'
 function VIPCoins(def, sale) {
   return {
     def,
-    sale
+    sale,
   }
 }
 
 function VIPMysteryCrates(def, sale) {
   return {
     def,
-    sale
+    sale,
   }
 }
 
 export default {
   components: {
-    Sale
+    Sale,
   },
   data() {
     return {}
@@ -464,23 +467,23 @@ export default {
       return {
         name: 'basic',
         coins: VIPCoins(10000, null),
-        mysteryCrates: VIPMysteryCrates(1, null)
+        mysteryCrates: VIPMysteryCrates(1, null),
       }
     },
     VIPMedium() {
       return {
         name: 'medium',
         coins: VIPCoins(25000, null),
-        mysteryCrates: VIPMysteryCrates(3, null)
+        mysteryCrates: VIPMysteryCrates(3, null),
       }
     },
     VIPMaster() {
       return {
         name: 'master',
         coins: VIPCoins(50000, null),
-        mysteryCrates: VIPMysteryCrates(6, null)
+        mysteryCrates: VIPMysteryCrates(6, null),
       }
-    }
-  }
+    },
+  },
 }
 </script>

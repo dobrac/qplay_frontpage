@@ -2,10 +2,10 @@
   <div>
     <section class="wrapper style1">
       <div class="container">
-        <h1 style="text-align: center;color: #000000;">
+        <h1 style="text-align: center; color: #000000;">
           Všeobecné obchodní podmínky a Podmínky používání služeb QPlay.cz
         </h1>
-        <div style="text-align: center">
+        <div style="text-align: center;">
           <a href="https://qplay.cz/VOP/VOP.pdf" target="_blank">
             Obchodní podmínky (VOP)
           </a>
@@ -23,17 +23,17 @@
         </div>
         <br /><br />
 
-        <h1 style="text-align: center;color: #000000;">
+        <h1 style="text-align: center; color: #000000;">
           Pravidla
         </h1>
-        <h1 style="text-align: center;color: #000000;">
+        <h1 style="text-align: center; color: #000000;">
           herního a teamspeak serveru
         </h1>
-        <p style="text-align: center;color: #ff0000;">
+        <p style="text-align: center; color: #ff0000;">
           Hráč registrovaný na serveru <strong>QPlay</strong> souhlasí s těmito
           pravidly a zavazuje se je dodržovat.
         </p>
-        <p style="text-align: center;color: #ff0000;">
+        <p style="text-align: center; color: #ff0000;">
           Pravidla se vztahují na Minecraft, TeamSpeak3 a Informační panel.
         </p>
         &nbsp;

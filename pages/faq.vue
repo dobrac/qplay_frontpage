@@ -8,7 +8,7 @@
 
         <div v-for="(q, index) in questions" :key="index">
           <a :href="'#' + q.question">
-            <span style="font-weight: bold">{{ q.question }}</span>
+            <span style="font-weight: bold;">{{ q.question }}</span>
           </a>
         </div>
 
@@ -18,7 +18,7 @@
 
         <div v-for="(q, index) in questions" :key="index">
           <a :name="q.question" />
-          <span style="font-weight: bold">{{ q.question }}</span>
+          <span style="font-weight: bold;">{{ q.question }}</span>
           <br />
           <span v-html="q.answer" />
           <br />
@@ -96,9 +96,9 @@ export default {
         new Question(
           'Někdo je za mě již zaregistrovaný, co mám dělat?',
           'Stačí si zaregistrovat účet pod jakýmkoliv volným nickem a následně postupovat podle návodu na <a href="https://qplay.cz/navod/overeni-originalky" target="_blank">Ověření originálky</a>.'
-        )
-      ]
+        ),
+      ],
     }
-  }
+  },
 }
 </script>

@@ -11,13 +11,13 @@ export default {
   props: {
     obj: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   methods: {
     numberWithSpaces(x) {
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
-    }
-  }
+    },
+  },
 }
 </script>

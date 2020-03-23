@@ -168,13 +168,13 @@ export default {
   data() {
     return {
       players: -1,
-      timer: null
+      timer: null,
     }
   },
   computed: {
     playersShow() {
       return this.players > -1 ? this.players : '---'
-    }
+    },
   },
   mounted() {
     this.fetchPlayers()
@@ -191,7 +191,7 @@ export default {
       if (data) {
         this.players = data
       }
-    }
-  }
+    },
+  },
 }
 </script>

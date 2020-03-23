@@ -1,13 +1,19 @@
 <template>
   <div>
     <script src="/js/facebook.js" />
-    <div id="fbplikebox" style="display:none;">
+    <div id="fbplikebox" style="display: none;">
       <div class="fbplbadge" />
       <iframe
         src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Ffacebook.com%2FQPlay.cz&amp;width=320&amp;height=500&amp;colorscheme=light&amp;show_faces=false&amp;border_color=%23C4C4C4&amp;stream=true&amp;header=false"
         scrolling="no"
         frameborder="0"
-        style="border:none; overflow:hidden; width:320px; height:500px;background:#FFFFFF;"
+        style="
+          border: none;
+          overflow: hidden;
+          width: 320px;
+          height: 500px;
+          background: #ffffff;
+        "
         allowtransparency="true"
       />
     </div>
