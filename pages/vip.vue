@@ -63,215 +63,17 @@
         </h2>-->
 
         <A n-a-m-e="zakoupeniVIP" />
-        <div class="row 200%">
-          <div class="4u 12u(narrower)">
-            <div id="sidebar">
-              <!-- Content -->
-              <article>
-                <!-- <span class="image featured"><img src="images/banner.jpg" alt="" /></span> -->
-                <h2>1) BASIC</h2>
-                <strong>Výhody:</strong>
-                <ul style="list-style-type: disc; padding: 0px 20px 0px;">
-                  <li>Připojí se na plný server i minihru!</li>
-                  <li>
-                    Má v chatu žlutý prefix
-                    <span style="color: #ffcc00;">BASIC</span>
-                  </li>
-                  <li>
-                    Má v tabu žlutý prefix
-                    <span style="color: #ffcc00;">BASIC</span>
-                  </li>
-                  <b>
-                    <li>
-                      Dostane <Sale :obj="VIPBasic.coins" />
-                      Coinu
-                    </li>
-                    <li>Ve hře získává o 10% více Coinů</li>
-                    <li>
-                      Dostane <Sale :obj="VIPBasic.mysteryCrates" />
-                      MYSTERY CRATE
-                    </li>
-                    <!--<li>
-                      <span style="color: #e75480;"
-                        >Dostane 1 VALENTÝNSKOU CRATE</span
-                      >
-                    </li>-->
-                  </b>
-                  <li>Může si zrodit mazlíčka a starat se o něho.</li>
-                  <li>Nepůsobí na něj SlowMode</li>
-                  <li>Může psát soukromé zprávy /tell a /r</li>
-                  <li>Delší čas, než budete kicknuti za AFK (5 minut)</li>
-                  <li>Speciální příkaz na posílání věcí /trade nick</li>
-                  <!--<li>Speciální příkaz na duel na 1vs1 /duel nick</li>-->
-                  <li>2x Více coinů za strávený čas na serveru</li>
-                  <li>Až <b>10</b> přátel pomocí příkazu /friend</li>
-                  <li>Až <b>3</b> hráči v Party pomocí příkazu /party</li>
-                  <li>Létání na Lobby pomocí příkazu /fly</li>
-                  <li>Psaní barevných zpráv do chatu na Lobby</li>
-                  <li>Až 18 slotů v EnderTruhle na MiniAnni</li>
-                  <li>Speciální doplňky na ModernBedWars</li>
-                  <li>45% daň při převodu Coinů</li>
-                </ul>
-                <span style="color: firebrick; font-size: 20px;">
-                  <strong>Délka trvání výhod: </strong>30 dní (Coiny jsou
-                  přičteny jednorázově)
-                </span>
-                <br />
-                <span style="color: firebrick; font-size: 25px;">
-                  <strong>Cena: </strong>50 Kč nebo 2 € (včetně DPH)
-                </span>
-                <br /><br />
-                <a href="https://pay.net-inout.cz/?pw=123987465&produkt=1">
-                  <input
-                    type="submit"
-                    name="submit"
-                    value="Zakoupit BASIC VIP"
-                  />
-                </a>
-              </article>
-            </div>
-          </div>
-          <div class="4u 12u(narrower)">
-            <div id="sidebar">
-              <!-- Sidebar -->
-              <section>
-                <h2>2) MEDIUM</h2>
-                <strong>Výhody:</strong>
-                <ul style="list-style-type: disc; padding: 0px 20px 0px;">
-                  <li>Připojí se na plný server i minihru!</li>
-                  <li>
-                    Má v chatu žlutý prefix
-                    <span style="color: #ffcc00;">MEDIUM</span>
-                  </li>
-                  <li>
-                    Má v tabu žlutý prefix
-                    <span style="color: #ffcc00;">MEDIUM</span>
-                  </li>
-                  <b>
-                    <li>
-                      Dostane
-                      <Sale :obj="VIPMedium.coins" />
-                      Coinu
-                    </li>
-                    <li>Ve hře získává o 15% více Coinů</li>
-                    <li>
-                      Dostane
-                      <Sale :obj="VIPMedium.mysteryCrates" />
-                      MYSTERY CRATE
-                    </li>
-                    <!--<li>
-                      <span style="color: #e75480;"
-                        >Dostane 2 VALENTÝNSKÉ CRATE</span
-                      >
-                    </li>-->
-                  </b>
-                  <li>Může si zrodit mazlíčka a starat se o něho.</li>
-                  <li>Nepůsobí na něj SlowMode</li>
-                  <li>Může psát soukromé zprávy /tell a /r</li>
-                  <li>Delší čas, než budete kicknuti za AFK (5 minut)</li>
-                  <li>Speciální příkaz na posílání věcí /trade nick</li>
-                  <!--<li>Speciální příkaz na duel na 1vs1 /duel nick</li>-->
-                  <li>2x Více coinů za strávený čas na serveru</li>
-                  <li>Až <b>10</b> přátel pomocí příkazu /friend</li>
-                  <li>Až <b>4</b> hráči v Party pomocí příkazu /party</li>
-                  <li>Létání na Lobby pomocí příkazu /fly</li>
-                  <li>Psaní barevných zpráv do chatu na Lobby</li>
-                  <li>Až 18 slotů v EnderTruhle na MiniAnni</li>
-                  <li>Speciální doplňky na ModernBedWars</li>
-                  <li>40% daň při převodu Coinů</li>
-                </ul>
-                <span style="color: firebrick; font-size: 20px;">
-                  <strong>Délka trvání výhod: </strong>30 dní (Coiny jsou
-                  přičteny jednorázově)
-                </span>
-                <br />
-                <span style="color: firebrick; font-size: 25px;">
-                  <strong>Cena: </strong>99 Kč nebo 4 € (včetně DPH)
-                </span>
-                <br /><br />
-                <a href="https://pay.net-inout.cz/?pw=123987465&produkt=2">
-                  <input
-                    type="submit"
-                    name="submit"
-                    value="Zakoupit MEDIUM VIP"
-                  />
-                </a>
-              </section>
-            </div>
-          </div>
-          <div class="4u 12u(narrower)">
-            <div id="sidebar">
-              <!-- Sidebar -->
-              <section>
-                <h2>3) MASTER</h2>
-                <strong>Výhody:</strong>
-                <ul style="list-style-type: disc; padding: 0px 20px 0px;">
-                  <li>Připojí se na plný server i minihru!</li>
-                  <li>
-                    Má v chatu žlutý prefix
-                    <span style="color: #ffcc00;">MASTER</span>
-                  </li>
-                  <li>
-                    Má v tabu žlutý prefix
-                    <span style="color: #ffcc00;">MASTER</span>
-                  </li>
-                  <b>
-                    <li>
-                      Dostane
-                      <Sale :obj="VIPMaster.coins" />
-                      Coinu
-                    </li>
-                    <li>Ve hře získává o 20% více Coinů</li>
-                    <li>
-                      Dostane
-                      <Sale :obj="VIPMaster.mysteryCrates" />
-                      MYSTERY CRATE
-                    </li>
-                    <!--<li>
-                      <span style="color: #e75480;"
-                        >Dostane 3 VALENTÝNSKÉ CRATE</span
-                      >
-                    </li>-->
-                  </b>
-                  <li>Může si zrodit mazlíčka a starat se o něho.</li>
-                  <li>Může si svého mazlíčka pojmenovat.</li>
-                  <li>Má možnost automatického přijímání úkolů na SkyWars.</li>
-                  <li>Nepůsobí na něj SlowMode</li>
-                  <li>Může psát soukromé zprávy /tell a /r</li>
-                  <li>Delší čas, než budete kicknuti za AFK (5 minut)</li>
-                  <li>Speciální příkaz na posílání věcí /trade nick</li>
-                  <!--<li>Speciální příkaz na duel na 1vs1 /duel nick</li>-->
-                  <li>2x Více coinů za strávený čas na serveru</li>
-                  <li>Až <b>10</b> přátel pomocí příkazu /friend</li>
-                  <li>Až <b>5</b> hráčů v Party pomocí příkazu /party</li>
-                  <li>Létání na Lobby pomocí příkazu /fly</li>
-                  <li>Psaní barevných zpráv do chatu na Lobby</li>
-                  <li>Až 18 slotů v EnderTruhle na MiniAnni</li>
-                  <li>Speciální doplňky na ModernBedWars</li>
-                  <li>35% daň při převodu Coinů</li>
-                </ul>
-                <span style="color: firebrick; font-size: 20px;">
-                  <strong>Délka trvání výhod: </strong>30 dní (Coiny jsou
-                  přičteny jednorázově)
-                </span>
-                <br />
-                <span style="color: firebrick; font-size: 25px;">
-                  <strong>Cena: </strong>189 Kč nebo 7,5 € (včetně DPH)
-                </span>
-                <br /><br />
-                <a href="https://pay.net-inout.cz/?pw=123987465&produkt=3">
-                  <input
-                    type="submit"
-                    name="submit"
-                    value="Zakoupit MASTER VIP"
-                  />
-                </a>
-              </section>
-            </div>
-          </div>
-        </div>
+        <VIPTable></VIPTable>
 
-        <br /><br /><br />
+        <br />
+
+        <p>
+          *Crate Shards je nová měna, kterou vlastní pouze hráče s LEGEND VIP.
+          Získává se místo Coinů hraním miniher. Na Lobby v Crate Factory si lze
+          následně Crate Shards proměnit na normální crates (BASIC, MYSTERY,
+          LEGEND) a v sezónách i na například Christmas, Valentine, Halloween
+          crate.
+        </p>
 
         <br />
         <br />
@@ -297,6 +99,14 @@
         <br />
         Případně můžete aktivovat kód na serveru příkazem na Lobby:
         <b>/kod [VAS_KOD]</b> - takže například /kod 1234-5678
+        <br />
+        <br />
+        <p>
+          Při současně aktivovaných více druhů VIP zároveň se nejprve aktivuje
+          to nejlepší a poté se postupně aktivují sestupně od nejlepších po
+          nejhorší. Při zakoupení více VIP stejného typu se doby expirace
+          prodlužují.
+        </p>
 
         <br />
         <br />
@@ -439,7 +249,7 @@
 </template>
 
 <script>
-import Sale from '@/components/vip/Sale'
+import VIPTable from '@/components/vip/VIPTable'
 
 function VIPCoins(def, sale) {
   return {
@@ -457,7 +267,7 @@ function VIPMysteryCrates(def, sale) {
 
 export default {
   components: {
-    Sale,
+    VIPTable,
   },
   data() {
     return {}

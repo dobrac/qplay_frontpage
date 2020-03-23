@@ -1,11 +1,11 @@
 <template>
   <div>
     <!-- Banner -->
-    <!-- <nuxt-link to="/vip">
+    <nuxt-link to="/vip">
       <section class="banner zoomBanner">&nbsp;</section>
-    </nuxt-link> -->
-    <section class="banner">
-      <header class="external">
+    </nuxt-link>
+    <section class="banner" style="background-image: none; height: inherit;">
+      <header class="external" style="position: relative;">
         <a href="https://info.qplay.cz/" target="_blank" class="button">
           Přihlášení do Info Panelu
         </a>
