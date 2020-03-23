@@ -320,6 +320,14 @@ export default {
               master: '20 %',
               legend: '-',
             },
+            {
+              name: 'Odměna na konci hry',
+              default: 'Coins',
+              basic: 'Coins',
+              medium: 'Coins',
+              master: 'Coins',
+              legend: 'Crate Shards*',
+            },
           ],
         },
         {
