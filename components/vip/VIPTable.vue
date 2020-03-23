@@ -4,7 +4,7 @@
       <div style="flex-grow: 10;">&nbsp;</div>
       <button
         :class="'btn-currency ' + (currency == 'CZK' ? 'selected' : '')"
-        style="margin-right: 10px;"
+        style="margin-right: 10p;"
         @click="changeCurrency('CZK')"
       >
         <img src="/vip/switch/CZK.png" alt="CZK" />
@@ -153,6 +153,8 @@
   }
 }
 .btn-currency {
+  $border-width: 3px;
+
   background: none;
   color: inherit;
   border: none;
@@ -161,7 +163,8 @@
   cursor: pointer;
   outline: inherit;
 
-  height: 44px;
+  height: 40px + 2 * $border-width;
+  border: $border-width solid transparent;
 
   &:hover {
     opacity: 0.9;
@@ -172,7 +175,7 @@
   }
 
   &.selected {
-    filter: brightness(80%);
+    border: $border-width solid #460e10;
   }
 }
 
@@ -187,6 +190,9 @@
   .section-row {
     td {
       text-align: center;
+    }
+    &:hover {
+      background-color: whitesmoke;
     }
   }
 
