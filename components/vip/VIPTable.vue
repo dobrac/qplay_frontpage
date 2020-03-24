@@ -381,6 +381,14 @@ export default {
           color: '#62983E',
           items: [
             {
+              name: 'Žluté písmo v chatu',
+              default: false,
+              basic: false,
+              medium: false,
+              master: false,
+              legend: true,
+            },
+            {
               name: 'Možnost pojmenovat si peta',
               default: false,
               basic: false,
@@ -424,8 +432,8 @@ export default {
               name: 'Velikost friend listu (/friend)',
               default: '5 přátel',
               basic: '10 přátel',
-              medium: '10 přátel',
-              master: '10 přátel',
+              medium: '15 přátel',
+              master: '20 přátel',
               legend: '30 přátel',
             },
           ],
