@@ -80,8 +80,8 @@
             <td colspan="5" :style="'background-color: ' + section.color"></td>
           </tr>
           <tr
-            v-for="item in section.items"
-            :key="index + item.name"
+            v-for="(item, indexItem) in section.items"
+            :key="index + '-' + indexItem"
             class="section-row"
           >
             <td style="text-align: right;" v-html="item.name"></td>
