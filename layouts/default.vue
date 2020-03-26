@@ -1,34 +1,20 @@
 <template>
   <div>
     <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v6.0&appId=1613903462180236&autoLogAppEvents=1"
-    ></script>
     <script src="/js/facebook.js" />
     <div id="fbplikebox" style="display: none;">
       <div class="fbplbadge" />
       <div class="fb-iframe">
-        <div
-          class="fb-page"
-          data-href="https://www.facebook.com/QPlay.cz/"
-          data-tabs="timeline"
-          data-width="320"
-          data-height="500"
-          data-small-header="true"
-          data-adapt-container-width="true"
-          data-hide-cover="false"
-          data-show-facepile="false"
-        >
-          <blockquote
-            cite="https://www.facebook.com/QPlay.cz/"
-            class="fb-xfbml-parse-ignore"
-          >
-            <a href="https://www.facebook.com/QPlay.cz/">QPlay.cz</a>
-          </blockquote>
-        </div>
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FQPlay.cz%2F&tabs=timeline&width=320&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=1613903462180236"
+          width="320"
+          height="500"
+          style="border: none; overflow: hidden;"
+          scrolling="no"
+          frameborder="0"
+          allowTransparency="true"
+          allow="encrypted-media"
+        ></iframe>
       </div>
     </div>
 

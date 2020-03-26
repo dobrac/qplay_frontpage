@@ -75,80 +75,47 @@
           crate.
         </p>
 
-        <br />
-        <br />
-        <h2>Jak aktivovat VIP kód?</h2>
-        <p>
-          Od 4.12.2017 přecházíme na nový systém aktivace VIP účtů. Zakoupíte si
-          tzv. KÓD K AKTIVOVÁNÍ VIP ÚČTU - pomocí sms, PayPalu či PSC a ve
-          zpětné sms obdržíte 8 místný kód ve tvaru XXXX-XXXX. Po jeho obdržení
-          doporučujeme navštívit stránku
-          <a href="https://kod.qplay.cz">https://kod.qplay.cz</a>, kam kód
-          zadáte a máte možnost jej aktivovat na serveru či přímo přes internet.
-          Dále je také možnost vygenerovat
-          <b>dárkovou poukázku - ideální dárek pro Vaše kamarády či rodinu.</b>
-        </p>
-        <b>Postup:</b><br />
-        1) Zakoupíte si KÓD - standardním způsobem - SMS, PSC, PayPal<br />
-        2) Po obdržení kódu (XXXX-XXXX) přejdete na stránku
-        <a href="https://kod.qplay.cz">https://kod.qplay.cz</a>, kam kód
-        zadáte<br />
-        3) Zvolíte možnost aktivace<br />
-        4) Počkáte cca 5 minut a Vaše VIP výhody by měly být aktivní!<br />
-
-        <br />
-        Případně můžete aktivovat kód na serveru příkazem na Lobby:
-        <b>/kod [VAS_KOD]</b> - takže například /kod 1234-5678
-        <br />
-        <br />
-        <p>
-          Při současně aktivovaných více druhů VIP zároveň se nejprve aktivuje
-          to nejlepší a poté se postupně aktivují sestupně od nejlepších po
-          nejhorší. Při zakoupení více VIP stejného typu se doby expirace
-          prodlužují.
-        </p>
-
-        <br />
-        <br />
-        <h2 style="margin-bottom: 0px;">
-          GoPay
-        </h2>
-        GoPay je platební brána, umožňující platbu pomocí PayPal, PaySafeCard,
-        bankovním převodem (online i standardním), platební kartou...
-        <br /><br />
         <div>
-          <img
-            src="/imgBrana/1.png"
-            style="height: 40px; margin-right: 10px;"
-          /><img
-            src="/imgBrana/2.png"
-            style="height: 40px; margin-right: 10px;"
-          /><img
-            src="/imgBrana/3.png"
-            style="height: 40px; margin-right: 10px;"
-          /><img
-            src="/imgBrana/4.png"
-            style="height: 40px; margin-right: 10px;"
-          /><img
-            src="/imgBrana/5.png"
-            style="height: 40px; margin-right: 10px;"
-          /><img
-            src="/imgBrana/6.png"
-            style="height: 40px; margin-right: 10px;"
-          /><img
-            src="/imgBrana/7.png"
-            style="height: 40px; margin-right: 10px;"
-          /><img
-            src="/imgBrana/8.png"
-            style="height: 40px; margin-right: 10px;"
-          />
+          <h2>Jak aktivovat VIP kód?</h2>
+          <p>
+            Od 4.12.2017 přecházíme na nový systém aktivace VIP účtů. Zakoupíte
+            si tzv. KÓD K AKTIVOVÁNÍ VIP ÚČTU - pomocí sms, PayPalu či PSC a ve
+            zpětné sms obdržíte 8 místný kód ve tvaru XXXX-XXXX. Po jeho
+            obdržení doporučujeme navštívit stránku
+            <a href="https://kod.qplay.cz">https://kod.qplay.cz</a>, kam kód
+            zadáte a máte možnost jej aktivovat na serveru či přímo přes
+            internet. Dále je také možnost vygenerovat
+            <b
+              >dárkovou poukázku - ideální dárek pro Vaše kamarády či rodinu.</b
+            >
+          </p>
+
+          <div>
+            <b>Postup:</b><br />
+            1) Zakoupíte si KÓD - standardním způsobem - SMS, PSC, PayPal<br />
+            2) Po obdržení kódu (XXXX-XXXX) přejdete na stránku
+            <a href="https://kod.qplay.cz">https://kod.qplay.cz</a>, kam kód
+            zadáte<br />
+            3) Zvolíte možnost aktivace<br />
+            4) Počkáte cca 5 minut a Vaše VIP výhody by měly být aktivní!<br />
+          </div>
+          <br />
+          <div>
+            Případně můžete aktivovat kód na serveru příkazem na Lobby:
+            <b>/kod [VAS_KOD]</b> - takže například /kod 1234-5678
+          </div>
+          <br />
+          <p>
+            Při současně aktivovaných více druhů VIP zároveň se nejprve aktivuje
+            to nejlepší a poté se postupně aktivují sestupně od nejlepších po
+            nejhorší. Při zakoupení více VIP stejného typu se doby expirace
+            prodlužují.
+          </p>
         </div>
 
-        <hr />
-
         <div>
-          <A n-a-m-e="darkovyPoukaz" />
-          <h2 style="margin-bottom: 0px;">
+          <a name="darkovyPoukaz" />
+          <h2>
             Zakoupení dárkového poukazu na VIP
           </h2>
           <p>
@@ -171,82 +138,129 @@
             V případě jakýchkoliv dotazů se na nás neváhejte obrátit – jak se
             dozvíte v sekci Kontakt.
           </p>
-        </div>
-        <br />
-        Další informace k VIP platbě, <em>reklamace</em> atd. můžete řešit
-        pomocí ticketu na
-        <a href="https://info.qplay.cz"><strong>info.qplay.cz</strong></a>
-        , případně napište na email: <strong>qplay@net-inout.cz</strong>,
-        Děkujeme<br />
-        <hr />
-        <h2>Máte problém s VIP?</h2>
-        <b>1.</b> VIP se vám na serveru aktivuje obvykle do 5 minut<br />
-        <b>2.</b> Pokud VIP i po hodině od odeslání SMS nemáte, zkontrolujte si
-        text a číslo SMS, kterou jste odeslal/a a zda vám byla doručena
-        potvrzovací zpráva o provedení platby<br />
-        <b>3.</b> V případě, že neshledáte chybu na své straně, napište ticket
-        na <a href="https://info.qplay.cz"><strong>info.qplay.cz</strong></a> a
-        vše zde s vámi prověříme<br />
-        <b>4.</b> Odeslání SMS může blokovat nedostatečná výše kreditu či
-        zakázané PREMIUM SMS platby, tyto problému musíte vyřešit s vaším
-        operátorem<br />
-        <b>5.</b> Za špatně zaslanou SMS neneseme žádnou zodpovědnost
 
-        <hr />
-        <h2>Pravidla - VIP</h2>
-        <ul>
-          <li>
-            <span style="color: #000000;">
+          <div>
+            Další informace k VIP platbě, <em>reklamace</em> atd. můžete řešit
+            pomocí ticketu na
+            <a href="https://info.qplay.cz"><strong>info.qplay.cz</strong></a>
+            , případně napište na email: <strong>qplay@net-inout.cz</strong>,
+            Děkujeme
+          </div>
+        </div>
+
+        <div style="margin-top: 2em;">
+          <h2>Máte problém s VIP?</h2>
+          <ol style="list-style: decimal; list-style-position: inside;">
+            <li>VIP se vám na serveru aktivuje obvykle do 5 minut</li>
+            <li>
+              Pokud VIP i po hodině od odeslání SMS nemáte, zkontrolujte si text
+              a číslo SMS, kterou jste odeslal/a a zda vám byla doručena
+              potvrzovací zpráva o provedení platby
+            </li>
+            <li>
+              V případě, že neshledáte chybu na své straně, napište ticket na
+              <a href="https://info.qplay.cz" style="font-weight: bold;"
+                >info.qplay.cz</a
+              >
+              a vše zde s vámi prověříme
+            </li>
+            <li>
+              Odeslání SMS může blokovat nedostatečná výše kreditu či zakázané
+              PREMIUM SMS platby, tyto problému musíte vyřešit s vaším
+              operátorem
+            </li>
+            <li>
+              Za špatně zaslanou SMS neneseme žádnou zodpovědnost
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <h2>Pravidla - VIP</h2>
+          <ul style="color: #000000;">
+            <li>
               VIP bude po zadání kódu aktivováno obvykle do 5 minut. Pokud ani
               po hodině nemáte VIP výhody aktivní, neváhejte se na nás obrátit.
-            </span>
-          </li>
-          <li>
-            <span style="color: #000000;">
+            </li>
+            <li>
               VIP neslouží jako obrana vůči banu = v případě porušení Obchodních
               podmínek, Podmínek použití služeb QPlay.cz či pravidel herního
               serveru, může Vám být zakázán přístup na server.
-            </span>
-          </li>
-          <li>
-            <span style="color: #000000;">
+            </li>
+            <li>
               Za špatně odeslanou platbu neneseme žádnou zodpovědnost.
-            </span>
-          </li>
-          <li>
-            <span style="color: #000000;">
+            </li>
+            <li>
               Zakoupením kódu k aktivaci VIP účtu souhlasíte, že rozumíte a
               souhlasíte s Obchodními podmínkami, Podmínkami použití služeb
               QPlay.cz a Pravidly herního serveru QPlay.cz a zavazujete se je
               dodržovat.
-            </span>
-          </li>
-          <li>
-            <span style="color: #000000;">
+            </li>
+            <li>
               Zakoupením kódu k aktivaci VIP účtu potvrzujete, že jste byli
               seznámeni s tím, že kupující nemá nárok na odstoupení od kupní
               smlouvy (do 14 dnů), jedná se o dodání digitálního obsahu bez
               hmotného nosiče.
-            </span>
-          </li>
-          <li>
-            <span style="color: #000000;">
+            </li>
+            <li>
               Negarantujeme, že po dobu trvání VIP výhod bude umožněn přístup na
               server. V případě, že herní server QPlay.cz nebude dále
               provozován, veškeré VIP účty a neaktivované VIP kódy s okamžitou
               platností zanikají bez nároku na finanční či jinou náhradu.
-            </span>
-          </li>
-          <li>
-            <span style="color: #000000;">
+            </li>
+            <li>
               Vyhrazujeme si právo na okamžitou úpravu VIP výhod bez upozornění.
-            </span>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>
+            GoPay
+          </h2>
+          <p>
+            GoPay je platební brána, umožňující platbu pomocí PayPal,
+            PaySafeCard, bankovním převodem (online i standardním), platební
+            kartou...
+          </p>
+          <div>
+            <img
+              src="/imgBrana/1.png"
+              style="height: 40px; margin-right: 10px;"
+            /><img
+              src="/imgBrana/2.png"
+              style="height: 40px; margin-right: 10px;"
+            /><img
+              src="/imgBrana/3.png"
+              style="height: 40px; margin-right: 10px;"
+            /><img
+              src="/imgBrana/4.png"
+              style="height: 40px; margin-right: 10px;"
+            /><img
+              src="/imgBrana/5.png"
+              style="height: 40px; margin-right: 10px;"
+            /><img
+              src="/imgBrana/6.png"
+              style="height: 40px; margin-right: 10px;"
+            /><img
+              src="/imgBrana/7.png"
+              style="height: 40px; margin-right: 10px;"
+            /><img
+              src="/imgBrana/8.png"
+              style="height: 40px; margin-right: 10px;"
+            />
+          </div>
+        </div>
       </div>
     </section>
   </div>
 </template>
+
+<style lang="scss" scoped>
+h2 {
+  margin-bottom: 0px;
+}
+</style>
 
 <script>
 import VIPTable from '@/components/vip/VIPTable'
