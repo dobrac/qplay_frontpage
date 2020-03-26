@@ -14,7 +14,7 @@
         class="fb-page fb-iframe"
         data-href="https://www.facebook.com/QPlay.cz/"
         data-tabs="timeline"
-        data-width="350"
+        data-width="320"
         data-height="500"
         data-small-header="true"
         data-adapt-container-width="true"
