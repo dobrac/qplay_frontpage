@@ -199,10 +199,6 @@
   td {
     padding: 5px;
   }
-
-  tr:nth-child(odd) {
-    //background-color: #4c8bf5;
-  }
 }
 </style>
 

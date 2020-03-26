@@ -1,21 +1,33 @@
 <template>
   <div>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v6.0&appId=1613903462180236&autoLogAppEvents=1"
+    ></script>
     <script src="/js/facebook.js" />
     <div id="fbplikebox" style="display: none;">
       <div class="fbplbadge" />
-      <iframe
-        src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Ffacebook.com%2FQPlay.cz&amp;width=320&amp;height=500&amp;colorscheme=light&amp;show_faces=false&amp;border_color=%23C4C4C4&amp;stream=true&amp;header=false"
-        scrolling="no"
-        frameborder="0"
-        style="
-          border: none;
-          overflow: hidden;
-          width: 320px;
-          height: 500px;
-          background: #ffffff;
-        "
-        allowtransparency="true"
-      />
+      <div
+        class="fb-page fb-iframe"
+        data-href="https://www.facebook.com/QPlay.cz/"
+        data-tabs="timeline"
+        data-width="350"
+        data-height="500"
+        data-small-header="true"
+        data-adapt-container-width="true"
+        data-hide-cover="false"
+        data-show-facepile="false"
+      >
+        <blockquote
+          cite="https://www.facebook.com/QPlay.cz/"
+          class="fb-xfbml-parse-ignore"
+        >
+          <a href="https://www.facebook.com/QPlay.cz/">QPlay.cz</a>
+        </blockquote>
+      </div>
     </div>
 
     <div id="page-wrapper">
@@ -147,5 +159,10 @@
   -moz-border-radius-bottomleft: 8px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+}
+
+.fb-iframe {
+  width: 320px;
+  height: 500px;
 }
 </style>
