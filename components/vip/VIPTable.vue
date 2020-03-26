@@ -4,7 +4,7 @@
       <div style="flex-grow: 10;">&nbsp;</div>
       <button
         :class="'btn-currency ' + (currency == 'CZK' ? 'selected' : '')"
-        style="margin-right: 10p;"
+        style="margin-right: 10px;"
         @click="changeCurrency('CZK')"
       >
         <img src="/vip/switch/CZK.png" alt="CZK" />
