@@ -10,23 +10,25 @@
     <script src="/js/facebook.js" />
     <div id="fbplikebox" style="display: none;">
       <div class="fbplbadge" />
-      <div
-        class="fb-page fb-iframe"
-        data-href="https://www.facebook.com/QPlay.cz/"
-        data-tabs="timeline"
-        data-width="320"
-        data-height="500"
-        data-small-header="true"
-        data-adapt-container-width="true"
-        data-hide-cover="false"
-        data-show-facepile="false"
-      >
-        <blockquote
-          cite="https://www.facebook.com/QPlay.cz/"
-          class="fb-xfbml-parse-ignore"
+      <div class="fb-iframe">
+        <div
+          class="fb-page"
+          data-href="https://www.facebook.com/QPlay.cz/"
+          data-tabs="timeline"
+          data-width="320"
+          data-height="500"
+          data-small-header="true"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="false"
         >
-          <a href="https://www.facebook.com/QPlay.cz/">QPlay.cz</a>
-        </blockquote>
+          <blockquote
+            cite="https://www.facebook.com/QPlay.cz/"
+            class="fb-xfbml-parse-ignore"
+          >
+            <a href="https://www.facebook.com/QPlay.cz/">QPlay.cz</a>
+          </blockquote>
+        </div>
       </div>
     </div>
 
@@ -164,5 +166,6 @@
 .fb-iframe {
   width: 320px;
   height: 500px;
+  background-color: white;
 }
 </style>

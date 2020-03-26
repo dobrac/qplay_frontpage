@@ -62,8 +62,8 @@
           </center>
         </h2>-->
 
-        <A n-a-m-e="zakoupeniVIP" />
         <VIPTable></VIPTable>
+        <a name="zakoupeniVIP" style="position: relative; top: -50vh;"></a>
 
         <br />
 
