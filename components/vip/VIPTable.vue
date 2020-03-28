@@ -331,6 +331,14 @@ export default {
           color: '#C84340',
           items: [
             {
+              name: 'Hlasování o mapě zdarma',
+              default: '1 Hlas',
+              basic: '1 Hlas',
+              medium: '1 Hlas',
+              master: '2 Hlasy',
+              legend: '4 Hlasy',
+            },
+            {
               name: 'Zpráva po připojení na Lobby',
               default: false,
               basic: false,
@@ -402,11 +410,11 @@ export default {
             },
             {
               name: 'Velikost party (/party)',
-              default: '2 hráči',
-              basic: '3 hráči',
-              medium: '4 hráči',
-              master: '5 hráčů',
-              legend: '8 hráčů',
+              default: '2 Hráči',
+              basic: '3 Hráči',
+              medium: '4 Hráči',
+              master: '5 Hráčů',
+              legend: '8 Hráčů',
             },
             {
               name: 'Soukromé zprávy (/msg)',
@@ -426,11 +434,11 @@ export default {
             },
             {
               name: 'Velikost friend listu (/friend)',
-              default: '5 přátel',
-              basic: '10 přátel',
-              medium: '15 přátel',
-              master: '20 přátel',
-              legend: '30 přátel',
+              default: '5 Přátel',
+              basic: '10 Přátel',
+              medium: '15 Přátel',
+              master: '20 Přátel',
+              legend: '30 Přátel',
             },
           ],
         },
