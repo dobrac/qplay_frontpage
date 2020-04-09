@@ -263,12 +263,20 @@ export default {
               legend: '1 Crate',
             },
             {
+              name: 'Easter Crates',
+              default: false,
+              basic: '1 Crate',
+              medium: '1 Crate',
+              master: '1 Crate',
+              legend: '1 Crate',
+            },
+            {
               name: 'Mystery Crates',
               default: false,
               basic: '1 Crate',
-              medium: '3 Crate',
-              master: '6 Crate',
-              legend: '6 Crate',
+              medium: '3 Crates',
+              master: '6 Crates',
+              legend: '6 Crates',
             },
             {
               name: 'Coins při aktivaci',
