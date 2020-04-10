@@ -73,7 +73,9 @@
           budete blokováni od Anti-Cheatu, proto jeho používání
           nedoporučujeme.<br />
           Hráč nesmí podvádět (žádným způsobem).<br />
-          Hráč nesmí být v jeden okamžik na serveru připojený přes více než 1 účet. Je zakázáno zvyšovat své statistiky za pomocí svého druhého účtu nebo po domluvě za pomocí jiného hráče.<br />
+          Hráč nesmí být v jeden okamžik na serveru připojený přes více než 1
+          účet. Je zakázáno zvyšovat své statistiky za pomocí svého druhého účtu
+          nebo po domluvě za pomocí jiného hráče.<br />
           Hráč nesmí spamovat chat. Za spam může být považována jakákoliv
           nevhodná zpráva do chatu - reklama, opakování stejné zprávy, nadávky
           apod.<br />
@@ -84,7 +86,8 @@
           rasismus.<br />
           Hráč musí mít nastaven vhodný skin.<br />
           Hráč musí respektovat všechna nařízení serveru.<br />
-          Hráč nesmí jakýmkoliv způsobem kazit průběh hry ostatním hráčům (cross teaming, podkopávání spoluhráčů aj.).<br />
+          Hráč nesmí jakýmkoliv způsobem kazit průběh hry ostatním hráčům (cross
+          teaming, podkopávání spoluhráčů aj.).<br />
           Hráč nesmí zneužít chyby serveru a musí ji nahlásit A-týmu nebo Vedení
           serveru.<br />
           Hráč nesmí poskytovat žádné informace o tom, jak obejít systém
@@ -181,7 +184,10 @@
           Každý hráč, včetně členů A-týmu, nesmí psát do chatu reklamu. Výjimkou
           jsou hráči se skupinou „YouTuber“, kteří si mohou dělat reklamu (URL
           adresa) na svoje videa/streamy ze serveru QPlay.<br />
-          Za reklamu se považuje jakákoliv přímá propagace (IP adresa, pozvánka na jiný server aj.) nebo kterákoliv URL adresa (výjimkou je reklama na video/YouTube kanál tvůrce, který projekt QPlay.cz pozitivně propaguje).<br />
+          Za reklamu se považuje jakákoliv přímá propagace (IP adresa, pozvánka
+          na jiný server aj.) nebo kterákoliv URL adresa (výjimkou je reklama na
+          video/YouTube kanál tvůrce, který projekt QPlay.cz pozitivně
+          propaguje).<br />
         </p>
 
         <h3>Obchodování</h3>

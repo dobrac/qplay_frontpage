@@ -33,11 +33,11 @@
           </a>
         </center>
         <br />
-        <header>
+        <!--<header>
           <center>
             <h2>Jak si koupit VIP?</h2>
           </center>
-        </header>
+        </header>-->
         <!--<h2><b><center><font color=indianred>Speciální VÁNOČNÍ Crate pro všechna VIP!</font></b></center></h2>
         <h2><b><center><font color=firebrick>SILVESTROVSKÁ AKCE: Ke všem VIP + 1 Crate!</font></b></center></h2>
         <h2>
@@ -61,6 +61,13 @@
             </font>
           </center>
         </h2>-->
+        <h2>
+          <center>
+            <font color="#2AC820" style="font-weight: bold;">
+              Velikonoční akce na všechna VIP!
+            </font>
+          </center>
+        </h2>
 
         <VIPTable></VIPTable>
         <a name="zakoupeniVIP" style="position: relative; top: -50vh;"></a>
