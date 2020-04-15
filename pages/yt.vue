@@ -79,7 +79,7 @@
 
             <p>4) Všechny kity má zadarmo.</p>
 
-            <p>5) Má možnost využít YTNick (natáčení videí za skryté jméno).</p>
+            <p>5) Má možnost využít /nick (natáčení videí za skryté jméno).</p>
 
             <p>6) Může využít možnosti pořádat soutěže s naším serverem.</p>
 
