@@ -263,18 +263,6 @@ export default {
               legend: '1 Crate',
             },
             {
-              name: 'Easter Crates',
-              default: false,
-              basic:
-                '<span style="color: #2AC820;font-weight:bold;">1 Crate</span>',
-              medium:
-                '<span style="color: #2AC820;font-weight:bold;">1 Crate</span>',
-              master:
-                '<span style="color: #2AC820;font-weight:bold;">1 Crate</span>',
-              legend:
-                '<span style="color: #2AC820;font-weight:bold;">2 Crates</span>',
-            },
-            {
               name: 'Mystery Crates',
               default: false,
               basic: '1 Crate',
