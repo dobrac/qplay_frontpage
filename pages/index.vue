@@ -16,7 +16,7 @@
       <div class="container">
         <header class="major">
           <h2>mc.qplay.cz</h2>
-          <p>Online Players: {{ playersShow }}/1400</p>
+          <p>Online Players: {{ playersShow }}/{{ playersMaxShow }}</p>
         </header>
       </div>
     </section>
@@ -168,12 +168,16 @@ export default {
   data() {
     return {
       players: -1,
+      playersMax: -1,
       timer: null,
     }
   },
   computed: {
     playersShow() {
       return this.players > -1 ? this.players : '---'
+    },
+    playersMaxShow() {
+      return this.playersMax > -1 ? this.playersMax : '---'
     },
   },
   mounted() {
@@ -188,8 +192,14 @@ export default {
       const data = await this.$axios.$get(
         'https://info.qplay.cz/playersCount.aspx'
       )
+      const dataMax = await this.$axios.$get(
+        'https://info.qplay.cz/playersMax.aspx'
+      )
       if (data) {
         this.players = data
+      }
+      if (dataMax) {
+        this.playersMax = dataMax
       }
     },
   },
