@@ -45,7 +45,7 @@
               <h3>MiniAnnihilation</h3>
               <p>
                 Natěž si suroviny, ze kterých si vytvoříš své brnění a nástroje.
-                Ovládni střed mapy, aby jsi získal i diamantové věci. Poté znič
+                Ovládni střed mapy, abys získal i diamantové věci. Poté znič
                 nexus ostatním týmům.
               </p>
             </div>
