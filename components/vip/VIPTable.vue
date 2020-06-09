@@ -271,6 +271,14 @@ export default {
               legend: '6 Crates',
             },
             {
+              name: '<span style="color: #ff0000;"><strong>Hestreng Crates</strong></span>',
+              default: false,
+              basic: '1 Crate',
+              medium: '1 Crate',
+              master: '1 Crate',
+              legend: '2 Crates',
+            },
+            {
               name: 'Coins při aktivaci',
               default: false,
               basic: '10 000 Coins',
