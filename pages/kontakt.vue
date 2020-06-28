@@ -2,13 +2,7 @@
   <div>
     <section class="wrapper style1">
       <div class="container">
-        <div
-          style="
-            background-color: whitesmoke;
-            border-radius: 10px;
-            padding: 20px;
-          "
-        >
+        <div class="support-container">
           <h2 style="margin: 0px;">Podpora</h2>
           <a href="https://info.qplay.cz" target="_blank" style="">
             <h3>info.qplay.cz (informační portál, ticket systém)</h3>
@@ -81,6 +75,14 @@
     </section>
   </div>
 </template>
+
+<style scoped>
+.support-container {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 20px;
+}
+</style>
 
 <script>
 export default {
