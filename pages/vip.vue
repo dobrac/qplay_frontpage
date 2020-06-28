@@ -150,7 +150,7 @@
             Další informace k VIP platbě, <em>reklamace</em> atd. můžete řešit
             pomocí ticketu na
             <a href="https://info.qplay.cz"><strong>info.qplay.cz</strong></a>
-            , případně napište na email: <strong>qplay@net-inout.cz</strong>,
+            , případně napište na email: <strong>support@qplay.cz</strong>,
             Děkujeme
           </div>
         </div>
