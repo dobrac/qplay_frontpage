@@ -40,6 +40,10 @@
           >
             Zásady zpracování osobních údajů
           </a>
+          <div style="font-size: 0.8rem;">
+            Pokud se změnou nesouhlasíte, kontaktujte nás s žádostí o zrušení
+            účtu.
+          </div>
         </div>
         <br /><br />
 
