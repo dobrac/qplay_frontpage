@@ -6,16 +6,36 @@
           Všeobecné obchodní podmínky a Podmínky používání služeb QPlay.cz
         </h1>
         <div style="text-align: center;">
-          <a href="https://qplay.cz/VOP/VOP.pdf" target="_blank">
+          <a href="/dokumenty/VOP-05-25-2018.pdf" target="_blank">
             Obchodní podmínky (VOP)
           </a>
           <br />
-          <a href="https://qplay.cz/VOP/PodminkyPouzivani.pdf" target="_blank">
+          <a href="/dokumenty/PodminkyPouzivani-05-25-2018.pdf" target="_blank">
             Podmínky používání služeb QPlay.cz
           </a>
           <br />
           <a
-            href="https://qplay.cz/VOP/ZasadyZpracovaniDat.pdf"
+            href="/dokumenty/ZasadyZpracovaniDat-05-25-2018.pdf"
+            target="_blank"
+          >
+            Zásady zpracování osobních údajů
+          </a>
+        </div>
+        <div style="text-align: center; margin-top: 2em;">
+          <h4 style="margin-bottom: 0px;">Platné od 1.7.2020</h4>
+          <div>
+            Ke dni 1.7. dochází ke změně provozovatele na QPlay Network s.r.o.
+          </div>
+          <a href="/dokumenty/VOP-01-07-2020.pdf" target="_blank">
+            Obchodní podmínky (VOP)
+          </a>
+          <br />
+          <a href="/dokumenty/PodminkyPouzivani-01-07-2020.pdf" target="_blank">
+            Podmínky používání služeb QPlay.cz
+          </a>
+          <br />
+          <a
+            href="/dokumenty/ZasadyZpracovaniDat-01-07-2020.pdf"
             target="_blank"
           >
             Zásady zpracování osobních údajů
