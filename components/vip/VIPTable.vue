@@ -25,7 +25,7 @@
             <img src="/vip/icons/Hrac.png" alt="DEFAULT" style="width: 100%;" />
           </th>
           <th>
-            <a href="https://pay.net-inout.cz/?produkt=1" class="buy-link">
+            <a href="https://pay.qplay.cz/?produkt=1" class="buy-link">
               <img
                 :src="'/vip/icons/BasicVIP_' + currency + '.png'"
                 alt="BASIC VIP"
@@ -35,7 +35,7 @@
             </a>
           </th>
           <th>
-            <a href="https://pay.net-inout.cz/?produkt=2" class="buy-link">
+            <a href="https://pay.qplay.cz/?produkt=2" class="buy-link">
               <img
                 :src="'/vip/icons/MediumVIP_' + currency + '.png'"
                 alt="MEDIUM VIP"
@@ -45,7 +45,7 @@
             </a>
           </th>
           <th>
-            <a href="https://pay.net-inout.cz/?produkt=3" class="buy-link">
+            <a href="https://pay.qplay.cz/?produkt=3" class="buy-link">
               <img
                 :src="'/vip/icons/MasterVIP_' + currency + '.png'"
                 alt="MASTER VIP"
@@ -55,7 +55,7 @@
             </a>
           </th>
           <th>
-            <a href="https://pay.net-inout.cz/?produkt=5" class="buy-link">
+            <a href="https://pay.qplay.cz/?produkt=5" class="buy-link">
               <img
                 :src="'/vip/icons/LegendVIP_' + currency + '.png'"
                 alt="LEGEND VIP"
@@ -98,7 +98,7 @@
           <td></td>
           <td></td>
           <td>
-            <a href="https://pay.net-inout.cz/?produkt=1" class="buy-link">
+            <a href="https://pay.qplay.cz/?produkt=1" class="buy-link">
               <img
                 :src="'/vip/prices/BasicVIP_' + currency + '.png'"
                 alt="BASIC VIP price"
@@ -107,7 +107,7 @@
             /></a>
           </td>
           <td>
-            <a href="https://pay.net-inout.cz/?produkt=2" class="buy-link">
+            <a href="https://pay.qplay.cz/?produkt=2" class="buy-link">
               <img
                 :src="'/vip/prices/MediumVIP_' + currency + '.png'"
                 alt="MEDIUM VIP price"
@@ -116,7 +116,7 @@
             /></a>
           </td>
           <td>
-            <a href="https://pay.net-inout.cz/?produkt=3" class="buy-link">
+            <a href="https://pay.qplay.cz/?produkt=3" class="buy-link">
               <img
                 :src="'/vip/prices/MasterVIP_' + currency + '.png'"
                 alt="MASTER VIP price"
@@ -125,7 +125,7 @@
             /></a>
           </td>
           <td>
-            <a href="https://pay.net-inout.cz/?produkt=5" class="buy-link">
+            <a href="https://pay.qplay.cz/?produkt=5" class="buy-link">
               <img
                 :src="'/vip/prices/LegendVIP_' + currency + '.png'"
                 alt="LEGEND VIP price"
