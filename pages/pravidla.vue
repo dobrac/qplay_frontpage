@@ -5,7 +5,7 @@
         <h1 style="text-align: center; color: #000000;">
           Všeobecné obchodní podmínky a Podmínky používání služeb QPlay.cz
         </h1>
-        <div style="text-align: center;">
+        <!-- <div style="text-align: center;">
           <a href="/dokumenty/VOP-05-25-2018.pdf" target="_blank">
             Obchodní podmínky (VOP)
           </a>
@@ -20,12 +20,12 @@
           >
             Zásady zpracování osobních údajů
           </a>
-        </div>
+        </div> -->
         <div style="text-align: center; margin-top: 2em;">
-          <h4 style="margin-bottom: 0px;">Platné od 1.7.2020</h4>
+          <!-- <h4 style="margin-bottom: 0px;">Platné od 1.7.2020</h4>
           <div>
             Ke dni 1.7. dochází ke změně provozovatele na QPlay Network s.r.o.
-          </div>
+          </div> -->
           <a href="/dokumenty/VOP-01-07-2020.pdf" target="_blank">
             Obchodní podmínky (VOP)
           </a>
@@ -40,10 +40,10 @@
           >
             Zásady zpracování osobních údajů
           </a>
-          <div style="font-size: 0.8rem;">
+          <!-- <div style="font-size: 0.8rem;">
             Pokud se změnou nesouhlasíte, kontaktujte nás s žádostí o zrušení
             účtu.
-          </div>
+          </div> -->
         </div>
         <br /><br />
 
