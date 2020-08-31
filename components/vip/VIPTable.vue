@@ -260,15 +260,20 @@ export default {
               basic: false,
               medium: false,
               master: false,
-              legend: '1 Crate',
+              legend:
+                '<span style="color: indianred; font-weight: bold;">2 Crate</span> <span style="text-decoration: line-through">1 Crate</span>',
             },
             {
               name: 'Mystery Crates',
               default: false,
-              basic: '1 Crate',
-              medium: '3 Crates',
-              master: '6 Crates',
-              legend: '6 Crates',
+              basic:
+                '<span style="color: indianred; font-weight: bold;">2 Crate</span> <span style="text-decoration: line-through">1 Crate</span>',
+              medium:
+                '<span style="color: indianred; font-weight: bold;">4 Crate</span> <span style="text-decoration: line-through">3 Crate</span>',
+              master:
+                '<span style="color: indianred; font-weight: bold;">7 Crate</span> <span style="text-decoration: line-through">6 Crate</span>',
+              legend:
+                '<span style="color: indianred; font-weight: bold;">7 Crate</span> <span style="text-decoration: line-through">6 Crate</span>',
             },
             {
               name: 'Coins při aktivaci',
