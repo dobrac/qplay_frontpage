@@ -6,8 +6,8 @@
     </nuxt-link> -->
     <section class="banner">&nbsp;</section>
 
-    <section class="banner" style="background-image: none; height: inherit;">
-      <header class="external" style="position: relative;">
+    <section class="banner" style="background-image: none; height: inherit">
+      <header class="external" style="position: relative">
         <a href="https://info.qplay.cz/" target="_blank" class="button">
           Přihlášení do Info Panelu
         </a>

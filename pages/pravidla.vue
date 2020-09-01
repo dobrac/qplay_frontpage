@@ -2,7 +2,7 @@
   <div>
     <section class="wrapper style1">
       <div class="container">
-        <h1 style="text-align: center; color: #000000;">
+        <h1 style="text-align: center; color: #000000">
           Všeobecné obchodní podmínky a Podmínky používání služeb QPlay.cz
         </h1>
         <!-- <div style="text-align: center;">
@@ -21,7 +21,7 @@
             Zásady zpracování osobních údajů
           </a>
         </div> -->
-        <div style="text-align: center; margin-top: 2em;">
+        <div style="text-align: center; margin-top: 2em">
           <!-- <h4 style="margin-bottom: 0px;">Platné od 1.7.2020</h4>
           <div>
             Ke dni 1.7. dochází ke změně provozovatele na QPlay Network s.r.o.
@@ -47,17 +47,15 @@
         </div>
         <br /><br />
 
-        <h1 style="text-align: center; color: #000000;">
-          Pravidla
-        </h1>
-        <h1 style="text-align: center; color: #000000;">
+        <h1 style="text-align: center; color: #000000">Pravidla</h1>
+        <h1 style="text-align: center; color: #000000">
           herního a teamspeak serveru
         </h1>
-        <p style="text-align: center; color: #ff0000;">
+        <p style="text-align: center; color: #ff0000">
           Hráč registrovaný na serveru <strong>QPlay</strong> souhlasí s těmito
           pravidly a zavazuje se je dodržovat.
         </p>
-        <p style="text-align: center; color: #ff0000;">
+        <p style="text-align: center; color: #ff0000">
           Pravidla se vztahují na Minecraft, TeamSpeak3 a Informační panel.
         </p>
         &nbsp;
@@ -238,7 +236,7 @@
           dalším.
         </p>
         &nbsp; &nbsp;
-        <span style="color: #000000;">
+        <span style="color: #000000">
           <i>
             Vyhrazujeme si právo každý případ porušení pravidel posuzovat
             individuálně. Každý registrovaný uživatel na serveru QPlay.cz je

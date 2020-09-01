@@ -2,13 +2,11 @@
   <div>
     <section class="wrapper style1">
       <div id="test" class="container">
-        <h2 style="text-align: center;">
-          FAQ - často kladené otázky
-        </h2>
+        <h2 style="text-align: center">FAQ - často kladené otázky</h2>
 
         <div v-for="(q, index) in questions" :key="index">
           <a :href="'#' + q.question">
-            <span style="font-weight: bold;">{{ q.question }}</span>
+            <span style="font-weight: bold">{{ q.question }}</span>
           </a>
         </div>
 
@@ -18,7 +16,7 @@
 
         <div v-for="(q, index) in questions" :key="index">
           <a :name="q.question" />
-          <span style="font-weight: bold;">{{ q.question }}</span>
+          <span style="font-weight: bold">{{ q.question }}</span>
           <br />
           <span v-html="q.answer" />
           <br />

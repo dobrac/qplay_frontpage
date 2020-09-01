@@ -5,7 +5,7 @@
         Máš originální Minecraft, ale někdo má již zabraný tvůj nick? Nevadí,
         stačí postupovat podle tohoto návodu a můžeš si svůj nick získat: <br />
         <br />
-        <ol style="list-style-type: decimal;">
+        <ol style="list-style-type: decimal">
           <li>
             Přihlaš se na stránce
             <a href="https://info.qplay.cz/" target="_blank">

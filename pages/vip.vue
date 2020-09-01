@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="wrapper style1" style="padding: 2em 0 1em 0;">
+    <section class="wrapper style1" style="padding: 2em 0 1em 0">
       <div id="test" class="container">
         <!--<center>
           <a href="#darkovyPoukaz" style="text-decoration:none;border:none;"
@@ -70,14 +70,14 @@
         </h2> -->
         <h2>
           <center>
-            <font color="indianred" style="font-weight: bold;">
+            <font color="indianred" style="font-weight: bold">
               "Zpátky do školy" akce na všechna VIP!
             </font>
           </center>
         </h2>
 
         <VIPTable></VIPTable>
-        <a name="zakoupeniVIP" style="position: relative; top: -50vh;"></a>
+        <a name="zakoupeniVIP" style="position: relative; top: -50vh"></a>
 
         <br />
 
@@ -129,9 +129,7 @@
 
         <div>
           <a name="darkovyPoukaz" />
-          <h2>
-            Zakoupení dárkového poukazu na VIP
-          </h2>
+          <h2>Zakoupení dárkového poukazu na VIP</h2>
           <p>
             Sháníte dárek pro svého kamaráda, kamarádku, syna, dceru…? Dárkový
             poukaz na PREMIUM účet na herním serveru QPlay.cz jistě nebude
@@ -162,9 +160,9 @@
           </div>
         </div>
 
-        <div style="margin-top: 2em;">
+        <div style="margin-top: 2em">
           <h2>Máte problém s VIP?</h2>
-          <ol style="list-style: decimal; list-style-position: inside;">
+          <ol style="list-style: decimal; list-style-position: inside">
             <li>VIP se vám na serveru aktivuje obvykle do 5 minut</li>
             <li>
               Pokud VIP i po hodině od odeslání SMS nemáte, zkontrolujte si text
@@ -173,7 +171,7 @@
             </li>
             <li>
               V případě, že neshledáte chybu na své straně, napište ticket na
-              <a href="https://info.qplay.cz" style="font-weight: bold;"
+              <a href="https://info.qplay.cz" style="font-weight: bold"
                 >info.qplay.cz</a
               >
               a vše zde s vámi prověříme
@@ -183,15 +181,13 @@
               PREMIUM SMS platby, tyto problému musíte vyřešit s vaším
               operátorem
             </li>
-            <li>
-              Za špatně zaslanou SMS neneseme žádnou zodpovědnost
-            </li>
+            <li>Za špatně zaslanou SMS neneseme žádnou zodpovědnost</li>
           </ol>
         </div>
 
         <div>
           <h2>Pravidla - VIP</h2>
-          <ul style="color: #000000;">
+          <ul style="color: #000000">
             <li>
               VIP bude po zadání kódu aktivováno obvykle do 5 minut. Pokud ani
               po hodině nemáte VIP výhody aktivní, neváhejte se na nás obrátit.
@@ -201,9 +197,7 @@
               podmínek, Podmínek použití služeb QPlay.cz či pravidel herního
               serveru, může Vám být zakázán přístup na server.
             </li>
-            <li>
-              Za špatně odeslanou platbu neneseme žádnou zodpovědnost.
-            </li>
+            <li>Za špatně odeslanou platbu neneseme žádnou zodpovědnost.</li>
             <li>
               Zakoupením kódu k aktivaci VIP účtu souhlasíte, že rozumíte a
               souhlasíte s Obchodními podmínkami, Podmínkami použití služeb
@@ -229,9 +223,7 @@
         </div>
 
         <div>
-          <h2>
-            GoPay
-          </h2>
+          <h2>GoPay</h2>
           <p>
             GoPay je platební brána, umožňující platbu pomocí PayPal,
             PaySafeCard, bankovním převodem (online i standardním), platební
@@ -240,28 +232,28 @@
           <div>
             <img
               src="/imgBrana/1.png"
-              style="height: 40px; margin-right: 10px;"
+              style="height: 40px; margin-right: 10px"
             /><img
               src="/imgBrana/2.png"
-              style="height: 40px; margin-right: 10px;"
+              style="height: 40px; margin-right: 10px"
             /><img
               src="/imgBrana/3.png"
-              style="height: 40px; margin-right: 10px;"
+              style="height: 40px; margin-right: 10px"
             /><img
               src="/imgBrana/4.png"
-              style="height: 40px; margin-right: 10px;"
+              style="height: 40px; margin-right: 10px"
             /><img
               src="/imgBrana/5.png"
-              style="height: 40px; margin-right: 10px;"
+              style="height: 40px; margin-right: 10px"
             /><img
               src="/imgBrana/6.png"
-              style="height: 40px; margin-right: 10px;"
+              style="height: 40px; margin-right: 10px"
             /><img
               src="/imgBrana/7.png"
-              style="height: 40px; margin-right: 10px;"
+              style="height: 40px; margin-right: 10px"
             /><img
               src="/imgBrana/8.png"
-              style="height: 40px; margin-right: 10px;"
+              style="height: 40px; margin-right: 10px"
             />
           </div>
         </div>

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div style="display: flex;">
-      <div style="flex-grow: 10;">&nbsp;</div>
+    <div style="display: flex">
+      <div style="flex-grow: 10">&nbsp;</div>
       <button
         :class="'btn-currency ' + (currency == 'CZK' ? 'selected' : '')"
-        style="margin-right: 10px;"
+        style="margin-right: 10px"
         @click="changeCurrency('CZK')"
       >
         <img src="/vip/switch/CZK.png" alt="CZK" />
@@ -17,19 +17,19 @@
       </button>
     </div>
 
-    <table class="table-vip" style="table-layout: fixed;">
+    <table class="table-vip" style="table-layout: fixed">
       <thead>
         <tr>
           <th></th>
           <th>
-            <img src="/vip/icons/Hrac.png" alt="DEFAULT" style="width: 100%;" />
+            <img src="/vip/icons/Hrac.png" alt="DEFAULT" style="width: 100%" />
           </th>
           <th>
             <a href="https://pay.qplay.cz/?produkt=1" class="buy-link">
               <img
                 :src="'/vip/icons/BasicVIP_' + currency + '.png'"
                 alt="BASIC VIP"
-                style="width: 100%;"
+                style="width: 100%"
                 class="vip-button"
               />
             </a>
@@ -39,7 +39,7 @@
               <img
                 :src="'/vip/icons/MediumVIP_' + currency + '.png'"
                 alt="MEDIUM VIP"
-                style="width: 100%;"
+                style="width: 100%"
                 class="vip-button"
               />
             </a>
@@ -49,7 +49,7 @@
               <img
                 :src="'/vip/icons/MasterVIP_' + currency + '.png'"
                 alt="MASTER VIP"
-                style="width: 100%;"
+                style="width: 100%"
                 class="vip-button"
               />
             </a>
@@ -59,7 +59,7 @@
               <img
                 :src="'/vip/icons/LegendVIP_' + currency + '.png'"
                 alt="LEGEND VIP"
-                style="width: 100%;"
+                style="width: 100%"
                 class="vip-button"
               />
             </a>
@@ -84,7 +84,7 @@
             :key="index + '-' + indexItem"
             class="section-row"
           >
-            <td style="text-align: right;" v-html="item.name"></td>
+            <td style="text-align: right" v-html="item.name"></td>
             <td v-html="translateBool(item.default)"></td>
             <td v-html="translateBool(item.basic)"></td>
             <td v-html="translateBool(item.medium)"></td>
@@ -102,7 +102,7 @@
               <img
                 :src="'/vip/prices/BasicVIP_' + currency + '.png'"
                 alt="BASIC VIP price"
-                style="width: 100%;"
+                style="width: 100%"
                 class="vip-button"
             /></a>
           </td>
@@ -111,7 +111,7 @@
               <img
                 :src="'/vip/prices/MediumVIP_' + currency + '.png'"
                 alt="MEDIUM VIP price"
-                style="width: 100%;"
+                style="width: 100%"
                 class="vip-button"
             /></a>
           </td>
@@ -120,7 +120,7 @@
               <img
                 :src="'/vip/prices/MasterVIP_' + currency + '.png'"
                 alt="MASTER VIP price"
-                style="width: 100%;"
+                style="width: 100%"
                 class="vip-button"
             /></a>
           </td>
@@ -129,7 +129,7 @@
               <img
                 :src="'/vip/prices/LegendVIP_' + currency + '.png'"
                 alt="LEGEND VIP price"
-                style="width: 100%;"
+                style="width: 100%"
                 class="vip-button"
               />
             </a>

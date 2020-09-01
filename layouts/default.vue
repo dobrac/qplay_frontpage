@@ -2,14 +2,14 @@
   <div>
     <div id="fb-root"></div>
     <script src="/js/facebook.js" />
-    <div id="fbplikebox" style="display: none;">
+    <div id="fbplikebox" style="display: none">
       <div class="fbplbadge" />
       <div class="fb-iframe">
         <iframe
           src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FQPlay.cz%2F&tabs=timeline&width=320&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=1613903462180236"
           width="320"
           height="500"
-          style="border: none; overflow: hidden;"
+          style="border: none; overflow: hidden"
           scrolling="no"
           frameborder="0"
           allowTransparency="true"
@@ -38,9 +38,7 @@
               <a>Jak se připojit?</a>
             </nuxt-link>
             <li class="external">
-              <a href="https://registrace.qplay.cz">
-                Zaregistrovat se
-              </a>
+              <a href="https://registrace.qplay.cz"> Zaregistrovat se </a>
             </li>
             <nuxt-link tag="li" to="/vip" class="vip">
               <a>Jak si koupit VIP?</a>
@@ -49,9 +47,7 @@
               <a>Pravidla</a>
             </nuxt-link>
             <li class="external">
-              <a href="https://changelog.qplay.cz">
-                Seznam změn
-              </a>
+              <a href="https://changelog.qplay.cz"> Seznam změn </a>
             </li>
             <nuxt-link tag="li" to="/nabor">
               <a>Nábor</a>

@@ -6,7 +6,7 @@
         Vidíš u ostatních hráčů, že mají skin, ale ty ho nemáš? Tak postupuj
         podle tohoto krátkého návodu a aktivuj si tyto výhody i ty! <br />
         <br />
-        <ol style="list-style-type: decimal;">
+        <ol style="list-style-type: decimal">
           <li>
             Přihlaš se na stránce
             <a href="https://info.qplay.cz/" target="_blank">

@@ -3,7 +3,7 @@
     <section class="wrapper style1">
       <div class="container">
         <div class="support-container">
-          <h2 style="margin: 0px;">Podpora</h2>
+          <h2 style="margin: 0px">Podpora</h2>
           <a href="https://info.qplay.cz" target="_blank" style="">
             <h3>info.qplay.cz (informační portál, ticket systém)</h3>
           </a>
@@ -26,23 +26,17 @@
         <a href="/faq"> FAQ </a>).
 
         <br /><br /><br />
-        <b>
-          Instagram:
-        </b>
+        <b> Instagram: </b>
         <a href="https://www.instagram.com/qplaycz/" target="_blank">
           <b>@qplaycz</b>
         </a>
         <br /><br />
-        <b>
-          Facebook:
-        </b>
+        <b> Facebook: </b>
         <a href="https://www.facebook.com/QPlay.cz" target="_blank">
           <b>https://www.facebook.com/QPlay.cz</b>
         </a>
         <br /><br />
-        <b>
-          TeamSpeak3:
-        </b>
+        <b> TeamSpeak3: </b>
         ts3.qplay.cz
 
         <br /><br /><br /><br />
@@ -58,7 +52,7 @@
           <a
             href="https://net-inout.cz"
             target="_blank"
-            style="border-bottom: 0px; color: inherit;"
+            style="border-bottom: 0px; color: inherit"
           >
             https://net-inout.cz
           </a>

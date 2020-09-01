@@ -3,11 +3,11 @@
     <section class="wrapper style1">
       <div class="container">
         <div
-          style="display: flex; flex-wrap: wrap; justify-content: space-around;"
+          style="display: flex; flex-wrap: wrap; justify-content: space-around"
         >
           <div>
             <h2>
-              Podmínky pro prefix <span style="color: red;">YouTuber</span>
+              Podmínky pro prefix <span style="color: red">YouTuber</span>
             </h2>
 
             <p>- YouTube kanál musí mít více než 1 500 odběratelů.</p>
@@ -22,7 +22,7 @@
             </p>
 
             <h3>
-              Pravidla pro <span style="color: red;">YouTubery</span> do 2 000
+              Pravidla pro <span style="color: red">YouTubery</span> do 2 000
               odběratelů:
             </h3>
 
@@ -33,7 +33,7 @@
             <p>• Natáčet každý měsíc alespoň 2 videa z našeho serveru.</p>
 
             <h3>
-              Pravidla pro <span style="color: red;">YouTubery</span> do 5 000
+              Pravidla pro <span style="color: red">YouTubery</span> do 5 000
               odběratelů:
             </h3>
 
@@ -44,7 +44,7 @@
             <p>• Natáčet každý měsíc alespoň 1 video z našeho serveru.</p>
 
             <h3>
-              Pravidla pro <span style="color: red;">YouTubery</span> do 20 000
+              Pravidla pro <span style="color: red">YouTubery</span> do 20 000
               odběratelů:
             </h3>
 
@@ -57,7 +57,7 @@
 
           <div>
             <h3>
-              Pravidla pro <span style="color: red;">YouTubery</span> nad 20 000
+              Pravidla pro <span style="color: red">YouTubery</span> nad 20 000
               odběratelů:
             </h3>
 
@@ -68,7 +68,7 @@
             <p>• Počet natočených videí z našeho serveru není stanoven.</p>
 
             <h3>
-              Výhody <span style="color: red;">YouTubera</span> na serveru:
+              Výhody <span style="color: red">YouTubera</span> na serveru:
             </h3>
 
             <p>1) Prefix YouTuber na Minecraft serveru.</p>
@@ -89,7 +89,7 @@
 
             <i>
               * Vyhrazujeme si právo na odebrání
-              <span style="color: red;">YouTubera</span> bez udání důvodu.
+              <span style="color: red">YouTubera</span> bez udání důvodu.
             </i>
           </div>
         </div>
