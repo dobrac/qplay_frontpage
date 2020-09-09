@@ -68,13 +68,6 @@
             </font>
           </center>
         </h2> -->
-        <h2>
-          <center>
-            <font color="indianred" style="font-weight: bold">
-              "Zpátky do školy" akce na všechna VIP!
-            </font>
-          </center>
-        </h2>
 
         <VIPTable></VIPTable>
         <a name="zakoupeniVIP" style="position: relative; top: -50vh"></a>
