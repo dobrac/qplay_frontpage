@@ -43,7 +43,7 @@
         <h2>
           <center>
             <font color="orange" style="font-weight: bold;">
-              Speciální HALLOWEEN Crate všechna VIP!
+              Speciální HALLOWEEN Crate pro všechna VIP!
             </font>
           </center>
         </h2>
