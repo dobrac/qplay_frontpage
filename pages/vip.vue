@@ -39,14 +39,14 @@
           </center>
         </header>-->
         <!--<h2><b><center><font color=indianred>Speciální VÁNOČNÍ Crate pro všechna VIP!</font></b></center></h2>
-        <h2><b><center><font color=firebrick>SILVESTROVSKÁ AKCE: Ke všem VIP + 1 Crate!</font></b></center></h2>
+        <h2><b><center><font color=firebrick>SILVESTROVSKÁ AKCE: Ke všem VIP + 1 Crate!</font></b></center></h2>-->
         <h2>
           <center>
             <font color="orange" style="font-weight: bold;">
               Speciální HALLOWEEN Crate všechna VIP!
             </font>
           </center>
-        </h2>-->
+        </h2>
         <!-- <h2>
           <center>
             <font color="indianred" style="font-weight: bold;">
