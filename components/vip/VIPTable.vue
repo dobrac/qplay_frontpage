@@ -471,6 +471,14 @@ export default {
               legend: '27 Slotů',
             },
             {
+              name: 'Větší pravděpodobnost na Detectiva/Murdera',
+              default: false,
+              basic: '2x větší než hráč',
+              medium: '3x větší než hráč',
+              master: '4x větší než hráč',
+              legend: '5x větší než hráč',
+            },
+            {
               name: 'Posílání věcí (/trade)',
               default: false,
               basic: true,
