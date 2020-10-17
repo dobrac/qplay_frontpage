@@ -473,10 +473,10 @@ export default {
             {
               name: 'Větší pravděpodobnost na Detectiva/Murdera',
               default: false,
-              basic: '2x větší než hráč',
-              medium: '3x větší než hráč',
-              master: '4x větší než hráč',
-              legend: '5x větší než hráč',
+              basic: 'o 50 % větší než hráč',
+              medium: 'o 100 % větší než hráč',
+              master: 'o 150 % větší než hráč',
+              legend: 'o 150 % větší než hráč',
             },
             {
               name: 'Posílání věcí (/trade)',
