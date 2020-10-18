@@ -109,7 +109,7 @@
           Hráč musí mít nastaven vhodný skin.<br />
           Hráč musí respektovat všechna nařízení serveru.<br />
           Hráč nesmí jakýmkoliv způsobem kazit průběh hry ostatním hráčům (cross
-          teaming, podkopávání spoluhráčů aj.).<br />
+          teaming, podkopávání spoluhráčů, targetování druhých hráčů aj.).<br />
           Hráč nesmí zneužít chyby serveru a musí ji nahlásit A-týmu nebo Vedení
           serveru.<br />
           Hráč nesmí poskytovat žádné informace o tom, jak obejít systém
