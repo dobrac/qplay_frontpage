@@ -509,11 +509,11 @@ export default {
           color: '#3A3838',
           items: [
             {
-              name: 'Hodnost na TS3',
+              name: 'Hodnost na Discordu',
               default: false,
-              basic: false,
-              medium: false,
-              master: false,
+              basic: true,
+              medium: true,
+              master: true,
               legend: true,
             },
             {
