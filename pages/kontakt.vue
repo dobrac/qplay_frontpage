@@ -37,8 +37,8 @@
         </a>
         <br /><br />
         <b> Discord: </b>
-        <a href="http://discord.qplay.cz" target="_blank">
-          <b>http://discord.qplay.cz</b>
+        <a href="https://discord.qplay.cz" target="_blank">
+          <b>https://discord.qplay.cz</b>
         </a>
         <br /><br />
         <b> TeamSpeak3: </b>
