@@ -48,9 +48,6 @@
         <br /><br />
 
         <h1 style="text-align: center; color: #000000">Pravidla</h1>
-        <h1 style="text-align: center; color: #000000">
-          herního a teamspeak serveru
-        </h1>
         <p style="text-align: center; color: #ff0000">
           Hráč registrovaný na serveru <strong>QPlay</strong> souhlasí s těmito
           pravidly a zavazuje se je dodržovat.
@@ -138,7 +135,7 @@
           Je zakázáno komukoliv (hráči nebo A-týmu) jakkoliv vyhrožovat, snažit
           se jej zesměšnit (či jinak znevážit nebo zpochybnit jeho autoritu před
           ostatními hráči), uvádět o něm nepravdivé či nepotvrzené informace.
-          Toto pravidlo se týká nejen herního serveru QPlay.cz, ale i TeamSpeaku
+          Toto pravidlo se týká nejen herního serveru QPlay.cz, ale i TeamSpeaku, Discordu
           a jakýchkoliv veřejně publikovaných příspěvků/fotek. Závažnější
           porušení tohoto pravidla může být nahlášeno příslušným úřadům.
         </p>
@@ -225,6 +222,13 @@
         <p>
           Každý hráč/uživatel po připojení na TeamSpeak3 je povinen seznámit se
           s pravidly, které nalezne v místnosti [Pravidla TS3]. Pravidla musí
+          respektovat.
+        </p>
+
+        <h3>Discord</h3>
+        <p>
+          Každý hráč/uživatel po připojení na Discord je povinen seznámit se
+          s pravidly, které nalezne v místnosti [#pravidla]. Pravidla musí
           respektovat.
         </p>
 
