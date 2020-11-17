@@ -56,7 +56,7 @@
           pravidly a zavazuje se je dodržovat.
         </p>
         <p style="text-align: center; color: #ff0000">
-          Pravidla se vztahují na Minecraft, TeamSpeak3 a Informační panel.
+          Pravidla se vztahují na Minecraft, Discord, TeamSpeak3 a Informační panel.
         </p>
         &nbsp;
         <h3>Podvádění</h3>
