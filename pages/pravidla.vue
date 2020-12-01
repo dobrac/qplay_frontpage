@@ -112,7 +112,7 @@
           Hráč nesmí poskytovat žádné informace o tom, jak obejít systém
           zabezpečení proti podvádění a o způsobech fungování našich ochran.
           Dále nesmí poskytovat informace o instalaci zakázaných cheatů nebo
-          komukoliv s instalací (či nastavením) přímo pomoci.
+          komukoliv s instalací (či nastavením) přímo pomoci.<br />
           Je zakázáno šířit jakékoliv informace o serveru, které nejsou veřejně přístupné.<br />
         </p>
 
