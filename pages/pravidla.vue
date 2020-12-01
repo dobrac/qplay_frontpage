@@ -93,8 +93,8 @@
           nedoporučujeme.<br />
           Hráč nesmí podvádět (žádným způsobem).<br />
           Hráč nesmí být v jeden okamžik na serveru připojený přes více než 1
-          účet. Je zakázáno zvyšovat své statistiky za pomocí svého druhého účtu
-          nebo po domluvě za pomocí jiného hráče.<br />
+          účet.<br />
+          Je zakázáno si uměle zvyšovat statistiky.<br />
           Hráč nesmí spamovat chat. Za spam může být považována jakákoliv
           nevhodná zpráva do chatu - reklama, opakování stejné zprávy, nadávky
           apod.<br />
@@ -113,6 +113,7 @@
           zabezpečení proti podvádění a o způsobech fungování našich ochran.
           Dále nesmí poskytovat informace o instalaci zakázaných cheatů nebo
           komukoliv s instalací (či nastavením) přímo pomoci.
+          Je zakázáno šířit jakékoliv informace o serveru, které nejsou veřejně přístupné.<br />
         </p>
 
         <h3>Povinnosti člena A-týmu:</h3>
@@ -200,13 +201,9 @@
 
         <h3>Reklama</h3>
         <p>
-          Každý hráč, včetně členů A-týmu, nesmí psát do chatu reklamu. Výjimkou
-          jsou hráči se skupinou „YouTuber“, kteří si mohou dělat reklamu (URL
-          adresa) na svoje videa/streamy ze serveru QPlay.<br />
-          Za reklamu se považuje jakákoliv přímá propagace (IP adresa, pozvánka
-          na jiný server aj.) nebo kterákoliv URL adresa (výjimkou je reklama na
-          video/YouTube kanál tvůrce, který projekt QPlay.cz pozitivně
-          propaguje).<br />
+
+          Každý hráč, včetně členů A-týmu, nesmí psát do chatu reklamu. Výjimkou jsou hráči se skupinou „YouTuber”, kteří si mohou dělat reklamu na svoje videa/streamy ze serveru QPlay.<br />
+          Za reklamu se považuje jakákoliv přímá propagace (IP adresa, pozvánka na jiný server aj.) nebo kterákoliv URL adresa. Za reklamu se nepovažuje reklama na video/YouTube kanál tvůrce, který projekt QPlay.cz pozitivně propaguje.<br />
         </p>
 
         <h3>Obchodování</h3>
@@ -247,7 +244,7 @@
             povinen pravidelně kontrolovat změny těchto pravidel, hraním na
             herním serveru QPlay.cz stvrzuje, že se se všemi pravidly seznámil,
             rozumí jim a zavazuje se je dodržovat. Všechna zde uvedená pravidla
-            jsou platná od <strong>01.04.2020</strong>.
+            jsou platná od <strong>01.12.2020</strong>.
           </i>
         </span>
         &nbsp;
