@@ -201,11 +201,17 @@
 
         <h3>Reklama</h3>
         <p>
-Každý hráč, včetně členů A-týmu, nesmí psát do chatu reklamu. Výjimkou jsou hráči se skupinou „YouTuber", kteří mají jiné podmínky stanovené vedením serveru.<br />
-<br />
-Za reklamu se považuje jakákoliv přímá propagace (IP adresa, pozvánka na jiný server aj.) nebo kterákoliv URL adresa. Za reklamu se nepovažuje reklama na video/YouTube kanál tvůrce, který projekt QPlay.cz pozitivně propaguje. V případě inzerce názvů svých sociálních sítí záleží na posouzení člena A-týmu, zda taková inzerce není nevhodná.<br />
-<br />
-O potrestání reklamy rozhoduje člen A-týmu.
+          Každý hráč, včetně členů A-týmu, nesmí psát do chatu reklamu. Výjimkou
+         jsou hráči se skupinou „YouTuber", kteří mají jiné podmínky stanovené 
+        vedením serveru.<br />
+          <br />
+          Za reklamu se považuje jakákoliv přímá propagace (IP adresa, pozvánka 
+          na jiný server aj.) nebo kterákoliv URL adresa. Za reklamu se nepovažuje 
+            reklama na video/YouTube kanál tvůrce, který projekt QPlay.cz pozitivně propaguje. 
+            V případě inzerce názvů svých sociálních sítí záleží na posouzení člena A-týmu, 
+            zda taková inzerce není nevhodná.<br />
+            <br />
+          O potrestání reklamy rozhoduje člen A-týmu.
         </p>
 
         <h3>Obchodování</h3>
