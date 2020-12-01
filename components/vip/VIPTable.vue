@@ -276,7 +276,7 @@ export default {
                 basic: '<span style="color: #B3000C;"><strong>1 Crate</strong></span>',
                 medium: '<span style="color: #B3000C;"><strong>1 Crate</strong></span>',
                 master: '<span style="color: #B3000C;"><strong>1 Crate</strong></span>',
-                legend: '<span style="color: #B3000C;"><strong>2 Crate</strong></span>',
+                legend: '<span style="color: #B3000C;"><strong>2 Crates</strong></span>',
              },
             {
               name: 'Coins při aktivaci',
