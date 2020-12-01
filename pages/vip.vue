@@ -4,7 +4,7 @@
       <div id="test" class="container">
         <center>
           <a href="#darkovyPoukaz" style="text-decoration:none;border:none;"
-            ><img src="images/BannerPNGFinal.png" style="max-width:100%"/></a
+            ><img src="/images/BannerPNGFinal.png" style="max-width:100%"/></a
           ><br />
           <br />
         </center>
