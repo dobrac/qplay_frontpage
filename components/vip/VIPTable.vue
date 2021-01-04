@@ -270,14 +270,14 @@ export default {
               master: '6 Crates',
               legend: '6 Crates',
             },
-            {
+          /*  {
                 name: '<span style="color: #B3000C;"><strong>Christmas Crates</strong></span>', 
                 default: false,
                 basic: '<span style="color: #B3000C;"><strong>1 Crate</strong></span>',
                 medium: '<span style="color: #B3000C;"><strong>1 Crate</strong></span>',
                 master: '<span style="color: #B3000C;"><strong>1 Crate</strong></span>',
                 legend: '<span style="color: #B3000C;"><strong>2 Crates</strong></span>',
-             },
+             }, */
             {
               name: 'Coins při aktivaci',
               default: false,
