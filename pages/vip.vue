@@ -54,13 +54,13 @@
             </font>
           </center>
         </h2> -->
-        <h2>
+        <!-- <h2>
           <center>
             <font color="indianred" style="font-weight: bold;">
               Speciální CHRISTMAS Crate pro všechna VIP!
             </font>
           </center>
-        </h2>
+        </h2> -->
         <!--<h2>
           <center>
             <font color="#e75480" style="font-weight: bold;">
