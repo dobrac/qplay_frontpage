@@ -220,7 +220,8 @@
           nabízet hráčům v chatu jakoukoliv obchodní nabídku. Předejdeme tak
           několika podvodným dohodám, na které doplatilo v historii Minecraft
           serverů už několik hráčů. Jedná se také o nabídky typu: „Ahoj, pošli
-          mi prosím tě určitý počet coins a já ti koupím VIP“.
+          mi prosím tě určitý počet coins a já ti koupím VIP“.<br />
+          Je zakázáno obchodovat či jen nabízet jakoukoliv obchodní nabídku se svým účtem nebo s jeho částmi (coiny, VIP, atd.) nebo s VIP kódy.
         </p>
 
         <h3>TeamSpeak3</h3>
@@ -252,7 +253,7 @@
             povinen pravidelně kontrolovat změny těchto pravidel, hraním na
             herním serveru QPlay.cz stvrzuje, že se se všemi pravidly seznámil,
             rozumí jim a zavazuje se je dodržovat. Všechna zde uvedená pravidla
-            jsou platná od <strong>01.12.2020</strong>.
+            jsou platná od <strong>06.01.2021</strong>.
           </i>
         </span>
         &nbsp;
