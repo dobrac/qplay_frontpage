@@ -1,5 +1,5 @@
 {
-  "name": "QPlayWeb",
+  "name": "qplayweb",
   "version": "1.0.0",
   "description": "QPlay website",
   "author": "Jakub Dobry",
@@ -15,29 +15,29 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.5.4",
-    "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0",
-    "push-dir": "^0.4.1"
+    "@nuxtjs/axios": "5.12.2",
+    "cross-env": "7.0.2",
+    "nuxt": "2.14.6",
+    "push-dir": "0.4.1"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^0.0.1",
-    "@nuxtjs/eslint-module": "^0.2.1",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.15.1",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-config-standard": ">=12.0.0",
-    "eslint-plugin-import": ">=2.18.0",
-    "eslint-plugin-jest": ">=22.7.2",
-    "eslint-plugin-node": ">=9.1.0",
-    "eslint-plugin-nuxt": ">=0.4.3",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-promise": ">=4.2.1",
-    "eslint-plugin-standard": ">=4.0.0",
-    "eslint-plugin-vue": "^5.2.3",
-    "node-sass": "^4.12.0",
-    "nodemon": "^1.19.1",
-    "prettier": "^1.18.2",
-    "sass-loader": "^7.1.0"
+    "@nuxtjs/eslint-config": "3.1.0",
+    "@nuxtjs/eslint-module": "2.0.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "7.8.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jest": "23.20.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-nuxt": "1.0.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "eslint-plugin-vue": "6.2.2",
+    "node-sass": "4.14.1",
+    "nodemon": "2.0.4",
+    "prettier": "2.1.1",
+    "sass-loader": "10.0.1"
   }
 }

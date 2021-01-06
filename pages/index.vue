@@ -1,8 +1,13 @@
 <template>
   <div>
     <!-- Banner -->
-    <section id="banner">
-      <header class="external">
+    <!-- <nuxt-link to="/vip">
+      <section class="banner zoomBanner">&nbsp;</section>
+    </nuxt-link> -->
+    <section class="banner">&nbsp;</section>
+
+    <section class="banner" style="background-image: none; height: inherit">
+      <header class="external" style="position: relative">
         <a href="https://info.qplay.cz/" target="_blank" class="button">
           Přihlášení do Info Panelu
         </a>
@@ -13,7 +18,7 @@
       <div class="container">
         <header class="major">
           <h2>mc.qplay.cz</h2>
-          <p>Online Players: {{ playersShow }}/1400</p>
+          <p>Online Players: {{ playersShow }}/{{ playersMaxShow }}</p>
         </header>
       </div>
     </section>
@@ -40,7 +45,7 @@
               <h3>MiniAnnihilation</h3>
               <p>
                 Natěž si suroviny, ze kterých si vytvoříš své brnění a nástroje.
-                Ovládni střed mapy, aby jsi získal i diamantové věci. Poté znič
+                Ovládni střed mapy, abys získal i diamantové věci. Poté znič
                 nexus ostatním týmům.
               </p>
             </div>
@@ -48,7 +53,7 @@
           <section class="4u 12u(narrower)">
             <div class="box highlight">
               <i
-                STYLE="background-image: url(icons/enderpearl.png);background-size: contain; background-repeat: no-repeat;"
+                STYLE="background-image: url(icons/ender_pearl.png);background-size: contain; background-repeat: no-repeat;"
                 class="icon major"
               />
               <h3>SkyWars</h3>
@@ -102,14 +107,14 @@
           <section class="4u 12u(narrower)">
             <div class="box highlight">
               <i
-                STYLE="background-image: url(icons/bow.png);background-size: contain; background-repeat: no-repeat;"
+                STYLE="background-image: url(icons/crystals.png);background-size: contain; background-repeat: no-repeat;"
                 class="icon major"
               />
-              <h3>Islands</h3>
+              <h3>Crystals</h3>
               <p>
-                Natěž si na svém ostrově suroviny, ze kterých získáš brnění a
-                útočné věci, které ti poslouží k zabití všech protihráčů na
-                mapě.
+                Natěž si na svém ostrově suroviny, zakup si u vesničana
+                speciální předměty a připrav se k boji. Jakmile budeš připraven,
+                znič srdce ostatním týmům.
               </p>
             </div>
           </section>
@@ -155,22 +160,6 @@
             </div>
           </section>
         </div>
-        <div class="row 200%">
-          <section class="4u 12u(narrower)">
-            <div class="box highlight">
-              <i
-                STYLE="background-image: url(icons/crystals.png);background-size: contain; background-repeat: no-repeat;"
-                class="icon major"
-              />
-              <h3>Crystals</h3>
-              <p>
-                Natěž si na svém ostrově suroviny, zakup si u vesničana
-                speciální předměty a připrav se k boji. Jakmile budeš připraven,
-                znič srdce ostatním týmům.
-              </p>
-            </div>
-          </section>
-        </div>
       </div>
     </section>
   </div>
@@ -181,13 +170,17 @@ export default {
   data() {
     return {
       players: -1,
-      timer: null
+      playersMax: -1,
+      timer: null,
     }
   },
   computed: {
     playersShow() {
       return this.players > -1 ? this.players : '---'
-    }
+    },
+    playersMaxShow() {
+      return this.playersMax > -1 ? this.playersMax : '---'
+    },
   },
   mounted() {
     this.fetchPlayers()
@@ -201,10 +194,16 @@ export default {
       const data = await this.$axios.$get(
         'https://info.qplay.cz/playersCount.aspx'
       )
+      const dataMax = await this.$axios.$get(
+        'https://info.qplay.cz/playersMax.aspx'
+      )
       if (data) {
         this.players = data
       }
-    }
-  }
+      if (dataMax) {
+        this.playersMax = dataMax
+      }
+    },
+  },
 }
 </script>

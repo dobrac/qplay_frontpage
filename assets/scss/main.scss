@@ -730,13 +730,21 @@ input[type="button"],
 
 /* Banner */
 
-#banner {
+.banner {
 	background-image: url("~static/images/banner.png");
 	background-position: center bottom;
 	background-size: cover;
 	height: 28em;
 	text-align: center;
 	position: relative;
+
+	&.zoomBanner {
+		transition: transform .2s;
+
+		&:hover {
+			transform: scale(1.02); 
+		}
+	}
 
 	header {
 		position: absolute;
@@ -884,7 +892,7 @@ input[type="button"],
 
 	/* Banner */
 
-	#banner {
+	.banner {
 		height: 24em;
 	}
 
@@ -937,7 +945,7 @@ input[type="button"],
 
 	/* Banner */
 
-	#banner {
+	.banner {
 		height: 20em;
 	}
 
@@ -1068,7 +1076,7 @@ input[type="button"],
 
 	/* Banner */
 
-	#banner {
+	.banner {
 		height: 20em;
 
 		header {
@@ -1321,7 +1329,7 @@ input[type="button"],
 
 	/* Banner */
 
-	#banner {
+	.banner {
 		height: 18em;
 	}
 
@@ -1397,7 +1405,7 @@ input[type="button"],
 
 	/* Banner */
 
-	#banner {
+	.banner {
 		height: 20em;
 
 		header {

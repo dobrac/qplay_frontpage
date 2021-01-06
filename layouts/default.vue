@@ -1,15 +1,21 @@
 <template>
   <div>
-    <script src="/js/facebook.js"></script>
-    <div id="fbplikebox" style="display:none;">
+    <div id="fb-root"></div>
+    <script src="/js/facebook.js" />
+    <div id="fbplikebox" style="display: none">
       <div class="fbplbadge" />
-      <iframe
-        src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Ffacebook.com%2FQPlay.cz&amp;width=320&amp;height=500&amp;colorscheme=light&amp;show_faces=false&amp;border_color=%23C4C4C4&amp;stream=true&amp;header=false"
-        scrolling="no"
-        frameborder="0"
-        style="border:none; overflow:hidden; width:320px; height:500px;background:#FFFFFF;"
-        allowtransparency="true"
-      />
+      <div class="fb-iframe">
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FQPlay.cz%2F&tabs=timeline&width=320&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=1613903462180236"
+          width="320"
+          height="500"
+          style="border: none; overflow: hidden"
+          scrolling="no"
+          frameborder="0"
+          allowTransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+      </div>
     </div>
 
     <div id="page-wrapper">
@@ -32,9 +38,7 @@
               <a>Jak se připojit?</a>
             </nuxt-link>
             <li class="external">
-              <a href="https://registrace.qplay.cz">
-                Zaregistrovat se
-              </a>
+              <a href="https://registrace.qplay.cz"> Zaregistrovat se </a>
             </li>
             <nuxt-link tag="li" to="/vip" class="vip">
               <a>Jak si koupit VIP?</a>
@@ -42,6 +46,9 @@
             <nuxt-link tag="li" to="/pravidla">
               <a>Pravidla</a>
             </nuxt-link>
+            <li class="external">
+              <a href="https://changelog.qplay.cz"> Seznam změn </a>
+            </li>
             <nuxt-link tag="li" to="/nabor">
               <a>Nábor</a>
               <ul>
@@ -102,11 +109,11 @@
 
     <!-- Scripts -->
     <!-- <script src="/js/jquery.min.js"></script> -->
-    <script src="/js/jquery.dropotron.min.js"></script>
-    <script src="/js/skel.min.js"></script>
-    <script src="/js/util.js"></script>
+    <script src="/js/jquery.dropotron.min.js" />
+    <script src="/js/skel.min.js" />
+    <script src="/js/util.js" />
     <!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
-    <script src="/js/main.js"></script>
+    <script src="/js/main.js" />
   </div>
 </template>
 
@@ -136,5 +143,11 @@
   -moz-border-radius-bottomleft: 8px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+}
+
+.fb-iframe {
+  width: 320px;
+  height: 500px;
+  background-color: white;
 }
 </style>

@@ -2,38 +2,60 @@
   <div>
     <section class="wrapper style1">
       <div class="container">
-        <h1 style="text-align: center;color: #000000;">
+        <h1 style="text-align: center; color: #000000">
           Všeobecné obchodní podmínky a Podmínky používání služeb QPlay.cz
         </h1>
-        <div style="text-align: center">
-          <a href="https://qplay.cz/VOP/VOP.pdf" target="_blank">
+        <!-- <div style="text-align: center;">
+          <a href="/dokumenty/VOP-05-25-2018.pdf" target="_blank">
             Obchodní podmínky (VOP)
           </a>
           <br />
-          <a href="https://qplay.cz/VOP/PodminkyPouzivani.pdf" target="_blank">
+          <a href="/dokumenty/PodminkyPouzivani-05-25-2018.pdf" target="_blank">
             Podmínky používání služeb QPlay.cz
           </a>
           <br />
           <a
-            href="https://qplay.cz/VOP/ZasadyZpracovaniDat.pdf"
+            href="/dokumenty/ZasadyZpracovaniDat-05-25-2018.pdf"
             target="_blank"
           >
             Zásady zpracování osobních údajů
           </a>
+        </div> -->
+        <div style="text-align: center; margin-top: 2em">
+          <!-- <h4 style="margin-bottom: 0px;">Platné od 1.7.2020</h4>
+          <div>
+            Ke dni 1.7. dochází ke změně provozovatele na QPlay Network s.r.o.
+          </div> -->
+          <a href="/dokumenty/VOP-01-07-2020.pdf" target="_blank">
+            Obchodní podmínky (VOP)
+          </a>
+          <br />
+          <a href="/dokumenty/PodminkyPouzivani-01-07-2020.pdf" target="_blank">
+            Podmínky používání služeb QPlay.cz
+          </a>
+          <br />
+          <a
+            href="/dokumenty/ZasadyZpracovaniDat-01-07-2020.pdf"
+            target="_blank"
+          >
+            Zásady zpracování osobních údajů
+          </a>
+          <!-- <div style="font-size: 0.8rem;">
+            Pokud se změnou nesouhlasíte, kontaktujte nás s žádostí o zrušení
+            účtu.
+          </div> -->
         </div>
         <br /><br />
 
-        <h1 style="text-align: center;color: #000000;">
-          Pravidla
-        </h1>
-        <h1 style="text-align: center;color: #000000;">
+        <h1 style="text-align: center; color: #000000">Pravidla</h1>
+        <h1 style="text-align: center; color: #000000">
           herního a teamspeak serveru
         </h1>
-        <p style="text-align: center;color: #ff0000;">
+        <p style="text-align: center; color: #ff0000">
           Hráč registrovaný na serveru <strong>QPlay</strong> souhlasí s těmito
           pravidly a zavazuje se je dodržovat.
         </p>
-        <p style="text-align: center;color: #ff0000;">
+        <p style="text-align: center; color: #ff0000">
           Pravidla se vztahují na Minecraft, TeamSpeak3 a Informační panel.
         </p>
         &nbsp;
@@ -69,8 +91,13 @@
           ho nahlásit A-týmu.<br />
           Hráč nesmí používat ani vlastnit upravené klienty, které mu ulehčují
           hru v Minecraftu (různé podpůrné nástroje, hacky, double click, multi
-          click...).<br />
+          click...). Butterfly click je povolen, avšak je zde vysoké riziko,
+          budete blokováni od Anti-Cheatu, proto jeho používání
+          nedoporučujeme.<br />
           Hráč nesmí podvádět (žádným způsobem).<br />
+          Hráč nesmí být v jeden okamžik na serveru připojený přes více než 1
+          účet. Je zakázáno zvyšovat své statistiky za pomocí svého druhého účtu
+          nebo po domluvě za pomocí jiného hráče.<br />
           Hráč nesmí spamovat chat. Za spam může být považována jakákoliv
           nevhodná zpráva do chatu - reklama, opakování stejné zprávy, nadávky
           apod.<br />
@@ -81,6 +108,8 @@
           rasismus.<br />
           Hráč musí mít nastaven vhodný skin.<br />
           Hráč musí respektovat všechna nařízení serveru.<br />
+          Hráč nesmí jakýmkoliv způsobem kazit průběh hry ostatním hráčům (cross
+          teaming, podkopávání spoluhráčů, targetování druhých hráčů aj.).<br />
           Hráč nesmí zneužít chyby serveru a musí ji nahlásit A-týmu nebo Vedení
           serveru.<br />
           Hráč nesmí poskytovat žádné informace o tom, jak obejít systém
@@ -124,7 +153,8 @@
           bez sdílení obsahu pro dospělé.<br />
           Každý má právo na své soukromí, a proto nesmí nikdo na serveru
           sdělovat ostatním hráčům jakékoliv osobní údaje, ani své.<br />
-          Hráč nesmí projevovat žádné prvky diskriminace, rasismu a posměšku.
+          Hráč nesmí projevovat žádné prvky provokace, diskriminace, rasismu a
+          posměšku.
         </p>
 
         <p>
@@ -151,7 +181,7 @@
           Člen A-týmu má právo zabanovat hráče, jestliže porušuje jakákoliv
           pravidla serveru.<br />
           Člen A-týmu musí uchovat důkaz, trvá-li ban déle jak 7 dní. Výjimkou
-          jsou bany na 60 dní. Vedení serveru důkazy uchovávat nemusí.<br />
+          jsou bany na 30 a 60 dní. Vedení serveru důkazy uchovávat nemusí.<br />
         </p>
 
         <h3>Zabezpečení a sdílení herního účtu</h3>
@@ -176,8 +206,10 @@
           Každý hráč, včetně členů A-týmu, nesmí psát do chatu reklamu. Výjimkou
           jsou hráči se skupinou „YouTuber“, kteří si mohou dělat reklamu (URL
           adresa) na svoje videa/streamy ze serveru QPlay.<br />
-          Za reklamu se považuje jakákoliv IP adresa, název Minecraft serveru
-          nebo kterákoliv URL adresa.<br />
+          Za reklamu se považuje jakákoliv přímá propagace (IP adresa, pozvánka
+          na jiný server aj.) nebo kterákoliv URL adresa (výjimkou je reklama na
+          video/YouTube kanál tvůrce, který projekt QPlay.cz pozitivně
+          propaguje).<br />
         </p>
 
         <h3>Obchodování</h3>
@@ -204,14 +236,14 @@
           dalším.
         </p>
         &nbsp; &nbsp;
-        <span style="color: #000000;">
+        <span style="color: #000000">
           <i>
             Vyhrazujeme si právo každý případ porušení pravidel posuzovat
             individuálně. Každý registrovaný uživatel na serveru QPlay.cz je
             povinen pravidelně kontrolovat změny těchto pravidel, hraním na
             herním serveru QPlay.cz stvrzuje, že se se všemi pravidly seznámil,
             rozumí jim a zavazuje se je dodržovat. Všechna zde uvedená pravidla
-            jsou platná od <strong>24.06.2018</strong>.
+            jsou platná od <strong>01.04.2020</strong>.
           </i>
         </span>
         &nbsp;

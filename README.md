@@ -1,4 +1,4 @@
-# QPlayWeb
+# QPlayWeb [![Build Status](https://travis-ci.org/dobrac/qplay_frontpage.svg?branch=master)](https://travis-ci.org/dobrac/qplay_frontpage) [![Netlify Status](https://api.netlify.com/api/v1/badges/f18ac92d-6885-4b58-a9ee-0c52cbde9a1f/deploy-status)](https://app.netlify.com/sites/qplay-frontpage/deploys)
 
 > QPlay website
 
