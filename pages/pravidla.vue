@@ -253,7 +253,7 @@
             povinen pravidelně kontrolovat změny těchto pravidel, hraním na
             herním serveru QPlay.cz stvrzuje, že se se všemi pravidly seznámil,
             rozumí jim a zavazuje se je dodržovat. Všechna zde uvedená pravidla
-            jsou platná od <strong>06.01.2021</strong>.
+            jsou platná od <strong>10.01.2021</strong>.
           </i>
         </span>
         &nbsp;
