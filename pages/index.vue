@@ -149,13 +149,12 @@
           <section class="4u 12u(narrower)">
             <div class="box highlight">
               <i
-                STYLE="background-image: url(icons/blue_wool.png);background-size: contain; background-repeat: no-repeat;"
+                STYLE="background-image: url(icons/ironsword.png);background-size: contain; background-repeat: no-repeat;"
                 class="icon major"
               />
-              <h3>Colors</h3>
+              <h3>Murder Mystery</h3>
               <p>
-                Běhej po mapě a obarvi svou barvou týmu co nejvíce bloků. Dej si
-                pozor, aby ti bloky nepřebarvil jiný hráč.
+                Sbírej gold ingoty, za které získáš šíp a následně zabij Murdera. V roli Murdera zabij všechny ostatní hráče.
               </p>
             </div>
           </section>
