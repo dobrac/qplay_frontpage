@@ -208,7 +208,7 @@ export default {
               medium: false,
               master: false,
               legend:
-                '<span style="color: indianred;"><strong>2 Crates</strong></span>',
+                '<span style="color: indianred; font-weight: bold;">2 Crates</span> <span style="text-decoration: line-through">1 Crate</span>',
             },
             /* {
               name: 'Mystery Crates',
@@ -223,13 +223,13 @@ export default {
                 '<span style="color: indianred;"><strong>Mystery Crates</strong></span>',
               default: false,
               basic:
-                '<span style="color: indianred;"><strong>2 Crates</strong></span>',
+                '<span style="color: indianred; font-weight: bold;">2 Crates</span> <span style="text-decoration: line-through">1 Crate</span>',
               medium:
-                '<span style="color: indianred;"><strong>4 Crates</strong></span>',
+                '<span style="color: indianred; font-weight: bold;">4 Crates</span> <span style="text-decoration: line-through">3 Crates</span>',
               master:
-                '<span style="color: indianred;"><strong>7 Crates</strong></span>',
+                '<span style="color: indianred; font-weight: bold;">7 Crates</span> <span style="text-decoration: line-through">6 Crates</span>',
               legend:
-                '<span style="color: indianred;"><strong>7 Crates</strong></span>',
+                '<span style="color: indianred; font-weight: bold;">7 Crates</span> <span style="text-decoration: line-through">6 Crates</span>',
             },
             /*  {
                 name: '<span style="color: #B3000C;"><strong>Christmas Crates</strong></span>',
