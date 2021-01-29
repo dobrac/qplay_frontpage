@@ -75,14 +75,6 @@
   </div>
 </template>
 
-<style scoped>
-.support-container {
-  background-color: whitesmoke;
-  border-radius: 10px;
-  padding: 20px;
-}
-</style>
-
 <script>
 export default {
   data() {
@@ -95,3 +87,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.support-container {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 20px;
+}
+</style>

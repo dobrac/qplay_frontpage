@@ -262,12 +262,6 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-h2 {
-  margin-bottom: 0px;
-}
-</style>
-
 <script>
 import VIPTable from '@/components/vip/VIPTable'
 
@@ -317,3 +311,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+h2 {
+  margin-bottom: 0px;
+}
+</style>

@@ -154,7 +154,8 @@
               />
               <h3>Murder Mystery</h3>
               <p>
-                Sbírej gold ingoty, za které získáš šíp, a následně zabij Murdera. V roli Murdera zabij všechny ostatní hráče.
+                Sbírej gold ingoty, za které získáš šíp, a následně zabij
+                Murdera. V roli Murdera zabij všechny ostatní hráče.
               </p>
             </div>
           </section>

@@ -53,7 +53,8 @@
           pravidly a zavazuje se je dodržovat.
         </p>
         <p style="text-align: center; color: #ff0000">
-          Pravidla se vztahují na Minecraft, Discord, TeamSpeak3 a Informační panel.
+          Pravidla se vztahují na Minecraft, Discord, TeamSpeak3 a Informační
+          panel.
         </p>
         &nbsp;
         <h3>Podvádění</h3>
@@ -113,7 +114,8 @@
           zabezpečení proti podvádění a o způsobech fungování našich ochran.
           Dále nesmí poskytovat informace o instalaci zakázaných cheatů nebo
           komukoliv s instalací (či nastavením) přímo pomoci.<br />
-          Je zakázáno šířit jakékoliv informace o serveru, které nejsou veřejně přístupné.<br />
+          Je zakázáno šířit jakékoliv informace o serveru, které nejsou veřejně
+          přístupné.<br />
         </p>
 
         <h3>Povinnosti člena A-týmu:</h3>
@@ -136,9 +138,10 @@
           Je zakázáno komukoliv (hráči nebo A-týmu) jakkoliv vyhrožovat, snažit
           se jej zesměšnit (či jinak znevážit nebo zpochybnit jeho autoritu před
           ostatními hráči), uvádět o něm nepravdivé či nepotvrzené informace.
-          Toto pravidlo se týká nejen herního serveru QPlay.cz, ale i TeamSpeaku, Discordu
-          a jakýchkoliv veřejně publikovaných příspěvků/fotek. Závažnější
-          porušení tohoto pravidla může být nahlášeno příslušným úřadům.
+          Toto pravidlo se týká nejen herního serveru QPlay.cz, ale i
+          TeamSpeaku, Discordu a jakýchkoliv veřejně publikovaných
+          příspěvků/fotek. Závažnější porušení tohoto pravidla může být
+          nahlášeno příslušným úřadům.
         </p>
 
         <p>
@@ -202,15 +205,17 @@
         <h3>Reklama</h3>
         <p>
           Každý hráč, včetně členů A-týmu, nesmí psát do chatu reklamu. Výjimkou
-         jsou hráči se skupinou „YouTuber", kteří mají jiné podmínky stanovené 
-        vedením serveru.<br />
+          jsou hráči se skupinou „YouTuber", kteří mají jiné podmínky stanovené
+          vedením serveru.<br />
           <br />
-          Za reklamu se považuje jakákoliv přímá propagace (IP adresa, pozvánka 
-          na jiný server aj.) nebo kterákoliv URL adresa. Za reklamu se nepovažuje 
-            reklama na video/YouTube kanál tvůrce, který projekt QPlay.cz pozitivně propaguje. 
-            V případě inzerce názvů svých sociálních sítí záleží na posouzení člena A-týmu, 
-            zda taková inzerce není nevhodná.<br />
-            <br />
+          Za reklamu se považuje jakákoliv přímá propagace (IP adresa, pozvánka
+          na jiný server aj.) nebo kterákoliv URL adresa. Za reklamu se
+          nepovažuje reklama na video/YouTube kanál tvůrce, který projekt
+          QPlay.cz pozitivně propaguje. V případě inzerce názvů svých sociálních
+          sítí záleží na posouzení člena A-týmu, zda taková inzerce není
+          nevhodná.
+          <br />
+          <br />
           O potrestání reklamy rozhoduje člen A-týmu.
         </p>
 
@@ -221,7 +226,8 @@
           několika podvodným dohodám, na které doplatilo v historii Minecraft
           serverů už několik hráčů. Jedná se také o nabídky typu: „Ahoj, pošli
           mi prosím tě určitý počet coins a já ti koupím VIP“.<br />
-          Je zakázáno obchodovat či jen nabízet jakoukoliv obchodní nabídku se svým účtem nebo s jeho částmi (coiny, VIP, atd.) nebo s VIP kódy.
+          Je zakázáno obchodovat či jen nabízet jakoukoliv obchodní nabídku se
+          svým účtem nebo s jeho částmi (coiny, VIP, atd.) nebo s VIP kódy.
         </p>
 
         <h3>TeamSpeak3</h3>
@@ -233,8 +239,8 @@
 
         <h3>Discord</h3>
         <p>
-          Každý hráč/uživatel po připojení na Discord je povinen seznámit se
-          s pravidly, které nalezne v místnosti [#pravidla]. Pravidla musí
+          Každý hráč/uživatel po připojení na Discord je povinen seznámit se s
+          pravidly, které nalezne v místnosti [#pravidla]. Pravidla musí
           respektovat.
         </p>
 

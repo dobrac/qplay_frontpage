@@ -140,68 +140,6 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-.buy-link {
-  border-bottom: none;
-}
-.vip-button {
-  transition: transform 0.2s;
-
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-  }
-}
-.btn-currency {
-  $border-width: 3px;
-
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-
-  height: 40px + 2 * $border-width;
-  border: $border-width solid transparent;
-
-  &:hover {
-    opacity: 0.9;
-    cursor: pointer;
-  }
-  &:focus {
-    outline: 0;
-  }
-
-  &.selected {
-    border: $border-width solid #460e10;
-  }
-}
-
-.table-vip {
-  .section-header {
-    td {
-      text-align: center;
-      font-weight: bold;
-      color: white;
-    }
-  }
-  .section-row {
-    td {
-      text-align: center;
-    }
-    &:hover {
-      background-color: whitesmoke;
-    }
-  }
-
-  td {
-    padding: 5px;
-  }
-}
-</style>
-
 <script>
 export default {
   data: () => {
@@ -270,7 +208,7 @@ export default {
               master: '6 Crates',
               legend: '6 Crates',
             },
-          /*  {
+            /*  {
                 name: '<span style="color: #B3000C;"><strong>Christmas Crates</strong></span>', 
                 default: false,
                 basic: '<span style="color: #B3000C;"><strong>1 Crate</strong></span>',
@@ -547,3 +485,65 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.buy-link {
+  border-bottom: none;
+}
+.vip-button {
+  transition: transform 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+.btn-currency {
+  $border-width: 3px;
+
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+
+  height: 40px + 2 * $border-width;
+  border: $border-width solid transparent;
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: 0;
+  }
+
+  &.selected {
+    border: $border-width solid #460e10;
+  }
+}
+
+.table-vip {
+  .section-header {
+    td {
+      text-align: center;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  .section-row {
+    td {
+      text-align: center;
+    }
+    &:hover {
+      background-color: whitesmoke;
+    }
+  }
+
+  td {
+    padding: 5px;
+  }
+}
+</style>
