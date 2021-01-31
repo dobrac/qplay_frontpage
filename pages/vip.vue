@@ -47,13 +47,13 @@
             </font>
           </center>
         </h2>-->
-        <h2>
+        <!--<h2>
           <center>
             <font color="indianred" style="font-weight: bold">
               Pololetní akce na všechna VIP!
             </font>
           </center>
-        </h2>
+        </h2>-->
         <!-- <h2>
           <center>
             <font color="indianred" style="font-weight: bold;">
