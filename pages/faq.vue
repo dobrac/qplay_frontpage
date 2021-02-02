@@ -40,17 +40,12 @@ export default {
     return {
       questions: [
         new Question(
-          'S jakou verzí Minecraftu se připojím na server?', 
+          'S jakou verzí Minecraftu se připojím na server?',
           'Na server se můžeš připojit s verzí 1.8. a vyšší.'
         ),
         new Question(
           'Jaké módy na serveru mohu používat?',
-          '<ol>
-          <li>Veškeré estetické modifikace (například shadery, jas) <i>[blinking skin mód je na serveru zakázán]</i></li>
-          <li>Veškeré modifikace, které hráče informují, nebo něco indikují (například status brnění, status efektů, minimapa, damage indicator)</li>
-          <li>Módy zlepšující výkon hry nebo zlepšující připojení k serveru (například módy zlepšující FPS)</li>
-          </ol>
-          <i>Veškeré módy jsou ale používány na vlastní nebezpečí.</i>'
+          '<ol><li>1) Veškeré estetické modifikace (například shadery, jas) <i>[blinking skin mód je na serveru zakázán]</i></li><li>2) Veškeré modifikace, které hráče informují, nebo něco indikují (například status brnění, status efektů, minimapa, damage indicator)</li><li>3) Módy zlepšující výkon hry nebo zlepšující připojení k serveru (například módy zlepšující FPS)</li></ol><i>Veškeré módy jsou používány na vlastní nebezpečí.</i>'
         ),
         new Question(
           'Jak mohu nahlásit nějaký problém/návrh/dotaz?',
@@ -90,7 +85,7 @@ export default {
         ),
         new Question(
           'Jak se připojím na Discord?',
-          'Na náš Discord server se připojíš skrz pozvánku, která se nachází na https://discord.qplay.cz'
+          'Na náš Discord server se připojíš skrz pozvánku, která se nachází na <a href="https://discord.qplay.cz" target="_blank">discord.qplay.cz</a>.'
         ),
         new Question(
           'Jak se připojím na TS3?',
