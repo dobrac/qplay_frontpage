@@ -90,7 +90,7 @@ export default {
         ),
         new Question(
           'Jak se připojím na Discord?',
-          'Na náš Discord server se připojíš skrz pozvánku, která se nachází na https://discord.qplay.cz'
+          'Na náš Discord server se připojíš skrz pozvánku, která se nachází na <a href="https://discord.qplay.cz" target="_blank">discord.qplay.cz</a>.'
         ),
         new Question(
           'Jak se připojím na TS3?',
