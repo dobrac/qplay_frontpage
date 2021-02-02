@@ -40,16 +40,21 @@ export default {
     return {
       questions: [
         new Question(
-          'S jakou verzí Minecraftu se připojím na server?',
-          'Na server se můžeš připojit s verzemi 1.8.x, 1.9.x, 1.10.x, 1.11.x a 1.12.x.'
+          'S jakou verzí Minecraftu se připojím na server?', 
+          'Na server se můžeš připojit s verzí 1.8. a vyšší.'
         ),
         new Question(
-          'Mohu na serveru používat módy?',
-          'Ano, můžeš, ale pouze námi vybrané: DamageIndicator, MiniMap, StatusArmor, StatusEffect, Optifine.'
+          'Jaké módy na serveru mohu používat?',
+          '<ol>
+          <li>Veškeré estetické modifikace (například shadery, jas) <i>[blinking skin mód je na serveru zakázán]</i></li>
+          <li>Veškeré modifikace, které hráče informují, nebo něco indikují (například status brnění, status efektů, minimapa, damage indicator)</li>
+          <li>Módy zlepšující výkon hry nebo zlepšující připojení k serveru (například módy zlepšující FPS)</li>
+          </ol>
+          <i>Veškeré módy jsou ale používány na vlastní nebezpečí.</i>'
         ),
         new Question(
           'Jak mohu nahlásit nějaký problém/návrh/dotaz?',
-          'Stačí, aby jsi se přihlásil se svými herními údaji na stránku <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a>, kde rozklikneš sekci "Mé tickety" a vytvoříš nový ticket s jakoukoliv otázkou či informací. Zodpovězeno ti bude nejpozději následující den (pokud jsi odeslal ticket Vedení serveru, může to trvat i déle).'
+          'Stačí, aby ses přihlásil se svými herními údaji na stránku <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a>, kde rozklikneš sekci "Mé tickety" a vytvoříš nový ticket s jakoukoliv otázkou či informací. Zodpovězeno ti bude nejpozději následující den (pokud jsi odeslal ticket Vedení serveru, může to trvat i déle).'
         ),
         new Question(
           'Potřebuji získat unban, obdržel jsem ban neprávem, co mám dělat?',
@@ -76,10 +81,6 @@ export default {
           'Server můžeš podpořit koupí jakéhokoliv VIP účtu, více informací o VIP účtech nalezneš na <a href="https://qplay.cz/vip" target="_blank">Jak si koupit VIP?</a>.'
         ),
         new Question(
-          'Chci zažádat o unban na serveru, avšak na TS mám též ban, co mám dělat?',
-          'První si musíš vyřešit unban na TS a poté zažádat o unban na serveru. Pokud unban na TS neobdržíš, nemáš žádnou jinou šanci, jak unban na serveru získat.'
-        ),
-        new Question(
           'Jak se mohu stát YouTuberem?',
           'Můžeš nám poslat žádost o YouTubera pomocí ticketu na stránce <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a> nebo ti může samotné Vedení serveru předložit nabídku. Více informací o YT nalezneš na <a href="https://qplay.cz/yt" target="_blank">YouTuber</a>'
         ),
@@ -88,12 +89,20 @@ export default {
           'Permanentní VIP vlastní veškeré výhody jako Medium VIP, kromě týdenních odměn, které má oddělené. Každý týden si může vyzvednout 4 000 coinů u Rewards postavičky, která se nachází na hlavním lobby.'
         ),
         new Question(
+          'Jak se připojím na Discord?',
+          'Na náš Discord server se připojíš skrz pozvánku, která se nachází na https://discord.qplay.cz'
+        ),
+        new Question(
           'Jak se připojím na TS3?',
           'Zaprvé si musíš TS3 stáhnout (www.teamspeak.com/downloads). Po instalaci stačí v horní liště "Connections" vyplnit své herní jméno a IP adresu: ts3.qplay.cz a kliknout na "Connect".'
         ),
         new Question(
           'Někdo je za mě již zaregistrovaný, co mám dělat?',
           'Stačí si zaregistrovat účet pod jakýmkoliv volným nickem a následně postupovat podle návodu na <a href="https://qplay.cz/navod/overeni-originalky" target="_blank">Ověření originálky</a>.'
+        ),
+        new Question(
+          'Zapomněl jsem heslo, jak si ho mohu resetovat?',
+          'Resetování hesla lze provést na stránce <a href="https://heslo.qplay.cz" target="_blank">heslo.qplay.cz</a>. Pro resetování bude potřeba, abys zadal e-mail, který máš přiřazený k úču. Pokud e-mail přiřazený nemáš, tak je resetování většinou nemožné, můžeš si ale zaregistrovat nový účet a kontaktovat nás na stránce <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a>, je možné, že ti i přesto heslo dokážeme resetovat.'
         ),
       ],
     }
