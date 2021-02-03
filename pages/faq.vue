@@ -89,7 +89,7 @@ export default {
         ),
         new Question(
           'Jak se připojím na TS3?',
-          'Zaprvé si musíš TS3 stáhnout (www.teamspeak.com/downloads). Po instalaci stačí v horní liště "Connections" vyplnit své herní jméno a IP adresu: ts3.qplay.cz a kliknout na "Connect".'
+          'Zaprvé si musíš TS3 stáhnout (<a href="hhttps://www.teamspeak.com/en/downloads/" target="_blank">www.teamspeak.com/downloads</a>). Po instalaci stačí v horní liště "Connections" vyplnit své herní jméno a IP adresu: ts3.qplay.cz a kliknout na "Connect".'
         ),
         new Question(
           'Někdo je za mě již zaregistrovaný, co mám dělat?',
