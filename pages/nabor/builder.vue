@@ -56,8 +56,8 @@
         </li>
         <li>
           <span style="color: #000000">
-            Jednou za dva měsíce může udělat svou akci na Discordu, kam obdrží zdarma
-            odměny do soutěže.
+            Jednou za dva měsíce může udělat svou akci na Discordu, kam obdrží
+            zdarma odměny do soutěže.
           </span>
         </li>
       </div>
