@@ -59,13 +59,16 @@
         &nbsp;
         <h3>Podvádění</h3>
         <p>
-          Hráč nesmí konat věci, které vedou k jeho obohacení a ke škodě
+          Hráč nesmí konat věci, které vedou k jeho obohacení nebo ke škodě
           druhého. Je zakázáno zamlčení podstatné skutečnosti a uvedení hráče v
           omyl.
         </p>
 
         <h3>Nevhodný skin</h3>
-        <p>Nevhodný skin obsahuje například prvky nacismu a sexuality.</p>
+        <p>
+          Nevhodný skin obsahuje například prvky nacismu a sexuality. Za skin
+          považujeme veškeré jeho prvky včetně například cape.
+        </p>
 
         <h3>Nevhodné jméno</h3>
         <p>
@@ -183,8 +186,9 @@
         <h3>Banování</h3>
         <p>
           Hráč:<br />
-          V případě, že hráč obdrží ban neprávem (MC/TS3), může podat ticket s
-          žádostí o unban na Informační panel a tam se jeho ban projedná.<br />
+          V případě, že hráč obdrží ban neprávem (MC/TS3/Discord), může podat
+          ticket s žádostí o unban na Informační panel a tam se jeho ban
+          projedná.<br />
           Jestliže se hráč snaží mařit nebo obcházet své potrestání, může mu být
           délka trestu navýšena.<br />
         </p>
