@@ -54,7 +54,7 @@
         </p>
         <p style="text-align: center; color: #ff0000">
           Pravidla se vztahují na Minecraft, Discord, TeamSpeak3 a Informační
-          panel.
+          panel projektu <b>QPlay.cz</b>.
         </p>
         &nbsp;
         <h3>Podvádění</h3>
