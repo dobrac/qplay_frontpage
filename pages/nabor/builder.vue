@@ -10,8 +10,9 @@
           <span style="color: #000000">
             Se svými herními údaji se přihlásíte na
             <a href="http://info.qplay.cz/" target="_blank">Informační Panel</a>
-            . Kliknete na sekci "Žádost o Buildera". Formulář vyplníte a
-            odešlete.
+            . Kliknete na sekci "Mé tickety" a následně si stačí vytvořit nový
+            ticket s typem "Žádost o Buildera", kde vám bude poskytnuto více
+            informací.
           </span>
         </ul>
         <h4><span style="color: #000000">Výhody Buildera</span></h4>
