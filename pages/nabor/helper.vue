@@ -11,7 +11,7 @@
             Pokud je zrovna otevřený formulář, tak se svými herními údaji
             přihlásíte na
             <a href="http://info.qplay.cz/" target="_blank">Informační Panel</a>
-            . Kliknete na sekci "Žádost o Helpera". Formulář vyplníte a
+            . Kliknete na sekci "Nábor na Helpera". Formulář vyplníte a
             odešlete.
           </span>
         </ul>
