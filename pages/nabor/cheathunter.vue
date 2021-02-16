@@ -35,9 +35,14 @@
         <h4>
           <span style="color: #000000">Odměna za práci CheatHuntera</span>
         </h4>
-        <li>
+        <ul>
           <span style="color: #000000">
             Každý měsíc obdrží určitou sumu coinů za odvedenou práci na serveru.
+          </span>
+        </ul>
+        <li>
+          <span style="color: #000000">
+            Za odvedenou práci může každý měsíc získat navíc různé typy crates.
           </span>
         </li>
         <li>

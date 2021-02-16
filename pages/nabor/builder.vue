@@ -46,6 +46,11 @@
         </li>
         <li>
           <span style="color: #000000">
+            Za odvedenou práci může každý měsíc získat navíc různé typy crates.
+          </span>
+        </li>
+        <li>
+          <span style="color: #000000">
             V závislosti na odvedené práci může obdržet hmotný balíček.
           </span>
         </li>
