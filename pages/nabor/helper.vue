@@ -11,7 +11,7 @@
             Pokud je zrovna otevřený formulář, tak se svými herními údaji
             přihlásíte na
             <a href="http://info.qplay.cz/" target="_blank">Informační Panel</a>
-            . Kliknete na sekci "Žádost o Helpera". Formulář vyplníte a
+            . Kliknete na sekci "Nábor na Helpera". Formulář vyplníte a
             odešlete.
           </span>
         </ul>
@@ -47,6 +47,11 @@
         </li>
         <li>
           <span style="color: #000000">
+            Za odvedenou práci může každý měsíc získat navíc různé typy crates.
+          </span>
+        </li>
+        <li>
+          <span style="color: #000000">
             V závislosti na odvedené práci může obdržet hmotný balíček.
           </span>
         </li>
@@ -58,7 +63,7 @@
         </li>
         <li>
           <span style="color: #000000">
-            Jednou za měsíc může udělat svou akci na TS3, kam obdrží zdarma
+            Jednou za měsíc může udělat svou akci na Discordu, kam obdrží zdarma
             odměny do soutěže.
           </span>
         </li>

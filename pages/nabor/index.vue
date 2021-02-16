@@ -9,6 +9,9 @@
         <nuxt-link tag="li" to="/nabor/builder">
           <a>Builder</a>
         </nuxt-link>
+        <nuxt-link tag="li" to="/nabor/cheathunter">
+          <a>CheatHunter</a>
+        </nuxt-link>
       </div>
     </section>
   </div>

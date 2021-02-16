@@ -54,18 +54,21 @@
         </p>
         <p style="text-align: center; color: #ff0000">
           Pravidla se vztahují na Minecraft, Discord, TeamSpeak3 a Informační
-          panel.
+          panel projektu <b>QPlay.cz</b>.
         </p>
         &nbsp;
         <h3>Podvádění</h3>
         <p>
-          Hráč nesmí konat věci, které vedou k jeho obohacení a ke škodě
+          Hráč nesmí konat věci, které vedou k jeho obohacení nebo ke škodě
           druhého. Je zakázáno zamlčení podstatné skutečnosti a uvedení hráče v
           omyl.
         </p>
 
         <h3>Nevhodný skin</h3>
-        <p>Nevhodný skin obsahuje například prvky nacismu a sexuality.</p>
+        <p>
+          Nevhodný skin obsahuje například prvky nacismu a sexuality. Za skin
+          považujeme veškeré jeho prvky včetně například cape.
+        </p>
 
         <h3>Nevhodné jméno</h3>
         <p>
@@ -90,8 +93,8 @@
           Hráč nesmí používat ani vlastnit upravené klienty, které mu ulehčují
           hru v Minecraftu (různé podpůrné nástroje, hacky, double click, multi
           click...). Butterfly click je povolen, avšak je zde vysoké riziko,
-          budete blokováni od Anti-Cheatu, proto jeho používání
-          nedoporučujeme.<br />
+          budete blokováni od Anti-Cheatu, proto jeho používání nedoporučujeme.
+          Povolené modifikace jsou popsány níže.<br />
           Hráč nesmí podvádět (žádným způsobem).<br />
           Hráč nesmí být v jeden okamžik na serveru připojený přes více než 1
           účet.<br />
@@ -116,6 +119,18 @@
           komukoliv s instalací (či nastavením) přímo pomoci.<br />
           Je zakázáno šířit jakékoliv informace o serveru, které nejsou veřejně
           přístupné.<br />
+          Hráč nesmí jakýmkoliv způsobem zneužívat či zbytečně zatěžovat podporu
+          serveru. <br />
+          <br />
+          <b>Povolené modifikace:</b><br />
+          1) Veškeré estetické modifikace (například shadery, jas)
+          <i>[blinking skin mód je na serveru zakázán]</i><br />
+          2) Veškeré modifikace, které hráče informují, nebo něco indikují
+          (například status brnění, status efektů, minimapa, damage indicator)
+          <br />
+          3) Módy zlepšující výkon hry nebo zlepšující připojení k serveru
+          (například módy zlepšující FPS)<br />
+          <i>Veškeré modifikace jsou používány na vlastní nebezpečí.</i><br />
         </p>
 
         <h3>Povinnosti člena A-týmu:</h3>
@@ -171,8 +186,9 @@
         <h3>Banování</h3>
         <p>
           Hráč:<br />
-          V případě, že hráč obdrží ban neprávem (MC/TS3), může podat ticket s
-          žádostí o unban na Informační panel a tam se jeho ban projedná.<br />
+          V případě, že hráč obdrží ban neprávem (MC/TS3/Discord), může podat
+          ticket s žádostí o unban na Informační panel a tam se jeho ban
+          projedná.<br />
           Jestliže se hráč snaží mařit nebo obcházet své potrestání, může mu být
           délka trestu navýšena.<br />
         </p>
@@ -259,7 +275,7 @@
             povinen pravidelně kontrolovat změny těchto pravidel, hraním na
             herním serveru QPlay.cz stvrzuje, že se se všemi pravidly seznámil,
             rozumí jim a zavazuje se je dodržovat. Všechna zde uvedená pravidla
-            jsou platná od <strong>10.01.2021</strong>.
+            jsou platná od <strong>17.02.2021</strong>.
           </i>
         </span>
         &nbsp;
