@@ -58,7 +58,7 @@
         </li>
         <li>
           <span style="color: #000000">
-            Jednou za měsíc může udělat svou akci na TS3, kam obdrží zdarma
+            Jednou za měsíc může udělat svou akci na Discordu, kam obdrží zdarma
             odměny do soutěže.
           </span>
         </li>
