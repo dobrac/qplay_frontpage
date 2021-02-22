@@ -97,7 +97,7 @@ export default {
         ),
         new Question(
           'Zapomněl jsem heslo, jak si ho mohu resetovat?',
-          'Resetování hesla lze provést na stránce <a href="https://heslo.qplay.cz" target="_blank">heslo.qplay.cz</a>. Pro resetování bude potřeba, abys zadal e-mail, který máš přiřazený k úču. Pokud e-mail přiřazený nemáš, tak je resetování většinou nemožné, můžeš si ale zaregistrovat nový účet a kontaktovat nás na stránce <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a>, je možné, že ti i přesto heslo dokážeme resetovat.'
+          'Resetování hesla lze provést na stránce <a href="https://heslo.qplay.cz" target="_blank">heslo.qplay.cz</a>. Pro resetování bude potřeba, abys zadal e-mail, který máš přiřazený k účtu. Pokud e-mail přiřazený nemáš, tak je resetování většinou nemožné, můžeš si ale zaregistrovat nový účet a kontaktovat nás na stránce <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a>, je možné, že ti i přesto heslo dokážeme resetovat.'
         ),
         new Question(
           'Jak lze ze serveru nahlásit cheatera?',
