@@ -87,6 +87,7 @@
 
         <h3>Povinnosti hráče</h3>
         <p>
+          Hráč musí dodržovat platné zákony České republiky.<br />
           Hráč je povinen na serveru dbát na zásady slušného chování. V případě,
           že zásady slušného chování porušuje jeho spoluhráč/protihráč, měl by
           ho nahlásit A-týmu.<br />
@@ -121,6 +122,9 @@
           přístupné.<br />
           Hráč nesmí jakýmkoliv způsobem zneužívat či zbytečně zatěžovat podporu
           serveru. <br />
+          Je zakázáno podporovat nebo propagovat hnutí, které směřuje k
+          potlačení práv a svobod člověka nebo hlásá národnostní, rasovou,
+          náboženskou či třídní zášť nebo zášť vůči jiné skupině osob.<br />
           <br />
           <b>Povolené modifikace:</b><br />
           1) Veškeré estetické modifikace (například shadery, jas)
@@ -275,7 +279,7 @@
             povinen pravidelně kontrolovat změny těchto pravidel, hraním na
             herním serveru QPlay.cz stvrzuje, že se se všemi pravidly seznámil,
             rozumí jim a zavazuje se je dodržovat. Všechna zde uvedená pravidla
-            jsou platná od <strong>17.02.2021</strong>.
+            jsou platná od <strong>01.03.2021</strong>.
           </i>
         </span>
         &nbsp;
