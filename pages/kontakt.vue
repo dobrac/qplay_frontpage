@@ -67,6 +67,7 @@
           <br />
           QPlay Network s.r.o.<br />
           IČO: 090 72 349<br />
+          DIČ: CZ09072349 (jsme plátci DPH)<br />
           <i>vedená u Krajského soudu v Plzni, oddíl C, vložka 39201</i><br />
           sídlo: Hodonínská 63, 323 00 Plzeň, Česká republika<br />
         </div>
