@@ -52,6 +52,9 @@
             <nuxt-link tag="li" to="/nabor">
               <a>Nábor</a>
               <ul>
+                <nuxt-link tag="li" to="/nabor/technik">
+                  <a>Technik</a>
+                </nuxt-link>
                 <nuxt-link tag="li" to="/nabor/helper">
                   <a>Helper</a>
                 </nuxt-link>
