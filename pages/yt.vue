@@ -2,6 +2,13 @@
   <div>
     <section class="wrapper style1">
       <div class="container">
+        <p style="text-align: center">
+          Níže naleznete podmínky a výhody skupiny YouTuber. V případě, že
+          podmínky splňujete, tak nás můžete kontaktovat na
+          <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a>
+          vytvořením ticketu s typem "Chci být YouTuber". O&nbsp;konečném
+          udělení skupiny YouTuber rozhoduje vedení serveru.
+        </p>
         <div
           style="display: flex; flex-wrap: wrap; justify-content: space-around"
         >
