@@ -11,7 +11,8 @@
             Rádi přijmeme nové Techniky do našeho Technik Teamu! Níže naleznete
             veškeré důležité informace o této pozici, včetně požadavků a výhod.
             Pokud byste se chtěli stát Technikem, tak nás neváhejte kontaktovat
-            na emailové adrese <b>support@qplay.cz</b>.
+            na emailové adrese <b>support@qplay.cz</b>. V případě, že bychom Vás
+            vybrali, tak Vás do 14 dní kontaktujeme na Vaši e-mailovou adresu.
           </span>
         </ul>
         <h4><span style="color: #000000">Co požadujeme?</span></h4>
