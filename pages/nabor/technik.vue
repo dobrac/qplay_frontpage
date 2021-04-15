@@ -6,15 +6,21 @@
           <span style="color: #000000"><b>Nábor na Technika</b></span>
         </h1>
         <h4><span style="color: #000000">Jak se stát Technikem?</span></h4>
-        <ul>
-          <span style="color: #000000">
-            Rádi přijmeme nové Techniky do našeho Technik Teamu! Níže naleznete
-            veškeré důležité informace o této pozici, včetně požadavků a výhod.
-            Pokud byste se chtěli stát Technikem, tak nás neváhejte kontaktovat
-            na emailové adrese <b>support@qplay.cz</b>. V případě, že bychom Vás
-            vybrali, tak Vás do 14 dní kontaktujeme na Vaši e-mailovou adresu.
-          </span>
-        </ul>
+        <span style="color: #000000">
+          Rádi přijmeme nové Techniky do našeho Technik Teamu! Níže naleznete
+          veškeré důležité informace o této pozici, včetně požadavků a výhod.
+          Pokud byste se chtěli stát Technikem, tak nás neváhejte kontaktovat na
+          emailové adrese <b>support@qplay.cz</b>.
+        </span>
+        <li style="color: #000000">
+          Do e-mailu uveďte svoje dosavadní zkušenosti a zároveň přiložte ukázky
+          svých prací.
+        </li>
+        <li style="color: #000000">
+          V případě, že bychom Vás vybrali, tak Vás do 14 dní kontaktujeme na
+          Vaši e-mailovou adresu.
+        </li>
+        <ul></ul>
         <h4><span style="color: #000000">Co požadujeme?</span></h4>
         <li>
           <span style="color: #000000">
