@@ -104,7 +104,7 @@ export default {
           'Hráče za cheaty můžete jednoduše zadarmo nahlásit pomocí příkazu <b>/report nick</b> a následně v inventáři stačí <b>zvolit nahlášení cheatera</b> (item železného meče). Členi QPlay teamu poté prověřují hráče s co nejvíce nahlášeními (pokud tedy chcete, aby byl daný cheater potrestán co nejdříve, tak je třeba, aby jej nahlásilo co nejvíce hráčů). V případě, že díky vašemu reportu bude cheater potrestán, tak se vám v chatu zobrazí zpráva, že byl daný hráč zabanován.' +
             '<br /><b><span style="color: #403C3C;">[</span><span style="color: #f64141;">Report</span><span style="color: #403C3C;">]</span>&nbsp;<span style="color: #545454;">Your report on player</span>&nbsp;<span style="color: #EF9000;">Tester </span><span style="color: #545454;">has been successfully solved. The cheater has been banned.</span></b><br />' +
             '<br />Z důvodu větší efektivity je naší prioritou hlavně blokovat cheatery, co zrovna v dané chvíli cheaty používají, proto se vámi vytvořený report po 10 minutách skrývá, pokud ale i po 10 minutách váš report nebyl vyřešen zabanováním cheatera a cheater stále cheaty používá, tak váš report můžete obnovit opětovným nahlášením. Tímto omezením chceme docílit toho, že budeme pomáhat hlavně hráčům, na jejichž aréně v dané chvíli cheater cheaty používá.<br /><br />' +
-            'Pro nahlášení cheaterů využívejte výhradně tento report systém. V případě, že máte k dispozici důkaz, tak stále můžete využít nahlášení cheatera skrz náš <a href="https://info.qplay.cz/" target="_blank">info panel.</a>'
+            'Pro nahlášení cheaterů využívejte výhradně tento report systém.'
         ),
       ],
     }
