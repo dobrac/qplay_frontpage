@@ -16,7 +16,7 @@
               target="_blank"
               >FAQ</a
             >. Záleží i na vaší úspěšnosti při nahlašování, tzn. cheatery
-            nahlašujte pouze při 100% jistotě.
+            nahlašujte pouze při 100% jistotě. Pakliže budete mít dostatečný počet reportů, Hlavní CheatHunter vás sám kontaktuje.
           </span>
         </ul>
         <h4><span style="color: #000000">Výhody CheatHuntera</span></h4>
