@@ -15,7 +15,7 @@
               href="https://qplay.cz/faq#Jak%20lze%20ze%20serveru%20nahlásit%20cheatera?"
               target="_blank"
               >FAQ</a
-            >. Záleží i na vaší úspěšnosti při nahlašování, tzn. cheatery
+            >. Záleží i na Vaší úspěšnosti při nahlašování, tzn. cheatery
             nahlašujte pouze při 100% jistotě. V případě, že bychom Vás vybrali, tak Vás sami zastihneme a pozici Vám nabídneme.
           </span>
         </ul>
