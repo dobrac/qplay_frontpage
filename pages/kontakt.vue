@@ -30,7 +30,7 @@
           registrace.qplay.cz</a
         >
         a skrz ten nás následně na info panelu kontaktujte. Doporučujeme i před
-        samotném kontaktování jakékoliv podpory si nejdříve přečíst naší sekci
+        samotným kontaktováním jakékoliv podpory si nejdříve přečíst naší sekci
         FAQ, kde se nachází většina odpovědí na otázky hráčů (<a href="/faq">
           FAQ </a
         >).<br /><br /><br />
