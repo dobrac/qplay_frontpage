@@ -16,7 +16,8 @@
               target="_blank"
               >FAQ</a
             >. Záleží i na Vaší úspěšnosti při nahlašování, tzn. cheatery
-            nahlašujte pouze při 100% jistotě. V případě, že bychom Vás vybrali, tak Vás sami zastihneme a pozici Vám nabídneme.
+            nahlašujte pouze při 100% jistotě. V případě, že bychom Vás vybrali,
+            tak Vás sami zastihneme a pozici Vám nabídneme.
           </span>
         </ul>
         <h4><span style="color: #000000">Výhody CheatHuntera</span></h4>
