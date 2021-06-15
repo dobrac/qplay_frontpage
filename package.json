@@ -15,30 +15,30 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@nuxtjs/axios": "5.13.1",
+    "@nuxtjs/axios": "5.13.6",
     "cross-env": "7.0.3",
-    "nuxt": "2.15.4",
+    "nuxt": "2.15.7",
     "push-dir": "0.4.1"
   },
   "devDependencies": {
-    "@nuxt/types": "~2.15.4",
-    "@nuxtjs/eslint-config": "6.0.0",
+    "@nuxt/types": "~2.15.7",
+    "@nuxtjs/eslint-config": "6.0.1",
     "@nuxtjs/eslint-module": "3.0.2",
     "babel-eslint": "10.1.0",
-    "eslint": "7.23.0",
-    "eslint-config-prettier": "8.1.0",
-    "eslint-config-standard": "16.0.2",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jest": "24.3.4",
+    "eslint": "7.28.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-jest": "24.3.6",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-nuxt": "2.0.0",
-    "eslint-plugin-prettier": "3.3.1",
-    "eslint-plugin-promise": "4.3.1",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-promise": "5.1.0",
     "eslint-plugin-standard": "5.0.0",
-    "eslint-plugin-vue": "7.8.0",
+    "eslint-plugin-vue": "7.11.1",
     "node-sass": "5.0.0",
     "nodemon": "2.0.7",
-    "prettier": "2.2.1",
-    "sass-loader": "10.1.1"
+    "prettier": "2.3.1",
+    "sass-loader": "10.2.0"
   }
 }
