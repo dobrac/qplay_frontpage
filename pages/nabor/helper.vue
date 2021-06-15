@@ -8,11 +8,14 @@
         <h4><span style="color: #000000">Jak se stát Helperem?</span></h4>
         <ul>
           <span style="color: #000000">
-            Pokud je zrovna otevřený formulář, tak se svými herními údaji
-            přihlásíte na
-            <a href="http://info.qplay.cz/" target="_blank">Informační Panel</a>
-            . Kliknete na sekci "Nábor na Helpera". Formulář vyplníte a
-            odešlete.
+            Helperem se můžete stát skrz veřejný nábor, který je
+            <b>v této chvíli otevřený</b>, 1. kolo náboru probíhá skrz
+            <b>formulář</b> ->
+            <a href="https://bit.ly/3gtOQAT" target="_blank">
+              klikni pro otevření formuláře</a
+            >. <br />
+            Formulář bude <b>uzavřen tuto sobotu 19.06.2021 v 20:00</b>, proto
+            je potřeba přihlášku odeslat dříve.
           </span>
         </ul>
         <h4><span style="color: #000000">Výhody Helpera</span></h4>
