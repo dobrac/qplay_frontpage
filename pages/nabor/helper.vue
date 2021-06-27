@@ -8,7 +8,7 @@
         <h4><span style="color: #000000">Jak se stát Helperem?</span></h4>
         <ul>
           <span style="color: #000000">
-            Pokud je zrovna otevřený formulář, tak se svými herními údaji
+            Pokud je zrovna otevřený formulář, tak se se svými herními údaji
             přihlásíte na
             <a href="http://info.qplay.cz/" target="_blank">Informační Panel</a>
             . Kliknete na sekci "Nábor na Helpera". Formulář vyplníte a
