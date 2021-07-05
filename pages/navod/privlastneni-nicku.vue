@@ -11,6 +11,11 @@
             <a href="https://info.qplay.cz/" target="_blank">
               https://info.qplay.cz
             </a>
+            (jestliže ještě nemáš na QPlay žádný účet zaregistrovaný, tak
+            nejdříve proveď registraci na
+            <a href="https://registrace.qplay.cz/" target="_blank"
+              >https://registrace.qplay.cz</a
+            >, pole "Nick" při registraci můžeš nechat prázdné)
           </li>
           <li>V menu vyber "Změna nicku"</li>
           <li>Zvol si svůj nick a klikni na tlačítko "Změnit nick"</li>
@@ -18,7 +23,7 @@
             Pokud je nick již obsazený, tak se ti zobrazí tlačítko "Přivlastnit
             nick"
           </li>
-          <li>Klikni na toto tlačítko a postupuj podle zobrazeného návodu.</li>
+          <li>Klikni na toto tlačítko a postupuj podle zobrazeného návodu</li>
         </ol>
       </div>
     </section>

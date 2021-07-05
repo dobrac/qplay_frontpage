@@ -4,7 +4,7 @@
       <div class="container">
         <h2>Návody</h2>
 
-        <nuxt-link tag="li" to="/navod/overeni-originalky">
+        <nuxt-link tag="li" to="/navod/privlastneni-nicku">
           <a>Můj nick je již zaregistrovaný</a>
         </nuxt-link>
         <nuxt-link tag="li" to="/navod/prihlaseni-bez-hesla">
