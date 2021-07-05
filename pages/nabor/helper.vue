@@ -9,9 +9,8 @@
         <ul>
           <span style="color: #000000">
             Pokud je zrovna otevřený formulář, tak se se svými herními údaji
-            přihlásíte na
-            <a href="http://info.qplay.cz/" target="_blank">Informační Panel</a>
-            . Kliknete na sekci "Nábor na Helpera". Formulář vyplníte a
+            přihlásíte do
+            <a href="http://info.qplay.cz/" target="_blank">Informačního Panelu</a> → kliknete na záložku "Nábor na Helpera" → zobrazený formulář vyplníte a
             odešlete.
           </span>
         </ul>
