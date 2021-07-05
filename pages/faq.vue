@@ -93,7 +93,7 @@ export default {
         ),
         new Question(
           'Někdo je za mě již zaregistrovaný, co mám dělat?',
-          'Stačí si zaregistrovat účet pod jakýmkoliv volným nickem a následně postupovat podle návodu na <a href="https://qplay.cz/navod/overeni-originalky" target="_blank">Ověření originálky</a>.'
+          'Stačí si zaregistrovat účet na <a href="https://registrace.qplay.cz" target="_blank">https://registrace.qplay.cz</a> (kolonku "Nick" můžeš nechat prázdnou) a následně postupovat podle návodu na <a href="https://qplay.cz/navod/privlastneni-nicku" target="_blank">Můj nick je již zaregistrovaný</a>.'
         ),
         new Question(
           'Zapomněl jsem heslo, jak si ho mohu resetovat?',
