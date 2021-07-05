@@ -125,6 +125,7 @@
           Je zakázáno podporovat nebo propagovat hnutí, které směřuje k
           potlačení práv a svobod člověka nebo hlásá národnostní, rasovou,
           náboženskou či třídní zášť nebo zášť vůči jiné skupině osob.<br />
+          Hráč nesmí jakkoliv mařit či obcházet svoje potrestání. <br />
           <br />
           <b>Povolené modifikace:</b><br />
           1) Veškeré estetické modifikace (například shadery, jas)
@@ -194,7 +195,7 @@
           ticket s žádostí o unban na Informační panel a tam se jeho ban
           projedná.<br />
           Jestliže se hráč snaží mařit nebo obcházet své potrestání, může mu být
-          délka trestu navýšena.<br />
+          trest změněn či jeho délka prodloužena.<br />
         </p>
 
         <p>
