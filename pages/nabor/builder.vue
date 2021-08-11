@@ -15,7 +15,7 @@
               klikni pro otevření formuláře</a
             >. <br />
             Formulář bude <b>uzavřen již tuto sobotu 18.08.2021</b>, proto je
-            potřeba přihlášku odeslat dříve.
+            potřeba přihlášku odeslat co nejdříve.
           </span>
         </ul>
         <h4><span style="color: #000000">Výhody Buildera</span></h4>
