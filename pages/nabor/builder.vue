@@ -8,11 +8,14 @@
         <h4><span style="color: #000000">Jak se stát Builderem?</span></h4>
         <ul>
           <span style="color: #000000">
-            Se svými herními údaji se přihlásíte na
-            <a href="http://info.qplay.cz/" target="_blank">Informační Panel</a>
-            . Kliknete na sekci "Mé tickety" a následně si stačí vytvořit nový
-            ticket s typem "Žádost o Buildera", kde vám bude poskytnuto více
-            informací.
+            Builderem se můžete stát skrz veřejný nábor, který je
+            <b>v této chvíli otevřený</b>, 1. kolo náboru probíhá skrz
+            <b>formulář</b> →
+            <a href="https://forms.gle/uqE5TRT9EHWjfaAc9" target="_blank">
+              klikni pro otevření formuláře</a
+            >. <br />
+            Formulář bude <b>uzavřen již tuto sobotu 18.08.2021</b>, proto je
+            potřeba přihlášku odeslat dříve.
           </span>
         </ul>
         <h4><span style="color: #000000">Výhody Buildera</span></h4>
