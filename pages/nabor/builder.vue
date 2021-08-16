@@ -14,7 +14,7 @@
             <a href="https://forms.gle/uqE5TRT9EHWjfaAc9" target="_blank">
               klikni pro otevření formuláře</a
             >. <br />
-            Formulář bude <b>uzavřen již tuto sobotu 18.08.2021</b>, proto je
+            Formulář bude <b>uzavřen již tuto středu 18.08.2021</b>, proto je
             potřeba přihlášku odeslat co nejdříve.
           </span>
         </ul>
