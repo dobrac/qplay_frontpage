@@ -253,6 +253,14 @@ export default {
                 '<span style="color: #2AC820;"><strong>2 Crates</strong></span>',
             }, */
             {
+              name: '<span style="color: #ff8c00;"><strong>Halloween Crates</strong></span>',
+              default: false,
+              basic: '<b>1 Crate</b>',
+              medium: '<b>1 Crate</b>',
+              master: '<b>1 Crate</b>',
+              legend: '<b>2 Crates</b>',
+            },
+            {
               name: 'Coins při aktivaci',
               default: false,
               basic: '10 000 Coins',
