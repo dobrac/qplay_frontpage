@@ -98,7 +98,7 @@
           Povolené modifikace jsou popsány níže.<br />
           Hráč nesmí podvádět (žádným způsobem).<br />
           Hráč nesmí být v jeden okamžik na serveru připojený přes více než 1
-          účet.<br />
+          účet za účelem obohacení účtů nebo poškození zájmů projektu QPlay.cz.<br />
           Je zakázáno si uměle zvyšovat statistiky.<br />
           Hráč nesmí spamovat chat. Za spam může být považována jakákoliv
           nevhodná zpráva do chatu - reklama, opakování stejné zprávy, nadávky
