@@ -2,12 +2,12 @@
   <div>
     <section class="wrapper style1" style="padding: 2em 0 1em 0">
       <div id="test" class="container">
-        <!--center>
+        <center>
           <a href="#darkovyPoukaz" style="text-decoration:none;border:none;"
             ><img src="/images/BannerPNGFinal.png" style="max-width:100%"/></a
           ><br />
           <br />
-        </center>-->
+        </center>
         <!--
   <center>
           <a href="#naramekAkce" style="text-decoration:none;border:none;"><img src="images/WebNaramkyAkce.png?ver=2" ></a><br> <br><br>
@@ -54,13 +54,13 @@
             </font>
           </center>
         </h2>-->
-        <!-- <h2>
+        <h2>
           <center>
-            <font color="indianred" style="font-weight: bold;">
+            <font color="indianred" style="font-weight: bold">
               Speciální CHRISTMAS Crate pro všechna VIP!
             </font>
           </center>
-        </h2> -->
+        </h2>
         <!--<h2>
           <center>
             <font color="#e75480" style="font-weight: bold;">
