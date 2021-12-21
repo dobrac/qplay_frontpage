@@ -227,7 +227,7 @@
           <p>
             GoPay je platební brána, umožňující platbu pomocí PayPal,
             PaySafeCard, bankovním převodem (online i standardním), platební
-            kartou...
+            kartou (pouze Visa), ...
           </p>
           <div>
             <img
@@ -237,19 +237,10 @@
               src="/imgBrana/2.png"
               style="height: 40px; margin-right: 10px"
             /><img
-              src="/imgBrana/3.png"
-              style="height: 40px; margin-right: 10px"
-            /><img
               src="/imgBrana/4.png"
               style="height: 40px; margin-right: 10px"
             /><img
               src="/imgBrana/5.png"
-              style="height: 40px; margin-right: 10px"
-            /><img
-              src="/imgBrana/6.png"
-              style="height: 40px; margin-right: 10px"
-            /><img
-              src="/imgBrana/7.png"
               style="height: 40px; margin-right: 10px"
             /><img
               src="/imgBrana/8.png"
