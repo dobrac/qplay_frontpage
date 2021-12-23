@@ -178,7 +178,7 @@
             </li>
             <li>
               Odeslání SMS může blokovat nedostatečná výše kreditu či zakázané
-              PREMIUM SMS platby, tyto problému musíte vyřešit s vaším
+              PREMIUM SMS platby, tyto problémy musíte vyřešit s vaším
               operátorem
             </li>
             <li>Za špatně zaslanou SMS neneseme žádnou zodpovědnost</li>
