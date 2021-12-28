@@ -18,27 +18,38 @@
           </span>
         </ul>
         <h4><span style="color: #000000">Výhody Helpera</span></h4>
-        <ul>
-          <li>
-            <span style="color: #000000">Vlastní veškeré VIP výhody.</span>
-          </li>
-          <li>
-            <span style="color: #000000">
-              Může se připojit do plného týmu na minihře MiniAnnihilation a
-              Crystals.
-            </span>
-          </li>
-        </ul>
+        <li>
+          <span style="color: #000000">
+            Vlastní veškeré MASTER VIP výhody a vybrané LEGEND VIP výhody.
+          </span>
+        </li>
+        <li>
+          <span style="color: #000000">
+            Může se připojit do plného týmu na minihře MiniAnnihilation a
+            Crystals.
+          </span>
+        </li>
+        <li>
+          <span style="color: #000000">
+            Jednou za měsíc může udělat svou velkou akci na Discordu, kam obdrží zdarma
+            odměny do soutěže.
+          </span>
+        </li>
+        <li>
+          <span style="color: #000000">
+            Může pořádat menší akce na Discordu v "QPlay Stage".
+          </span>
+        </li> 
         <h4><span style="color: #000000">Odměna za práci Helpera</span></h4>
-        <ul>
+        <li>
           <span style="color: #000000">
             Každý měsíc obdrží určitou sumu coinů za odvedenou práci v
             ticket-systému.
           </span>
-        </ul>
+        </li>
         <li>
           <span style="color: #000000">
-            Za odvedenou práci obdrží zpravidla 1x Basic VIP.
+            Za odvedenou práci obdrží každý měsíc zpravidla 1x Basic VIP.
           </span>
         </li>
         <li>
@@ -61,12 +72,6 @@
           <span style="color: #000000">
             Po rozhodnutí vedení serveru může za svou odvedenou práci získat
             finanční odměnu.
-          </span>
-        </li>
-        <li>
-          <span style="color: #000000">
-            Jednou za měsíc může udělat svou akci na Discordu, kam obdrží zdarma
-            odměny do soutěže.
           </span>
         </li>
       </div>
