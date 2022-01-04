@@ -1,10 +1,10 @@
 <template>
   <div>
     <!-- Banner -->
-    <nuxt-link to="/vip">
+    <!--nuxt-link to="/vip">
       <section class="banner zoomBanner">&nbsp;</section>
-    </nuxt-link>
-    <!--<section class="banner">&nbsp;</section>-->
+    </nuxt-link>-->
+    <section class="banner">&nbsp;</section>
 
     <section class="banner" style="background-image: none; height: inherit">
       <header class="external" style="position: relative">

@@ -231,7 +231,7 @@ export default {
               legend:
                 '<span style="color: indianred; font-weight: bold;">7 Crates</span> <span style="text-decoration: line-through">6 Crates</span>',
             }, */
-            {
+            /* {
               name: '<span style="color: #B3000C;"><strong>Christmas Crates</strong></span>',
               default: false,
               basic:
@@ -242,7 +242,7 @@ export default {
                 '<span style="color: #B3000C;"><strong>1 Crate</strong></span>',
               legend:
                 '<span style="color: #B3000C;"><strong>2 Crates</strong></span>',
-            },
+            }, */
             /* {
               name:
                 '<span style="color: #2AC820;"><strong>Easter Crates</strong></span>',
