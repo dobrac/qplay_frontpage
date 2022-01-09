@@ -496,14 +496,6 @@ export default {
               master: true,
               legend: true,
             },
-            {
-              name: 'Duel na 1vs1 (/duel)',
-              default: false,
-              basic: true,
-              medium: true,
-              master: true,
-              legend: true,
-            },
           ],
         },
         {
