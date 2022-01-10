@@ -91,6 +91,8 @@
             <p>6) Může využít možnosti pořádat soutěže s naším serverem.</p>
 
             <p>7) Jeho kanál je zveřejněn v sekci „Skupiny“ na Info panelu.</p>
+            
+            <p>8) Skupina YouTuber na Discord serveru (lze o ni požádat v <a href="https://info.qplay.cz/" target="_blank">ticketu</a> s typem "Jiné").</p>
 
             <br />
 
