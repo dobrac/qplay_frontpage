@@ -192,10 +192,10 @@ export default {
   methods: {
     async fetchPlayers() {
       const data = await this.$axios.$get(
-        'https://info.qplay.cz/playersCount.aspx'
+        'https://old.info.qplay.cz/playersCount.aspx'
       )
       const dataMax = await this.$axios.$get(
-        'https://info.qplay.cz/playersMax.aspx'
+        'https://old.info.qplay.cz/playersMax.aspx'
       )
       if (data) {
         this.players = data
