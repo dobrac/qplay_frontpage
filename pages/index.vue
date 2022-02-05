@@ -29,6 +29,32 @@
           <h2>Chceš se také připojit?</h2>
           <a href="/jak-se-pripojit" class="button">Klikni zde</a>
         </header>
+        <div class="links">
+          <div>
+            <a
+              href="https://www.instagram.com/qplaycz/"
+              target="_blank"
+              ref="QPlay.cz"
+              >Instagram</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://www.youtube.com/qplaycz"
+              target="_blank"
+              ref="QPlay.cz"
+              >Youtube</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://www.facebook.com/QPlay.cz/"
+              target="_blank"
+              ref="QPlay.cz"
+              >Facebook</a
+            >
+          </div>
+        </div>
       </div>
     </section>
 
@@ -167,6 +193,7 @@
 
 <script>
 export default {
+  name: 'IndexPage',
   data() {
     return {
       players: -1,
@@ -207,3 +234,16 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+
+  a {
+    color: white;
+  }
+}
+</style>

@@ -1,23 +1,5 @@
 <template>
   <div>
-    <div id="fb-root"></div>
-    <script src="/js/facebook.js" />
-    <div id="fbplikebox" style="display: none">
-      <div class="fbplbadge" />
-      <div class="fb-iframe">
-        <iframe
-          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FQPlay.cz%2F&tabs=timeline&width=320&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=1613903462180236"
-          width="320"
-          height="500"
-          style="border: none; overflow: hidden"
-          scrolling="no"
-          frameborder="0"
-          allowTransparency="true"
-          allow="encrypted-media"
-        ></iframe>
-      </div>
-    </div>
-
     <div id="page-wrapper">
       <!-- Header -->
       <div id="header">
@@ -123,37 +105,8 @@
   </div>
 </template>
 
-<style>
-#fbplikebox {
-  display: block;
-  padding: 0;
-  z-index: 99999;
-  position: fixed;
+<script>
+export default {
+  name: 'DefaultPage',
 }
-
-.fbplbadge {
-  background-color: #3b5998;
-  display: block;
-  height: 150px;
-  top: 50%;
-  margin-top: -75px;
-  position: absolute;
-  left: -47px;
-  width: 47px;
-  background-image: url('~static/images/w2b_vertical-right.png');
-  background-repeat: no-repeat;
-  overflow: hidden;
-  -webkit-border-top-left-radius: 8px;
-  -webkit-border-bottom-left-radius: 8px;
-  -moz-border-radius-topleft: 8px;
-  -moz-border-radius-bottomleft: 8px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
-
-.fb-iframe {
-  width: 320px;
-  height: 500px;
-  background-color: white;
-}
-</style>
+</script>
