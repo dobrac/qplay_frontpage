@@ -25,8 +25,7 @@ export default {
       },
       { src: '/js/google-analytics.js' },
       {
-        src:
-          '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js',
+        src: '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js',
       },
       { src: '/js/cookies.js' },
     ],
@@ -38,8 +37,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href:
-          '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css',
+        href: '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css',
       },
       {
         rel: 'stylesheet',
@@ -63,6 +61,10 @@ export default {
    ** Nuxt.js modules
    */
   modules: ['@nuxtjs/axios', '@nuxtjs/eslint-module'],
+  buildModules: [
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module',
+  ],
   /*
    ** Build configuration
    */
