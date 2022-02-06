@@ -2,6 +2,12 @@
   <div>
     <section class="wrapper style1">
       <div class="container">
+        <h2>Ranky</h2>
+        <nuxt-link tag="li" to="/yt">
+          <a>YouTuber</a>
+        </nuxt-link>
+
+        <br />
         <h2>Nábory</h2>
         <nuxt-link tag="li" to="/nabor/technik">
           <a>Technik</a>
@@ -19,3 +25,9 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'NaborPage',
+}
+</script>

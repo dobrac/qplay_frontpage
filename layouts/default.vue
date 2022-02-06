@@ -22,18 +22,21 @@
             <li class="external">
               <a href="https://registrace.qplay.cz"> Zaregistrovat se </a>
             </li>
-            <nuxt-link tag="li" to="/vip" class="vip">
-              <a>Jak si koupit VIP?</a>
-            </nuxt-link>
             <nuxt-link tag="li" to="/pravidla">
               <a>Pravidla</a>
+            </nuxt-link>
+            <nuxt-link tag="li" to="/vip" class="vip">
+              <a>VIP účet</a>
             </nuxt-link>
             <li class="external">
               <a href="https://changelog.qplay.cz"> Seznam změn </a>
             </li>
             <nuxt-link tag="li" to="/nabor">
-              <a>Nábor</a>
+              <a>Pozice</a>
               <ul>
+                <nuxt-link tag="li" to="/yt">
+                  <a>YouTuber</a>
+                </nuxt-link>
                 <nuxt-link tag="li" to="/nabor/technik">
                   <a>Technik</a>
                 </nuxt-link>
@@ -48,15 +51,12 @@
                 </nuxt-link>
               </ul>
             </nuxt-link>
-            <nuxt-link tag="li" to="/faq">
-              <a>FAQ</a>
-            </nuxt-link>
-            <nuxt-link tag="li" to="/yt">
-              <a>YouTuber</a>
-            </nuxt-link>
             <nuxt-link tag="li" to="/navod">
-              <a>Návody</a>
+              <a>Nápověda</a>
               <ul>
+                <nuxt-link tag="li" to="/faq">
+                  <a>FAQ</a>
+                </nuxt-link>
                 <nuxt-link tag="li" to="/navod/privlastneni-nicku">
                   <a>Můj nick je již zaregistrovaný</a>
                 </nuxt-link>
@@ -107,6 +107,6 @@
 
 <script>
 export default {
-  name: 'DefaultPage',
+  name: 'DefaultLayout',
 }
 </script>

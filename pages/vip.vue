@@ -271,6 +271,7 @@ function VIPMysteryCrates(def, sale) {
 }
 
 export default {
+  name: 'VIPPage',
   components: {
     VIPTable,
   },

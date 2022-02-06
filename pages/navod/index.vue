@@ -2,6 +2,12 @@
   <div>
     <section class="wrapper style1">
       <div class="container">
+        <h2>FAQ</h2>
+        <nuxt-link tag="li" to="/faq">
+          <a>Často kladené otázky</a>
+        </nuxt-link>
+
+        <br />
         <h2>Návody</h2>
 
         <nuxt-link tag="li" to="/navod/privlastneni-nicku">
@@ -17,3 +23,9 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'NavodyPage',
+}
+</script>
