@@ -187,11 +187,11 @@
           předejdou zbytečným komplikacím.
         </p>
 
-        <h3>Banování</h3>
+        <h3>Trestání</h3>
         <p>
           Hráč:<br />
-          V případě, že hráč obdrží ban neprávem (MC/TS3/Discord), může podat
-          ticket s žádostí o unban na Informační panel a tam se jeho ban
+          V případě, že hráč obdrží trest neprávem (MC/TS3/Discord), může podat
+          ticket s žádostí o unban/unmute na Informační panel a tam se jeho trest
           projedná.<br />
           Jestliže se hráč snaží mařit nebo obcházet své potrestání, může mu být
           délka trestu navýšena.<br />
@@ -199,7 +199,7 @@
 
         <p>
           Člen A-týmu:<br />
-          Člen A-týmu má právo zabanovat hráče, jestliže porušuje jakákoliv
+          Člen A-týmu má právo potrestat hráče, jestliže porušuje jakákoliv
           pravidla serveru.<br />
           Člen A-týmu musí uchovat důkaz, trvá-li ban déle jak 7 dní. Výjimkou
           jsou bany na 30 a 60 dní. Vedení serveru důkazy uchovávat nemusí.<br />
@@ -229,8 +229,8 @@
           vedením serveru.<br />
           <br />
           Za reklamu se považuje jakákoliv přímá propagace (IP adresa, pozvánka
-          na jiný server aj.) nebo kterákoliv URL adresa. Za reklamu se
-          nepovažuje reklama na video/YouTube kanál tvůrce, který projekt
+          na jiný server aj.) nebo kterákoliv URL adresa, vyjma těch, které souvisí s projektem QPlay.cz. Za reklamu se
+          nepovažuje reklama na video/YouTube kanál/Twitch kanál tvůrce, který projekt
           QPlay.cz pozitivně propaguje. V případě inzerce názvů svých sociálních
           sítí záleží na posouzení člena A-týmu, zda taková inzerce není
           nevhodná.
@@ -279,7 +279,7 @@
             povinen pravidelně kontrolovat změny těchto pravidel, hraním na
             herním serveru QPlay.cz stvrzuje, že se se všemi pravidly seznámil,
             rozumí jim a zavazuje se je dodržovat. Všechna zde uvedená pravidla
-            jsou platná od <strong>04.11.2021</strong>.
+            jsou platná od <strong>06.02.2022</strong>.
           </i>
         </span>
         &nbsp;
