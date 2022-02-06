@@ -24,8 +24,8 @@
         <h4><span style="color: #000000">Co požadujeme?</span></h4>
         <li>
           <span style="color: #000000">
-            Základní znalosti programování v programovacím jazyce Java nebo
-            Kotlin.
+            Základní znalosti programování (programovací jazyk Java, Kotlin 
+            nebo JavaScript výhodou).
           </span>
         </li>
         <li>
@@ -35,7 +35,7 @@
         </li>
         <li>
           <span style="color: #000000">
-            Umět využívat znalosti matematiky.
+            Umět využívat základní znalosti matematiky.
           </span>
         </li>
         <ul></ul>
