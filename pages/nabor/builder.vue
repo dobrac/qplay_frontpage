@@ -9,7 +9,7 @@
         <ul>
           <span style="color: #000000">
             Se svými herními údaji se přihlásíte na
-            <a href="http://info.qplay.cz/" target="_blank">Informační Panel</a>
+            <a href="https://info.qplay.cz/" target="_blank">Informační Panel</a>
             . Kliknete na sekci "Mé tickety" a následně si stačí vytvořit nový
             ticket s typem "Žádost o Buildera", kde vám bude poskytnuto více
             informací.
