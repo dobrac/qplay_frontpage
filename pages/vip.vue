@@ -61,13 +61,13 @@
             </font>
           </center>
         </h2>-->
-        <!--<h2>
+        <h2>
           <center>
             <font color="#e75480" style="font-weight: bold;">
               Valentýnská akce na všechna VIP!
             </font>
           </center>
-        </h2>-->
+        </h2>
         <!--<h2>
           <center>
             <font color="#2AC820" style="font-weight: bold">
