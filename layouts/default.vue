@@ -28,6 +28,9 @@
             <nuxt-link tag="li" to="/vip" class="vip">
               <a>VIP účet</a>
             </nuxt-link>
+            <li class="vip external">
+              <a href="https://store.qplay.cz">Obchod</a>
+            </li>
             <li class="external">
               <a href="https://changelog.qplay.cz"> Seznam změn </a>
             </li>
