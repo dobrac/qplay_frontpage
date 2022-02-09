@@ -265,6 +265,19 @@ export default {
               legend: '<span style="color: #ff8c00;"><strong>2 Crates</strong></span>',
             }, */
             {
+              name:
+                '<span style="color: #e75480;"><strong>Valentine Crates</strong></span>',
+              default: false,
+              basic:
+                '<span style="color: #e75480; font-weight: bold;">1 Crate</span>',
+              medium:
+                '<span style="color: #e75480; font-weight: bold;">1 Crate</span>',
+              master:
+                '<span style="color: #e75480; font-weight: bold;">1 Crate</span>',
+              legend:
+                '<span style="color: #e75480; font-weight: bold;">2 Crates</span>',
+            },
+            {
               name: 'Coins při aktivaci',
               default: false,
               basic: '10 000 Coins',
