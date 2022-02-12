@@ -31,6 +31,11 @@
         </li>
         <li>
           <span style="color: #000000">
+            Má právo na využívání příkazu /nick, kterým se může skrýt před hráči na minihrách.
+          </span>
+        </li>
+        <li>
+          <span style="color: #000000">
             Jednou za měsíc může udělat svou velkou akci na Discordu, kam obdrží zdarma
             odměny do soutěže.
           </span>
