@@ -146,7 +146,10 @@
             </a>
             a zvolte možnost vygenerovat dárkový poukaz. Tento vygenerovaný
             dárkový poukaz je možné vytisknout a je platný ihned po
-            zaplacení.<br /><br />
+            zaplacení.<br />
+            <br />
+            <b>Náhled dárkového poukazu</b> <br />
+            <img src="https://kod.qplay.cz/assets/img/poukazkaTisk.jpg" alt="Náhled poukázky"><br /><br />
             V případě jakýchkoliv dotazů se na nás neváhejte obrátit – jak se
             dozvíte v sekci Kontakt.
           </p>
