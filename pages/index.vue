@@ -219,10 +219,10 @@ export default {
   methods: {
     async fetchPlayers() {
       const data = await this.$axios.$get(
-        'https://old.info.qplay.cz/playersCount.aspx'
+        'https://api.info.qplay.cz/public/players/online'
       )
       const dataMax = await this.$axios.$get(
-        'https://old.info.qplay.cz/playersMax.aspx'
+        'https://api.info.qplay.cz/public/players/max'
       )
       if (data) {
         this.players = data
