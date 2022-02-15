@@ -20,7 +20,7 @@
               <a>Jak se připojit?</a>
             </nuxt-link>
             <li class="external">
-              <a href="https://registrace.qplay.cz"> Zaregistrovat se </a>
+              <a href="https://account.qplay.cz"> Zaregistrovat se </a>
             </li>
             <nuxt-link tag="li" to="/pravidla">
               <a>Pravidla</a>
