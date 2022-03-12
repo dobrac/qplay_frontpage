@@ -92,7 +92,7 @@
 
             <p>7) Jeho kanál je zveřejněn v sekci „Skupiny“ na Info panelu.</p>
             
-            <p>8) Skupina YouTuber na <a href="https://discord.qplay.cz" target="_blank">Discord serveru</a> (lze o ni požádat v <a href="https://info.qplay.cz/" target="_blank">ticketu</a> s typem "Jiné").</p>
+            <p>8) Skupina YouTuber na <a href="https://discord.qplay.cz" target="_blank">Discord serveru</a> (lze o ni požádat v <a href="https://info.qplay.cz/tickets/new" target="_blank">ticketu</a> s typem "Jiné").</p>
 
             <br />
 
