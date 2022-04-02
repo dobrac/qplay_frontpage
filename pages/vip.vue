@@ -68,13 +68,13 @@
             </font>
           </center>
         </h2>-->
-        <!--<h2>
+        <h2>
           <center>
             <font color="#2AC820" style="font-weight: bold">
-              Velikonoční akce na všechna VIP!
+              Velikonoční akce na VIP!
             </font>
           </center>
-        </h2>-->
+        </h2>
 
         <VIPTable></VIPTable>
         <a name="zakoupeniVIP" style="position: relative; top: -50vh"></a>
