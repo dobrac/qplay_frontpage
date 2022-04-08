@@ -75,6 +75,10 @@
             </font>
           </center>
         </h2>
+        <center><br>
+        <font size="5" style="font-weight: bold;" ;>Zakupením VIP skrz <a href="https://store.qplay.cz/category/325694" target="_blank">store.qplay.cz</a>
+        lze obdržet více bonusových Easter Crates ZDARMA!</font>
+        </center>
 
         <VIPTable></VIPTable>
         <a name="zakoupeniVIP" style="position: relative; top: -50vh"></a>
