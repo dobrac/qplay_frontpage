@@ -48,10 +48,18 @@
           </div>
           <div>
             <a
-              href="https://www.facebook.com/QPlay.cz/"
+              href="https://discord.qplay.cz"
               target="_blank"
               ref="QPlay.cz"
-              >Facebook</a
+              >Discord</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://store.qplay.cz/"
+              target="_blank"
+              ref="QPlay.cz"
+              >Store</a
             >
           </div>
         </div>
