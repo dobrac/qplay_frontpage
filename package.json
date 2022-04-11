@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES next build",
-    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES next build",
+    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES next export",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
