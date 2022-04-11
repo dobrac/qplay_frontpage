@@ -13,7 +13,7 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "axios": "^0.26.1",
+    "axios": "0.26.1",
     "cross-env": "7.0.3",
     "next": "12.1.4",
     "react": "18.0.0",
