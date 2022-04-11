@@ -88,14 +88,6 @@ const Home: NextPage = () => {
               >Discord</a
               >
             </div>
-            <div>
-              <a
-                href="https://store.qplay.cz/"
-                target="_blank"
-                rel="noreferrer"
-              >Store</a
-              >
-            </div>
           </div>
         </div>
       </section>
