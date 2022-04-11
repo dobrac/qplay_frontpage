@@ -1,4 +1,6 @@
-export default {
+import { defineNuxtConfig } from 'nuxt3'
+
+export default defineNuxtConfig({
   mode: 'universal',
   server: {
     port: 3000, // default: 3000
@@ -7,13 +9,12 @@ export default {
   /*
    ** Headers of the page
    */
-  head: {
+  meta: {
     title: 'QPlay.cz',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || '',
       },
@@ -52,7 +53,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['assets/scss/main'],
+  css: ['~/assets/scss/main'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -60,26 +61,10 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios', '@nuxtjs/eslint-module'],
-  buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
-  ],
-  /*
-   ** Build configuration
-   */
-  build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {},
-  },
+  modules: ['@nuxtjs/eslint-module'],
   router: {
     linkActiveClass: 'current',
     linkExactActiveClass: 'current',
     // base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/qplay_frontpage/' : ''
   },
-  axios: {
-    progress: false,
-  },
-}
+})

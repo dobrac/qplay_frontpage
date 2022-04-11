@@ -67,8 +67,8 @@
         </tr>
       </thead>
       <tbody>
-        <template v-for="(section, index) in sections">
-          <tr :key="index" class="section-header">
+        <template v-for="(section, index) in sections" :key="index">
+          <tr class="section-header">
             <td
               :style="
                 'text-align: right; opacity: 0.8; background-color: ' +
@@ -557,6 +557,7 @@ export default {
 .buy-link {
   border-bottom: none;
 }
+
 .vip-button {
   transition: transform 0.2s;
 
@@ -565,6 +566,7 @@ export default {
     transform: scale(1.1);
   }
 }
+
 .btn-currency {
   $border-width: 3px;
 
@@ -583,6 +585,7 @@ export default {
     opacity: 0.9;
     cursor: pointer;
   }
+
   &:focus {
     outline: 0;
   }
@@ -600,10 +603,12 @@ export default {
       color: white;
     }
   }
+
   .section-row {
     td {
       text-align: center;
     }
+
     &:hover {
       background-color: whitesmoke;
     }

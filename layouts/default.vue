@@ -6,7 +6,7 @@
         <!-- Logo -->
         <h1>
           <a id="logo" href="/">
-            <img src="~static/images/logo.png" alt="QPlay" />
+            <img src="~public/images/logo.png" alt="QPlay" />
           </a>
         </h1>
 
@@ -79,7 +79,7 @@
         </nav>
       </div>
 
-      <nuxt />
+      <slot />
 
       <!-- Footer -->
       <div id="footer">
@@ -103,7 +103,7 @@
     <script src="/js/jquery.dropotron.min.js" />
     <script src="/js/skel.min.js" />
     <script src="/js/util.js" />
-    <!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+    <!--[if lte IE 8]> <script src="js/ie/respond.min.js"></script><![endif]-->
     <script src="/js/main.js" />
   </div>
 </template>

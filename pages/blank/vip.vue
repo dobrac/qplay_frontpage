@@ -271,12 +271,12 @@ function VIPMysteryCrates(def, sale) {
   }
 }
 
+definePageMeta({ layout: 'blank' })
 export default {
   name: 'BlankVIPPage',
   components: {
     VIPTable,
   },
-  layout: 'blank',
   data() {
     return {}
   },
