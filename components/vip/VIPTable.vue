@@ -67,7 +67,7 @@
         </tr>
       </thead>
       <tbody>
-        <template v-for="(section, index) in sections" class="section-header">
+        <template v-for="(section, index) in sections">
           <tr :key="index" class="section-header">
             <td
               :style="
@@ -244,8 +244,7 @@ export default {
                 '<span style="color: #B3000C;"><strong>2 Crates</strong></span>',
             }, */
             {
-              name:
-                '<span style="color: #2AC820;"><strong>Easter Crates</strong></span>',
+              name: '<span style="color: #2AC820;"><strong>Easter Crates</strong></span>',
               default: false,
               basic: false,
               medium:
