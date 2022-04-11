@@ -30,7 +30,7 @@ const menu = [
   new MenuItem("Zaregistrovat se", "https://account.qplay.cz", true),
   new MenuItem("Pravidla", "/pravidla"),
   new MenuItem("VIP účet", "/vip", false, "vip"),
-  new MenuItem("Obchod", "https://shrefre.qplay.cz", true, "vip"),
+  new MenuItem("Obchod", "https://store.qplay.cz", true, "vip"),
   new MenuItem("Seznam změn", "https://changelog.qplay.cz", true),
   new MenuItem("Pozice", "/nabor").setItems([
     new MenuItem("YouTuber", "/yt"),
