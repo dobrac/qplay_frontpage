@@ -1,16 +1,21 @@
 {
   "name": "qplay_frontpage_next",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES next build",
+    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES next build",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "next": "12.1.4",
+    "cross-env": "7.0.3",
     "react": "18.0.0",
+    "react-cookie-consent": "^7.4.1",
     "react-dom": "18.0.0"
   },
   "devDependencies": {
@@ -19,6 +24,7 @@
     "@types/react-dom": "18.0.0",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.4",
+    "sass": "^1.50.0",
     "typescript": "4.6.3"
   }
 }
