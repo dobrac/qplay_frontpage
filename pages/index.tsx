@@ -1,9 +1,37 @@
 import type {NextPage} from 'next'
 import Link from "next/link"
+import axios from "axios";
+import {useCallback, useEffect, useState} from "react";
 
 const Home: NextPage = () => {
-  const playersShow = 10
-  const playersMaxShow = 2500
+  const [players, setPlayers] = useState(-1)
+  const [playersMax, setPlayersMax] = useState(-1)
+  const playersShow = players > -1 ? players : '---'
+  const playersMaxShow = playersMax > -1 ? playersMax : '---'
+
+  const fetchPlayers = useCallback(async () => {
+    const data = await axios.get(
+      'https://api.info.qplay.cz/public/players/online'
+    )
+    const dataMax = await axios.get(
+      'https://api.info.qplay.cz/public/players/max'
+    )
+    if (data?.data) {
+      setPlayers(data.data)
+    }
+    if (dataMax?.data) {
+      setPlayersMax(dataMax.data)
+    }
+  }, [])
+
+  useEffect(() => {
+    fetchPlayers()
+
+    const timer = setInterval(fetchPlayers, 5000)
+    return () => {
+      clearInterval(timer)
+    }
+  }, [fetchPlayers])
 
   return (
     <div>
