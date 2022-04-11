@@ -83,10 +83,10 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
     <div>
       <div id="page-wrapper">
         <div id="header">
-          <h1>
+          <h1 id="logo">
             <Link href="/" passHref>
               <a>
-                <img id="logo" src="/images/logo.png" alt="QPlay"/>
+                <img src="/images/logo.png" alt="QPlay"/>
               </a>
             </Link>
           </h1>
