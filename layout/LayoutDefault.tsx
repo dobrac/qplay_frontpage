@@ -86,7 +86,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
           <h1>
             <Link href="/" passHref>
               <a>
-                <img src="/images/logo.png" alt="QPlay"/>
+                <img id="logo" src="/images/logo.png" alt="QPlay"/>
               </a>
             </Link>
           </h1>
