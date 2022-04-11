@@ -4,7 +4,9 @@ node_js:
 
 cache:
   directories:
-    - "node_modules"
+    - $HOME/.cache/yarn
+    - node_modules
+    - .next/cache
 
 branches:
   only:
