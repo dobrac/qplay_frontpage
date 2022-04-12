@@ -52,6 +52,9 @@ function MenuItemRender({item}: { item: MenuItem }) {
   const router = useRouter()
 
   function isCurrent(path: string): boolean {
+    if (!path.endsWith("/")) {
+      path = path + "/"
+    }
     return router.asPath === path
   }
 
