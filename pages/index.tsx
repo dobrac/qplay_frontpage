@@ -1,7 +1,7 @@
-import type {NextPage} from 'next'
+import type { NextPage } from 'next'
 import Link from "next/link"
 import axios from "axios";
-import {useCallback, useEffect, useState} from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const Home: NextPage = () => {
   const [players, setPlayers] = useState(-1)
@@ -35,225 +35,295 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      {/* <!--nuxt-link to="/vip">
-        <section class="banner zoomBanner">&nbsp;</section>
-      </nuxt-link>-->*/}
-      <section className="banner">&nbsp;</section>
-
-      <section className="banner" style={{backgroundImage: "none", height: "inherit"}}>
-        <header className="external" style={{"position": "relative"}}>
-          <a href="https://info.qplay.cz/" target="_blank" className="button" rel="noreferrer">
-            Přihlášení do Info Panelu
-          </a>
-        </header>
-      </section>
-      <section className="wrapper style2">
-        <div className="container">
-          <header className="major">
-            <h2>mc.qplay.cz</h2>
-            <p>Online Players: {playersShow}/{playersMaxShow}</p>
-          </header>
-        </div>
-      </section>
-      <section id="cta" className="wrapper style3">
-        <div className="container">
-          <header>
-            <h2>Chceš se také připojit?</h2>
+      <section id="banner">
+        <div className="boxcontainer">
+          <div className="box">
+            <div>
+              <h2>mc.qplay.cz</h2>
+              <p>Online hráči: {playersShow}/{playersMaxShow}</p>
+            </div>
             <Link href="/jak-se-pripojit" passHref>
-              <a className="button">Klikni zde</a>
+              <a className="button"><button>Jak se připojit</button></a>
             </Link>
-          </header>
-          <div className="links">
-            <div>
-              <a
-                href="https://www.instagram.com/qplaycz/"
-                target="_blank"
-                rel="noreferrer"
-              >Instagram</a
-              >
+          </div>
+        </div>
+      </section>
+      <section id="aboutus">
+        <div className="container">
+          <h1 className="title">O nás</h1>
+          <div className="row">
+            <div className="col-lg-5">
+              <img src="/images/render.png" />
             </div>
-            <div>
-              <a
-                href="https://www.youtube.com/qplaycz"
-                target="_blank"
-                rel="noreferrer"
-              >Youtube</a
-              >
-            </div>
-            <div>
-              <a
-                href="https://discord.qplay.cz"
-                target="_blank"
-                rel="noreferrer"
-              >Discord</a
-              >
+            <div className="col-lg-7 d-flex">
+              <div className="content">
+                <h1>O <span className="colored">QPLAY.CZ</span></h1>
+                <p>Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují.
+                  Jenom tak klidně levitují ve vzduchu. Jelikož slunce jasně září a na obloze byste od východu k
+                  západu hledali mráček marně, balónky působí jako jakási fata morgána uprostřed pouště. Zkrátka
+                  široko daleko nikde nic, jen zelenkavá tráva, jasně modrá obloha a tři křiklavě barevné pouťové
+                  balónky, které se téměř nepozorovatelně pohupují ani ne moc vysoko, ani moc nízko nad zemí.
+                  Kdyby pod balónky nebyla sytě zelenkavá tráva, ale třeba suchá silnice či beton, možná by bylo
+                  vidět jejich barevné stíny - to jak přes poloprůsvitné barevné balónky prochází ostré sluneční
+                  paprsky.</p>
+                <div className="stats">
+                  <div className="row">
+                    <div className="col-md-4 mb-4">
+                      <img src="/icons/add-user.svg" />
+                      <h2>5,000,000+</h2>
+                      <p>Registrovaných hráčů</p>
+                    </div>
+                    <div className="col-md-4 mb-4">
+                      <img src="/icons/time-circle.svg" />
+                      <h2>780,000+</h2>
+                      <p>Odehraných hodin</p>
+                    </div>
+                    <div className="col-md-4 mb-4">
+                      <img src="/icons/game.svg" />
+                      <h2>400+</h2>
+                      <p>Online hráčů denně</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section className="wrapper style1">
+      <section id="discord">
         <div className="container">
-          <div className="row 200%">
-            <section className="4u 12u(narrower)">
-              <div className="box highlight">
-                <i
-                  style={{
-                    backgroundImage: "url(icons/coalblock.png)",
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat"
-                  }}
-                  className="icon major"
-                />
-                <h3>MiniAnnihilation</h3>
-                <p>
-                  Natěž si suroviny, ze kterých si vytvoříš své brnění a nástroje.
-                  Ovládni střed mapy, abys získal i diamantové věci. Poté znič
-                  nexus ostatním týmům.
-                </p>
-              </div>
-            </section>
-            <section className="4u 12u(narrower)">
-              <div className="box highlight">
-                <i
-                  style={{
-                    backgroundImage: "url(icons/ender_pearl.png)",
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat"
-                  }}
-                  className="icon major"
-                />
-                <h3>SkyWars</h3>
-                <p>
-                  Posbírej z truhel na ostrovech ty nejlepší věci pro boj a zabij
-                  všechny nepřátele.
-                </p>
-              </div>
-            </section>
-            <section className="4u 12u(narrower)">
-              <div className="box highlight">
-                <i
-                  style={{
-                    backgroundImage: "url(icons/minecraft_golden_apple.png)",
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat"
-                  }}
-                  className="icon major"
-                />
-                <h3>MiniUHC</h3>
-                <p>
-                  Natěž si ve volné přírodě co nejlepší suroviny a zabij všechny
-                  nepřátele.
-                </p>
-              </div>
-            </section>
+          <div className="row">
+            <div className="col-md-7">
+              <h1>Discord</h1>
+              <p>Připoj se na náš discord a propoj si účet pro získání zajímavých výhod</p>
+              <ul>
+                <li>Máte přístup do místnosti #general 🎮</li>
+                <li>Otevře se vám místnost #pomoc-mezi-hráči, ve které můžete požádat o pomoc druhých hráčů, nebo naopak druhým hráčům můžete pomoct vy 👥</li>
+                <li>Máte přístup do mnoha dalších text channelů pod sekcí Komunita | QPlay a Komunita | Ostatní ✌️</li>
+                <li>Máte k dispozici několik volných voice místností 🗣️</li>
+                <li>Máte možnost se zúčastňovat herních akcí! Pokud bude probíhat akce, zjistíte to v místnosti oznámení 🎲</li>
+                <li>Pokud na serveru vlastníte jakékoliv VIP, tak automaticky obdržíte roli &quot;VIP&quot;. Navíc obdržíte přístup do VIP chatu #vip-chat 💎</li>
+              </ul>
+              <a href="https://discord.qplay.cz/"><button>Přidat se k discordu</button></a>
+            </div>
+            <div className="col-md-5 d-flex">
+              <img src="/images/discord.png" />
+            </div>
           </div>
-          <div className="row 200%">
-            <section className="4u 12u(narrower)">
-              <div className="box highlight">
-                <i
+        </div>
+      </section>
+      <section id="games">
+        <div className="container">
+          <h1 className="title">Naše minihry</h1>
+          <div className="row">
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div
+                  className="card-top"
                   style={{
-                    backgroundImage: "url(icons/1vs1.png)",
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat"
-                  }}
-                  className="icon major"
-                />
-                <h3>1vs1</h3>
-                <p>
-                  Myslíš si, že jsi výborný zabiják? Dokaž to! Vyzvi svého
-                  kamaráda nebo náhodného hráče na souboj a zab ho.
-                </p>
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/minianni.png)"
+                  }}>
+                  <div className="header">
+                    <img src="/icons/coalblock.png" />
+                    <h3>MiniAnnihilation</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Natěž si suroviny, ze kterých si vytvoříš své brnění a nástroje. Ovládni střed mapy, abys získal i diamantové věci. Poté znič nexus ostatním týmům.</p>
+                    <h4>Seznam serverů</h4>
+                    <ul>
+                      <li>MiniAnni Run (5v5v5v5)</li>
+                      <li>MiniAnni (10v10v10v10)</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </section>
-            <section className="4u 12u(narrower)">
-              <div className="box highlight">
-                <i
+            </div>
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div
+                  className="card-top"
                   style={{
-                    backgroundImage: "url(icons/bed.png)",
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat"
-                  }}
-                  className="icon major"
-                />
-                <h3>BedWars</h3>
-                <p>
-                  Nasbírej na svém ostrově co nejvíce ingotů (bronze, iron, gold),
-                  zakup si věci u vesničana a znič postel ostatním týmům.
-                </p>
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/skywars.png)"
+                  }}>
+                  <div className="header">
+                    <img src="/icons/ender_pearl.png" />
+                    <h3>SkyWars</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Posbírej z truhel na ostrovech ty nejlepší věci pro boj a zabij všechny nepřátele.</p>
+                    <h4>Seznam serverů</h4>
+                    <ul>
+                      <li>SkyWars Solo</li>
+                      <li>Bigeho Event</li>
+                      <li>SkyWars Duo</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </section>
-            <section className="4u 12u(narrower)">
-              <div className="box highlight">
-                <i
+            </div>
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div
+                  className="card-top"
                   style={{
-                    backgroundImage: "url(icons/crystals.png)",
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat"
-                  }}
-                  className="icon major"
-                />
-                <h3>Crystals</h3>
-                <p>
-                  Natěž si na svém ostrově suroviny, zakup si u vesničana
-                  speciální předměty a připrav se k boji. Jakmile budeš připraven,
-                  znič srdce ostatním týmům.
-                </p>
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/miniuhc.png)"
+                  }}>
+                  <div className="header">
+                    <img src="/icons/minecraft_golden_apple.png" />
+                    <h3>MiniUHC</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Natěž si ve volné přírodě co nejlepší suroviny a zabij všechny nepřátele.</p>
+                    <h4>Seznam serverů</h4>
+                    <ul>
+                      <li>MiniUHC Duo</li>
+                      <li>MiniUHC Trio</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </section>
-          </div>
-          <div className="row 200%">
-            <section className="4u 12u(narrower)">
-              <div className="box highlight">
-                <i
+            </div>
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div
+                  className="card-top"
                   style={{
-                    backgroundImage: "url(icons/gold_ingot.png)",
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat"
-                  }}
-                  className="icon major"
-                />
-                <h3>GoldRush</h3>
-                <p>
-                  Nakup si za získané levely věci k boji a získej od pig-zombie
-                  pro svůj tým co nejvíce zlatých cihel.
-                </p>
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/1vs1.png)"
+                  }}>
+                  <div className="header">
+                    <img src="/icons/1vs1.png" />
+                    <h3>1vs1</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Myslíš si, že jsi výborný zabiják? Dokaž to! Vyzvi svého kamaráda nebo náhodného hráče na souboj a zab ho.</p>
+                    <h4>Seznam serverů</h4>
+                    <ul>
+                      <li>Training</li>
+                      <li>Archer</li>
+                      <li>BuildUHC</li>
+                      <li>Ranked</li>
+                      <li>TheBrigde</li>
+                      <li>Sumo</li>
+                      <li>SkyWars</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </section>
-            <section className="4u 12u(narrower)">
-              <div className="box highlight">
-                <i
+            </div>
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div
+                  className="card-top"
                   style={{
-                    backgroundImage: "url(icons/nether_star.png)",
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat"
-                  }}
-                  className="icon major"
-                />
-                <h3>MicroBattle</h3>
-                <p>
-                  Chop se zbraně se svým spoluhráčem a vyzabíjej na mapě všechny
-                  nepřátele.
-                </p>
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/bedwars.png)"
+                  }}>
+                  <div className="header">
+                    <img src="/icons/bed.png" />
+                    <h3>BedWars</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Nasbírej na svém ostrově co nejvíce ingotů (bronze, iron, gold), zakup si věci u vesničana a znič postel ostatním týmům.</p>
+                    <h4>Seznam serverů</h4>
+                    <ul>
+                      <li>BedWars Solo (1v1v1v1)</li>
+                      <li>BedWars Duo (2v2v2v2)</li>
+                      <li>BedWars Squad (4v4v4v4)</li>
+                      <li>BedWars Modern Duo (2v2v2v2v2v2)</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </section>
-            <section className="4u 12u(narrower)">
-              <div className="box highlight">
-                <i
+            </div>
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div
+                  className="card-top"
                   style={{
-                    backgroundImage: "url(icons/ironsword.png)",
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat"
-                  }}
-                  className="icon major"
-                />
-                <h3>Murder Mystery</h3>
-                <p>
-                  Sbírej gold ingoty, za které získáš šíp, a následně zabij
-                  Murdera. V roli Murdera zabij všechny ostatní hráče.
-                </p>
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/crystals.png)"
+                  }}>
+                  <div className="header">
+                    <img src="/icons/crystals.png" />
+                    <h3>Crystals</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Natěž si na svém ostrově suroviny, zakup si u vesničana speciální předměty a připrav se k boji. Jakmile budeš připraven, znič srdce ostatním týmům.</p>
+                    <h4>Seznam serverů</h4>
+                    <ul>
+                      <li>Crystals (10v10v10v10)</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </section>
+            </div>
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div
+                  className="card-top"
+                  style={{
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/arcade.png)"
+                  }}>
+                  <div className="header">
+                    <img src="/icons/gold_ingot.png" />
+                    <h3>GoldRush</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Nakup si za získané levely věci k boji a získej od pig-zombie pro svůj tým co nejvíce zlatých cihel.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div
+                  className="card-top"
+                  style={{
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/arcade.png)"
+                  }}>
+                  <div className="header">
+                    <img src="/icons/nether_star.png" />
+                    <h3>MicroBattle</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Chop se zbraně se svým spoluhráčem a vyzabíjej na mapě všechny nepřátele.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div
+                  className="card-top"
+                  style={{
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/arcade.png)"
+                  }}>
+                  <div className="header">
+                    <img src="/icons/ironsword.png" />
+                    <h3>Murder Mystery</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Sbírej gold ingoty, za které získáš šíp, a následně zabij Murdera. V roli Murdera zabij všechny ostatní hráče.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

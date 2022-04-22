@@ -1,5 +1,4 @@
 import '../styles/main.scss'
-import '../styles/custom.scss'
 import "../public/css/font-awesome.min.css"
 import type {AppProps} from 'next/app'
 import LayoutDefault from "../layout/LayoutDefault";
@@ -13,6 +12,7 @@ function MyApp({Component, pageProps}: AppProps) {
       <Head>
         <title>QPlay.cz</title>
         <meta name="description" content="QPlay Minecraft Server"/>
+        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
       </Head>
       <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" strategy="beforeInteractive"/>
       <Script src="/js/google-analytics.js"/>

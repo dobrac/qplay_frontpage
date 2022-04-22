@@ -81,9 +81,15 @@ const questions = [
 export default function FAQ() {
   return (
     <div>
-      <section className="wrapper style1">
+      <section id="banner" className="sm">
+        <div className="pagename">
+            <h1>FAQ</h1>
+        </div>
+      </section>
+      <section id="pagecontent">
         <div id="test" className="container">
           <h2 style={{textAlign: "center"}}>FAQ - často kladené otázky</h2>
+          <br/><br/>
 
           {questions.map(q => {
             return (

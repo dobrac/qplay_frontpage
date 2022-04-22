@@ -1,7 +1,12 @@
 export default function LoginWithoutPassword() {
   return (
     <div>
-      <section className="wrapper style1">
+      <section id="banner" className="sm">
+        <div className="pagename">
+            <h1>Přihlášení bez hesla</h1>
+        </div>
+      </section>
+      <section id="pagecontent">
         <div className="container">
           Máš originální Minecraft a nebaví tě se furt na serveru přihlašovat?
           Vidíš u ostatních hráčů, že mají skin, ale ty ho nemáš? Tak postupuj

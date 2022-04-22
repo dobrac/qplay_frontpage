@@ -3,8 +3,13 @@ import VIPTable from "../components/VIPTable";
 export default function VIP() {
   return (
     <div>
-      <section className="wrapper style1" style={{padding: "2em 0 1em 0"}}>
-        <div id="test" className="container">
+      <section id="banner" className="sm">
+        <div className="pagename">
+            <h1>VIP ÚČET</h1>
+        </div>
+      </section>
+      <section id="pagecontent">
+        <div className="container">
           {/* <center>
             <a href="#darkovyPoukaz" style="text-decoration:none;border:none;"
               ><img src="/images/BannerPNGFinal.png" style="max-width:100%"/></a
@@ -15,25 +20,9 @@ export default function VIP() {
     <center>
             <a href="#naramekAkce" style="text-decoration:none;border:none;"><img src="images/WebNaramkyAkce.png?ver=2" ></a><br> <br><br>
     </center>    */}
-
-          <div style={{textAlign: "center"}}>
-            <a href="https://kod.qplay.cz/">
-              <input
-                id="aktivovatVIP"
-                type="submit"
-                name="submit"
-                value="AKTIVOVAT VIP KÓD"
-              />
-            </a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#zakoupeniVIP">
-              <input
-                id="souhlasPort"
-                type="submit"
-                name="submit"
-                value="Zakoupit VIP"
-              />
-            </a>
+          <div className="btnsgroup">
+            <a className="button" href="https://kod.qplay.cz/"><button>AKTIVOVAT VIP KÓD</button></a>
+            <a className="button" href="#zakoupeniVIP"><button>Zakoupit VIP</button></a>
           </div>
           <br/>
           {/*  <header>
@@ -78,13 +67,15 @@ export default function VIP() {
               </span>
             </div>
           </h2>
-          <div style={{textAlign: "center"}}>
-            <span style={{fontWeight: "bold", fontSize: "24px"}}>Zakupením VIP skrz{" "}<a
+          <h3 style={{textAlign: "center"}}>
+            <span style={{fontWeight: "bold"}}>Zakupením VIP skrz{" "}<a
               href="https://store.qplay.cz/category/325694" target="_blank" rel="noreferrer">store.qplay.cz</a>{" "}
               lze obdržet více bonusových Easter Crates NAVÍC!</span>
-          </div>
+          </h3>
           <br/>
-          <VIPTable/>
+          <div className="table-responsive">
+            <VIPTable/>
+          </div>
           <a id="zakoupeniVIP" style={{position: "relative", top: "-50vh"}}/>
 
           <br/>
@@ -104,19 +95,17 @@ export default function VIP() {
               si tzv. KÓD K AKTIVOVÁNÍ VIP ÚČTU - pomocí sms, PayPalu či PSC a ve
               zpětné sms obdržíte 8 místný kód ve tvaru XXXX-XXXX. Po jeho
               obdržení doporučujeme navštívit stránku
-              <a href="https://kod.qplay.cz">https://kod.qplay.cz</a>, kam kód
+              <a href="https://kod.qplay.cz"> https://kod.qplay.cz</a>, kam kód
               zadáte a máte možnost jej aktivovat na serveru či přímo přes
               internet. Dále je také možnost vygenerovat
-              <b
-              >dárkovou poukázku - ideální dárek pro Vaše kamarády či rodinu.</b
-              >
+              <b> dárkovou poukázku - ideální dárek pro Vaše kamarády či rodinu.</b>
             </p>
 
             <div>
               <b>Postup:</b><br/>
               1) Zakoupíte si KÓD - standardním způsobem - SMS, PSC, PayPal<br/>
-              2) Po obdržení kódu (XXXX-XXXX) přejdete na stránku
-              <a href="https://kod.qplay.cz">https://kod.qplay.cz</a>, kam kód
+              2) Po obdržení kódu (XXXX-XXXX) přejdete na stránku 
+               <a href="https://kod.qplay.cz"> https://kod.qplay.cz</a>, kam kód
               zadáte<br/>
               3) Zvolíte možnost aktivace<br/>
               4) Počkáte cca 5 minut a Vaše VIP výhody by měly být aktivní!<br/>
@@ -124,7 +113,7 @@ export default function VIP() {
             <br/>
             <div>
               Případně můžete aktivovat kód na serveru příkazem na Lobby:
-              <b>/kod [VAS_KOD]</b> - takže například /kod 1234-5678
+              <b> /kod [VAS_KOD]</b> - takže například /kod 1234-5678
             </div>
             <br/>
             <p>
@@ -148,11 +137,7 @@ export default function VIP() {
               postupujte dle pokynů uvedených na této stránce. Po úspěšném
               zaplacení Vám přijde sms (v případě platby pomocí sms) nebo email (v
               případě platby pomocí PSC nebo PayPal) s kódem. Tento kód zadejte na
-              stránce
-              <a href="https://kod.qplay.cz" target="_blank" rel="noreferrer">
-                https://kod.qplay.cz
-              </a>
-              a zvolte možnost vygenerovat dárkový poukaz. Tento vygenerovaný
+              stránce <a href="https://kod.qplay.cz" target="_blank" rel="noreferrer">https://kod.qplay.cz</a> a zvolte možnost vygenerovat dárkový poukaz. Tento vygenerovaný
               dárkový poukaz je možné vytisknout a je platný ihned po
               zaplacení.<br/><br/>
               V případě jakýchkoliv dotazů se na nás neváhejte obrátit – jak se
@@ -162,7 +147,7 @@ export default function VIP() {
             <div>
               Další informace k VIP platbě, <em>reklamace</em> atd. můžete řešit
               pomocí ticketu na
-              <a href="https://info.qplay.cz"><strong>info.qplay.cz</strong></a>
+              <a href="https://info.qplay.cz"><strong> info.qplay.cz</strong></a>
               , případně napište na email: <strong>support@qplay.cz</strong>,
               Děkujeme
             </div>
@@ -195,7 +180,7 @@ export default function VIP() {
 
           <div>
             <h2>Pravidla - VIP</h2>
-            <ul style={{color: "#000000"}}>
+            <ul>
               <li>
                 VIP bude po zadání kódu aktivováno obvykle do 5 minut. Pokud ani
                 po hodině nemáte VIP výhody aktivní, neváhejte se na nás obrátit.

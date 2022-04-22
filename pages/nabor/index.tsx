@@ -3,7 +3,12 @@ import Link from "next/link"
 export default function Hire() {
   return (
     <div>
-      <section className="wrapper style1">
+      <section id="banner" className="sm">
+        <div className="pagename">
+            <h1>Nábor</h1>
+        </div>
+      </section>
+      <section id="pagecontent">
         <div className="container">
           <h2>Ranky</h2>
           <li>

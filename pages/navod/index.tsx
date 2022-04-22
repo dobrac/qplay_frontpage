@@ -3,7 +3,12 @@ import Link from "next/link"
 export default function Help() {
   return (
     <div>
-      <section className="wrapper style1">
+      <section id="banner" className="sm">
+        <div className="pagename">
+            <h1>Nápověda</h1>
+        </div>
+      </section>
+      <section id="pagecontent">
         <div className="container">
           <h2>FAQ</h2>
           <li>

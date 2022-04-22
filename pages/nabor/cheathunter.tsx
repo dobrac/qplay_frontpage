@@ -1,7 +1,12 @@
 export default function CheatHunter() {
   return (
     <div>
-      <section className="wrapper style1">
+      <section id="banner" className="sm">
+        <div className="pagename">
+            <h1>CheatHunter</h1>
+        </div>
+      </section>
+      <section id="pagecontent">
         <div className="container">
           <h1 style={{textAlign: "center", fontSize: "xx-large"}}>
             <span style={{color: "#000000"}}><b>Nábor na CheatHuntera</b></span>

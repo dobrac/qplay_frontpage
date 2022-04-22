@@ -3,7 +3,12 @@ import Link from "next/link"
 export default function HowToJoin() {
   return (
     <div>
-      <section className="wrapper style1">
+      <section id="banner" className="sm">
+        <div className="pagename">
+            <h1>Jak se připojit</h1>
+        </div>
+      </section>
+      <section id="pagecontent">
         <div className="container">
           <strong>1)</strong> - Zapněte si Minecraft launcher.<br/>
           <strong>2)</strong> - Připojte se do Minecraftu s verzí 1.8 nebo
@@ -26,7 +31,6 @@ export default function HowToJoin() {
               <a> KLIKNI </a>
             </Link>
           </strong>
-          <br/><br/>
         </div>
       </section>
     </div>

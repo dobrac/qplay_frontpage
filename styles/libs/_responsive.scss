@@ -1,0 +1,19 @@
+$breaks: (xlarge: 1400px,
+large: 1200px,
+mlarge: 992px,
+medium: 768px,
+xsmal: 717px,
+small: 600px,
+mobile-l: 425px,
+mobile-m: 375px,
+mobile-s: 320px);
+
+@mixin responsive($size) {
+  @media (max-width: map-get($breaks, $size)) { @content; }
+}
+
+$browser-context: 16;
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
