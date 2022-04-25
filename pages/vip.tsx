@@ -71,18 +71,19 @@ export default function VIP() {
               </font>
             </center>
           </h2> */}
-          <h2>
+          {/* <h2>
             <div style={{textAlign: "center"}}>
               <span style={{fontWeight: "bold", color: "#2AC820"}}>
                 Velikonoční akce na VIP!
               </span>
             </div>
-          </h2>
+          </h2> */}
           <div style={{textAlign: "center"}}>
             <span style={{fontWeight: "bold", fontSize: "24px"}}>Zakupením VIP skrz{" "}<a
               href="https://store.qplay.cz/category/325694" target="_blank" rel="noreferrer">store.qplay.cz</a>{" "}
-              lze obdržet více bonusových Easter Crates NAVÍC!</span>
+              lze obdržet bonusové Mystery Crates NAVÍC!</span>
           </div>
+          <br/>
           <br/>
           <VIPTable/>
           <a id="zakoupeniVIP" style={{position: "relative", top: "-50vh"}}/>
