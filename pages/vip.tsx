@@ -84,7 +84,6 @@ export default function VIP() {
               lze obdržet bonusové Mystery Crates NAVÍC!</span>
           </div>
           <br/>
-          <br/>
           <VIPTable/>
           <a id="zakoupeniVIP" style={{position: "relative", top: "-50vh"}}/>
 
