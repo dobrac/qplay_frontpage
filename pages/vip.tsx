@@ -80,7 +80,7 @@ export default function VIP() {
           </h2> */}
           <div style={{textAlign: "center"}}>
             <span style={{fontWeight: "bold", fontSize: "24px"}}>Zakupením VIP skrz{" "}<a
-              href="https://store.qplay.cz/category/325694" target="_blank" rel="noreferrer">store.qplay.cz</a>{" "}
+              href="https://store.qplay.cz/category/328613" target="_blank" rel="noreferrer">store.qplay.cz</a>{" "}
               lze obdržet bonusové Mystery Crates NAVÍC!</span>
           </div>
           <br/>
