@@ -3,14 +3,14 @@ import Link from "next/link"
 export default function Help() {
   return (
     <div>
-      <section id="banner" className="sm">
+      <section className="banner sm">
         <div className="pagename">
             <h1>Nápověda</h1>
         </div>
       </section>
-      <section id="pagecontent">
+      <section className="pagecontent">
         <div className="container">
-          <h2>FAQ</h2>
+          <h2 className="mt-4 mb-4">FAQ</h2>
           <li>
             <Link href="/faq" passHref>
               <a>Často kladené otázky</a>
@@ -18,7 +18,7 @@ export default function Help() {
           </li>
 
           <br/>
-          <h2>Návody</h2>
+          <h2 className="mt-4 mb-4">Návody</h2>
 
           <li>
             <Link href="/navod/privlastneni-nicku" passHref>

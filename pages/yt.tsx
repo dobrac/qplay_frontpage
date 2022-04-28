@@ -1,12 +1,12 @@
 export default function Youtuber() {
   return (
     <div>
-      <section id="banner" className="sm">
+      <section className="banner sm">
         <div className="pagename">
             <h1>YouTuber</h1>
         </div>
       </section>
-      <section id="pagecontent">
+      <section className="pagecontent">
         <div className="container">
           <p style={{textAlign: "center"}}>
             Níže naleznete podmínky a výhody skupiny YouTuber. V případě, že

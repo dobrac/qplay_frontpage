@@ -3,12 +3,12 @@ import Link from "next/link"
 export default function Contact() {
   return (
     <div>
-      <section id="banner" className="sm">
+      <section className="banner sm">
         <div className="pagename">
             <h1>Kontakt</h1>
         </div>
       </section>
-      <section id="pagecontent">
+      <section className="pagecontent">
         <div className="container">
           <div className="support-container">
             <h2 style={{margin: "0px"}}>Podpora</h2>

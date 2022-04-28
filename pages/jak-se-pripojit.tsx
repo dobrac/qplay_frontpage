@@ -3,12 +3,12 @@ import Link from "next/link"
 export default function HowToJoin() {
   return (
     <div>
-      <section id="banner" className="sm">
+      <section className="banner sm">
         <div className="pagename">
             <h1>Jak se připojit</h1>
         </div>
       </section>
-      <section id="pagecontent">
+      <section className="pagecontent">
         <div className="container">
           <strong>1)</strong> - Zapněte si Minecraft launcher.<br/>
           <strong>2)</strong> - Připojte se do Minecraftu s verzí 1.8 nebo

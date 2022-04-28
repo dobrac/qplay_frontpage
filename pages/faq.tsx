@@ -81,13 +81,13 @@ const questions = [
 export default function FAQ() {
   return (
     <div>
-      <section id="banner" className="sm">
+      <section className="banner sm">
         <div className="pagename">
             <h1>FAQ</h1>
         </div>
       </section>
-      <section id="pagecontent">
-        <div id="test" className="container">
+      <section className="pagecontent">
+        <div className="container">
           <h2 style={{textAlign: "center"}}>FAQ - často kladené otázky</h2>
           <br/><br/>
 
@@ -108,7 +108,7 @@ export default function FAQ() {
           {questions.map(q => {
             return (
               <div key={q.question}>
-                <a id={q.question}/>
+                <a className={q.question}/>
                 <span style={{fontWeight: "bold"}}>{q.question}</span>
                 <br/>
                 <span dangerouslySetInnerHTML={{__html: q.answer}}/>

@@ -3,12 +3,12 @@ import VIPTable from "../components/VIPTable";
 export default function VIP() {
   return (
     <div>
-      <section id="banner" className="sm">
+      <section className="banner sm">
         <div className="pagename">
             <h1>VIP ÚČET</h1>
         </div>
       </section>
-      <section id="pagecontent">
+      <section className="pagecontent">
         <div className="container">
           {/* <center>
             <a href="#darkovyPoukaz" style="text-decoration:none;border:none;"
@@ -76,7 +76,7 @@ export default function VIP() {
           <div className="table-responsive">
             <VIPTable/>
           </div>
-          <a id="zakoupeniVIP" style={{position: "relative", top: "-50vh"}}/>
+          <a className="zakoupeniVIP" style={{position: "relative", top: "-50vh"}}/>
 
           <br/>
 
@@ -125,7 +125,7 @@ export default function VIP() {
           </div>
 
           <div>
-            <a id="darkovyPoukaz"/>
+            <a className="darkovyPoukaz"/>
             <h2>Zakoupení dárkového poukazu na VIP</h2>
             <p>
               Sháníte dárek pro svého kamaráda, kamarádku, syna, dceru…? Dárkový

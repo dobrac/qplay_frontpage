@@ -1,12 +1,12 @@
 export default function Rules() {
   return (
     <div>
-      <section id="banner" className="sm">
+      <section className="banner sm">
         <div className="pagename">
             <h1>Pravidla</h1>
         </div>
       </section>
-      <section id="pagecontent">
+      <section className="pagecontent">
         <div className="container">
           <h1 style={{textAlign: "center", color: "#000000"}}>
             Všeobecné obchodní podmínky a Podmínky používání služeb QPlay.cz

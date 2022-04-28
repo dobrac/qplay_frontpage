@@ -27,7 +27,6 @@ class MenuItem {
 const menu = [
   new MenuItem("Domů", "/"),
   new MenuItem("Připojení", "/jak-se-pripojit"),
-  new MenuItem("Registrace", "https://account.qplay.cz", true),
   new MenuItem("Pravidla", "/pravidla"),
   new MenuItem("VIP účet", "/vip", false, "special"),
   new MenuItem("Obchod", "https://store.qplay.cz", true, "special"),
@@ -45,7 +44,8 @@ const menu = [
     new MenuItem("Přihlašování bez hesla/skin na serveru", "/navod/prihlaseni-bez-hesla"),
     new MenuItem("Změna hesla", "https://heslo.qplay.cz", true),
   ]),
-  new MenuItem("Kontakt", "/kontakt")
+  new MenuItem("Kontakt", "/kontakt"),
+  new MenuItem("Přihlášení", "https://info.qplay.cz", true, "special")
 ]
 
 function MenuItemRender({ item }: { item: MenuItem }) {

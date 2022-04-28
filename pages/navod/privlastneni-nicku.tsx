@@ -1,12 +1,12 @@
 export default function AcquireNick() {
   return (
     <div>
-      <section id="banner" className="sm">
+      <section className="banner sm">
         <div className="pagename">
             <h1>Přivlastnění nicku</h1>
         </div>
       </section>
-      <section id="pagecontent">
+      <section className="pagecontent">
         <div className="container">
           Máš originální Minecraft, ale někdo má již zabraný tvůj nick? Nevadí,
           stačí postupovat podle tohoto návodu a můžeš si svůj nick získat: <br/>
