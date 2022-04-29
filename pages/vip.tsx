@@ -60,13 +60,13 @@ export default function VIP() {
               </font>
             </center>
           </h2> */}
-          <h2>
+          {/* <h2>
             <div style={{textAlign: "center"}}>
               <span style={{fontWeight: "bold", color: "#2AC820"}}>
                 Velikonoční akce na VIP!
               </span>
             </div>
-          </h2>
+          </h2> */}
           <h3 style={{textAlign: "center"}}>
             <span style={{fontWeight: "bold"}}>Zakupením VIP skrz{" "}<a
               href="https://store.qplay.cz/category/325694" target="_blank" rel="noreferrer">store.qplay.cz</a>{" "}

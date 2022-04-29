@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Link from "next/link"
-import { ReactChild } from "react";
+import { ReactChild, useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Script from "next/script";
 
@@ -90,40 +90,58 @@ function MenuItemRender({ item }: { item: MenuItem }) {
   )
 }
 
-const navbar = () => {
-  document.getElementsByClassName('navbar-collapse')[0].classList.toggle('show');
-  document.getElementsByTagName('body')[0].classList.toggle('scroll');
-};
 const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ children }) => {
+  const [navbarShow, setNavbar] = useState(false);
+
+  const router = useRouter();
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setNavbar(false);
+      document.getElementsByTagName("body")[0].classList.remove("scroll");
+    }
+
+    router.events.on('routeChangeStart', handleRouteChange);
+  }, [])
+
+  const toggleNav = () => {
+    setNavbar(!navbarShow);
+    document.getElementsByTagName("body")[0].classList.toggle("scroll");
+  };
+
+  let Navbar = 'collapse navbar-collapse';
+  if (navbarShow) {
+    Navbar += ' show';
+  }
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <Link href="/" passHref>
             <a className="navbar-brand">
-              <img src="/imagesBig/logo.png"/>
+              <img src="/imagesBig/logo.png" />
             </a>
           </Link>
-          <button onClick={(e) => navbar()} className="navbar-toggler">
+          <button onClick={(e) => toggleNav()} className="navbar-toggler">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
           </button>
-          <div className="collapse navbar-collapse">
-            <button onClick={(e) => navbar()} className="navbar-close">
+          <div className={Navbar}>
+            <button onClick={(e) => toggleNav()} className="navbar-close">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x-lg" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
                 <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
               </svg>
             </button>
-            <img className="logocol" src="/imagesBig/logo.png"/>
-              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                {menu.map(item => {
-                  return (
-                    <MenuItemRender key={item.text} item={item}/>
-                  )
-                })}
-              </ul>
+            <img className="logocol" src="/imagesBig/logo.png" />
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              {menu.map(item => {
+                return (
+                  <MenuItemRender key={item.text} item={item} />
+                )
+              })}
+            </ul>
           </div>
         </div>
       </nav>
@@ -133,13 +151,57 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
       <footer>
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
-              <h3>Provozovatel</h3>
-              <p>QPlay Network s.r.o.</p>
-              <p>IČO: 090 72 349</p>
-              <p>DIČ: CZ09072349 (jsme plátci DPH)</p>
-              <p>vedená u Krajského soudu v Plzni, oddíl C, vložka 39201</p>
-              <p>sídlo: Hodonínská 63, 323 00 Plzeň, Česká republika</p>
+            <div className="col-md-3">
+              <h6 className="text-uppercase fw-bold">
+                Užitečné odkazy
+              </h6>
+              <p>
+                <Link href='/'>
+                  <a className="text-reset">
+                    Domů
+                  </a>
+                </Link>
+              </p>
+              <p>
+                <Link href='/jak-se-pripojit'>
+                  <a className="text-reset">
+                    Jak se připojit
+                  </a>
+                </Link>
+              </p>
+              <p>
+                <Link href='/vip'>
+                  <a className="text-reset">
+                    VIP
+                  </a>
+                </Link>
+              </p>
+              <p>
+                <Link href='https://store.qplay.cz/'>
+                  <a className="text-reset">
+                    Obchod
+                  </a>
+                </Link>
+              </p>
+            </div>
+            <div className="col-md-3">
+              <h6 className="text-uppercase fw-bold">
+                Pravidla a podmínky
+              </h6>
+              <p>
+                <Link href='/pravidla'>
+                  <a className="text-reset">
+                    Pravidla
+                  </a>
+                </Link>
+              </p>
+              <p>
+                <Link href='/pravidla#gdrp'>
+                  <a className="text-reset">
+                    Obchrana osobních údajů
+                  </a>
+                </Link>
+              </p>
             </div>
             <div className="col-md-6 d-flex">
               <div className="responsive-icons">

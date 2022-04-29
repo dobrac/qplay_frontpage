@@ -120,6 +120,10 @@ button {
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @include responsive(medium) {
+    flex-direction: column;
+  }
 }
 
 h3 {
@@ -226,10 +230,10 @@ h3 {
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("/images/banner.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/images/banner-3.jpg");
   height: 80vh;
   min-height: 500px;
-  background-position: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 50px;
@@ -321,7 +325,7 @@ h3 {
   .pagename {
     display: flex;
     height: 100%;
-    padding-top: 114.02px;
+    padding-top: 87.61px;
     text-transform: uppercase;
 
     h1 {
@@ -422,7 +426,8 @@ nav {
       ul {
         overflow-y: scroll;
         max-height: calc(100vh - 68px);
-        padding-bottom: 25px;
+        padding: 0 30px;
+        padding-bottom: 30px;
       }
     }
 
@@ -552,6 +557,8 @@ nav {
     @include responsive(medium) {
       background: #ececec;
       padding: 10px 0;
+      width: 100%!important;
+      border-radius: 10px;
 
       .nav-link {
         width: fit-content;
@@ -600,7 +607,7 @@ nav {
           transition: background 0.1s;
 
           @include responsive(medium) {
-            color: #414242;
+            color: #575757;
           }
 
           &::after {
