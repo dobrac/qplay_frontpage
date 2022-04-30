@@ -25,13 +25,74 @@ const Home: NextPage = () => {
   }, [])
 
   useEffect(() => {
-    fetchPlayers()
+    fetchPlayers();
 
     const timer = setInterval(fetchPlayers, 5000)
     return () => {
       clearInterval(timer)
     }
   }, [fetchPlayers])
+
+  const [changelogNews, setchangelogNews] = useState([])
+
+  const fetchchangelogNews = useCallback(async () => {
+    const data = await axios.get(
+      'https://changelog.qplay.cz/api/changelog'
+    )
+    if (data?.data) {
+      setchangelogNews(data.data)
+    }
+  }, [])
+
+  useEffect(() => {
+    fetchchangelogNews();
+  }, []);
+
+  function getImage(text:string) {
+    const image = text.match(/src="(.*?)"/);
+    return image ? image[0].replace('src="', '').replace('"', '') : '/images/404image.png';
+  }
+
+  function replaceTags(text:string) {
+    return text.replace(/<br[^>]*>/gi, '').replace(/<p>(.*)<\/p>/g, '').replace(/\*\*([^*]+?)\*\*/g, "<b>$1<\/b>").replace(/<img .*?>/g,'');
+  }
+
+  function convertDate(date:string) {
+    return new Date(date).toLocaleString("cs-CZ", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour12: false
+    })
+  }
+
+  function ChangeLogNewsRender() {
+    const news = changelogNews.slice(0, 3).map(
+      (element) => {
+        return (
+          <div className="col-md-4 mb-4" key={element['id']}>
+            <div className="card">
+              <div className="card-image" style={{backgroundImage: `url(` + getImage(element['notes']) + `)`}}></div>
+              <div className="card-body">
+                <span className="tag" style={{backgroundColor: element['typecolor']}}>{ element['typename'] }</span>
+                <h5 className="card-title">{ element['headline'] }</h5>
+                <p className="card-text" dangerouslySetInnerHTML={{__html: replaceTags(element['notes'])}}></p>
+                <p className="mb-0"><a href={`https://changelog.qplay.cz/article/` + element['id']}>Číst více</a></p>
+              </div>
+              <div className="card-footer">
+                { convertDate(element['timestamp']) }
+              </div>
+            </div>
+          </div>
+        )
+      }
+    )
+    return (
+      <div className="row">
+        {news}
+      </div>
+    )
+  }
 
   return (
     <div>
@@ -40,16 +101,16 @@ const Home: NextPage = () => {
           <div className="box">
             <div>
               <div className="d-flex">
-                <h2>IP: <span data-text="Klikni pro zkopírování!" 
+                <h2>IP: <span data-text="Klikni pro zkopírování!"
                   className="hint"
-                  onClick={() => {navigator.clipboard.writeText('mc.qplay.cz')}}>
-                    mc.qplay.cz
-                    <span className="hint-text">Klikni pro zkopírování!</span>
-                  </span>
+                  onClick={() => { navigator.clipboard.writeText('mc.qplay.cz') }}>
+                  mc.qplay.cz
+                  <span className="hint-text">Klikni pro zkopírování!</span>
+                </span>
                 </h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
                 </svg>
               </div>
               <p>Online hráči: {playersShow}/{playersMaxShow}</p>
@@ -100,6 +161,16 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="oursites">
+        <h1 className='text-center'>tady budou ty odkazy na fb, ig...</h1>
+      </section>
+      <section className="news">
+        <div className="container">
+          <h1 className="title">Nejnovější změny</h1>
+          <ChangeLogNewsRender />
+          <a href="https://changelog.qplay.cz/"><button className="mt-2">Zobrazit všechny změny</button></a>
         </div>
       </section>
       <section className="discord">

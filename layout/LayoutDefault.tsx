@@ -92,6 +92,7 @@ function MenuItemRender({ item }: { item: MenuItem }) {
 
 const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ children }) => {
   const [navbarShow, setNavbar] = useState(false);
+  const [offset, setOffset] = useState(0);
 
   const router = useRouter();
   useEffect(() => {
@@ -101,6 +102,11 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
     }
 
     router.events.on('routeChangeStart', handleRouteChange);
+
+    const onScroll = () => setOffset(window.pageYOffset);
+    window.removeEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, [])
 
   const toggleNav = () => {
@@ -113,9 +119,14 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
     Navbar += ' show';
   }
 
+  let Scrollnav = 'navbar navbar-expand-lg';
+  if (offset > 0) {
+    Scrollnav += ' sticky';
+  }
+
   return (
     <div>
-      <nav className="navbar navbar-expand-lg">
+      <nav className={Scrollnav}>
         <div className="container">
           <Link href="/" passHref>
             <a className="navbar-brand">
@@ -151,7 +162,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
       <footer>
         <div className="container">
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-md-3 mt-4">
               <h6 className="text-uppercase fw-bold">
                 Užitečné odkazy
               </h6>
@@ -184,7 +195,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
                 </Link>
               </p>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 mt-4">
               <h6 className="text-uppercase fw-bold">
                 Pravidla a podmínky
               </h6>
@@ -250,7 +261,6 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
       </footer>
 
       <Script src="/js/jquery.dropotron.min.js" />
-      <Script src="/js/navbar.js" />
     </div>
   )
 }
