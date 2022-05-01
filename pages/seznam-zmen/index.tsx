@@ -21,7 +21,7 @@ const ChangeLog = () => {
             'https://changelog.qplay.cz/api/changelog'
         )
         if (data?.data) {
-            setPages(Math.round(data.data.filter((item:any) => item.published).length / 3))
+            setPages(Math.round(data.data.filter((item:any) => item.published).length / 9))
             setchangelogNews(data.data.filter((item:any) => item.published))
         }
     }, [])
@@ -56,7 +56,7 @@ const ChangeLog = () => {
                                     <span className="tag" style={{ backgroundColor: element['typecolor'] }}>{element['typename']}</span>
                                     <h5 className="card-title">{element['headline']}</h5>
                                     <p className="card-text">
-                                        <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm, remarkBreaks, emoji]}>{replaceTags(element['notes'])}</ReactMarkdown>
+                                        <ReactMarkdown remarkRehypeOptions={{allowDangerousHtml: true}} rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm, remarkBreaks, emoji]}>{replaceTags(element['notes'])}</ReactMarkdown>
                                     </p>
                                     <p className="mb-0 readmore">
                                         <Link href={`/seznam-zmen/` + element['id']} passHref>
@@ -94,8 +94,8 @@ const ChangeLog = () => {
     }
 
     const getPaginatedData = () => {
-        const startIndex = currentPage * 3 - 3;
-        const endIndex = startIndex + 3;
+        const startIndex = currentPage * 9 - 9;
+        const endIndex = startIndex + 9;
         return changelogNews.slice(startIndex, endIndex);
     };
 

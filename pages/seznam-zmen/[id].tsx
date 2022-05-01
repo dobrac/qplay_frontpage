@@ -53,7 +53,7 @@ const ChangeLogNew = () => {
                 {changelogNew.headline}
                 </h1>
                 <p className="notes">
-                    <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks, emoji]} rehypePlugins={[rehypeRaw]}>{changelogNew.notes}</ReactMarkdown>
+                    <ReactMarkdown remarkRehypeOptions={{allowDangerousHtml: true}} remarkPlugins={[remarkGfm, remarkBreaks, emoji]} rehypePlugins={[rehypeRaw]}>{changelogNew.notes}</ReactMarkdown>
                 </p>
             </div>
         )
