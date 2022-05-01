@@ -50,7 +50,9 @@ const ChangeLogNew = () => {
                 <h1 className='title'>
                 {changelogNew.headline}
                 </h1>
-                <p className="notes"><ReactMarkdown children={changelogNew.notes} rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]} /></p>
+                <p className="notes">
+                    <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>{changelogNew.notes}</ReactMarkdown>
+                </p>
             </div>
         )
     }

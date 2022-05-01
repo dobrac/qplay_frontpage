@@ -53,7 +53,9 @@ const ChangeLog = () => {
                                 <div className="card-body">
                                     <span className="tag" style={{ backgroundColor: element['typecolor'] }}>{element['typename']}</span>
                                     <h5 className="card-title">{element['headline']}</h5>
-                                    <p className="card-text"><ReactMarkdown children={replaceTags(element['notes'])} rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]} /></p>
+                                    <p className="card-text">
+                                        <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>{replaceTags(element['notes'])}</ReactMarkdown>
+                                    </p>
                                     <p className="mb-0 readmore">
                                         <Link href={`/seznam-zmen/` + element['id']} passHref>
                                             <a>Číst více</a>
@@ -97,7 +99,7 @@ const ChangeLog = () => {
 
     function ChangeLogPagination() {
         const listItems = Array.from(Array(pages).keys()).map((index) =>
-            <Fragment>
+            <Fragment key={index}>
                 {index+1 >= currentPage-1 && index+1 <= currentPage+1 ?
                     <Fragment>
                         {currentPage == index+1 ?
