@@ -3,6 +3,7 @@ import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import remarkBreaks from 'remark-breaks'
 import rehypeRaw from 'rehype-raw'
 
 const ChangeLogNew = () => {
@@ -51,7 +52,7 @@ const ChangeLogNew = () => {
                 {changelogNew.headline}
                 </h1>
                 <p className="notes">
-                    <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>{changelogNew.notes}</ReactMarkdown>
+                    <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]} rehypePlugins={[rehypeRaw]}>{changelogNew.notes}</ReactMarkdown>
                 </p>
             </div>
         )

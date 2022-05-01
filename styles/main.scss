@@ -842,7 +842,6 @@ nav {
       }
 
       .card-text {
-        white-space: pre-wrap;
         max-height: 215px;
         overflow: hidden;
         position: relative;
@@ -876,10 +875,17 @@ nav {
   }
 
   .notes {
-    white-space: pre-wrap;
     max-width: 510px;
     display: block;
     margin: auto;
+
+    p {
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
   }
 
   button {

@@ -4,6 +4,7 @@ import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import remarkBreaks from 'remark-breaks'
 import rehypeRaw from 'rehype-raw'
 
 const Home: NextPage = () => {
@@ -80,7 +81,7 @@ const Home: NextPage = () => {
                 <span className="tag" style={{ backgroundColor: element['typecolor'] }}>{element['typename']}</span>
                 <h5 className="card-title">{element['headline']}</h5>
                 <p className="card-text">
-                  <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>{replaceTags(element['notes'])}</ReactMarkdown>
+                  <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm, remarkBreaks]}>{replaceTags(element['notes'])}</ReactMarkdown>
                 </p>
                 <p className="mb-0 readmore">
                   <Link href={`/seznam-zmen/` + element['id']} passHref>
