@@ -2,7 +2,6 @@ import { NextPage } from "next";
 import Link from "next/link"
 import { ReactChild, useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import Script from "next/script";
 
 class MenuItem {
   text: string
@@ -30,7 +29,7 @@ const menu = [
   new MenuItem("Pravidla", "/pravidla"),
   new MenuItem("VIP účet", "/vip", false, "special"),
   new MenuItem("Obchod", "https://store.qplay.cz", true, "special"),
-  new MenuItem("Seznam změn", "https://changelog.qplay.cz", true),
+  new MenuItem("Seznam změn", "/seznam-zmen"),
   new MenuItem("Pozice", "/nabor").setItems([
     new MenuItem("YouTuber", "/yt"),
     new MenuItem("Technik", "/nabor/technik"),
@@ -217,7 +216,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
             <div className="col-md-6 d-flex">
               <div className="responsive-icons">
                 <div className="icons">
-                  <a href="https://www.instagram.com/qplaycz/">
+                  <Link href="https://www.instagram.com/qplaycz/" passHref>
                     <div className="icon instagram">
                       <div className="tooltip">Instagram</div>
                       <span>
@@ -228,8 +227,8 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
                         </svg>
                       </span>
                     </div>
-                  </a>
-                  <a href="https://www.youtube.com/qplaycz">
+                  </Link>
+                  <Link href="https://www.youtube.com/qplaycz" passHref>
                     <div className="icon youtube">
                       <div className="tooltip">YouTube</div>
                       <span>
@@ -240,8 +239,8 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
                         </svg>
                       </span>
                     </div>
-                  </a>
-                  <a href="https://www.facebook.com/QPlay.cz/">
+                  </Link>
+                  <Link href="https://www.facebook.com/QPlay.cz/" passHref>
                     <div className="icon facebook">
                       <div className="tooltip">Facebook</div>
                       <span>
@@ -250,7 +249,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
                         </svg>
                       </span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -259,8 +258,6 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
           <p className="text-center">© QPlay.cz. Všechna práva vyhrazena <span className="split">|</span> <span className="design">Designed by: <a href="https://skypad6000.eu">Skypad6000</a></span></p>
         </div>
       </footer>
-
-      <Script src="/js/jquery.dropotron.min.js" />
     </div>
   )
 }

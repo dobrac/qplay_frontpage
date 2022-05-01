@@ -782,6 +782,7 @@ nav {
   margin: 50px 0;
 
   .card {
+    min-height: 626px;
     height: 100%;
     border: 0;
     border-radius: 10px;
@@ -799,13 +800,6 @@ nav {
     .card-body {
       position: relative;
 
-      .tag {
-        color: #fff;
-        font-size: 14px;
-        padding: 2.5px 10px;
-        border-radius: 10px;
-      }
-
       .card-title {
         margin-top: 0.5rem;
         font-weight: 900;
@@ -816,19 +810,39 @@ nav {
         max-height: 215px;
         overflow: hidden;
         position: relative;
-
-        &:after {
-          content: "";
-          position: absolute;
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px;
-          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 50%);
-          bottom: -18px;
-          left: 0;
-          width: 100%;
-          height: 2.5rem;
-        }
       }
+
+      .readmore {
+        position: absolute;
+        bottom: 1rem;
+      }
+    }
+  }
+
+  .tag {
+    color: #fff;
+    font-size: 14px;
+    padding: 2.5px 10px;
+    border-radius: 10px;
+  }
+
+  .newinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+
+  .notes {
+    white-space: pre-wrap;
+    max-width: 720px;
+    display: block;
+    margin: auto;
+    text-align: center;
+
+    img {
+      margin: 10px 0;
     }
   }
 
@@ -841,6 +855,68 @@ nav {
 .oursites {
   padding: 50px 0;
   background: #f3f5fa;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .sitesbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    @include responsive(medium) {
+      flex-direction: column;
+    }
+
+    .site {
+      transition: color 0.3s;
+      cursor: pointer;
+
+      h2 {
+        font-size: 22px;
+        margin-bottom: 0;
+      }
+
+      svg {
+        height: 50px;
+        width: 50px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+      }
+
+      &.instagram {
+        color: #c13584;
+
+        &:hover {
+          color: #a32e70;
+        }
+      }
+
+      &.youtube {
+        color: #ff0000;
+
+        &:hover {
+          color: #d10000;
+        }
+      }
+
+      &.facebook {
+        color: #4267b2;
+
+        &:hover {
+          color: #375797;
+        }
+      }
+    }
+  }
 }
 
 .games {
