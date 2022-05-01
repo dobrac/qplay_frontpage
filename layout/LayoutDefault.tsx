@@ -216,7 +216,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
             <div className="col-md-6 d-flex">
               <div className="responsive-icons">
                 <div className="icons">
-                  <Link href="https://www.instagram.com/qplaycz/" passHref>
+                  <a href="https://www.instagram.com/qplaycz/">
                     <div className="icon instagram">
                       <div className="tooltip">Instagram</div>
                       <span>
@@ -227,8 +227,8 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
                         </svg>
                       </span>
                     </div>
-                  </Link>
-                  <Link href="https://www.youtube.com/qplaycz" passHref>
+                  </a>
+                  <a href="https://www.youtube.com/qplaycz">
                     <div className="icon youtube">
                       <div className="tooltip">YouTube</div>
                       <span>
@@ -239,8 +239,8 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
                         </svg>
                       </span>
                     </div>
-                  </Link>
-                  <Link href="https://www.facebook.com/QPlay.cz/" passHref>
+                  </a>
+                  <a href="https://www.facebook.com/QPlay.cz/">
                     <div className="icon facebook">
                       <div className="tooltip">Facebook</div>
                       <span>
@@ -249,7 +249,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
                         </svg>
                       </span>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

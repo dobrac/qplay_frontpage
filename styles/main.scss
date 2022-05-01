@@ -4,7 +4,7 @@
 @import "styles/libs/normalize";
 
 html {
-  scroll-behavior: auto!important
+  scroll-behavior: auto !important
 }
 
 body {
@@ -34,6 +34,42 @@ a {
   }
 }
 
+.pagination {
+  box-shadow: 0 5px 25px 0 rgb(0 0 0 / 10%);
+
+  .page-item {
+    &.active {
+      .page-link {
+        color: #fff;
+        background: #c82f31;
+        cursor: default;
+      }
+    }
+
+    &.disabled {
+      cursor: default;
+
+      .page-link {
+        cursor: default;
+        color: #6c757d;
+      }
+    }
+
+    .page-link {
+      color: #212529;
+      border: 0;
+      transition: background-color 0.3s;
+      font-size: 16px;
+      border-left: #1b1d28 solid 1px;
+      cursor: pointer;
+
+      &:first-child {
+        border-left: 0;
+      }
+    }
+  }
+}
+
 button {
   border: 0;
   border-radius: 10px;
@@ -51,7 +87,7 @@ button {
 .hint {
   position: relative;
   cursor: pointer;
-  
+
   &:hover {
     .hint-text {
       top: -45px;
@@ -562,7 +598,7 @@ nav {
     @include responsive(medium) {
       background: #ececec;
       padding: 10px 0;
-      width: 100%!important;
+      width: 100% !important;
       border-radius: 10px;
 
       .nav-link {
@@ -817,6 +853,11 @@ nav {
         bottom: 1rem;
       }
     }
+
+    .card-footer {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
   }
 
   .tag {
@@ -836,14 +877,9 @@ nav {
 
   .notes {
     white-space: pre-wrap;
-    max-width: 720px;
+    max-width: 510px;
     display: block;
     margin: auto;
-    text-align: center;
-
-    img {
-      margin: 10px 0;
-    }
   }
 
   button {

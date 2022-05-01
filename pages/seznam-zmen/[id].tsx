@@ -1,6 +1,9 @@
 import { useRouter } from 'next/router'
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import rehypeRaw from 'rehype-raw'
 
 const ChangeLogNew = () => {
     const router = useRouter()
@@ -14,6 +17,9 @@ const ChangeLogNew = () => {
         )
         if (data?.data) {
             setchangelogNew(data.data)
+            if (!data.data.published) {
+                router.push('/seznam-zmen')
+            }
         } else {
             router.push('/seznam-zmen')
         }
@@ -24,10 +30,6 @@ const ChangeLogNew = () => {
             fetchchangelogNew(id);
         }
     }, [router.isReady]);
-
-    function replaceTags(text: string) {
-        return text.replace(/<br[^>]*>/gi, '').replace(/\*\*([^*]+?)\*\*/g, "<b>$1<\/b>");
-    }
 
     function convertDate(date: string) {
         return new Date(date).toLocaleString("cs-CZ", {
@@ -48,7 +50,7 @@ const ChangeLogNew = () => {
                 <h1 className='title'>
                 {changelogNew.headline}
                 </h1>
-                <p className="notes" dangerouslySetInnerHTML={{ __html: replaceTags(changelogNew.notes) }}></p>
+                <p className="notes"><ReactMarkdown children={changelogNew.notes} rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]} /></p>
             </div>
         )
     }

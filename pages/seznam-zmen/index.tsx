@@ -1,22 +1,28 @@
 import axios from "axios";
 import Link from "next/link"
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, Fragment } from "react";
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import rehypeRaw from 'rehype-raw'
 
 const ChangeLog = () => {
     const [changelogNews, setchangelogNews] = useState([])
+    const [pages, setPages] = useState(0);
+    const [currentPage, setCurrentPage] = useState(1);
+
+    useEffect(() => {
+        fetchchangelogNews();
+    }, []);
 
     const fetchchangelogNews = useCallback(async () => {
         const data = await axios.get(
             'https://changelog.qplay.cz/api/changelog'
         )
         if (data?.data) {
-            setchangelogNews(data.data)
+            setPages(Math.round(data.data.filter((item:any) => item.published).length / 3))
+            setchangelogNews(data.data.filter((item:any) => item.published))
         }
     }, [])
-
-    useEffect(() => {
-        fetchchangelogNews();
-    }, []);
 
     function getImage(text: string) {
         const image = text.match(/src="(.*?)"/);
@@ -24,7 +30,7 @@ const ChangeLog = () => {
     }
 
     function replaceTags(text: string) {
-        return text.replace(/<br[^>]*>/gi, '').replace(/<p>(.*)<\/p>/g, '').replace(/\*\*([^*]+?)\*\*/g, "<b>$1<\/b>").replace(/<img .*?>/g, '');
+        return text.replace(/<br[^>]*>/gi, '').replace(/<p>(.*)<\/p>/g, '').replace(/<img .*?>/g, '');
     }
 
     function convertDate(date: string) {
@@ -37,7 +43,7 @@ const ChangeLog = () => {
     }
 
     function ChangeLogNewsRender() {
-        const news = changelogNews.map(
+        const news = getPaginatedData().map(
             (element) => {
                 if (element['published']) {
                     return (
@@ -47,7 +53,7 @@ const ChangeLog = () => {
                                 <div className="card-body">
                                     <span className="tag" style={{ backgroundColor: element['typecolor'] }}>{element['typename']}</span>
                                     <h5 className="card-title">{element['headline']}</h5>
-                                    <p className="card-text" dangerouslySetInnerHTML={{ __html: replaceTags(element['notes']) }}></p>
+                                    <p className="card-text"><ReactMarkdown children={replaceTags(element['notes'])} rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]} /></p>
                                     <p className="mb-0 readmore">
                                         <Link href={`/seznam-zmen/` + element['id']} passHref>
                                             <a>Číst více</a>
@@ -70,6 +76,76 @@ const ChangeLog = () => {
         )
     }
 
+    function goToNextPage() {
+        setCurrentPage((page) => page + 1);
+    }
+
+    function goToPreviousPage() {
+        setCurrentPage((page) => page - 1);
+    }
+
+    function changePage(page: Number) {
+        const pageNumber = Number(page);
+        setCurrentPage(pageNumber);
+    }
+
+    const getPaginatedData = () => {
+        const startIndex = currentPage * 3 - 3;
+        const endIndex = startIndex + 3;
+        return changelogNews.slice(startIndex, endIndex);
+    };
+
+    function ChangeLogPagination() {
+        const listItems = Array.from(Array(pages).keys()).map((index) =>
+            <Fragment>
+                {index+1 >= currentPage-1 && index+1 <= currentPage+1 ?
+                    <Fragment>
+                        {currentPage == index+1 ?
+                            <li className="paginate_button page-item active"><a className="page-link">{ index+1 }</a></li>
+                            :
+                            <li className="paginate_button page-item" onClick={(e) => changePage(index+1)}><a className="page-link">{ index+1 }</a></li>
+                        }
+                    </Fragment>
+                    :
+                    ''
+                }
+            </Fragment>
+        );
+        return (
+            <div className="d-flex justify-content-center mt-2">
+                <ul className="pagination">
+                    {currentPage == 1 ?
+                        <li className="paginate_button page-item previous disabled"><a className="page-link">Předchozí</a></li>
+                        :
+                        <li className="paginate_button page-item previous" onClick={(e) => goToPreviousPage()}><a className="page-link">Předchozí</a></li>
+                    }
+                    {currentPage > 2 ?
+                        <Fragment>
+                            <li className="paginate_button page-item" onClick={(e) => changePage(1)}><a className="page-link">1</a></li>
+                            <li className="paginate_button page-item disabled"><a className="page-link">...</a></li>
+                        </Fragment>
+                        :
+                        ''
+                    }
+                    {listItems}
+                    {currentPage < pages-1 ?
+                        <Fragment>
+                            <li className="paginate_button page-item disabled"><a className="page-link">...</a></li>
+                            <li className="paginate_button page-item" onClick={(e) => changePage(pages)}><a className="page-link">{pages}</a></li>
+                        </Fragment>
+                        :
+                        ''
+                    }
+                    {currentPage == pages ?
+                        <li className="paginate_button page-item next disabled"><a className="page-link">Další</a></li>
+                        :
+                        <li className="paginate_button page-item next" onClick={(e) => goToNextPage()}><a className="page-link">Další</a></li>
+                    }
+                </ul>
+            </div>
+        )
+    }
+
     return (
         <div>
             <section className="banner sm">
@@ -81,6 +157,7 @@ const ChangeLog = () => {
                 <section className="news">
                     <div className="container">
                         <ChangeLogNewsRender />
+                        <ChangeLogPagination />
                     </div>
                 </section>
             </section>

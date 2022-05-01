@@ -18,7 +18,10 @@
     "next": "12.1.4",
     "react": "18.0.0",
     "react-cookie-consent": "7.4.1",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-markdown": "^8.0.3",
+    "rehype-raw": "^6.1.1",
+    "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "17.0.23",
