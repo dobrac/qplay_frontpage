@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkBreaks from 'remark-breaks'
 import rehypeRaw from 'rehype-raw'
+import emoji from 'remark-emoji';
 
 const Home: NextPage = () => {
   const [players, setPlayers] = useState(-1)
@@ -81,7 +82,7 @@ const Home: NextPage = () => {
                 <span className="tag" style={{ backgroundColor: element['typecolor'] }}>{element['typename']}</span>
                 <h5 className="card-title">{element['headline']}</h5>
                 <p className="card-text">
-                  <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm, remarkBreaks]}>{replaceTags(element['notes'])}</ReactMarkdown>
+                  <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm, remarkBreaks, emoji]}>{replaceTags(element['notes'])}</ReactMarkdown>
                 </p>
                 <p className="mb-0 readmore">
                   <Link href={`/seznam-zmen/` + element['id']} passHref>

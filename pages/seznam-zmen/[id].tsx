@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkBreaks from 'remark-breaks'
 import rehypeRaw from 'rehype-raw'
+import emoji from 'remark-emoji';
 
 const ChangeLogNew = () => {
     const router = useRouter()
@@ -52,7 +53,7 @@ const ChangeLogNew = () => {
                 {changelogNew.headline}
                 </h1>
                 <p className="notes">
-                    <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]} rehypePlugins={[rehypeRaw]}>{changelogNew.notes}</ReactMarkdown>
+                    <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks, emoji]} rehypePlugins={[rehypeRaw]}>{changelogNew.notes}</ReactMarkdown>
                 </p>
             </div>
         )
