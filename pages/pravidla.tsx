@@ -255,7 +255,7 @@ export default function Rules() {
             respektovat.
           </p>
 
-          <h3 id="gdrp">Osobní údaje</h3>
+          <h3>Osobní údaje</h3>
           <p>
             Pokud se hráč nebo člen A-týmu jakýmkoliv způsobem dostane k
             jakýmkoliv osobním údajům libovolného hráče (či člena a-týmu), je

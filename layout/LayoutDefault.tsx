@@ -206,7 +206,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
                 </Link>
               </p>
               <p>
-                <Link href='/pravidla#gdrp'>
+                <Link href='/pravidla'>
                   <a className="text-reset">
                     Obchrana osobních údajů
                   </a>
