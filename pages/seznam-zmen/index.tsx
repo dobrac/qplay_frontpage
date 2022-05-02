@@ -6,9 +6,11 @@ import remarkGfm from 'remark-gfm'
 import remarkBreaks from 'remark-breaks'
 import rehypeRaw from 'rehype-raw'
 import emoji from 'remark-emoji';
+import {ChangelogEntry} from "../../types/ChangelogEntry";
+import ChangelogCard from "../../components/ChangelogCard";
 
 const ChangeLog = () => {
-    const [changelogNews, setchangelogNews] = useState([])
+    const [changelogNews, setchangelogNews] = useState<ChangelogEntry[]>([])
     const [pages, setPages] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
 
@@ -17,58 +19,21 @@ const ChangeLog = () => {
     }, []);
 
     const fetchchangelogNews = useCallback(async () => {
-        const data = await axios.get(
+        const data = await axios.get<ChangelogEntry[]>(
             'https://changelog.qplay.cz/api/changelog'
         )
         if (data?.data) {
-            setPages(Math.round(data.data.filter((item:any) => item.published).length / 9))
-            setchangelogNews(data.data.filter((item:any) => item.published))
+            setPages(Math.round(data.data.filter((item) => item.published).length / 9))
+            setchangelogNews(data.data.filter((item) => item.published))
         }
     }, [])
-
-    function getImage(text: string) {
-        const image = text.match(/src="(.*?)"/);
-        return image ? image[0].replace('src="', '').replace('"', '') : '/images/404image.png';
-    }
-
-    function replaceTags(text: string) {
-        return text.replace(/<br[^>]*>/gi, '').replace(/<p>(.*)<\/p>/g, '').replace(/<img .*?>/g, '');
-    }
-
-    function convertDate(date: string) {
-        return new Date(date).toLocaleString("cs-CZ", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-            hour12: false
-        })
-    }
 
     function ChangeLogNewsRender() {
         const news = getPaginatedData().map(
             (element) => {
                 if (element['published']) {
                     return (
-                        <div className="col-md-4 mb-4" key={element['id']}>
-                            <div className="card">
-                                <div className="card-image" style={{ backgroundImage: `url('` + getImage(element['notes']) + `')` }}></div>
-                                <div className="card-body">
-                                    <span className="tag" style={{ backgroundColor: element['typecolor'] }}>{element['typename']}</span>
-                                    <h5 className="card-title">{element['headline']}</h5>
-                                    <p className="card-text">
-                                        <ReactMarkdown remarkRehypeOptions={{allowDangerousHtml: true}} rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm, remarkBreaks, emoji]}>{replaceTags(element['notes'])}</ReactMarkdown>
-                                    </p>
-                                    <p className="mb-0 readmore">
-                                        <Link href={`/seznam-zmen/` + element['id']} passHref>
-                                            <a>Číst více</a>
-                                        </Link>
-                                    </p>
-                                </div>
-                                <div className="card-footer">
-                                    {convertDate(element['timestamp'])}
-                                </div>
-                            </div>
-                        </div>
+                      <ChangelogCard key={element['id']} element={element} />
                     )
                 }
             }
