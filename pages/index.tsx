@@ -154,17 +154,17 @@ const Home: NextPage = () => {
                   <div className="row">
                     <div className="col-md-4 mb-4">
                       <img src="/icons/add-user.svg" />
-                      <h2>5,000,000+</h2>
+                      <h2>1,900,000+</h2>
                       <p>Registrovaných hráčů</p>
                     </div>
                     <div className="col-md-4 mb-4">
                       <img src="/icons/time-circle.svg" />
-                      <h2>780,000+</h2>
+                      <h2>14,000,000+</h2>
                       <p>Odehraných hodin</p>
                     </div>
                     <div className="col-md-4 mb-4">
                       <img src="/icons/game.svg" />
-                      <h2>400+</h2>
+                      <h2>500+</h2>
                       <p>Online hráčů denně</p>
                     </div>
                   </div>
