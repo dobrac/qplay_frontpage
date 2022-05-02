@@ -32,7 +32,10 @@ const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogNew}) => {
                 {changelogNew.headline}
                 </h1>
                 <div className="notes">
-                    <ReactMarkdown remarkRehypeOptions={{allowDangerousHtml: true}} remarkPlugins={[remarkGfm, remarkBreaks, emoji]} rehypePlugins={[rehypeRaw]}>{changelogNew.notes}</ReactMarkdown>
+                    <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks, emoji]}
+                                   rehypePlugins={[rehypeRaw]}>
+                        {changelogNew.notes}
+                    </ReactMarkdown>
                 </div>
             </div>
         )
