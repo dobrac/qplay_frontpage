@@ -1,16 +1,15 @@
-import type { NextPage } from 'next'
+import type {NextPage} from 'next'
 import Link from "next/link"
 import axios from "axios";
-import { useCallback, useEffect, useState } from "react";
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import remarkBreaks from 'remark-breaks'
-import rehypeRaw from 'rehype-raw'
-import emoji from 'remark-emoji';
+import {useCallback, useEffect, useState} from "react";
 import {ChangelogEntry} from "../types/ChangelogEntry";
 import ChangelogCard from "../components/ChangelogCard";
 
-const Home: NextPage = () => {
+interface HomeProps {
+  changelogNews: ChangelogEntry[]
+}
+
+const Home: NextPage<HomeProps> = ({ changelogNews }) => {
   const [players, setPlayers] = useState(-1)
   const [playersMax, setPlayersMax] = useState(-1)
   const playersShow = players > -1 ? players : '---'
@@ -39,21 +38,6 @@ const Home: NextPage = () => {
       clearInterval(timer)
     }
   }, [fetchPlayers])
-
-  const [changelogNews, setchangelogNews] = useState<ChangelogEntry[]>([])
-
-  const fetchchangelogNews = useCallback(async () => {
-    const data = await axios.get<ChangelogEntry[]>(
-      'https://changelog.qplay.cz/api/changelog'
-    )
-    if (data?.data) {
-      setchangelogNews(data.data.filter((item) => item.published))
-    }
-  }, [])
-
-  useEffect(() => {
-    fetchchangelogNews();
-  }, []);
 
   function ChangeLogNewsRender() {
     const news = changelogNews.slice(0, 3).map(
@@ -418,6 +402,27 @@ const Home: NextPage = () => {
       </section>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const res = await axios.get<ChangelogEntry[]>(
+    'https://changelog.qplay.cz/api/changelog'
+  )
+
+  let changelogNews: ChangelogEntry[] = []
+  if (res?.data) {
+    changelogNews = res.data.filter((item) => item.published)
+  }
+
+  return {
+    props: {
+      changelogNews: changelogNews
+    },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 10, // In seconds
+  }
 }
 
 export default Home

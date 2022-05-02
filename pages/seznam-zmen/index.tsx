@@ -1,32 +1,19 @@
 import axios from "axios";
-import Link from "next/link"
-import { useCallback, useEffect, useState, Fragment } from "react";
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import remarkBreaks from 'remark-breaks'
-import rehypeRaw from 'rehype-raw'
-import emoji from 'remark-emoji';
+import {Fragment, useEffect, useState} from "react";
 import {ChangelogEntry} from "../../types/ChangelogEntry";
 import ChangelogCard from "../../components/ChangelogCard";
 
-const ChangeLog = () => {
-    const [changelogNews, setchangelogNews] = useState<ChangelogEntry[]>([])
+interface ChangeLogProps {
+    changelogNews: ChangelogEntry[]
+}
+
+export default function ChangeLog({changelogNews}: ChangeLogProps) {
     const [pages, setPages] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
 
     useEffect(() => {
-        fetchchangelogNews();
+        setPages(Math.round(changelogNews.length / 9))
     }, []);
-
-    const fetchchangelogNews = useCallback(async () => {
-        const data = await axios.get<ChangelogEntry[]>(
-            'https://changelog.qplay.cz/api/changelog'
-        )
-        if (data?.data) {
-            setPages(Math.round(data.data.filter((item) => item.published).length / 9))
-            setchangelogNews(data.data.filter((item) => item.published))
-        }
-    }, [])
 
     function ChangeLogNewsRender() {
         const news = getPaginatedData().map(
@@ -134,4 +121,23 @@ const ChangeLog = () => {
     )
 }
 
-export default ChangeLog
+export async function getStaticProps() {
+    const res = await axios.get<ChangelogEntry[]>(
+      'https://changelog.qplay.cz/api/changelog'
+    )
+
+    let changelogNews: ChangelogEntry[] = []
+    if (res?.data) {
+      changelogNews = res.data.filter((item) => item.published)
+    }
+
+    return {
+        props: {
+            changelogNews: changelogNews
+        },
+        // Next.js will attempt to re-generate the page:
+        // - When a request comes in
+        // - At most once every 10 seconds
+        revalidate: 10, // In seconds
+    }
+}

@@ -32,12 +32,12 @@ export default function ChangelogCard({element}: { element: ChangelogEntry }) {
         <div className="card-body">
           <span className="tag" style={{backgroundColor: element['typecolor']}}>{element['typename']}</span>
           <h5 className="card-title">{element['headline']}</h5>
-          <p className="card-text">
-            <ReactMarkdown remarkRehypeOptions={{allowDangerousHtml: true}} rehypePlugins={[rehypeRaw]}
+          <div className="card-text">
+            <ReactMarkdown rehypePlugins={[rehypeRaw]}
                            remarkPlugins={[remarkGfm, remarkBreaks, emoji]}>
               {replaceTags(element['notes'])}
             </ReactMarkdown>
-          </p>
+          </div>
           <p className="mb-0 readmore">
             <Link href={`/seznam-zmen/` + element['id']} passHref>
               <a>Číst více</a>
