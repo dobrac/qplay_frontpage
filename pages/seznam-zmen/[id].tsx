@@ -1,38 +1,17 @@
-import { useRouter } from 'next/router'
 import axios from "axios";
-import { useCallback, useEffect, useState } from "react";
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkBreaks from 'remark-breaks'
 import rehypeRaw from 'rehype-raw'
 import emoji from 'remark-emoji';
+import {ChangelogEntry} from "../../types/ChangelogEntry";
+import type {GetStaticProps, NextPage} from 'next'
 
-const ChangeLogNew = () => {
-    const router = useRouter()
-    const { id } = router.query
+interface ChangeLogNewProps {
+    changelogNew: ChangelogEntry
+}
 
-    const [changelogNew, setchangelogNew] = useState({headline: '', notes: '', typecolor: '', typename: '', timestamp: ''})
-
-    const fetchchangelogNew = useCallback(async (newid:any) => {
-        const data = await axios.get(
-            'https://changelog.qplay.cz/api/changelog/' + newid
-        )
-        if (data?.data) {
-            setchangelogNew(data.data)
-            if (!data.data.published) {
-                router.push('/seznam-zmen')
-            }
-        } else {
-            router.push('/seznam-zmen')
-        }
-    }, [])
-
-    useEffect(() => {
-        if (router.isReady) {
-            fetchchangelogNew(id);
-        }
-    }, [router.isReady]);
-
+const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogNew}) => {
     function convertDate(date: string) {
         return new Date(date).toLocaleString("cs-CZ", {
             year: "numeric",
@@ -52,9 +31,9 @@ const ChangeLogNew = () => {
                 <h1 className='title'>
                 {changelogNew.headline}
                 </h1>
-                <p className="notes">
+                <div className="notes">
                     <ReactMarkdown remarkRehypeOptions={{allowDangerousHtml: true}} remarkPlugins={[remarkGfm, remarkBreaks, emoji]} rehypePlugins={[rehypeRaw]}>{changelogNew.notes}</ReactMarkdown>
-                </p>
+                </div>
             </div>
         )
     }
@@ -75,6 +54,57 @@ const ChangeLogNew = () => {
             </section>
         </div>
     )
+}
+
+// @ts-ignore
+export const getStaticProps: GetStaticProps = async (context) => {
+    const data = await axios.get(
+      'https://changelog.qplay.cz/api/changelog/' + context.params?.id
+    )
+
+    if (!data?.data || !data.data.published) {
+        return {
+            redirect: {
+                destination: "/seznam-zmen",
+            },
+        }
+    }
+
+    return {
+        props: {
+            changelogNew: data.data
+        },
+        // Next.js will attempt to re-generate the page:
+        // - When a request comes in
+        // - At most once every 10 seconds
+        revalidate: 10, // In seconds
+    }
+}
+
+
+// This function gets called at build time on server-side.
+// It may be called again, on a serverless function, if
+// the path has not been generated.
+export async function getStaticPaths() {
+    const res = await axios.get<ChangelogEntry[]>(
+      'https://changelog.qplay.cz/api/changelog'
+    )
+
+    if (!res.data) {
+        return {}
+    }
+
+    // Get the paths we want to pre-render based on posts
+    const paths = res.data
+      .filter((item) => item.published)
+      .map((entry) => ({
+        params: { id: entry.id },
+    }))
+
+    // We'll pre-render only these paths at build time.
+    // { fallback: blocking } will server-render pages
+    // on-demand if the path doesn't exist.
+    return { paths, fallback: 'blocking' }
 }
 
 export default ChangeLogNew
