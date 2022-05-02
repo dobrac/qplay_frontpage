@@ -107,7 +107,7 @@ export default function Youtuber() {
               <br/>
 
               <i>
-                * Vyhrazujeme si právo na odebrání
+                * Vyhrazujeme si právo na odebrání{" "}
                 <span style={{color: "red"}}>YouTubera</span> bez udání důvodu.
               </i>
             </div>

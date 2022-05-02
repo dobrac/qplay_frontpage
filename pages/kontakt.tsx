@@ -29,14 +29,14 @@ export default function Contact() {
           adrese <b>support@qplay.cz</b>. Například na dotazy ohledně žádostí o
           unban či problémů s platbou v případě funkčního info panelu nemusí být
           na tomto emailu odpovídáno, pro tento druh dotazů prosím využijte
-          informační portál
+          informační portál{" "}
           <a href="https://info.qplay.cz" target="_blank" rel="noreferrer">
             (info.qplay.cz)</a
           >. Pokud máte problém s přístupem do informačního portálu, tak si
-          ideálně založte nový účet na
+          ideálně založte nový účet na{" "}
           <a href="https://registrace.qplay.cz" target="_blank" rel="noreferrer">
             registrace.qplay.cz
-          </a>
+          </a>{" "}
           a skrz ten nás následně na info panelu kontaktujte. Doporučujeme i před
           samotným kontaktováním jakékoliv podpory si nejdříve přečíst naší sekci
           FAQ, kde se nachází většina odpovědí na otázky hráčů (
