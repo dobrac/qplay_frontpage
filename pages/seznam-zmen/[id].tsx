@@ -6,6 +6,7 @@ import rehypeRaw from 'rehype-raw'
 import emoji from 'remark-emoji';
 import {ChangelogEntry} from "../../types/ChangelogEntry";
 import type {GetStaticProps, NextPage} from 'next'
+import he from "he"
 
 interface ChangeLogNewProps {
     changelogNew: ChangelogEntry
@@ -34,7 +35,7 @@ const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogNew}) => {
                 <div className="notes">
                     <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks, emoji]}
                                    rehypePlugins={[rehypeRaw]}>
-                        {changelogNew.notes}
+                        {he.decode(changelogNew.notes)}
                     </ReactMarkdown>
                 </div>
             </div>

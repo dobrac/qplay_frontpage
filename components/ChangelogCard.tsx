@@ -5,6 +5,7 @@ import remarkBreaks from "remark-breaks";
 import emoji from "remark-emoji";
 import Link from "next/link";
 import {ChangelogEntry} from "../types/ChangelogEntry";
+import he from "he"
 
 function getImage(text: string) {
   const image = text.match(/src="(.*?)"/);
@@ -35,7 +36,7 @@ export default function ChangelogCard({element}: { element: ChangelogEntry }) {
           <div className="card-text">
             <ReactMarkdown rehypePlugins={[rehypeRaw]}
                            remarkPlugins={[remarkGfm, remarkBreaks, emoji]}>
-              {replaceTags(element['notes'])}
+              {he.decode(replaceTags(element['notes']))}
             </ReactMarkdown>
           </div>
           <p className="mb-0 readmore">
