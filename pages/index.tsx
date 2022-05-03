@@ -397,6 +397,25 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 </div>
               </div>
             </div>
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div
+                  className="card-top"
+                  style={{
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/teams.png)"
+                  }}>
+                  <div className="header">
+                    <img src="/icons/diamondblock.png" />
+                    <h3>Teams</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Teams Teams Teams Teams Teams Teams Teams Teams Teams</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
