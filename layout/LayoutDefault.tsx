@@ -151,7 +151,6 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
                   <MenuItemRender key={item.text} item={item} />
                 )
               })}
-              <div className="hg2"></div>
             </ul>
           </div>
         </div>
