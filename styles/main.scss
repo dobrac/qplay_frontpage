@@ -34,6 +34,24 @@ a {
   }
 }
 
+.CookieConsent {
+  background: #212529!important;
+
+  button {
+    border: 0!important;
+    border-radius: 10px!important;
+    color: #fff!important;
+    background: #c82f31!important;
+    padding: 0.75rem 2rem!important;
+    height: fit-content!important;
+    transition: background 0.3s!important;
+  
+    &:hover {
+      background: #b1292b!important;
+    }
+  }
+}
+
 .pagination {
   box-shadow: 0 5px 25px 0 rgb(0 0 0 / 10%);
 
@@ -468,7 +486,7 @@ nav {
         overflow-y: scroll;
         max-height: calc(100vh - 68px);
         padding: 0 30px;
-        padding-bottom: 30px;
+        padding-bottom: 100px;
       }
     }
 
