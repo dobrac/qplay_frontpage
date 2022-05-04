@@ -91,14 +91,9 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             <div className="col-lg-7 d-flex">
               <div className="content">
                 <h1>O <span className="colored">QPLAY.CZ</span></h1>
-                <p>Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují.
-                  Jenom tak klidně levitují ve vzduchu. Jelikož slunce jasně září a na obloze byste od východu k
-                  západu hledali mráček marně, balónky působí jako jakási fata morgána uprostřed pouště. Zkrátka
-                  široko daleko nikde nic, jen zelenkavá tráva, jasně modrá obloha a tři křiklavě barevné pouťové
-                  balónky, které se téměř nepozorovatelně pohupují ani ne moc vysoko, ani moc nízko nad zemí.
-                  Kdyby pod balónky nebyla sytě zelenkavá tráva, ale třeba suchá silnice či beton, možná by bylo
-                  vidět jejich barevné stíny - to jak přes poloprůsvitné barevné balónky prochází ostré sluneční
-                  paprsky.</p>
+                <p>Minecraft server QPlay.cz, který patří mezi největší servery v Česku a Slovensku, byl založen v roce 2015 a nabízí spoustu různých miniher.
+                  Za své dlouhodobé působení na česko-slovenské scéně se pyšní pokročilým technickým nastavením. Server vytvořil i své vlastní minihry Crystals, Teams a MiniAnnihilation. Dále si můžete na serveru zahrát minihry, které jsou známe především ze zahraničí - BedWars, SkyWars, 1vs1, MurderMystery a další.
+                  Přijďte si užít hru Minecraft na serveru QPlay.</p>
                 <div className="stats">
                   <div className="row">
                     <div className="col-md-4 mb-4">
@@ -411,7 +406,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 </div>
                 <div className="card-body">
                   <div className="content">
-                    <p>Teams Teams Teams Teams Teams Teams Teams Teams Teams</p>
+                    <p>Sbírej specials items, zabíjej bosse, obsaď XP farmu na středu mapy a znič nepřátelské nexusy.</p>
                   </div>
                 </div>
               </div>
