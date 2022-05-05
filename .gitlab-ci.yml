@@ -23,7 +23,12 @@ deploy:
   environment:
     name: production
     url: https://qplay.cz
-  when: manual
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+      when: on_success
+    - if: "$CI_COMMIT_BRANCH == null"
+      when: never
+    - when: manual
   script:
     - kubectl --token=${KUBE_TOKEN} --server=${KUBE_SERVER} set image deployment/qplay-frontpage qplay-frontpage=$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA --namespace=$KUBE_NAMESPACE --record --insecure-skip-tls-verify=true
     - kubectl --token=${KUBE_TOKEN} --server=${KUBE_SERVER} --namespace=$KUBE_NAMESPACE --insecure-skip-tls-verify=true rollout status deployment qplay-frontpage
