@@ -1,5 +1,4 @@
 import '../styles/main.scss'
-import "../public/css/font-awesome.min.css"
 import type {AppProps} from 'next/app'
 import LayoutDefault from "../layout/LayoutDefault";
 import Head from "next/head";
