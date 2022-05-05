@@ -117,44 +117,17 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 <div className="stats">
                   <div className="row">
                     <div className="col-md-4 mb-4">
-                      <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Iconly/Light/Add-User" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                          <g id="Add-User" transform="translate(2.000000, 2.000000)" stroke="#000000" stroke-width="1.5">
-                            <path d="M7.8766,13.2062 C4.0326,13.2062 0.7496,13.7872 0.7496,16.1152 C0.7496,18.4432 4.0126,19.0452 7.8766,19.0452 C11.7216,19.0452 15.0036,18.4632 15.0036,16.1362 C15.0036,13.8092 11.7416,13.2062 7.8766,13.2062 Z" id="Stroke-1"></path>
-                            <path d="M7.8766,9.8859 C10.3996,9.8859 12.4446,7.8409 12.4446,5.3179 C12.4446,2.7949 10.3996,0.7499 7.8766,0.7499 C5.3546,0.7499 3.30957019,2.7949 3.30957019,5.3179 C3.3006,7.8319 5.3306,9.8769 7.8456,9.8859 L7.8766,9.8859 Z" id="Stroke-3"></path>
-                            <line x1="17.2037" y1="6.6691" x2="17.2037" y2="10.6791" id="Stroke-5"></line>
-                            <line x1="19.2496" y1="8.674" x2="15.1596" y2="8.674" id="Stroke-7"></line>
-                          </g>
-                        </g>
-                      </svg>
+                      <img src="/icons/add-user.svg" />
                       <h2>1,900,000+</h2>
                       <p>Registrovaných hráčů</p>
                     </div>
                     <div className="col-md-4 mb-4">
-                      <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Iconly/Light/Time-Circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                          <g id="Time-Circle" transform="translate(2.000000, 2.000000)" stroke="#000000" stroke-width="1.5">
-                            <path d="M19.2498,10.0005 C19.2498,15.1095 15.1088,19.2505 9.9998,19.2505 C4.8908,19.2505 0.7498,15.1095 0.7498,10.0005 C0.7498,4.8915 4.8908,0.7505 9.9998,0.7505 C15.1088,0.7505 19.2498,4.8915 19.2498,10.0005 Z" id="Stroke-1"></path>
-                            <polyline id="Stroke-3" points="13.4314 12.9429 9.6614 10.6939 9.6614 5.8469"></polyline>
-                          </g>
-                        </g>
-                      </svg>
+                      <img src="/icons/game.svg" />
                       <h2>14,000,000+</h2>
                       <p>Odehraných hodin</p>
                     </div>
                     <div className="col-md-4 mb-4">
-                      <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Iconly/Light/Game" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                          <g id="Game" transform="translate(2.000000, 2.000000)" stroke="#000000" stroke-width="1.5">
-                            <line x1="6.84825686" y1="10.3140022" x2="6.84825686" y2="14.0589969" id="Stroke-1"></line>
-                            <line x1="8.75903359" y1="12.1867073" x2="4.93790399" y2="12.1867073" id="Stroke-2"></line>
-                            <line x1="13.3661121" y1="10.4280345" x2="13.2590866" y2="10.4280345" id="Stroke-3"></line>
-                            <line x1="15.1796122" y1="14.0026039" x2="15.0725866" y2="14.0026039" id="Stroke-4"></line>
-                            <path d="M6.07216276,5.32907052e-15 L6.07216276,5.32907052e-15 C6.07216276,0.740482877 6.68464554,1.34076212 7.44018226,1.34076212 L8.49666207,1.34076212 C9.66228674,1.34491631 10.6064427,2.27026027 10.611741,3.41266022 L10.611741,4.08771473" id="Stroke-5"></path>
-                            <path d="M14.4283141,19.9626083 C11.4231218,20.013497 8.47303168,20.0114199 5.57274558,19.9626083 C2.35350217,19.9626083 0,17.6663844 0,14.5112835 L0,9.86171565 C0,6.70661469 2.35350217,4.41039079 5.57274558,4.41039079 C8.48892657,4.36054061 11.441136,4.36157916 14.4283141,4.41039079 C17.6475575,4.41039079 20,6.70765324 20,9.86171565 L20,14.5112835 C20,17.6663844 17.6475575,19.9626083 14.4283141,19.9626083 Z" id="Stroke-7"></path>
-                          </g>
-                        </g>
-                      </svg>
+                      <img src="/icons/time-circle.svg" />
                       <h2>500+</h2>
                       <p>Online hráčů denně</p>
                     </div>
