@@ -1,6 +1,12 @@
+import Head from "next/head"
+
 export default function LoginWithoutPassword() {
   return (
     <div>
+      <Head>
+        <title>QPlay.cz | Přihlášení bez hesla</title>
+        <meta name="description" content="Podrobný návod jak na se na našem serveru přihlašovat bez hesla." />
+      </Head>
       <section className="banner sm">
         <div className="pagename">
             <h1>Přihlášení bez hesla</h1>

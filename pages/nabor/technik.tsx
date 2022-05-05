@@ -1,6 +1,12 @@
+import Head from "next/head"
+
 export default function Technik() {
   return (
     <div>
+      <Head>
+        <title>QPlay.cz | Technik</title>
+        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Technik." />
+      </Head>
       <section className="banner sm">
         <div className="pagename">
             <h1>Technik</h1>

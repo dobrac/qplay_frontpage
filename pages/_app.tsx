@@ -19,8 +19,6 @@ function MyApp({Component, pageProps}: AppProps) {
       <CookieConsent
         location="bottom"
         buttonText="Souhlasím"
-        style={{background: "#3c404d", text: "#d6d6d6"}}
-        buttonStyle={{background: "#8bed4f", fontSize: "16px", padding: "8px 24px"}}
       >
         Tento web používá k poskytování služeb, personalizaci reklam a analýze návštěvnosti soubory cookie. Používáním
         tohoto webu s tím souhlasíte.{" "}

@@ -1,8 +1,13 @@
+import Head from "next/head"
 import Link from "next/link"
 
 export default function Help() {
   return (
     <div>
+      <Head>
+        <title>QPlay.cz | Nápověda</title>
+        <meta name="description" content="Seznam nápověd." />
+      </Head>
       <section className="banner sm">
         <div className="pagename">
             <h1>Nápověda</h1>

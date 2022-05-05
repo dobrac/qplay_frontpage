@@ -1,8 +1,13 @@
+import Head from "next/head"
 import Link from "next/link"
 
 export default function Contact() {
   return (
     <div>
+      <Head>
+        <title>QPlay.cz | Kontakt</title>
+        <meta name="description" content="Kontakt na podporu/vedení serveru QPlay.cz." />
+      </Head>
       <section className="banner sm">
         <div className="pagename">
             <h1>Kontakt</h1>

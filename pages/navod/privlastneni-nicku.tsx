@@ -1,6 +1,12 @@
+import Head from "next/head"
+
 export default function AcquireNick() {
   return (
     <div>
+      <Head>
+        <title>QPlay.cz | Přivlastnění nicku</title>
+        <meta name="description" content="Podrobný návod jak si na našem serveru přivlastnit nick." />
+      </Head>
       <section className="banner sm">
         <div className="pagename">
             <h1>Přivlastnění nicku</h1>

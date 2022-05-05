@@ -1,3 +1,4 @@
+import Head from "next/head";
 import type { NextPage } from 'next'
 import Link from "next/link"
 import axios from "axios";
@@ -69,6 +70,10 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
 
   return (
     <div>
+      <Head>
+        <title>QPlay.cz | Hlavní stránka</title>
+        <meta name="description" content="Minecraft server QPlay.cz, který patří mezi největší servery v Česku a Slovensku, byl založen v roce 2015 a nabízí spoustu různých miniher." />
+      </Head>
       <section className="banner">
         <div className="boxcontainer">
           <div className="box">
@@ -233,7 +238,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 <div
                   className="card-top"
                   style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/minianni.png)"
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/minianni.webp)"
                   }}>
                   <div className="header">
                     <div className="imageicon">
@@ -259,7 +264,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 <div
                   className="card-top"
                   style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/skywars.png)"
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/skywars.webp)"
                   }}>
                   <div className="header">
                     <div className="imageicon">
@@ -286,7 +291,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 <div
                   className="card-top"
                   style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/miniuhc.png)"
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/miniuhc.webp)"
                   }}>
                   <div className="header">
                     <div className="imageicon">
@@ -312,7 +317,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 <div
                   className="card-top"
                   style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/1vs1.png)"
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/1vs1.webp)"
                   }}>
                   <div className="header">
                     <div className="imageicon">
@@ -343,7 +348,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 <div
                   className="card-top"
                   style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/bedwars.png)"
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/bedwars.webp)"
                   }}>
                   <div className="header">
                     <div className="imageicon">
@@ -371,7 +376,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 <div
                   className="card-top"
                   style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/crystals.png)"
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/crystals.webp)"
                   }}>
                   <div className="header">
                     <div className="imageicon">
@@ -396,7 +401,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 <div
                   className="card-top"
                   style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/arcade.png)"
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/arcade.webp)"
                   }}>
                   <div className="header">
                     <div className="imageicon">
@@ -417,7 +422,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 <div
                   className="card-top"
                   style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/arcade.png)"
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/arcade.webp)"
                   }}>
                   <div className="header">
                     <div className="imageicon">
@@ -438,7 +443,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 <div
                   className="card-top"
                   style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/arcade.png)"
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/arcade.webp)"
                   }}>
                   <div className="header">
                     <div className="imageicon">
@@ -459,7 +464,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 <div
                   className="card-top"
                   style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/teams.png)"
+                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/teams.webp)"
                   }}>
                   <div className="header">
                     <div className="imageicon">

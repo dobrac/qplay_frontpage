@@ -1,8 +1,13 @@
+import Head from "next/head";
 import VIPTable from "../components/VIPTable";
 
 export default function VIP() {
   return (
     <div>
+      <Head>
+        <title>QPlay.cz | VIP</title>
+        <meta name="description" content="Zakoupení VIP účtu na našem serveru." />
+      </Head>
       <section className="banner sm">
         <div className="pagename">
             <h1>VIP ÚČET</h1>

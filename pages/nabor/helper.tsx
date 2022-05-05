@@ -1,6 +1,12 @@
+import Head from "next/head"
+
 export default function Helper() {
   return (
     <div>
+      <Head>
+        <title>QPlay.cz | Helper</title>
+        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Helper." />
+      </Head>
       <section className="banner sm">
         <div className="pagename">
             <h1>Helper</h1>

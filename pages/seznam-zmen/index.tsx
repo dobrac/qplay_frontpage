@@ -1,3 +1,4 @@
+import Head from "next/head";
 import axios from "axios";
 import {Fragment, useEffect, useState} from "react";
 import {ChangelogEntry} from "../../types/ChangelogEntry";
@@ -104,6 +105,10 @@ export default function ChangeLog({changelogNews}: ChangeLogProps) {
 
     return (
         <div>
+            <Head>
+                <title>QPlay.cz | Seznam změn</title>
+                <meta name="description" content="Seznam změn na našem serveru." />
+            </Head>
             <section className="banner sm">
                 <div className="pagename">
                     <h1>Seznam Změn</h1>

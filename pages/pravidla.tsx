@@ -1,6 +1,12 @@
+import Head from "next/head"
+
 export default function Rules() {
   return (
     <div>
+      <Head>
+        <title>QPlay.cz | Pravidla</title>
+        <meta name="description" content="Pravidla serveru QPlay.cz." />
+      </Head>
       <section className="banner sm">
         <div className="pagename">
             <h1>Pravidla</h1>

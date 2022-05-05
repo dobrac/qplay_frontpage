@@ -1,8 +1,13 @@
+import Head from "next/head"
 import Link from "next/link"
 
 export default function HowToJoin() {
   return (
     <div>
+      <Head>
+        <title>QPlay.cz | Jak se připojit</title>
+        <meta name="description" content="Podrobný návod jak se zaregistovat a připojit na náš server." />
+      </Head>
       <section className="banner sm">
         <div className="pagename">
             <h1>Jak se připojit</h1>

@@ -1,8 +1,13 @@
+import Head from "next/head"
 import Link from "next/link"
 
 export default function Hire() {
   return (
     <div>
+      <Head>
+        <title>QPlay.cz | Nábor</title>
+        <meta name="description" content="Seznam všech náborů." />
+      </Head>
       <section className="banner sm">
         <div className="pagename">
             <h1>Nábor</h1>

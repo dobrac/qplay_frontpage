@@ -1,3 +1,5 @@
+import Head from "next/head"
+
 class Question {
   question: string
   answer: string
@@ -81,6 +83,10 @@ const questions = [
 export default function FAQ() {
   return (
     <div>
+      <Head>
+        <title>QPlay.cz | FAQ</title>
+        <meta name="description" content="Často kladené otázky na náš server." />
+      </Head>
       <section className="banner sm">
         <div className="pagename">
             <h1>FAQ</h1>

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import axios from "axios";
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -44,6 +45,10 @@ const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogNew}) => {
 
     return (
         <div>
+            <Head>
+                <title>QPlay.cz | Seznam změn</title>
+                <meta name="description" content="Seznam změn na našem serveru." />
+            </Head>
             <section className="banner sm">
                 <div className="pagename">
                     <h1>Seznam Změn</h1>
