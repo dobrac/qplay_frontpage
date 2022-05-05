@@ -92,7 +92,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
               <div className="content">
                 <h1>O <span className="colored">QPLAY.CZ</span></h1>
                 <p>Minecraft server QPlay.cz, který patří mezi největší servery v Česku a Slovensku, byl založen v roce 2015 a nabízí spoustu různých miniher.
-                  Za své dlouhodobé působení na česko-slovenské scéně se pyšní pokročilým technickým nastavením. Server vytvořil i své vlastní minihry Crystals, Teams a MiniAnnihilation. Dále si můžete na serveru zahrát minihry, které jsou známe především ze zahraničí - BedWars, SkyWars, 1vs1, MurderMystery a další.
+                  Za své dlouhodobé působení na česko-slovenské scéně se pyšní pokročilým technickým nastavením. Server vytvořil i své vlastní minihry Crystals, Teams a MiniAnnihilation. Dále si můžete na serveru zahrát minihry, které jsou známé především ze zahraničí - BedWars, SkyWars, 1vs1, MurderMystery a další.
                   Přijďte si užít hru Minecraft na serveru QPlay.</p>
                 <div className="stats">
                   <div className="row">
@@ -406,7 +406,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 </div>
                 <div className="card-body">
                   <div className="content">
-                    <p>Sbírej specials items, zabíjej bosse, obsaď XP farmu na středu mapy a znič nepřátelské nexusy.</p>
+                    <p>Sbírej speciální itemy, zabíjej bosse, obsaď XP farmu na středu mapy a znič nepřátelské nexusy.</p>
                   </div>
                 </div>
               </div>
