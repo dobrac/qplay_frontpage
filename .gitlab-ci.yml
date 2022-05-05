@@ -1,0 +1,34 @@
+image: gcr.io/kaniko-project/executor:debug
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - |
+      /kaniko/executor \
+      --cache=true \
+      --context $CI_PROJECT_DIR \
+      --dockerfile $CI_PROJECT_DIR/Dockerfile \
+      --destination $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+
+deploy:
+  stage: deploy
+  needs: [ "build" ]
+  image:
+    name: bitnami/kubectl:latest
+  environment:
+    name: production
+    url: https://qplay.cz
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+      when: on_success
+    - if: "$CI_COMMIT_BRANCH == null"
+      when: never
+    - when: manual
+  script:
+    - kubectl --token=${KUBE_TOKEN} --server=${KUBE_SERVER} set image deployment/qplay-frontpage qplay-frontpage=$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA --namespace=$KUBE_NAMESPACE --record --insecure-skip-tls-verify=true
+    - kubectl --token=${KUBE_TOKEN} --server=${KUBE_SERVER} --namespace=$KUBE_NAMESPACE --insecure-skip-tls-verify=true rollout status deployment qplay-frontpage
