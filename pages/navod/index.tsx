@@ -1,11 +1,22 @@
+import Head from "next/head"
 import Link from "next/link"
+import Banner from "../../components/Banner";
 
 export default function Help() {
   return (
     <div>
-      <section className="wrapper style1">
+      <Head>
+        <title>QPlay.cz | Nápověda</title>
+        <meta name="description" content="Seznam nápověd." />
+      </Head>
+      <Banner sm={true}>
+        <div className="pagename">
+            <h1>Nápověda</h1>
+        </div>
+      </Banner>
+      <section className="pagecontent">
         <div className="container">
-          <h2>FAQ</h2>
+          <h2 className="mt-4 mb-4">FAQ</h2>
           <li>
             <Link href="/faq" passHref>
               <a>Často kladené otázky</a>
@@ -13,7 +24,7 @@ export default function Help() {
           </li>
 
           <br/>
-          <h2>Návody</h2>
+          <h2 className="mt-4 mb-4">Návody</h2>
 
           <li>
             <Link href="/navod/privlastneni-nicku" passHref>

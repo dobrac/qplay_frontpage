@@ -1,11 +1,22 @@
+import Head from "next/head"
 import Link from "next/link"
+import Banner from "../../components/Banner";
 
 export default function Hire() {
   return (
     <div>
-      <section className="wrapper style1">
+      <Head>
+        <title>QPlay.cz | Nábor</title>
+        <meta name="description" content="Seznam všech náborů." />
+      </Head>
+      <Banner sm={true}>
+        <div className="pagename">
+            <h1>Nábor</h1>
+        </div>
+      </Banner>
+      <section className="pagecontent">
         <div className="container">
-          <h2>Ranky</h2>
+          <h2 className="mt-4 mb-4">Ranky</h2>
           <li>
             <Link href="/yt" passHref>
               <a>YouTuber</a>
@@ -13,7 +24,7 @@ export default function Hire() {
           </li>
 
           <br/>
-          <h2>Nábory</h2>
+          <h2 className="mt-4 mb-4">Nábory</h2>
           <li>
             <Link href="/nabor/technik" passHref>
               <a>Technik</a>

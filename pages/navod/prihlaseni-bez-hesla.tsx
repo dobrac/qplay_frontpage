@@ -1,7 +1,19 @@
+import Head from "next/head"
+import Banner from "../../components/Banner";
+
 export default function LoginWithoutPassword() {
   return (
     <div>
-      <section className="wrapper style1">
+      <Head>
+        <title>QPlay.cz | Přihlášení bez hesla</title>
+        <meta name="description" content="Podrobný návod jak na se na našem serveru přihlašovat bez hesla." />
+      </Head>
+      <Banner sm={true}>
+        <div className="pagename">
+            <h1>Přihlášení bez hesla</h1>
+        </div>
+      </Banner>
+      <section className="pagecontent">
         <div className="container">
           Máš originální Minecraft a nebaví tě se furt na serveru přihlašovat?
           Vidíš u ostatních hráčů, že mají skin, ale ty ho nemáš? Tak postupuj

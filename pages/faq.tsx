@@ -1,3 +1,6 @@
+import Head from "next/head"
+import Banner from "../components/Banner";
+
 class Question {
   question: string
   answer: string
@@ -81,9 +84,19 @@ const questions = [
 export default function FAQ() {
   return (
     <div>
-      <section className="wrapper style1">
-        <div id="test" className="container">
+      <Head>
+        <title>QPlay.cz | FAQ</title>
+        <meta name="description" content="Často kladené otázky na náš server." />
+      </Head>
+      <Banner sm={true}>
+        <div className="pagename">
+            <h1>FAQ</h1>
+        </div>
+      </Banner>
+      <section className="pagecontent">
+        <div className="container">
           <h2 style={{textAlign: "center"}}>FAQ - často kladené otázky</h2>
+          <br/><br/>
 
           {questions.map(q => {
             return (
@@ -102,7 +115,7 @@ export default function FAQ() {
           {questions.map(q => {
             return (
               <div key={q.question}>
-                <a id={q.question}/>
+                <a className={q.question}/>
                 <span style={{fontWeight: "bold"}}>{q.question}</span>
                 <br/>
                 <span dangerouslySetInnerHTML={{__html: q.answer}}/>

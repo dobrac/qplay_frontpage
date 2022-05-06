@@ -1,7 +1,19 @@
+import Head from "next/head"
+import Banner from "../../components/Banner";
+
 export default function AcquireNick() {
   return (
     <div>
-      <section className="wrapper style1">
+      <Head>
+        <title>QPlay.cz | Přivlastnění nicku</title>
+        <meta name="description" content="Podrobný návod jak si na našem serveru přivlastnit nick." />
+      </Head>
+      <Banner sm={true}>
+        <div className="pagename">
+            <h1>Přivlastnění nicku</h1>
+        </div>
+      </Banner>
+      <section className="pagecontent">
         <div className="container">
           Máš originální Minecraft, ale někdo má již zabraný tvůj nick? Nevadí,
           stačí postupovat podle tohoto návodu a můžeš si svůj nick získat: <br/>

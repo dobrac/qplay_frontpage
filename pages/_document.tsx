@@ -5,9 +5,9 @@ export default function Document() {
     <Html>
       <Head>
         <meta charSet="UTF-8"/>
-        <meta name="viewport" content='width=device-width, initial-scale=1'/>
         <meta name="format-detection" content="telephone=no"/>
 
+        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
       <body>

@@ -1,7 +1,19 @@
+import Head from 'next/head'
+import Banner from "../components/Banner";
+
 export default function Youtuber() {
   return (
     <div>
-      <section className="wrapper style1">
+      <Head>
+        <title>QPlay.cz | YouTuber</title>
+        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici YouTuber." />
+      </Head>
+      <Banner sm={true}>
+        <div className="pagename">
+            <h1>YouTuber</h1>
+        </div>
+      </Banner>
+      <section className="pagecontent">
         <div className="container">
           <p style={{textAlign: "center"}}>
             Níže naleznete podmínky a výhody skupiny YouTuber. V případě, že
@@ -102,7 +114,7 @@ export default function Youtuber() {
               <br/>
 
               <i>
-                * Vyhrazujeme si právo na odebrání
+                * Vyhrazujeme si právo na odebrání{" "}
                 <span style={{color: "red"}}>YouTubera</span> bez udání důvodu.
               </i>
             </div>

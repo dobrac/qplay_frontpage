@@ -1,7 +1,19 @@
+import Head from "next/head"
+import Banner from "../../components/Banner";
+
 export default function Technik() {
   return (
     <div>
-      <section className="wrapper style1">
+      <Head>
+        <title>QPlay.cz | Technik</title>
+        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Technik." />
+      </Head>
+      <Banner sm={true}>
+        <div className="pagename">
+            <h1>Technik</h1>
+        </div>
+      </Banner>
+      <section className="pagecontent">
         <div className="container">
           <h1 style={{textAlign: "center", fontSize: "xx-large"}}>
             <span style={{color: "#000000"}}><b>Nábor na Technika</b></span>

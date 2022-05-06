@@ -1,7 +1,19 @@
+import Head from "next/head"
+import Banner from "../components/Banner";
+
 export default function Rules() {
   return (
     <div>
-      <section className="wrapper style1">
+      <Head>
+        <title>QPlay.cz | Pravidla</title>
+        <meta name="description" content="Pravidla serveru QPlay.cz." />
+      </Head>
+      <Banner sm={true}>
+        <div className="pagename">
+            <h1>Pravidla</h1>
+        </div>
+      </Banner>
+      <section className="pagecontent">
         <div className="container">
           <h1 style={{textAlign: "center", color: "#000000"}}>
             Všeobecné obchodní podmínky a Podmínky používání služeb QPlay.cz
