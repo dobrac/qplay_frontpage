@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Link from "next/link"
 import { ReactChild, useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Footer from "../components/Footer";
 
 class MenuItem {
   text: string
@@ -158,10 +159,10 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
 
       {children}
 
-      <footer>
+      <Footer>
         <div className="container">
           <div className="row">
-            <div className="col-md-3 mt-4">
+            <div className="col-md-3 mt-4 inview">
               <h6 className="text-uppercase fw-bold">
                 Užitečné odkazy
               </h6>
@@ -194,7 +195,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
                 </Link>
               </p>
             </div>
-            <div className="col-md-3 mt-4">
+            <div className="col-md-3 mt-4 inview">
               <h6 className="text-uppercase fw-bold">
                 Pravidla a podmínky
               </h6>
@@ -257,7 +258,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
           <hr />
           <p className="text-center">© QPlay.cz. Všechna práva vyhrazena <span className="split">|</span> <span className="design">Designed by: <a href="https://skypad6000.eu">Skypad6000</a></span></p>
         </div>
-      </footer>
+      </Footer>
     </div>
   )
 }

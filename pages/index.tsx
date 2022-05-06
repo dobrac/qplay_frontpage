@@ -19,6 +19,7 @@ import { useCallback, useEffect, useState } from "react";
 import { ChangelogEntry } from "../types/ChangelogEntry";
 import ChangelogCard from "../components/ChangelogCard";
 import Banner from "../components/Banner";
+import ImageCard from "../components/ImageCard";
 
 interface HomeProps {
   changelogNews: ChangelogEntry[]
@@ -209,11 +210,8 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
           <div className="row">
             <div className="col-lg-4 mb-4">
               <div className="card">
-                <div
-                  className="card-top"
-                  style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/minianni.webp)"
-                  }}>
+                <div className="card-top">
+                  <ImageCard imagesrc={"/imgServers/minianni.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={miniannihilation} height={80} width={80} quality={100} />
@@ -235,11 +233,8 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             </div>
             <div className="col-lg-4 mb-4">
               <div className="card">
-                <div
-                  className="card-top"
-                  style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/skywars.webp)"
-                  }}>
+                <div className="card-top">
+                  <ImageCard imagesrc={"/imgServers/skywars.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={skywars} height={80} width={80} quality={100} />
@@ -262,11 +257,8 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             </div>
             <div className="col-lg-4 mb-4">
               <div className="card">
-                <div
-                  className="card-top"
-                  style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/miniuhc.webp)"
-                  }}>
+                <div className="card-top">
+                  <ImageCard imagesrc={"/imgServers/miniuhc.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={miniuhc} height={80} width={80} quality={100} />
@@ -288,11 +280,8 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             </div>
             <div className="col-lg-4 mb-4">
               <div className="card">
-                <div
-                  className="card-top"
-                  style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/1vs1.webp)"
-                  }}>
+                <div className="card-top">
+                  <ImageCard imagesrc={"/imgServers/1vs1.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={onevsone} height={80} width={80} quality={100} />
@@ -319,11 +308,8 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             </div>
             <div className="col-lg-4 mb-4">
               <div className="card">
-                <div
-                  className="card-top"
-                  style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/bedwars.webp)"
-                  }}>
+                <div className="card-top">
+                  <ImageCard imagesrc={"/imgServers/bedwars.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={bedwars} height={80} width={80} quality={100} />
@@ -347,11 +333,8 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             </div>
             <div className="col-lg-4 mb-4">
               <div className="card">
-                <div
-                  className="card-top"
-                  style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/crystals.webp)"
-                  }}>
+                <div className="card-top">
+                  <ImageCard imagesrc={"/imgServers/crystals.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={crystals} height={80} width={80} quality={100} />
@@ -372,11 +355,8 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             </div>
             <div className="col-lg-4 mb-4">
               <div className="card">
-                <div
-                  className="card-top"
-                  style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/arcade.webp)"
-                  }}>
+                <div className="card-top">
+                  <ImageCard imagesrc={"/imgServers/arcade.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={goldrush} height={80} width={80} quality={100} />
@@ -393,11 +373,8 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             </div>
             <div className="col-lg-4 mb-4">
               <div className="card">
-                <div
-                  className="card-top"
-                  style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/arcade.webp)"
-                  }}>
+                <div className="card-top">
+                  <ImageCard imagesrc={"/imgServers/arcade.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={microbattle} height={80} width={80} quality={100} />
@@ -414,11 +391,8 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             </div>
             <div className="col-lg-4 mb-4">
               <div className="card">
-                <div
-                  className="card-top"
-                  style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/arcade.webp)"
-                  }}>
+                <div className="card-top">
+                  <ImageCard imagesrc={"/imgServers/arcade.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={murdermystery} height={80} width={80} quality={100} />
@@ -435,11 +409,8 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             </div>
             <div className="col-lg-4 mb-4">
               <div className="card">
-                <div
-                  className="card-top"
-                  style={{
-                    backgroundImage: "linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url(/imgServers/teams.webp)"
-                  }}>
+                <div className="card-top">
+                  <ImageCard imagesrc={"/imgServers/teams.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={teams} height={80} width={80} quality={100} />

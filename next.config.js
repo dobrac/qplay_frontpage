@@ -2,6 +2,9 @@
 const nextConfig = {
     reactStrictMode: true,
     trailingSlash: true,
+    images: {
+        domains: ["cloud.n-io.cz"]
+    },
 }
 
 module.exports = nextConfig

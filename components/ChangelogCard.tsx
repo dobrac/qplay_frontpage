@@ -6,6 +6,7 @@ import emoji from "remark-emoji";
 import Link from "next/link";
 import {ChangelogEntry} from "../types/ChangelogEntry";
 import he from "he"
+import ImageCard from "./ImageCard";
 
 function getImage(text: string) {
   const image = text.match(/src="(.*?)"/);
@@ -29,7 +30,7 @@ export default function ChangelogCard({element}: { element: ChangelogEntry }) {
   return (
     <div className="col-md-4 mb-4">
       <div className="card">
-        <div className="card-image" style={{backgroundImage: `url('` + getImage(element['notes']) + `')`}}></div>
+        <ImageCard imagesrc={getImage(element['notes'])}></ImageCard>
         <div className="card-body">
           <span className="tag" style={{backgroundColor: element['typecolor']}}>{element['typename']}</span>
           <h5 className="card-title">{element['headline']}</h5>
