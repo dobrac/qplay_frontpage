@@ -93,13 +93,15 @@ function MenuItemRender({ item }: { item: MenuItem }) {
 const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ children }) => {
   const [navbarShow, setNavbar] = useState(false);
   const [offset, setOffset] = useState(0);
-
+  
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = () => {
       setNavbar(false);
       document.getElementsByTagName("body")[0].classList.remove("scroll");
     }
+
+    setOffset(window.pageYOffset);
 
     router.events.on('routeChangeStart', handleRouteChange);
 
