@@ -18,6 +18,7 @@ COPY package.json package.json
 COPY yarn.lock yarn.lock
 RUN yarn install --pure-lockfile --production --link-duplicates
 
+COPY --from=build /app/next.config.js next.config.js
 COPY --from=build /app/.next .next
 COPY --from=build /app/public public
 
