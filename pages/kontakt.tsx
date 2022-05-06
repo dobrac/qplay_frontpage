@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
+import Banner from "../components/Banner";
 
 export default function Contact() {
   return (
@@ -8,11 +9,11 @@ export default function Contact() {
         <title>QPlay.cz | Kontakt</title>
         <meta name="description" content="Kontakt na podporu/vedení serveru QPlay.cz." />
       </Head>
-      <section className="banner sm">
+      <Banner sm={true}>
         <div className="pagename">
             <h1>Kontakt</h1>
         </div>
-      </section>
+      </Banner>
       <section className="pagecontent">
         <div className="container">
           <div className="support-container">

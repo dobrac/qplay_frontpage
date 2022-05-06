@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
+import Banner from "../../components/Banner";
 
 export default function Hire() {
   return (
@@ -8,11 +9,11 @@ export default function Hire() {
         <title>QPlay.cz | Nábor</title>
         <meta name="description" content="Seznam všech náborů." />
       </Head>
-      <section className="banner sm">
+      <Banner sm={true}>
         <div className="pagename">
             <h1>Nábor</h1>
         </div>
-      </section>
+      </Banner>
       <section className="pagecontent">
         <div className="container">
           <h2 className="mt-4 mb-4">Ranky</h2>

@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Banner from "../../components/Banner";
 
 export default function LoginWithoutPassword() {
   return (
@@ -7,11 +8,11 @@ export default function LoginWithoutPassword() {
         <title>QPlay.cz | Přihlášení bez hesla</title>
         <meta name="description" content="Podrobný návod jak na se na našem serveru přihlašovat bez hesla." />
       </Head>
-      <section className="banner sm">
+      <Banner sm={true}>
         <div className="pagename">
             <h1>Přihlášení bez hesla</h1>
         </div>
-      </section>
+      </Banner>
       <section className="pagecontent">
         <div className="container">
           Máš originální Minecraft a nebaví tě se furt na serveru přihlašovat?

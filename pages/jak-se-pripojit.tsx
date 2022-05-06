@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
+import Banner from "../components/Banner";
 
 export default function HowToJoin() {
   return (
@@ -8,11 +9,11 @@ export default function HowToJoin() {
         <title>QPlay.cz | Jak se připojit</title>
         <meta name="description" content="Podrobný návod jak se zaregistovat a připojit na náš server." />
       </Head>
-      <section className="banner sm">
+      <Banner sm={true}>
         <div className="pagename">
             <h1>Jak se připojit</h1>
         </div>
-      </section>
+      </Banner>
       <section className="pagecontent">
         <div className="container">
           <strong>1)</strong> - Zapněte si Minecraft launcher.<br/>

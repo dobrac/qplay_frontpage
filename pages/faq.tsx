@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Banner from "../components/Banner";
 
 class Question {
   question: string
@@ -87,11 +88,11 @@ export default function FAQ() {
         <title>QPlay.cz | FAQ</title>
         <meta name="description" content="Často kladené otázky na náš server." />
       </Head>
-      <section className="banner sm">
+      <Banner sm={true}>
         <div className="pagename">
             <h1>FAQ</h1>
         </div>
-      </section>
+      </Banner>
       <section className="pagecontent">
         <div className="container">
           <h2 style={{textAlign: "center"}}>FAQ - často kladené otázky</h2>

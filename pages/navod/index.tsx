@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
+import Banner from "../../components/Banner";
 
 export default function Help() {
   return (
@@ -8,11 +9,11 @@ export default function Help() {
         <title>QPlay.cz | Nápověda</title>
         <meta name="description" content="Seznam nápověd." />
       </Head>
-      <section className="banner sm">
+      <Banner sm={true}>
         <div className="pagename">
             <h1>Nápověda</h1>
         </div>
-      </section>
+      </Banner>
       <section className="pagecontent">
         <div className="container">
           <h2 className="mt-4 mb-4">FAQ</h2>

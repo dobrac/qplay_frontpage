@@ -18,6 +18,7 @@ import teams from '../public/icons/teams.png'
 import { useCallback, useEffect, useState } from "react";
 import { ChangelogEntry } from "../types/ChangelogEntry";
 import ChangelogCard from "../components/ChangelogCard";
+import Banner from "../components/Banner";
 
 interface HomeProps {
   changelogNews: ChangelogEntry[]
@@ -74,7 +75,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
         <title>QPlay.cz | Hlavní stránka</title>
         <meta name="description" content="Minecraft server QPlay.cz, který patří mezi největší servery v Česku a Slovensku, byl založen v roce 2015 a nabízí spoustu různých miniher." />
       </Head>
-      <section className="banner">
+      <Banner>
         <div className="boxcontainer">
           <div className="box">
             <div>
@@ -98,7 +99,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             </Link>
           </div>
         </div>
-      </section>
+      </Banner>
       <section className="aboutus">
         <div className="container">
           <h1 className="title">O nás</h1>

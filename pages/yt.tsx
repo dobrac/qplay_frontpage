@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Banner from "../components/Banner";
 
 export default function Youtuber() {
   return (
@@ -7,11 +8,11 @@ export default function Youtuber() {
         <title>QPlay.cz | YouTuber</title>
         <meta name="description" content="Podrobný návod jak na našem serveru získat pozici YouTuber." />
       </Head>
-      <section className="banner sm">
+      <Banner sm={true}>
         <div className="pagename">
             <h1>YouTuber</h1>
         </div>
-      </section>
+      </Banner>
       <section className="pagecontent">
         <div className="container">
           <p style={{textAlign: "center"}}>

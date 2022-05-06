@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Banner from "../../components/Banner";
 
 export default function Helper() {
   return (
@@ -7,11 +8,11 @@ export default function Helper() {
         <title>QPlay.cz | Helper</title>
         <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Helper." />
       </Head>
-      <section className="banner sm">
+      <Banner sm={true}>
         <div className="pagename">
             <h1>Helper</h1>
         </div>
-      </section>
+      </Banner>
       <section className="pagecontent">
         <div className="container">
           <h1 style={{textAlign: "center", fontSize: "xx-large"}}>

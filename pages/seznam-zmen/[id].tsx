@@ -8,6 +8,7 @@ import emoji from 'remark-emoji';
 import {ChangelogEntry} from "../../types/ChangelogEntry";
 import type {GetStaticProps, NextPage} from 'next'
 import he from "he"
+import Banner from "../../components/Banner";
 
 interface ChangeLogNewProps {
     changelogNew: ChangelogEntry
@@ -49,11 +50,11 @@ const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogNew}) => {
                 <title>QPlay.cz | Seznam změn</title>
                 <meta name="description" content="Seznam změn na našem serveru." />
             </Head>
-            <section className="banner sm">
+            <Banner sm={true}>
                 <div className="pagename">
                     <h1>Seznam Změn</h1>
                 </div>
-            </section>
+            </Banner>
             <section className="pagecontent">
                 <section className="news">
                     <div className="container">

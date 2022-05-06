@@ -3,6 +3,7 @@ import axios from "axios";
 import {Fragment, useEffect, useState} from "react";
 import {ChangelogEntry} from "../../types/ChangelogEntry";
 import ChangelogCard from "../../components/ChangelogCard";
+import Banner from "../../components/Banner";
 
 interface ChangeLogProps {
     changelogNews: ChangelogEntry[]
@@ -109,11 +110,11 @@ export default function ChangeLog({changelogNews}: ChangeLogProps) {
                 <title>QPlay.cz | Seznam změn</title>
                 <meta name="description" content="Seznam změn na našem serveru." />
             </Head>
-            <section className="banner sm">
+            <Banner sm={true}>
                 <div className="pagename">
                     <h1>Seznam Změn</h1>
                 </div>
-            </section>
+            </Banner>
             <section className="pagecontent">
                 <section className="news">
                     <div className="container">
