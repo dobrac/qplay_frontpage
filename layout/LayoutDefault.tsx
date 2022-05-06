@@ -1,8 +1,10 @@
-import { NextPage } from "next";
+import {NextPage} from "next";
 import Link from "next/link"
-import { ReactChild, useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import {ReactChild, useEffect, useState} from "react";
+import {useRouter} from "next/router";
 import Footer from "../components/Footer";
+import Image from "next/image";
+import Logo from "../public/imagesBig/logo.png"
 
 class MenuItem {
   text: string
@@ -132,7 +134,9 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({ chil
         <div className="container">
           <Link href="/" passHref>
             <a className="navbar-brand">
-              <img src="/imagesBig/logo.png" />
+              <div className="navbar-img-container">
+                <Image src={Logo} alt={"logo"} width={140} height={61}/>
+              </div>
             </a>
           </Link>
           <button onClick={(e) => toggleNav()} className="navbar-toggler">

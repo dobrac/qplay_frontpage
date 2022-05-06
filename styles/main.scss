@@ -494,11 +494,13 @@ nav {
   }
 
   .navbar-brand {
-    img {
+    .navbar-img-container {
       width: 140px;
+      height: 61px;
 
       @include responsive(mobile-s) {
         width: 100px;
+        height: 44px;
       }
     }
   }

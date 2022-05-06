@@ -13,7 +13,6 @@ function MyApp({Component, pageProps}: AppProps) {
         <meta name="description" content="QPlay Minecraft Server"/>
         <meta name="viewport" content='width=device-width, initial-scale=1'/>
       </Head>
-      <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" strategy="beforeInteractive"/>
       <Script src="/js/google-analytics.js"/>
       <CookieConsent
         location="bottom"
