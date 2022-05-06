@@ -11,7 +11,7 @@ function MyApp({Component, pageProps}: AppProps) {
       <Head>
         <title>QPlay.cz</title>
         <meta name="description" content="QPlay Minecraft Server"/>
-        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+        <meta name="viewport" content='width=device-width, initial-scale=1'/>
       </Head>
       <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" strategy="beforeInteractive"/>
       <Script src="/js/google-analytics.js"/>

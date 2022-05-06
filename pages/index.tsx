@@ -14,6 +14,12 @@ import crystals from '../public/icons/crystals.png'
 import goldrush from '../public/icons/goldrush.png'
 import microbattle from '../public/icons/microbattle.png'
 import murdermystery from '../public/icons/murdermystery.png'
+import imgServerMiniUHC from "../public/imgServers/miniuhc.webp"
+import imgServer1vs1 from "../public/imgServers/1vs1.webp"
+import imgServerBedWars from "../public/imgServers/bedwars.webp"
+import imgServerCrystals from "../public/imgServers/crystals.webp"
+import imgServerArcade from "../public/imgServers/arcade.webp"
+import imgServerTeams from "../public/imgServers/teams.webp"
 import teams from '../public/icons/teams.png'
 import { useCallback, useEffect, useState } from "react";
 import { ChangelogEntry } from "../types/ChangelogEntry";
@@ -211,7 +217,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             <div className="col-lg-4 mb-4">
               <div className="card">
                 <div className="card-top">
-                  <ImageCard imagesrc={"/imgServers/minianni.webp"}></ImageCard>
+                  <ImageCard src={"/imgServers/minianni.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={miniannihilation} height={80} width={80} quality={100} />
@@ -234,7 +240,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             <div className="col-lg-4 mb-4">
               <div className="card">
                 <div className="card-top">
-                  <ImageCard imagesrc={"/imgServers/skywars.webp"}></ImageCard>
+                  <ImageCard src={"/imgServers/skywars.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={skywars} height={80} width={80} quality={100} />
@@ -258,7 +264,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             <div className="col-lg-4 mb-4">
               <div className="card">
                 <div className="card-top">
-                  <ImageCard imagesrc={"/imgServers/miniuhc.webp"}></ImageCard>
+                  <ImageCard src={imgServerMiniUHC}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={miniuhc} height={80} width={80} quality={100} />
@@ -281,7 +287,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             <div className="col-lg-4 mb-4">
               <div className="card">
                 <div className="card-top">
-                  <ImageCard imagesrc={"/imgServers/1vs1.webp"}></ImageCard>
+                  <ImageCard src={imgServer1vs1}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={onevsone} height={80} width={80} quality={100} />
@@ -309,7 +315,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             <div className="col-lg-4 mb-4">
               <div className="card">
                 <div className="card-top">
-                  <ImageCard imagesrc={"/imgServers/bedwars.webp"}></ImageCard>
+                  <ImageCard src={imgServerBedWars}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={bedwars} height={80} width={80} quality={100} />
@@ -334,7 +340,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             <div className="col-lg-4 mb-4">
               <div className="card">
                 <div className="card-top">
-                  <ImageCard imagesrc={"/imgServers/crystals.webp"}></ImageCard>
+                  <ImageCard src={imgServerCrystals}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={crystals} height={80} width={80} quality={100} />
@@ -356,7 +362,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             <div className="col-lg-4 mb-4">
               <div className="card">
                 <div className="card-top">
-                  <ImageCard imagesrc={"/imgServers/arcade.webp"}></ImageCard>
+                  <ImageCard src={imgServerArcade}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={goldrush} height={80} width={80} quality={100} />
@@ -374,7 +380,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             <div className="col-lg-4 mb-4">
               <div className="card">
                 <div className="card-top">
-                  <ImageCard imagesrc={"/imgServers/arcade.webp"}></ImageCard>
+                  <ImageCard src={imgServerArcade}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={microbattle} height={80} width={80} quality={100} />
@@ -392,7 +398,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             <div className="col-lg-4 mb-4">
               <div className="card">
                 <div className="card-top">
-                  <ImageCard imagesrc={"/imgServers/arcade.webp"}></ImageCard>
+                  <ImageCard src={imgServerArcade}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={murdermystery} height={80} width={80} quality={100} />
@@ -410,7 +416,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             <div className="col-lg-4 mb-4">
               <div className="card">
                 <div className="card-top">
-                  <ImageCard imagesrc={"/imgServers/teams.webp"}></ImageCard>
+                  <ImageCard src={imgServerTeams}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
                       <Image src={teams} height={80} width={80} quality={100} />

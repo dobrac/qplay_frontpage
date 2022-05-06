@@ -30,7 +30,7 @@ export default function ChangelogCard({element}: { element: ChangelogEntry }) {
   return (
     <div className="col-md-4 mb-4">
       <div className="card">
-        <ImageCard imagesrc={getImage(element['notes'])}></ImageCard>
+        <ImageCard src={getImage(element['notes'])}></ImageCard>
         <div className="card-body">
           <span className="tag" style={{backgroundColor: element['typecolor']}}>{element['typename']}</span>
           <h5 className="card-title">{element['headline']}</h5>
