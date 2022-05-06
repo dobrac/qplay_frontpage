@@ -22,7 +22,8 @@ function convertDate(date: string) {
     year: "numeric",
     month: "long",
     day: "numeric",
-    hour12: false
+    hour12: false,
+    timeZone: "Europe/Prague"
   })
 }
 
@@ -47,7 +48,7 @@ export default function ChangelogCard({element}: { element: ChangelogEntry }) {
           </p>
         </div>
         <div className="card-footer">
-          {convertDate(element['timestamp'])}
+          <time dateTime={element.timestamp}>{convertDate(element.timestamp)}</time>
         </div>
       </div>
     </div>
