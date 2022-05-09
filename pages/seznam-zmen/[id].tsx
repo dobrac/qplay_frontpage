@@ -78,6 +78,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       redirect: {
         destination: "/seznam-zmen",
       },
+      revalidate: 10, // In seconds
     }
   }
 
