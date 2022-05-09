@@ -5,6 +5,9 @@ const nextConfig = {
     images: {
         domains: ["cloud.n-io.cz"]
     },
+    experimental: {
+        outputStandalone: true
+    }
 }
 
 module.exports = nextConfig
