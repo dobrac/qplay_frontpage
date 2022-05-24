@@ -19,17 +19,12 @@ export default function Helper() {
             <span style={{color: "#000000"}}><b>Nábor na Helpera</b></span>
           </h1>
           <h4><span style={{color: "#000000"}}>Jak se stát Helperem?</span></h4>
-          <ul>
           <span style={{color: "#000000"}}>
-            Pokud je zrovna otevřený formulář, tak se se svými herními údaji
-            přihlásíte do{" "}
-            <a href="http://info.qplay.cz/" target="_blank" rel="noreferrer"
-            >Informačního Panelu</a
-            >{" "}
-            → kliknete na záložku &quot;Nábor na Helpera&quot; → zobrazený formulář
-            vyplníte a odešlete.
-          </span>
-          </ul>
+          Pokud byste se chtěli stát Helperem, tak je aktuálně <b>otevřený nábor!</b> První kolo probíhá formou formuláře.<br />
+          Formulář nalezneš na → <a href="https://bit.ly/3sQp54z" target="blank_">https://bit.ly/3sQp54z</a> <br />
+          (1. kolo bude uzavřeno 2.6.2022 v 23:59)
+         </span>
+         <p></p>
           <h4><span style={{color: "#000000"}}>Výhody Helpera</span></h4>
           <li>
           <span style={{color: "#000000"}}>
