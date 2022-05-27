@@ -331,84 +331,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                       <li>BedWars Solo (1v1v1v1)</li>
                       <li>BedWars Duo (2v2v2v2)</li>
                       <li>BedWars Squad (4v4v4v4)</li>
-                      <li>BedWars Modern Duo (2v2v2v2v2v2)</li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card">
-                <div className="card-top">
-                  <ImageCard src={imgServerCrystals}></ImageCard>
-                  <div className="header">
-                    <div className="imageicon">
-                      <Image src={crystals} height={80} width={80} quality={100} />
-                    </div>
-                    <h3>Crystals</h3>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <div className="content">
-                    <p>Natěž si na svém ostrově suroviny, zakup si u vesničana speciální předměty a připrav se k boji. Jakmile budeš připraven, znič srdce ostatním týmům.</p>
-                    <h4>Seznam serverů</h4>
-                    <ul>
-                      <li>Crystals (10v10v10v10)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card">
-                <div className="card-top">
-                  <ImageCard src={imgServerArcade}></ImageCard>
-                  <div className="header">
-                    <div className="imageicon">
-                      <Image src={goldrush} height={80} width={80} quality={100} />
-                    </div>
-                    <h3>GoldRush</h3>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <div className="content">
-                    <p>Nakup si za získané levely věci k boji a získej od pig-zombie pro svůj tým co nejvíce zlatých cihel.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card">
-                <div className="card-top">
-                  <ImageCard src={imgServerArcade}></ImageCard>
-                  <div className="header">
-                    <div className="imageicon">
-                      <Image src={microbattle} height={80} width={80} quality={100} />
-                    </div>
-                    <h3>MicroBattle</h3>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <div className="content">
-                    <p>Chop se zbraně se svým spoluhráčem a vyzabíjej na mapě všechny nepřátele.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card">
-                <div className="card-top">
-                  <ImageCard src={imgServerArcade}></ImageCard>
-                  <div className="header">
-                    <div className="imageicon">
-                      <Image src={murdermystery} height={80} width={80} quality={100} />
-                    </div>
-                    <h3>Murder Mystery</h3>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <div className="content">
-                    <p>Sbírej gold ingoty, za které získáš šíp, a následně zabij Murdera. V roli Murdera zabij všechny ostatní hráče.</p>
                   </div>
                 </div>
               </div>
@@ -427,6 +350,10 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 <div className="card-body">
                   <div className="content">
                     <p>Sbírej speciální itemy, zabíjej bosse, obsaď XP farmu na středu mapy a znič nepřátelské nexusy.</p>
+                    <h4>Seznam serverů</h4>
+                    <ul>
+                      <li>Teams Squad (4v4v4v4)</li>
+                    </ul>
                   </div>
                 </div>
               </div>
