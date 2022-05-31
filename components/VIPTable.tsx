@@ -323,14 +323,6 @@ const sections = [
         legend: '27 Slotů',
       },
       {
-        name: 'Větší pravděpodobnost na Detectiva/Murdera',
-        default: false,
-        basic: 'o 50 % větší než hráč',
-        medium: 'o 100 % větší než hráč',
-        master: 'o 150 % větší než hráč',
-        legend: 'o 150 % větší než hráč',
-      },
-      {
         name: 'Posílání věcí (/trade)',
         default: false,
         basic: true,
