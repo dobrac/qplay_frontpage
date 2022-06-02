@@ -20,9 +20,9 @@ export default function Helper() {
           </h1>
           <h4><span style={{color: "#000000"}}>Jak se stát Helperem?</span></h4>
           <span style={{color: "#000000"}}>
-          Pokud byste se chtěli stát Helperem, tak je aktuálně <b>otevřený nábor!</b> První kolo probíhá formou formuláře.<br />
-          Formulář nalezneš na → <a href="https://bit.ly/3sQp54z" target="blank_">https://bit.ly/3sQp54z</a> <br />
-          (1. kolo bude uzavřeno 2.6.2022 v 23:59)
+          V této chvíli je <b>nábor</b> na pozici Helpera <b>uzavřen</b>.
+          <br />
+          V případě otevřeného náboru všechny hráče informujeme na našich <b>sociálních sítích a na této stránce</b>.
          </span> 
          <p></p>
           <h4><span style={{color: "#000000"}}>Výhody Helpera</span></h4>
