@@ -18,12 +18,16 @@ export default function Technik() {
           <h1 style={{textAlign: "center", fontSize: "xx-large"}}>
             <span style={{color: "#000000"}}><b>Nábor na Technika</b></span>
           </h1>
+          <h3 style={{textAlign: "center", color: "#D2042D"}}><span>
+          <b>Nově hledáme i techniky, kteří se zaměřují na vývoj Survivalu/SkyBlocku nebo podobných Minecraft módů!</b>
+          </span> </h3>
+          <br />
           <h4><span style={{color: "#000000"}}>Jak se stát Technikem?</span></h4>
           <span style={{color: "#000000"}}>
           Rádi přijmeme nové Techniky do našeho Technik Teamu! Níže naleznete
           veškeré důležité informace o této pozici, včetně požadavků a výhod.
           Pokud byste se chtěli stát Technikem, tak nás neváhejte kontaktovat na
-          emailové adrese <b>support@qplay.cz</b>.
+          emailové adrese <b>support@qplay.cz</b>. <br />
         </span>
           <li style={{color: "#000000"}}>
             Do e-mailu uveďte svoje dosavadní zkušenosti a zároveň přiložte ukázky
@@ -33,8 +37,14 @@ export default function Technik() {
             V případě, že bychom Vás vybrali, tak Vás do 14 dní kontaktujeme na
             Vaši e-mailovou adresu.
           </li>
+          <br />
+          <h4><span style={{color: "#000000"}}>Co požadujeme? </span><span style={{fontSize: "15px"}}>(pro podání přihlášky stačí splňovat požadavky buď ze sekce A nebo B)</span></h4>
+          <b>Sekce A:</b>
+          <li>
+            Zkušenosti s nastavováním již naprogramovaných pluginů a to hlavně pluginů týkajících se Survivalu/SkyBlocku nebo podobných Minecraft módů.
+          </li> 
           <ul></ul>
-          <h4><span style={{color: "#000000"}}>Co požadujeme?</span></h4>
+          <b>Sekce B:</b>
           <li>
           <span style={{color: "#000000"}}>
             Základní znalosti programování (programovací jazyk Java, Kotlin
@@ -51,7 +61,7 @@ export default function Technik() {
             Umět využívat základní znalosti matematiky.
           </span>
           </li>
-          <ul></ul>
+          <br />
           <h4><span style={{color: "#000000"}}>Co nabízíme?</span></h4>
           <li>
           <span style={{color: "#000000"}}>
