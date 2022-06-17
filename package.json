@@ -27,7 +27,7 @@
     "remark-emoji": "^3.0.2",
     "remark-gfm": "^3.0.1",
     "remark-parse": "^10.0.1",
-    "sharp": "^0.30.4"
+    "sharp": "^0.30.5"
   },
   "devDependencies": {
     "@types/he": "^1.1.2",
