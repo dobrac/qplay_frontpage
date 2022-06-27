@@ -33,8 +33,7 @@ export default function Helper() {
           </li>
           <li>
           <span style={{color: "#000000"}}>
-            Může se připojit do plného týmu na minihře MiniAnnihilation a
-            Crystals.
+            Může se připojit do plného týmu na minihře MiniAnnihilation.
           </span>
           </li>
           <li>
