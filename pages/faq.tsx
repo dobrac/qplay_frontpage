@@ -18,7 +18,7 @@ const questions = [
   ),
   new Question(
     'Jaké módy na serveru mohu používat?',
-    '<ol><li>1) Veškeré estetické modifikace (například shadery, jas) <i>[blinking skin mód je na serveru zakázán]</i></li><li>2) Veškeré modifikace, které hráče informují, nebo něco indikují (například status brnění, status efektů, minimapa, damage indicator)</li><li>3) Módy zlepšující výkon hry nebo zlepšující připojení k serveru (například módy zlepšující FPS)</li></ol><i>Veškeré módy jsou používány na vlastní nebezpečí.</i>'
+    '1) Veškeré estetické modifikace (například shadery, jas) <i>[blinking skin mód je na serveru zakázán]</i><br/>2) Veškeré modifikace, které hráče informují, nebo něco indikují (například status brnění, status efektů, minimapa, damage indicator)<br/>3) Módy zlepšující výkon hry nebo zlepšující připojení k serveru (například módy zlepšující FPS)<br/><i>Veškeré módy jsou používány na vlastní nebezpečí.</i>'
   ),
   new Question(
     'Jak mohu nahlásit nějaký problém/návrh/dotaz?',
