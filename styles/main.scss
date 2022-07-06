@@ -623,6 +623,10 @@ nav {
         font-size: 12px;
       }
 
+      @include responsive(large) {
+        font-size: 10px;
+      }
+
       @include responsive(mlarge) {
         font-size: 16px !important;
       }
@@ -638,7 +642,7 @@ nav {
   }
 
   .dropdown {
-    @include responsive(medium) {
+    @include responsive(mlarge) {
       background: #ececec;
       padding: 10px 0;
       width: 100% !important;
@@ -669,7 +673,7 @@ nav {
       max-height: unset;
       overflow: auto;
 
-      @include responsive(medium) {
+      @include responsive(mlarge) {
         display: block;
         box-shadow: unset;
         position: relative;
@@ -690,7 +694,7 @@ nav {
           color: #212529;
           transition: background 0.1s;
 
-          @include responsive(medium) {
+          @include responsive(mlarge) {
             color: #575757;
           }
 
