@@ -169,7 +169,7 @@ export default function Rules() {
             hráči, neplnoletí, a proto je nutné komunikovat slušně, bez vulgarit a
             bez sdílení obsahu pro dospělé.<br/>
             Každý má právo na své soukromí, a proto nesmí nikdo na serveru
-            sdělovat ostatním hráčům jakékoliv osobní údaje, ani své.<br/>
+            sdělovat ostatním hráčům jakékoliv osobní údaje druhých hráčů.<br/>
             Hráč nesmí projevovat žádné prvky provokace, diskriminace, rasismu a
             posměšku.
           </p>
@@ -277,7 +277,7 @@ export default function Rules() {
             povinen pravidelně kontrolovat změny těchto pravidel, hraním na
             herním serveru QPlay.cz stvrzuje, že se se všemi pravidly seznámil,
             rozumí jim a zavazuje se je dodržovat. Všechna zde uvedená pravidla
-            jsou platná od <strong>06.02.2022</strong>.
+            jsou platná od <strong>06.07.2022</strong>.
           </i>
         </span>
           &nbsp;
