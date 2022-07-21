@@ -41,7 +41,7 @@ const questions = [
     'Coiny si můžeš přeposlat příkazem /coins convert jménohráče částka (50% daň, v případě VIP je daň nižší). Na stránce <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a> nabízíme i migraci celého účtu/změnu jména (coiny, statistiky, VIP atd.).'
   ),
   new Question(
-    'Chci se stát člen A-Teamu, jak toho mohu docílit?',
+    'Chci se stát členem A-Teamu, jak toho mohu docílit?',
     'Záleží, jakou pozici chceš vykonávat. Nábory na pozici Helper bývají jednou za tři měsíce formou formuláře a jsou vždy vyvěšeny na <a href="https://www.facebook.com/QPlay.cz" target="_blank">Facebooku QPlay.cz</a> nebo <a href="https://instagram.com/qplaycz/" target="_blank">Instagramu QPlay.cz</a>. Chceš-li se stát builderem, musíš si napsat ticket na stránce <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a> s žádostí o osobní pohovor.'
   ),
   new Question(
