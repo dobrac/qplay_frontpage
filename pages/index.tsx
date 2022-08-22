@@ -14,6 +14,8 @@ import crystals from '../public/icons/crystals.png'
 import goldrush from '../public/icons/goldrush.png'
 import microbattle from '../public/icons/microbattle.png'
 import murdermystery from '../public/icons/murdermystery.png'
+import getdown from '../public/icons/getdown.png'
+import imgServerGetDown from "../public/imgServers/miniuhc.webp"
 import imgServerMiniUHC from "../public/imgServers/miniuhc.webp"
 import imgServer1vs1 from "../public/imgServers/1vs1.webp"
 import imgServerBedWars from "../public/imgServers/bedwars.webp"
@@ -331,6 +333,28 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                       <li>BedWars Solo (1v1v1v1)</li>
                       <li>BedWars Duo (2v2v2v2)</li>
                       <li>BedWars Squad (4v4v4v4)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div className="card-top">
+                  <ImageCard src={imgServerGetDown}></ImageCard>
+                  <div className="header">
+                    <div className="imageicon">
+                      <Image src={getdown} height={80} width={80} quality={100} />
+                    </div>
+                    <h3>GetDown</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Sbírej body, nakup si věci a zabij všechny protihráče!</p>
+                    <h4>Seznam serverů</h4>
+                    <ul>
+                      <li>GetDown</li>
                     </ul>
                   </div>
                 </div>
