@@ -33,10 +33,8 @@ export default function AcquireNick() {
             <li>V menu vyber &quot;Změna nicku&quot;</li>
             <li>Zvol si svůj nick a klikni na tlačítko &quot;Změnit nick&quot;</li>
             <li>
-              Pokud je nick již obsazený, tak se ti zobrazí tlačítko &quot;Přivlastnit
-              nick&quot;
+              Pokud je nick již obsazený, tak se ti zobrazí návod, podle kterého stačí postupovat
             </li>
-            <li>Klikni na toto tlačítko a postupuj podle zobrazeného návodu</li>
           </ol>
         </div>
       </section>
