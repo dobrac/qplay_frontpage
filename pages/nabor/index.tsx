@@ -36,6 +36,11 @@ export default function Hire() {
             </Link>
           </li>
           <li>
+            <Link href="/nabor/moderator" passHref>
+              <a>Moderátor</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/nabor/builder" passHref>
               <a>Builder</a>
             </Link>
