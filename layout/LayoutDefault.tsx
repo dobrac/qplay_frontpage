@@ -37,6 +37,7 @@ const menu = [
     new MenuItem("YouTuber", "/yt"),
     new MenuItem("Technik", "/nabor/technik"),
     new MenuItem("Helper", "/nabor/helper"),
+    new MenuItem("Moderátor", "/nabor/moderator"),
     new MenuItem("Builder", "/nabor/builder"),
     new MenuItem("CheatHunter", "/nabor/cheathunter"),
   ]),
