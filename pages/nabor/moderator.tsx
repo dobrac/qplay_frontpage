@@ -5,8 +5,8 @@ export default function Moderator() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Helper</title>
-        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Helper." />
+        <title>QPlay.cz | Moderátor</title>
+        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Moderátor." />
       </Head>
       <Banner sm={true}>
         <div className="pagename">
