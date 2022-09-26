@@ -18,8 +18,8 @@ export default function Technik() {
           <h1 style={{textAlign: "center", fontSize: "xx-large"}}>
             <span style={{color: "#000000"}}><b>Nábor na Technika</b></span>
           </h1>
-          <h3 style={{textAlign: "center", color: "#D2042D"}}><span>
-          <b>Nově hledáme i techniky, kteří se zaměřují na vývoj Survivalu/SkyBlocku nebo podobných Minecraft módů!</b>
+          <h3 style={{textAlign: "center", color: "#41B3A3"}}><span>
+          <b>Nově hledáme i techniky, kteří se zaměřují na vývoj webových stránek!</b>
           </span> </h3>
           <br />
           <h4><span style={{color: "#000000"}}>Jak se stát Technikem?</span></h4>
@@ -38,12 +38,7 @@ export default function Technik() {
             Vaši e-mailovou adresu.
           </li>
           <br />
-          <h4><span style={{color: "#000000"}}>Co požadujeme? </span><span style={{fontSize: "15px"}}>(pro podání přihlášky stačí splňovat požadavky buď ze sekce A nebo B)</span></h4>
-          <b>Sekce A:</b>
-          <li>
-            Zkušenosti s nastavováním již naprogramovaných pluginů a to hlavně pluginů týkajících se Survivalu/SkyBlocku nebo podobných Minecraft módů.
-          </li> 
-          <ul></ul>
+          <h4><span style={{color: "#000000"}}>Co požadujeme? </span><span style={{fontSize: "15px"}}>(pro podání přihlášky stačí splňovat požadavky buď ze sekce B nebo C)</span></h4>
           <b>Sekce B:</b>
           <li>
           <span style={{color: "#000000"}}>
@@ -61,6 +56,23 @@ export default function Technik() {
             Umět využívat základní znalosti matematiky.
           </span>
           </li>
+          <br />
+          <b>Sekce C:</b>
+          <li>
+          <span style={{color: "#000000"}}> 
+            Zkušenosti s programováním webových stránek.
+          </span>  
+          </li> 
+          <li>
+          <span style={{color: "#000000"}}>  
+            Zkušenosti s HTML a CSS.
+          </span>
+          </li>
+          <li>
+          <span style={{color: "#000000"}}>  
+            Znalost programovacího jazyka JavaScript (React nebo jiné frameworky výhodou)
+          </span>
+          </li> 
           <br />
           <h4><span style={{color: "#000000"}}>Co nabízíme?</span></h4>
           <li>
