@@ -25,9 +25,9 @@ export default function Moderator() {
           <p></p>
           <h4><span style={{color: "#000000"}}>Jak se stát Moderátorem?</span></h4>
           <span style={{color: "#000000"}}>  
-          Pokud byste se chtěli stát Moderátorem, tak je aktuálně <b>otevřený nábor!</b> První kolo probíhá formou formuláře.<br />
-          Formulář nalezneš na → <a href="https://bit.ly/ModeratorNabor" target="blank_">https://bit.ly/ModeratorNabor</a> <br />
-          (1. kolo bude uzavřeno 2.10.2022 v 23:59)
+          V této chvíli je <b>nábor</b> na pozici Moderátora <b>uzavřen</b>.
+          <br />
+          V případě otevřeného náboru všechny hráče informujeme na našich <b>sociálních sítích a na této stránce</b>.
           </span>
          <p></p>
           <h4><span style={{color: "#000000"}}>Výhody Moderátora</span></h4>
