@@ -40,9 +40,13 @@ export default function Technik() {
           <br />
           <h4><span style={{color: "#000000"}}>Co požadujeme? </span><span style={{fontSize: "15px"}}>(pro podání přihlášky stačí splňovat požadavky buď ze sekce B nebo C)</span></h4>
           <b>Sekce B:</b>
+          <br />
+          <span style={{color: "#000000"}}>
+          <i>(V této chvíli hledáme pro tuto sekci pouze pokročilejší techniky nikoliv začátečníky.)</i>
+          </span>
           <li>
           <span style={{color: "#000000"}}>
-            Základní znalosti programování (programovací jazyk Java, Kotlin
+            Pokročilé znalosti programování (programovací jazyk Java, Kotlin
             nebo JavaScript výhodou).
           </span>
           </li>
