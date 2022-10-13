@@ -131,7 +131,7 @@ export default function Rules() {
             <br/>
             3) Módy zlepšující výkon hry nebo zlepšující připojení k serveru
             (například módy zlepšující FPS)<br/>
-            <i>Veškeré modifikace jsou používány na vlastní nebezpečí.</i><br/>
+            <i>Veškeré modifikace jsou používány na vlastní nebezpečí, stejně jako hraní přes mobilní zařízení.</i><br/>
           </p>
 
           <h3>Povinnosti člena A-týmu:</h3>
@@ -277,7 +277,7 @@ export default function Rules() {
             povinen pravidelně kontrolovat změny těchto pravidel, hraním na
             herním serveru QPlay.cz stvrzuje, že se se všemi pravidly seznámil,
             rozumí jim a zavazuje se je dodržovat. Všechna zde uvedená pravidla
-            jsou platná od <strong>06.07.2022</strong>.
+            jsou platná od <strong>13.10.2022</strong>.
           </i>
         </span>
           &nbsp;
