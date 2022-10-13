@@ -277,7 +277,7 @@ export default function Rules() {
             povinen pravidelně kontrolovat změny těchto pravidel, hraním na
             herním serveru QPlay.cz stvrzuje, že se se všemi pravidly seznámil,
             rozumí jim a zavazuje se je dodržovat. Všechna zde uvedená pravidla
-            jsou platná od <strong>12.10.2022</strong>.
+            jsou platná od <strong>13.10.2022</strong>.
           </i>
         </span>
           &nbsp;
