@@ -369,7 +369,7 @@ const sections = [
         legend: true,
       },
       {
-        name: '50% šance na získání spawneru po vytěžení',
+        name: '50% šance na získání spawneru po vytěžení se silktouchem',
         default: false,
         basic: false,
         medium: false,
@@ -425,7 +425,7 @@ const sections = [
         legend: true,
       },
       {
-        name: 'Editace vlasního času a počasí /ptime, /pweather',
+        name: 'Editace vlastního času a počasí /ptime, /pweather',
         default: false,
         basic: true,
         medium: true,
@@ -479,6 +479,14 @@ const sections = [
         medium: true,
         master: true,
         legend: true,
+      },
+      {
+        name: 'Počet rezidencí /res',
+        default: '3',
+        basic: '4',
+        medium: '5',
+        master: '6',
+        legend: '7',
       },
       {
         name: 'Počet možných domovů /sethome',
