@@ -377,7 +377,7 @@ const sections = [
         legend: true,
       },
       {
-        name: 'Zvíraznění se /glow',
+        name: 'Zvýraznění se /glow',
         default: false,
         basic: false,
         medium: false,
