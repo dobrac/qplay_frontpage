@@ -536,6 +536,14 @@ const sections = [
         master: '200x200 bloků',
         legend: '250x250 bloků',
       },
+      {
+        name: 'Počet Marketplace',
+        default: '30 obchodů',
+        basic: '50 obchodů',
+        medium: '75 obchodů',
+        master: '100 obchodů',
+        legend: '150 obchodů',
+      },      
     ],
   },
   {
