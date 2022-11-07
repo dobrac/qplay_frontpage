@@ -11,6 +11,7 @@ class Question {
   }
 }
 
+
 const questions = [
   new Question(
     'S jakou verzí Minecraftu se připojím na server?',
