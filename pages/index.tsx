@@ -14,12 +14,16 @@ import crystals from '../public/icons/crystals.png'
 import goldrush from '../public/icons/goldrush.png'
 import microbattle from '../public/icons/microbattle.png'
 import murdermystery from '../public/icons/murdermystery.png'
+import getdown from '../public/icons/getdown.png'
+import survival from '../public/icons/survival.png'
 import imgServerMiniUHC from "../public/imgServers/miniuhc.webp"
 import imgServer1vs1 from "../public/imgServers/1vs1.webp"
 import imgServerBedWars from "../public/imgServers/bedwars.webp"
 import imgServerCrystals from "../public/imgServers/crystals.webp"
 import imgServerArcade from "../public/imgServers/arcade.webp"
 import imgServerTeams from "../public/imgServers/teams.webp"
+import imgServerGetDown from "../public/imgServers/getdown.webp"
+import imgServerSurvival from "../public/imgServers/survival.webp"
 import teams from '../public/icons/teams.png'
 import { useCallback, useEffect, useState } from "react";
 import { ChangelogEntry } from "../types/ChangelogEntry";
@@ -240,6 +244,32 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
             <div className="col-lg-4 mb-4">
               <div className="card">
                 <div className="card-top">
+                  <ImageCard src={"/imgServers/survival.webp"}></ImageCard>
+                  <div className="header">
+                    <div className="imageicon">
+                      <Image src={survival} height={80} width={80} quality={100} />
+                    </div>
+                    <h3>Survival</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Natěž si suroviny, postav si své obydlí, objevuj svět, vydělávej peníze a relaxuj!</p>
+                    <h4>Seznam serverů</h4>
+                    <ul>
+                      <li>Survival</li>
+                    </ul>
+                    <h4>Mapa světa</h4>
+                    <ul>
+                      <li><a href="https://mapa-survival.qplay.cz/">mapa-survival.qplay.cz</a></li>
+                    </ul>                    
+                  </div>
+                </div>
+              </div>
+            </div>            
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div className="card-top">
                   <ImageCard src={"/imgServers/skywars.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
@@ -261,6 +291,28 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                 </div>
               </div>
             </div>
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div className="card-top">
+                  <ImageCard src={"/imgServers/getdown.webp"}></ImageCard>
+                  <div className="header">
+                    <div className="imageicon">
+                      <Image src={getdown} height={80} width={80} quality={100} />
+                    </div>
+                    <h3>GetDown</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Seskákej jako první, nasbírej co nejvíce bodů, vyzbroj se a ve finálním boji zůstaň jako poslední naživu.</p>
+                    <h4>Seznam serverů</h4>
+                    <ul>
+                      <li>GetDown</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>            
             <div className="col-lg-4 mb-4">
               <div className="card">
                 <div className="card-top">
