@@ -261,7 +261,7 @@ const Home: NextPage<HomeProps> = ({ changelogNews }) => {
                     </ul>
                     <h4>Mapa světa</h4>
                     <ul>
-                      <li><a href="https://mapa-survival.qplay.cz/" target="_blank">mapa-survival.qplay.cz/</a></li>
+                      <li><a href="https://mapa-survival.qplay.cz/">mapa-survival.qplay.cz/</a></li>
                     </ul>                    
                   </div>
                 </div>
