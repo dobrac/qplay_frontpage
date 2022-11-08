@@ -489,6 +489,14 @@ const sections = [
         legend: true,
       },
       {
+        name: 'Editace ShulkerBoxu pomocí shift a pravého tlačítka',
+        default: false,
+        basic: false,
+        medium: true,
+        master: true,
+        legend: true,
+      },
+      {
         name: 'Bonusový kit',
         default: false,
         basic: true,
