@@ -489,6 +489,14 @@ const sections = [
         legend: true,
       },
       {
+        name: 'Otevření shulker boxu v ruce (shift+pravé tlačítko myši)',
+        default: false,
+        basic: false,
+        medium: true,
+        master: true,
+        legend: true,
+      },      
+      {
         name: 'Bonusový kit',
         default: false,
         basic: true,
