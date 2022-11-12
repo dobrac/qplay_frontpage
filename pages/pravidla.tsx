@@ -90,7 +90,7 @@ export default function Rules() {
             ho nahlásit A-týmu.<br/>
             Hráč nesmí používat ani vlastnit upravené klienty, které mu ulehčují
             hru v Minecraftu (různé podpůrné nástroje, hacky, double click, multi
-            click...). Butterfly click je povolen, avšak je zde vysoké riziko,
+            click...). Butterfly click je povolen, avšak je zde vysoké riziko, že z důvodu vysokého počtu kliknutí za sekundu
             budete blokováni od Anti-Cheatu, proto jeho používání nedoporučujeme.
             Povolené modifikace jsou popsány níže.<br/>
             Hráč nesmí podvádět (žádným způsobem).<br/>
