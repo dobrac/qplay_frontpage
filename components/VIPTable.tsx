@@ -473,6 +473,14 @@ const sections = [
         legend: true,
       },
       {
+        name: 'Skrýt a ukázat se na mapě světa /map hide, /map show',
+        default: false,
+        basic: true,
+        medium: true,
+        master: true,
+        legend: true,
+      },
+      {
         name: 'Sedání na schody a slaby',
         default: false,
         basic: true,
