@@ -26,7 +26,7 @@ export default function Moderator() {
           <h4><span style={{color: "#000000"}}>Jak se stát Moderátorem?</span></h4>
           <span style={{color: "#000000"}}> 
             Se svými herními údaji se přihlásíte na{" "}
-            <a href="https://info.qplay.cz/" target="_blank" rel="noreferrer">Informační Panel</a>{" "}. 
+            <a href="https://info.qplay.cz/" target="_blank" rel="noreferrer">Informační Panel</a>.{" "} 
             Kliknete na sekci &quot;Mé tickety&quot; a následně si stačí vytvořit nový
             ticket s typem &quot;Žádost o Moderátora&quot;, kde vám bude poskytnuto více
             informací.
