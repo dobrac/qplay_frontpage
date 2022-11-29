@@ -22,8 +22,8 @@ export default function Builder() {
           <ul>
           <span style={{color: "#000000"}}>
             Se svými herními údaji se přihlásíte na{" "}
-            <a href="https://info.qplay.cz/" target="_blank" rel="noreferrer">Informační Panel</a>{" "}
-            . Kliknete na sekci &quot;Mé tickety&quot; a následně si stačí vytvořit nový
+            <a href="https://info.qplay.cz/" target="_blank" rel="noreferrer">Informační Panel</a>.{" "}
+            Kliknete na sekci &quot;Mé tickety&quot; a následně si stačí vytvořit nový
             ticket s typem &quot;Žádost o Buildera&quot;, kde vám bude poskytnuto více
             informací.
           </span>
