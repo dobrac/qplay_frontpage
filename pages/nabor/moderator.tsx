@@ -20,14 +20,16 @@ export default function Moderator() {
           </h1>
           <h4><span style={{color: "#000000"}}>Náplň pozice</span></h4>
           <span style={{color: "#000000"}}>
-          Jedná se o úplně novou pozici, jejíž naplní bude převážně pomáhaní hráčům, když si nebudou vědět rady, na momentálně připravovaném Survival serveru.
+          Jedná se o pozici, jejíž naplní je převážně pomáhaní hráčům, když si nebudou vědět rady, na našem Survival serveru.
           </span> 
           <p></p>
           <h4><span style={{color: "#000000"}}>Jak se stát Moderátorem?</span></h4>
-          <span style={{color: "#000000"}}>  
-          V této chvíli je <b>nábor</b> na pozici Moderátora <b>uzavřen</b>.
-          <br />
-          V případě otevřeného náboru všechny hráče informujeme na našich <b>sociálních sítích a na této stránce</b>.
+          <span style={{color: "#000000"}}> 
+            Se svými herními údaji se přihlásíte na{" "}
+            <a href="https://info.qplay.cz/" target="_blank" rel="noreferrer">Informační Panel</a>.{" "} 
+            Kliknete na sekci &quot;Mé tickety&quot; a následně si stačí vytvořit nový
+            ticket s typem &quot;Žádost o Moderátora&quot;, kde vám bude poskytnuto více
+            informací.
           </span>
          <p></p>
           <h4><span style={{color: "#000000"}}>Výhody Moderátora</span></h4>
