@@ -368,7 +368,7 @@ const sections = [
         legend: true,
       },
       {
-        name: '50% šance na získání spawneru po vytěžení se silktouchem',
+        name: '15% šance na získání spawneru po vytěžení se silktouchem',
         default: false,
         basic: false,
         medium: false,
