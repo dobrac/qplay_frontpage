@@ -93,19 +93,17 @@ export default function Youtuber() {
 
               <p>1) Prefix YouTuber na Minecraft serveru.</p>
 
-              <p>2) Prefix YouTuber na TS3 serveru.</p>
+              <p>2) Má aktivované všechny VIP výhody.</p>
 
-              <p>3) Má aktivované všechny VIP výhody.</p>
+              <p>3) Všechny kity má zadarmo.</p>
 
-              <p>4) Všechny kity má zadarmo.</p>
+              <p>4) Má možnost využít /nick (natáčení videí za skryté jméno).</p>
 
-              <p>5) Má možnost využít /nick (natáčení videí za skryté jméno).</p>
+              <p>5) Může využít možnosti pořádat soutěže s naším serverem.</p>
 
-              <p>6) Může využít možnosti pořádat soutěže s naším serverem.</p>
+              <p>6) Jeho kanál je zveřejněn v sekci „Skupiny“ na Info panelu.</p>
 
-              <p>7) Jeho kanál je zveřejněn v sekci „Skupiny“ na Info panelu.</p>
-
-              <p>8) Skupina YouTuber na <a href="https://discord.qplay.cz" target="_blank" rel="noreferrer">Discord
+              <p>7) Skupina YouTuber na <a href="https://discord.qplay.cz" target="_blank" rel="noreferrer">Discord
                 serveru</a> (lze o ni
                 požádat v <a href="https://info.qplay.cz/tickets/new" target="_blank" rel="noreferrer">ticketu</a> s
                 typem

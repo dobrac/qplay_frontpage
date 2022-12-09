@@ -22,6 +22,11 @@ export default function Hire() {
               <a>YouTuber</a>
             </Link>
           </li>
+          <li>
+            <Link href="/tiktoker" passHref>
+              <a>TikToker</a>
+            </Link>
+          </li>
 
           <br/>
           <h2 className="mt-4 mb-4">Nábory</h2>
