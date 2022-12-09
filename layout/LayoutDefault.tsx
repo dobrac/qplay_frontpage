@@ -35,6 +35,7 @@ const menu = [
   new MenuItem("Seznam změn", "/seznam-zmen"),
   new MenuItem("Pozice", "/nabor").setItems([
     new MenuItem("YouTuber", "/yt"),
+    new MenuItem("TikToker", "/tiktoker"),
     new MenuItem("Technik", "/nabor/technik"),
     new MenuItem("Helper", "/nabor/helper"),
     new MenuItem("Moderátor", "/nabor/moderator"),
