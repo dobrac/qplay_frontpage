@@ -94,8 +94,7 @@ export default function Rules() {
             budete blokováni od Anti-Cheatu, proto jeho používání nedoporučujeme.
             Povolené modifikace jsou popsány níže.<br/>
             Hráč nesmí podvádět (žádným způsobem).<br/>
-            Hráč nesmí být v jeden okamžik na serveru připojený přes více než 1
-            účet za účelem obohacení účtů nebo poškození zájmů projektu QPlay.cz.<br/>
+            Hráč nesmí vlastnit více než 1 účet za účelem obohacení účtů nebo poškození zájmů projektu QPlay.cz.<br/>
             Je zakázáno si uměle zvyšovat statistiky.<br/>
             Hráč nesmí spamovat chat. Za spam může být považována jakákoliv
             nevhodná zpráva do chatu - reklama, opakování stejné zprávy, nadávky
@@ -277,7 +276,7 @@ export default function Rules() {
             povinen pravidelně kontrolovat změny těchto pravidel, hraním na
             herním serveru QPlay.cz stvrzuje, že se se všemi pravidly seznámil,
             rozumí jim a zavazuje se je dodržovat. Všechna zde uvedená pravidla
-            jsou platná od <strong>13.10.2022</strong>.
+            jsou platná od <strong>11.12.2022</strong>.
           </i>
         </span>
           &nbsp;
