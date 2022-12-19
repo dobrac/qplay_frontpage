@@ -171,7 +171,7 @@ export default function VIP() {
               <li>
                 V případě, že neshledáte chybu na své straně, napište ticket na
                 <a href="https://info.qplay.cz" style={{fontWeight: "bold"}}
-                >info.qplay.cz</a
+                > info.qplay.cz </a
                 >
                 a vše zde s vámi prověříme
               </li>
