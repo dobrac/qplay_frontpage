@@ -101,7 +101,7 @@ export default function FAQ() {
           {questions.map(q => {
             return (
               <div key={q.question}>
-                <a href={'#' + q.question}>
+                <a href={'#' + q.question.replaceAll(" ", "_")}>
                   <span style={{fontWeight: "bold"}}>{q.question}</span>
                 </a>
               </div>
@@ -114,8 +114,8 @@ export default function FAQ() {
 
           {questions.map(q => {
             return (
-              <div key={q.question}>
-                <a className={q.question}/>
+              <div key={q.question} className="href-offset">
+                <span className="offset"><a id={q.question.replaceAll(" ", "_")}/></span>
                 <span style={{fontWeight: "bold"}}>{q.question}</span>
                 <br/>
                 <span dangerouslySetInnerHTML={{__html: q.answer}}/>

@@ -1,6 +1,8 @@
 import Head from "next/head";
 import VIPTable from "../components/VIPTable";
 import Banner from "../components/Banner";
+import Image from 'next/image'
+import Voucher from '../public/images/BannerPNGFinal.png'
 
 export default function VIP() {
   return (
@@ -78,6 +80,9 @@ export default function VIP() {
               href="https://store.qplay.cz/category/325694" target="_blank" rel="noreferrer">store.qplay.cz</a>{" "}
               lze obdržet bonusové Christmas Crates NAVÍC!</span>
           </h3>
+          <h4 style={{textAlign: "center"}}>
+          <span><a href="#poukaz VIP" ><Image src={Voucher} /></a></span>
+          </h4>
           <br/>
           <div className="table-responsive">
             <VIPTable/>
@@ -130,7 +135,8 @@ export default function VIP() {
             </p>
           </div>
 
-          <div>
+          <div className="href-offset">
+          <span className="offset"><a id="poukaz VIP"/></span>
             <a className="darkovyPoukaz"/>
             <h2>Zakoupení dárkového poukazu na VIP</h2>
             <p>
@@ -171,7 +177,7 @@ export default function VIP() {
               <li>
                 V případě, že neshledáte chybu na své straně, napište ticket na
                 <a href="https://info.qplay.cz" style={{fontWeight: "bold"}}
-                >info.qplay.cz</a
+                > info.qplay.cz </a
                 >
                 a vše zde s vámi prověříme
               </li>
