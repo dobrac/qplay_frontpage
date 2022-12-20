@@ -1258,3 +1258,12 @@ footer {
     }
   }
 }
+
+.href-offset {
+  .offset {
+    position: relative;
+    a {
+      position:absolute; top:-150px;
+    }
+  }
+}
