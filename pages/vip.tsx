@@ -1,6 +1,8 @@
 import Head from "next/head";
 import VIPTable from "../components/VIPTable";
 import Banner from "../components/Banner";
+import Image from 'next/image'
+import Voucher from '../public/images/BannerPNGFinal.png'
 
 export default function VIP() {
   return (
@@ -78,6 +80,9 @@ export default function VIP() {
               href="https://store.qplay.cz/category/325694" target="_blank" rel="noreferrer">store.qplay.cz</a>{" "}
               lze obdržet bonusové Christmas Crates NAVÍC!</span>
           </h3>
+          <h4 style={{textAlign: "center"}}>
+          <span><a href="#poukaz VIP" ><Image src={Voucher} /></a></span>
+          </h4>
           <br/>
           <div className="table-responsive">
             <VIPTable/>
@@ -117,7 +122,7 @@ export default function VIP() {
               4) Počkáte cca 5 minut a Vaše VIP výhody by měly být aktivní!<br/>
             </div>
             <br/>
-            <div>
+            <div id="poukaz VIP">
               Případně můžete aktivovat kód na serveru příkazem na Lobby:
               <b> /kod [VAS_KOD]</b> - takže například /kod 1234-5678
             </div>
