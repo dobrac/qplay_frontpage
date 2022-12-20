@@ -122,7 +122,7 @@ export default function VIP() {
               4) Počkáte cca 5 minut a Vaše VIP výhody by měly být aktivní!<br/>
             </div>
             <br/>
-            <div id="poukaz VIP">
+            <div>
               Případně můžete aktivovat kód na serveru příkazem na Lobby:
               <b> /kod [VAS_KOD]</b> - takže například /kod 1234-5678
             </div>
@@ -135,7 +135,8 @@ export default function VIP() {
             </p>
           </div>
 
-          <div>
+          <div className="href-offset">
+          <span className="offset"><a id="poukaz VIP"/></span>
             <a className="darkovyPoukaz"/>
             <h2>Zakoupení dárkového poukazu na VIP</h2>
             <p>
