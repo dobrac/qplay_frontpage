@@ -13,7 +13,11 @@ const Banner: FC<PropsWithChildren<{sm?: boolean}>> = ({children, sm})=> {
       :
       <a href="https://vip.qplay.cz">
         <div className="banner-image-winter">
-          <Image priority={true} src={bannerImageW} layout={"fill"} objectFit={"cover"} objectPosition={"center"} alt="banner" />
+          if (window.screen.width {">"} 768) {
+            <Image priority={true} src={bannerImageW} layout={"fill"} objectFit={"cover"} objectPosition={"center"} alt="banner" />
+          } else {
+            <Image priority={true} src={bannerImage} layout={"fill"} objectFit={"cover"} objectPosition={"center"} alt="banner" />
+          }
         </div>
       </a>
       }      
