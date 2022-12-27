@@ -74,7 +74,7 @@ export default function Technik() {
           </li>
           <li>
           <span style={{color: "#000000"}}>  
-            Znalost programovacího jazyka JavaScript (React nebo jiné frameworky výhodou)
+            Znalost programovacího jazyka JavaScript (React nebo jiné frameworky výhodou).
           </span>
           </li> 
           <br />
