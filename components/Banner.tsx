@@ -12,9 +12,9 @@ const Banner: FC<PropsWithChildren<{sm?: boolean}>> = ({children, sm})=> {
       </div>
       :
       //<a href="https://vip.qplay.cz">
-        <div className="banner-image-winter">
-          <Image priority={true} src={bannerImageW} layout={"fill"} objectFit={"cover"} objectPosition={"center"} alt="banner" />
-        </div>
+      <div className="banner-image-winter">
+        <Image priority={true} src={bannerImageW} layout={"fill"} objectFit={"cover"} objectPosition={"center"} alt="banner" />
+      </div>
       //</a>
       }      
       {children}
