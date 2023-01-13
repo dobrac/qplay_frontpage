@@ -115,7 +115,16 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
           <div className="row">
             <div className="col-lg-5">
               <div className="render">
-                <Image src={render} width={277} height={450} quality={100}/>
+                <Image
+                  alt="figurine"
+                  src={render}
+                  width={277}
+                  height={450}
+                  quality={100}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }}/>
               </div>
             </div>
             <div className="col-lg-7 d-flex">
@@ -220,7 +229,16 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
             </div>
             <div className="col-md-5 d-flex">
               <div className="discordimg">
-                <Image src={discord} width={300} height={242} quality={100}/>
+                <Image
+                  src={discord}
+                  alt="discord"
+                  width={300}
+                  height={242}
+                  quality={100}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }}/>
               </div>
             </div>
           </div>
@@ -236,7 +254,15 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                   <ImageCard src={"/imgServers/minianni.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
-                      <Image src={miniannihilation} height={80} width={80} quality={100}/>
+                      <Image
+                        src={miniannihilation}
+                        alt="miniannihilation"
+                        height={80}
+                        width={80}
+                        quality={100}
+                        style={{
+                          maxWidth: "100%",
+                        }}/>
                     </div>
                     <h3>MiniAnnihilation</h3>
                   </div>
@@ -260,7 +286,15 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                   <ImageCard src={"/imgServers/survival.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
-                      <Image src={survival} height={80} width={80} quality={100}/>
+                      <Image
+                        src={survival}
+                        alt="survival"
+                        height={80}
+                        width={80}
+                        quality={100}
+                        style={{
+                          maxWidth: "100%",
+                        }}/>
                     </div>
                     <h3>Survival</h3>
                   </div>
@@ -286,7 +320,15 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                   <ImageCard src={"/imgServers/skywars.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
-                      <Image src={skywars} height={80} width={80} quality={100}/>
+                      <Image
+                        src={skywars}
+                        alt="skywars"
+                        height={80}
+                        width={80}
+                        quality={100}
+                        style={{
+                          maxWidth: "100%",
+                        }}/>
                     </div>
                     <h3>SkyWars</h3>
                   </div>
@@ -310,7 +352,15 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                   <ImageCard src={"/imgServers/getdown.webp"}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
-                      <Image src={getdown} height={80} width={80} quality={100}/>
+                      <Image
+                        src={getdown}
+                        alt="getdown"
+                        height={80}
+                        width={80}
+                        quality={100}
+                        style={{
+                          maxWidth: "100%",
+                        }}/>
                     </div>
                     <h3>GetDown</h3>
                   </div>
@@ -333,7 +383,15 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                   <ImageCard src={imgServerMiniUHC}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
-                      <Image src={miniuhc} height={80} width={80} quality={100}/>
+                      <Image
+                        src={miniuhc}
+                        alt="miniuhc"
+                        height={80}
+                        width={80}
+                        quality={100}
+                        style={{
+                          maxWidth: "100%",
+                        }}/>
                     </div>
                     <h3>MiniUHC</h3>
                   </div>
@@ -356,7 +414,15 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                   <ImageCard src={imgServer1vs1}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
-                      <Image src={onevsone} height={80} width={80} quality={100}/>
+                      <Image
+                        src={onevsone}
+                        alt="onevsone"
+                        height={80}
+                        width={80}
+                        quality={100}
+                        style={{
+                          maxWidth: "100%",
+                        }}/>
                     </div>
                     <h3>1vs1</h3>
                   </div>
@@ -385,7 +451,15 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                   <ImageCard src={imgServerBedWars}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
-                      <Image src={bedwars} height={80} width={80} quality={100}/>
+                      <Image
+                        src={bedwars}
+                        alt="bedwars"
+                        height={80}
+                        width={80}
+                        quality={100}
+                        style={{
+                          maxWidth: "100%",
+                        }}/>
                     </div>
                     <h3>BedWars</h3>
                   </div>
@@ -410,7 +484,15 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                   <ImageCard src={imgServerTeams}></ImageCard>
                   <div className="header">
                     <div className="imageicon">
-                      <Image src={teams} height={80} width={80} quality={100}/>
+                      <Image
+                        src={teams}
+                        alt="teams"
+                        height={80}
+                        width={80}
+                        quality={100}
+                        style={{
+                          maxWidth: "100%",
+                        }}/>
                     </div>
                     <h3>Teams</h3>
                   </div>
@@ -431,7 +513,7 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
 export async function getStaticProps() {

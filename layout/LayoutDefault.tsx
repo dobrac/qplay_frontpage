@@ -136,7 +136,15 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
         <div className="container">
           <Link href="/" className="navbar-brand" passHref>
             <div className="navbar-img-container">
-              <Image src={Logo} alt={"logo"} width={140} height={61}/>
+              <Image
+                src={Logo}
+                alt={"logo"}
+                width={140}
+                height={61}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
           </Link>
           <button onClick={(e) => toggleNav()} className="navbar-toggler">
@@ -264,7 +272,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
         </div>
       </Footer>
     </div>
-  )
+  );
 }
 
 export default LayoutDefault
