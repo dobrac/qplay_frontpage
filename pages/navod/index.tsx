@@ -7,11 +7,11 @@ export default function Help() {
     <div>
       <Head>
         <title>QPlay.cz | Nápověda</title>
-        <meta name="description" content="Seznam nápověd." />
+        <meta name="description" content="Seznam nápověd."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>Nápověda</h1>
+          <h1>Nápověda</h1>
         </div>
       </Banner>
       <section className="pagecontent">
@@ -19,7 +19,7 @@ export default function Help() {
           <h2 className="mt-4 mb-4">FAQ</h2>
           <li>
             <Link href="/faq" passHref>
-              <a>Často kladené otázky</a>
+              Často kladené otázky
             </Link>
           </li>
 
@@ -28,12 +28,12 @@ export default function Help() {
 
           <li>
             <Link href="/navod/privlastneni-nicku" passHref>
-              <a>Můj nick je již zaregistrovaný</a>
+              Můj nick je již zaregistrovaný
             </Link>
           </li>
           <li>
             <Link href="/navod/prihlaseni-bez-hesla" passHref>
-              <a>Přihlašování bez hesla/skin na serveru</a>
+              Přihlašování bez hesla/skin na serveru
             </Link>
           </li>
           <li className="external">

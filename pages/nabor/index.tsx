@@ -7,11 +7,11 @@ export default function Hire() {
     <div>
       <Head>
         <title>QPlay.cz | Nábor</title>
-        <meta name="description" content="Seznam všech náborů." />
+        <meta name="description" content="Seznam všech náborů."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>Nábor</h1>
+          <h1>Nábor</h1>
         </div>
       </Banner>
       <section className="pagecontent">
@@ -19,12 +19,12 @@ export default function Hire() {
           <h2 className="mt-4 mb-4">Ranky</h2>
           <li>
             <Link href="/yt" passHref>
-              <a>YouTuber</a>
+              YouTuber
             </Link>
           </li>
           <li>
             <Link href="/tiktoker" passHref>
-              <a>TikToker</a>
+              TikToker
             </Link>
           </li>
 
@@ -32,27 +32,27 @@ export default function Hire() {
           <h2 className="mt-4 mb-4">Nábory</h2>
           <li>
             <Link href="/nabor/technik" passHref>
-              <a>Technik</a>
+              Technik
             </Link>
           </li>
           <li>
             <Link href="/nabor/helper" passHref>
-              <a>Helper</a>
+              Helper
             </Link>
           </li>
           <li>
             <Link href="/nabor/moderator" passHref>
-              <a>Moderátor</a>
+              Moderátor
             </Link>
           </li>
           <li>
             <Link href="/nabor/builder" passHref>
-              <a>Builder</a>
+              Builder
             </Link>
           </li>
           <li>
             <Link href="/nabor/cheathunter" passHref>
-              <a>CheatHunter</a>
+              CheatHunter
             </Link>
           </li>
         </div>

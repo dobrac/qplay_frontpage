@@ -7,11 +7,11 @@ export default function Contact() {
     <div>
       <Head>
         <title>QPlay.cz | Kontakt</title>
-        <meta name="description" content="Kontakt na podporu/vedení serveru QPlay.cz." />
+        <meta name="description" content="Kontakt na podporu/vedení serveru QPlay.cz."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>Kontakt</h1>
+          <h1>Kontakt</h1>
         </div>
       </Banner>
       <section className="pagecontent">
@@ -47,9 +47,7 @@ export default function Contact() {
           samotným kontaktováním jakékoliv podpory si nejdříve přečíst naší sekci
           FAQ, kde se nachází většina odpovědí na otázky hráčů (
           <Link href="/faq" passHref>
-            <a>
-              FAQ
-            </a>
+            FAQ
           </Link>
           ).<br/><br/><br/>
           <b> Instagram: </b>

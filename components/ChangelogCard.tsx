@@ -43,7 +43,7 @@ export default function ChangelogCard({element}: { element: ChangelogEntry }) {
           </div>
           <p className="mb-0 readmore">
             <Link href={`/seznam-zmen/` + element['id']} passHref>
-              <a>Číst více</a>
+              Číst více
             </Link>
           </p>
         </div>

@@ -7,11 +7,11 @@ export default function HowToJoin() {
     <div>
       <Head>
         <title>QPlay.cz | Jak se připojit</title>
-        <meta name="description" content="Podrobný návod jak se zaregistovat a připojit na náš server." />
+        <meta name="description" content="Podrobný návod jak se zaregistovat a připojit na náš server."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>Jak se připojit</h1>
+          <h1>Jak se připojit</h1>
         </div>
       </Banner>
       <section className="pagecontent">
@@ -34,7 +34,7 @@ export default function HowToJoin() {
           našeho návodu na ověření:{" "}
           <strong>
             <Link href="/navod/prihlaseni-bez-hesla" passHref>
-              <a> KLIKNI </a>
+              KLIKNI
             </Link>
           </strong>
         </div>
