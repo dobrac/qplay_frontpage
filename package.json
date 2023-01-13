@@ -10,13 +10,15 @@
     "lint": "next lint",
     "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES yarn build",
     "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES yarn export",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "axios": "1.2.2",
     "cross-env": "7.0.3",
     "he": "^1.2.0",
     "next": "13.1.2",
+    "next-sitemap": "^3.1.45",
     "react": "18.2.0",
     "react-cookie-consent": "8.0.1",
     "react-dom": "18.2.0",
