@@ -14,6 +14,7 @@ import strip from 'strip-markdown'
 
 interface ChangeLogNewProps {
   changelogEntry: ChangelogEntry
+  description: string
 }
 
 const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogEntry, description}) => {
