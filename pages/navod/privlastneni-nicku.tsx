@@ -5,12 +5,12 @@ export default function AcquireNick() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Přivlastnění nicku</title>
-        <meta name="description" content="Podrobný návod jak si na našem serveru přivlastnit nick." />
+        <title>Přivlastnění nicku | QPlay.cz</title>
+        <meta name="description" content="Podrobný návod jak si na našem serveru přivlastnit nick."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>Přivlastnění nicku</h1>
+          <h1>Přivlastnění nicku</h1>
         </div>
       </Banner>
       <section className="pagecontent">

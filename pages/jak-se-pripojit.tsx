@@ -6,7 +6,7 @@ export default function HowToJoin() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Jak se připojit</title>
+        <title>Jak se připojit | QPlay.cz</title>
         <meta name="description" content="Podrobný návod jak se zaregistovat a připojit na náš server."/>
       </Head>
       <Banner sm={true}>

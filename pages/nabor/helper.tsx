@@ -5,12 +5,12 @@ export default function Helper() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Helper</title>
-        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Helper." />
+        <title>Helper | QPlay.cz</title>
+        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Helper."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>Helper</h1>
+          <h1>Helper</h1>
         </div>
       </Banner>
       <section className="pagecontent">
@@ -21,10 +21,10 @@ export default function Helper() {
           <h4><span style={{color: "#000000"}}>Jak se stát Helperem?</span></h4>
           <span style={{color: "#000000"}}>
           V této chvíli je <b>nábor</b> na pozici Helpera <b>uzavřen</b>.
-          <br />
+          <br/>
           V případě otevřeného náboru všechny hráče informujeme na našich <b>sociálních sítích a na této stránce</b>.
          </span>
-         <p></p>
+          <p></p>
           <h4><span style={{color: "#000000"}}>Výhody Helpera</span></h4>
           <li>
           <span style={{color: "#000000"}}>

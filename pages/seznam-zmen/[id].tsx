@@ -1,6 +1,7 @@
 import Head from "next/head";
 import axios from "axios";
 import ReactMarkdown from 'react-markdown'
+import {remark} from 'remark'
 import remarkGfm from 'remark-gfm'
 import remarkBreaks from 'remark-breaks'
 import rehypeRaw from 'rehype-raw'
@@ -9,12 +10,13 @@ import {ChangelogEntry} from "../../types/ChangelogEntry";
 import type {GetStaticProps, NextPage} from 'next'
 import he from "he"
 import Banner from "../../components/Banner";
+import strip from 'strip-markdown'
 
 interface ChangeLogNewProps {
-  changelogNew: ChangelogEntry
+  changelogEntry: ChangelogEntry
 }
 
-const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogNew}) => {
+const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogEntry, description}) => {
   function convertDate(date: string) {
     return new Date(date).toLocaleString("cs-CZ", {
       year: "numeric",
@@ -25,20 +27,20 @@ const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogNew}) => {
     })
   }
 
-  function ChangeLogNewRender() {
+  function ChangeLogEntryRender() {
     return (
       <div>
         <div className="newinfo">
-          <span className="tag" style={{backgroundColor: changelogNew.typecolor}}>{changelogNew.typename}</span>
-          <time dateTime={changelogNew.timestamp}>{convertDate(changelogNew.timestamp)}</time>
+          <span className="tag" style={{backgroundColor: changelogEntry.typecolor}}>{changelogEntry.typename}</span>
+          <time dateTime={changelogEntry.timestamp}>{convertDate(changelogEntry.timestamp)}</time>
         </div>
         <h1 className='title'>
-          {changelogNew.headline}
+          {changelogEntry.headline}
         </h1>
         <div className="notes">
           <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks, emoji]}
                          rehypePlugins={[rehypeRaw]}>
-            {he.decode(changelogNew.notes)}
+            {he.decode(changelogEntry.notes)}
           </ReactMarkdown>
         </div>
       </div>
@@ -48,18 +50,18 @@ const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogNew}) => {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Seznam změn</title>
-        <meta name="description" content="Seznam změn na našem serveru."/>
+        <title>{`${changelogEntry.headline} | QPlay.cz`}</title>
+        <meta name="description" content={description}/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-          <h1>Seznam Změn</h1>
+          <h1>{changelogEntry.headline}</h1>
         </div>
       </Banner>
       <section className="pagecontent">
         <section className="news">
           <div className="container">
-            <ChangeLogNewRender/>
+            <ChangeLogEntryRender/>
           </div>
         </section>
       </section>
@@ -82,9 +84,22 @@ export const getStaticProps: GetStaticProps = async (context) => {
     }
   }
 
+  const stripNotes = await remark()
+    .use(remarkGfm)
+    .use(remarkBreaks)
+    .use(emoji)
+    .use(strip)
+    .process(he.decode(data.data.notes))
+  const description = String(stripNotes)
+    .replaceAll("\n", " ")
+    .replace(/\s{2,}/g, ' ')
+    .substring(0, 160)
+    .trim()
+
   return {
     props: {
-      changelogNew: data.data
+      changelogEntry: data.data,
+      description
     },
     // Next.js will attempt to re-generate the page:
     // - When a request comes in

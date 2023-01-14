@@ -5,12 +5,12 @@ export default function Youtuber() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | YouTuber</title>
-        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici YouTuber." />
+        <title>YouTuber | QPlay.cz</title>
+        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici YouTuber."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>YouTuber</h1>
+          <h1>YouTuber</h1>
         </div>
       </Banner>
       <section className="pagecontent">

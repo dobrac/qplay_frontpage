@@ -5,12 +5,12 @@ export default function Rules() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Pravidla</title>
-        <meta name="description" content="Pravidla serveru QPlay.cz." />
+        <title>Pravidla | QPlay.cz</title>
+        <meta name="description" content="Pravidla serveru QPlay.cz."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>Pravidla</h1>
+          <h1>Pravidla</h1>
         </div>
       </Banner>
       <section className="pagecontent">
@@ -90,7 +90,8 @@ export default function Rules() {
             ho nahlásit A-týmu.<br/>
             Hráč nesmí používat ani vlastnit upravené klienty, které mu ulehčují
             hru v Minecraftu (různé podpůrné nástroje, hacky, double click, multi
-            click...). Butterfly click je povolen, avšak je zde vysoké riziko, že z důvodu vysokého počtu kliknutí za sekundu
+            click...). Butterfly click je povolen, avšak je zde vysoké riziko, že z důvodu vysokého počtu kliknutí za
+            sekundu
             budete blokováni od Anti-Cheatu, proto jeho používání nedoporučujeme.
             Povolené modifikace jsou popsány níže.<br/>
             Hráč nesmí podvádět (žádným způsobem).<br/>

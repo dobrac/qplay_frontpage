@@ -5,12 +5,12 @@ export default function Tiktoker() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Tiktoker</title>
-        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici TikToker." />
+        <title>Tiktoker | QPlay.cz</title>
+        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici TikToker."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>TikToker</h1>
+          <h1>TikToker</h1>
         </div>
       </Banner>
       <section className="pagecontent">
@@ -22,7 +22,7 @@ export default function Tiktoker() {
             vytvořením ticketu s typem &quot;Chci být TikToker&quot;. O&nbsp;konečném
             udělení skupiny TikToker rozhoduje vedení serveru.
           </p>
-          <br />
+          <br/>
           <div
             style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}
           >
@@ -38,7 +38,7 @@ export default function Tiktoker() {
               <p>- Na TikTok kanále se musí vyskytovat alespoň 3 videa z našeho serveru.</p>
 
               <p> - TikToker se musí snažit aktivně vydávat každý měsíc alespoň 2 videa z našeho serveru.</p>
-              <br />
+              <br/>
               <h2>
                 Výhody <span style={{color: "#FF1493"}}>TikTokera</span> na serveru:
               </h2>

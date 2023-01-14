@@ -1,19 +1,17 @@
 import Head from "next/head";
 import VIPTable from "../components/VIPTable";
 import Banner from "../components/Banner";
-import Image from 'next/image'
-import Voucher from '../public/images/BannerPNGFinal.png'
 
 export default function VIP() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | VIP</title>
-        <meta name="description" content="Zakoupení VIP účtu na našem serveru." />
+        <title>VIP | QPlay.cz</title>
+        <meta name="description" content="Zakoupení VIP účtu na našem serveru."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>VIP ÚČET</h1>
+          <h1>VIP ÚČET</h1>
         </div>
       </Banner>
       <section className="pagecontent">
@@ -29,8 +27,12 @@ export default function VIP() {
             <a href="#naramekAkce" style="text-decoration:none;border:none;"><img src="images/WebNaramkyAkce.png?ver=2" ></a><br> <br><br>
     </center>    */}
           <div className="btnsgroup">
-            <a className="button" href="https://kod.qplay.cz/"><button>AKTIVOVAT VIP KÓD</button></a>
-            <a className="button" href="#zakoupeniVIP"><button>Zakoupit VIP</button></a>
+            <a className="button" href="https://kod.qplay.cz/">
+              <button>AKTIVOVAT VIP KÓD</button>
+            </a>
+            <a className="button" href="#zakoupeniVIP">
+              <button>Zakoupit VIP</button>
+            </a>
           </div>
           <br/>
           {/*  <header>
@@ -115,8 +117,8 @@ export default function VIP() {
             <div>
               <b>Postup:</b><br/>
               1) Zakoupíte si KÓD - standardním způsobem - SMS, PSC, PayPal<br/>
-              2) Po obdržení kódu (XXXX-XXXX) přejdete na stránku 
-               <a href="https://kod.qplay.cz"> https://kod.qplay.cz</a>, kam kód
+              2) Po obdržení kódu (XXXX-XXXX) přejdete na stránku
+              <a href="https://kod.qplay.cz"> https://kod.qplay.cz</a>, kam kód
               zadáte<br/>
               3) Zvolíte možnost aktivace<br/>
               4) Počkáte cca 5 minut a Vaše VIP výhody by měly být aktivní!<br/>
@@ -136,7 +138,7 @@ export default function VIP() {
           </div>
 
           <div className="href-offset">
-          <span className="offset"><a id="poukaz VIP"/></span>
+            <span className="offset"><a id="poukaz VIP"/></span>
             <a className="darkovyPoukaz"/>
             <h2>Zakoupení dárkového poukazu na VIP</h2>
             <p>
@@ -149,7 +151,8 @@ export default function VIP() {
               postupujte dle pokynů uvedených na této stránce. Po úspěšném
               zaplacení Vám přijde sms (v případě platby pomocí sms) nebo email (v
               případě platby pomocí PSC nebo PayPal) s kódem. Tento kód zadejte na
-              stránce <a href="https://kod.qplay.cz" target="_blank" rel="noreferrer">https://kod.qplay.cz</a> a zvolte možnost vygenerovat dárkový poukaz. Tento vygenerovaný
+              stránce <a href="https://kod.qplay.cz" target="_blank" rel="noreferrer">https://kod.qplay.cz</a> a zvolte
+              možnost vygenerovat dárkový poukaz. Tento vygenerovaný
               dárkový poukaz je možné vytisknout a je platný ihned po
               zaplacení.<br/><br/>
               V případě jakýchkoliv dotazů se na nás neváhejte obrátit – jak se

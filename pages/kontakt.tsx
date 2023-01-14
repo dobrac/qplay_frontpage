@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Kontakt</title>
+        <title>Kontakt | QPlay.cz</title>
         <meta name="description" content="Kontakt na podporu/vedení serveru QPlay.cz."/>
       </Head>
       <Banner sm={true}>

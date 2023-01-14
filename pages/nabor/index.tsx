@@ -6,7 +6,7 @@ export default function Hire() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Nábor</title>
+        <title>Nábor | QPlay.cz</title>
         <meta name="description" content="Seznam všech náborů."/>
       </Head>
       <Banner sm={true}>

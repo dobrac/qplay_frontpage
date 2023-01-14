@@ -5,12 +5,12 @@ export default function LoginWithoutPassword() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Přihlášení bez hesla</title>
-        <meta name="description" content="Podrobný návod jak na se na našem serveru přihlašovat bez hesla." />
+        <title>Přihlášení bez hesla | QPlay.cz</title>
+        <meta name="description" content="Podrobný návod jak na se na našem serveru přihlašovat bez hesla."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>Přihlášení bez hesla</h1>
+          <h1>Přihlášení bez hesla</h1>
         </div>
       </Banner>
       <section className="pagecontent">

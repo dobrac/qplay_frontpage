@@ -6,7 +6,7 @@ export default function Help() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Nápověda</title>
+        <title>Nápověda | QPlay.cz</title>
         <meta name="description" content="Seznam nápověd."/>
       </Head>
       <Banner sm={true}>

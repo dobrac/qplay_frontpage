@@ -85,12 +85,12 @@ export default function FAQ() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | FAQ</title>
-        <meta name="description" content="Často kladené otázky na náš server." />
+        <title>FAQ | QPlay.cz</title>
+        <meta name="description" content="Často kladené otázky na náš server."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>FAQ</h1>
+          <h1>FAQ</h1>
         </div>
       </Banner>
       <section className="pagecontent">

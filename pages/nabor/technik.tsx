@@ -5,12 +5,12 @@ export default function Technik() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Technik</title>
-        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Technik." />
+        <title>Technik | QPlay.cz</title>
+        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Technik."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>Technik</h1>
+          <h1>Technik</h1>
         </div>
       </Banner>
       <section className="pagecontent">
@@ -20,14 +20,14 @@ export default function Technik() {
           </h1>
           <h3 style={{textAlign: "center", color: "#41B3A3"}}><span>
           <b>Nově hledáme i techniky, kteří se zaměřují na vývoj webových stránek!</b>
-          </span> </h3>
-          <br />
+          </span></h3>
+          <br/>
           <h4><span style={{color: "#000000"}}>Jak se stát Technikem?</span></h4>
           <span style={{color: "#000000"}}>
           Rádi přijmeme nové Techniky do našeho Technik Teamu! Níže naleznete
           veškeré důležité informace o této pozici, včetně požadavků a výhod.
           Pokud byste se chtěli stát Technikem, tak nás neváhejte kontaktovat na
-          emailové adrese <b>support@qplay.cz</b>. <br />
+          emailové adrese <b>support@qplay.cz</b>. <br/>
         </span>
           <li style={{color: "#000000"}}>
             Do e-mailu uveďte svoje dosavadní zkušenosti a zároveň přiložte ukázky
@@ -37,10 +37,11 @@ export default function Technik() {
             V případě, že bychom Vás vybrali, tak Vás do 14 dní kontaktujeme na
             Vaši e-mailovou adresu.
           </li>
-          <br />
-          <h4><span style={{color: "#000000"}}>Co požadujeme? </span><span style={{fontSize: "15px"}}>(pro podání přihlášky stačí splňovat požadavky buď ze sekce B nebo C)</span></h4>
+          <br/>
+          <h4><span style={{color: "#000000"}}>Co požadujeme? </span><span style={{fontSize: "15px"}}>(pro podání přihlášky stačí splňovat požadavky buď ze sekce B nebo C)</span>
+          </h4>
           <b>Sekce B:</b>
-          <br />
+          <br/>
           <span style={{color: "#000000"}}>
           <i>(V této chvíli hledáme pro tuto sekci pouze pokročilejší techniky nikoliv začátečníky.)</i>
           </span>
@@ -60,13 +61,13 @@ export default function Technik() {
             Umět využívat základní znalosti matematiky.
           </span>
           </li>
-          <br />
+          <br/>
           <b>Sekce C:</b>
           <li>
           <span style={{color: "#000000"}}> 
             Zkušenosti s programováním webových stránek.
-          </span>  
-          </li> 
+          </span>
+          </li>
           <li>
           <span style={{color: "#000000"}}>  
             Zkušenosti s HTML a CSS.
@@ -76,8 +77,8 @@ export default function Technik() {
           <span style={{color: "#000000"}}>  
             Znalost programovacího jazyka JavaScript (React nebo jiné frameworky výhodou).
           </span>
-          </li> 
-          <br />
+          </li>
+          <br/>
           <h4><span style={{color: "#000000"}}>Co nabízíme?</span></h4>
           <li>
           <span style={{color: "#000000"}}>

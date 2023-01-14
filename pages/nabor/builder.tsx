@@ -5,12 +5,12 @@ export default function Builder() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Builder</title>
-        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Builder." />
+        <title>Builder | QPlay.cz</title>
+        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Builder."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>Builder</h1>
+          <h1>Builder</h1>
         </div>
       </Banner>
       <section className="pagecontent">

@@ -5,12 +5,12 @@ export default function Moderator() {
   return (
     <div>
       <Head>
-        <title>QPlay.cz | Moderátor</title>
-        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Moderátor." />
+        <title>Moderátor | QPlay.cz</title>
+        <meta name="description" content="Podrobný návod jak na našem serveru získat pozici Moderátor."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
-            <h1>Moderátor</h1>
+          <h1>Moderátor</h1>
         </div>
       </Banner>
       <section className="pagecontent">
@@ -21,17 +21,17 @@ export default function Moderator() {
           <h4><span style={{color: "#000000"}}>Náplň pozice</span></h4>
           <span style={{color: "#000000"}}>
           Jedná se o pozici, jejíž naplní je převážně pomáhaní hráčům, když si nebudou vědět rady, na našem Survival serveru.
-          </span> 
+          </span>
           <p></p>
           <h4><span style={{color: "#000000"}}>Jak se stát Moderátorem?</span></h4>
           <span style={{color: "#000000"}}> 
             Se svými herními údaji se přihlásíte na{" "}
-            <a href="https://info.qplay.cz/" target="_blank" rel="noreferrer">Informační Panel</a>.{" "} 
+            <a href="https://info.qplay.cz/" target="_blank" rel="noreferrer">Informační Panel</a>.{" "}
             Kliknete na sekci &quot;Mé tickety&quot; a následně si stačí vytvořit nový
             ticket s typem &quot;Žádost o Moderátora&quot;, kde vám bude poskytnuto více
             informací.
           </span>
-         <p></p>
+          <p></p>
           <h4><span style={{color: "#000000"}}>Výhody Moderátora</span></h4>
           <li>
           <span style={{color: "#000000"}}>
