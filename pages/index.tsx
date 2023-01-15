@@ -75,7 +75,7 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
   return (
     <div>
       <Head>
-        <title>QPlay.cz</title>
+        <title>QPlay.cz Minecraft Server</title>
         <meta name="description"
               content="Minecraft server QPlay.cz, který patří mezi největší servery v Česku a Slovensku, byl založen v roce 2015 a nabízí spoustu různých miniher."/>
       </Head>
