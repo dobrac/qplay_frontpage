@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: process.env.SITE_URL || 'https://qplay.cz',
+    siteUrl: process.env.SITE_URL || 'https://www.qplay.cz',
     generateRobotsTxt: true,
 }

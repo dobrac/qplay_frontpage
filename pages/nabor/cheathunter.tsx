@@ -25,7 +25,7 @@ export default function CheatHunter() {
             serveru skrz příkaz <b>/report nick</b>, bližší informace k tomuto
             příkazu naleznete v{" "}
             <a
-              href="https://qplay.cz/faq#Jak%20lze%20ze%20serveru%20nahlásit%20cheatera?"
+              href="https://www.qplay.cz/faq#Jak%20lze%20ze%20serveru%20nahlásit%20cheatera?"
               target="_blank" rel="noreferrer"
             >FAQ</a
             >. Záleží i na Vaší úspěšnosti při nahlašování, tzn. cheatery

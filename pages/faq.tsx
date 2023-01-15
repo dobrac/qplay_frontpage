@@ -46,11 +46,11 @@ const questions = [
   ),
   new Question(
     'Jakým způsobem mohu podpořit server?',
-    'Server můžeš podpořit koupí jakéhokoliv VIP účtu, více informací o VIP účtech nalezneš na <a href="https://qplay.cz/vip" target="_blank">Jak si koupit VIP?</a>.'
+    'Server můžeš podpořit koupí jakéhokoliv VIP účtu, více informací o VIP účtech nalezneš na <a href="https://www.qplay.cz/vip" target="_blank">Jak si koupit VIP?</a>.'
   ),
   new Question(
     'Jak se mohu stát YouTuberem?',
-    'Můžeš nám poslat žádost o YouTubera pomocí ticketu na stránce <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a> nebo ti může samotné Vedení serveru předložit nabídku. Více informací o YT nalezneš na <a href="https://qplay.cz/yt" target="_blank">YouTuber</a>'
+    'Můžeš nám poslat žádost o YouTubera pomocí ticketu na stránce <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a> nebo ti může samotné Vedení serveru předložit nabídku. Více informací o YT nalezneš na <a href="https://www.qplay.cz/yt" target="_blank">YouTuber</a>'
   ),
   new Question(
     'Jaké výhody získám s Permanentním VIP (PVIP)?',
@@ -66,7 +66,7 @@ const questions = [
   ),
   new Question(
     'Někdo je za mě již zaregistrovaný, co mám dělat?',
-    'Stačí si zaregistrovat účet na <a href="https://registrace.qplay.cz" target="_blank">https://registrace.qplay.cz</a> (kolonku "Nick" můžeš nechat prázdnou) a následně postupovat podle návodu na <a href="https://qplay.cz/navod/privlastneni-nicku" target="_blank">Můj nick je již zaregistrovaný</a>.'
+    'Stačí si zaregistrovat účet na <a href="https://registrace.qplay.cz" target="_blank">https://registrace.qplay.cz</a> (kolonku "Nick" můžeš nechat prázdnou) a následně postupovat podle návodu na <a href="https://www.qplay.cz/navod/privlastneni-nicku" target="_blank">Můj nick je již zaregistrovaný</a>.'
   ),
   new Question(
     'Zapomněl jsem heslo, jak si ho mohu resetovat?',
