@@ -9,6 +9,8 @@ import {useRouter} from "next/router";
 
 function MyApp({Component, pageProps}: AppProps) {
   const router = useRouter()
+  const baseUrl = "https://www.qplay.cz"
+  const currentPath = baseUrl + router.asPath
 
   useEffect(() => {
     ReactGA.initialize('UA-60146032-1');
@@ -24,6 +26,7 @@ function MyApp({Component, pageProps}: AppProps) {
         <title>QPlay.cz</title>
         <meta name="description" content="QPlay Minecraft Server"/>
         <meta name="viewport" content='width=device-width, initial-scale=1'/>
+        <link rel="canonical" href={currentPath}/>
       </Head>
       <CookieConsent
         location="bottom"
