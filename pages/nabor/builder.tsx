@@ -21,11 +21,14 @@ export default function Builder() {
           <h4><span style={{color: "#000000"}}>Jak se stát Builderem?</span></h4>
           <ul>
           <span style={{color: "#000000"}}>
-            Se svými herními údaji se přihlásíte na{" "}
-            <a href="https://info.qplay.cz/" target="_blank" rel="noreferrer">Informační Panel</a>.{" "}
-            Kliknete na sekci &quot;Mé tickety&quot; a následně si stačí vytvořit nový
-            ticket s typem &quot;Žádost o Buildera&quot;, kde vám bude poskytnuto více
-            informací.
+            Builderem se můžete stát skrz veřejný nábor, který je
+            <b>v této chvíli otevřený</b>, 1. kolo náboru probíhá skrz
+            <b>formulář</b> →
+            <a href="https://forms.gle/1HXNUiSLUHLc2Ax8A" target="_blank">
+              klikni pro otevření formuláře</a
+            >. <br />
+            Formulář bude <b>uzavřen již tuto neděli 12.02.2023</b>, proto je
+            potřeba přihlášku odeslat co nejdříve.    
           </span>
           </ul>
           <h4><span style={{color: "#000000"}}>Výhody Buildera</span></h4>
