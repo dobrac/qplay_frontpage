@@ -24,7 +24,7 @@ export default function Builder() {
             Builderem se můžete stát skrz veřejný nábor, který je
             <b> v této chvíli otevřený</b>,<br/>1. kolo náboru probíhá skrz
             <b> formulář </b>  
-            <a href="https://forms.gle/1HXNUiSLUHLc2Ax8A" target="_blank">
+            <a href="https://forms.gle/1HXNUiSLUHLc2Ax8A" target="_blank" rel="noreferrer" >
               klikni pro otevření formuláře</a>.<br/>
             Formulář bude <b>uzavřen již tuto neděli 12.02.2023</b>, proto je
             potřeba přihlášku odeslat co nejdříve.    
