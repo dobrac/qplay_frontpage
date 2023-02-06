@@ -20,7 +20,7 @@ export default function Builder() {
           </h1>
           <h4><span style={{color: "#000000"}}>Jak se stát Builderem?</span></h4>
           <span style={{color: "#000000"}}>
-          Builderem se můžete stát skrz veřejný nábor, který je <b>v této chvíli otevřený</b>, 1. kolo náboru probíhá skrz <b>formulář</b> → <a href="https://forms.gle/1HXNUiSLUHLc2Ax8A" target="_blank">klikni pro otevření formuláře</a>. <br />
+          Builderem se můžete stát skrz veřejný nábor, který je <b>v této chvíli otevřený</b>, 1. kolo náboru probíhá skrz <b>formulář</b> → <a href="https://forms.gle/1HXNUiSLUHLc2Ax8A">klikni pro otevření formuláře</a>. <br />
           Formulář bude <b>uzavřen již tuto neděli 12.02.2023</b>, proto je
           potřeba přihlášku odeslat co nejdříve.  
           <br />
