@@ -19,17 +19,15 @@ export default function Builder() {
             <span style={{color: "#000000"}}><b>Nábor na Buildera</b></span>
           </h1>
           <h4><span style={{color: "#000000"}}>Jak se stát Builderem?</span></h4>
-          <ul>
           <span style={{color: "#000000"}}>
             Builderem se můžete stát skrz veřejný nábor, který je
             <b> v této chvíli otevřený</b>,<br/>1. kolo náboru probíhá skrz
             <b> formulář </b>  
-            <a href="https://forms.gle/1HXNUiSLUHLc2Ax8A" target="_blank" rel="noreferrer" >
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJnqgnnOBKgFqkYla6OR0oqbhXS6LWXbfVWVEKtrc5IYZSYw/viewform" target="_blank" rel="noreferrer" >
               klikni pro otevření formuláře</a>.<br/>
             Formulář bude <b>uzavřen již tuto neděli 12.02.2023</b>, proto je
             potřeba přihlášku odeslat co nejdříve.    
           </span>
-          </ul>
           <h4><span style={{color: "#000000"}}>Výhody Buildera</span></h4>
           <li>
           <span style={{color: "#000000"}}>
