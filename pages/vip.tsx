@@ -63,13 +63,13 @@ export default function VIP() {
               </font>
             </center>
           </h2> */}
-          {/* h2>
-            <center>
-              <font color="#e75480" style="font-weight: bold;">
-                Valentýnská akce na všechna VIP!
-              </font>
-            </center>
-          </h2> */}
+          { <h2>
+            <div style={{textAlign: "center"}}>
+              <span style={{fontWeight: "bold", color: "#e75480"}}>
+              Valentýnská akce na všechna VIP!
+              </span>
+            </div>
+          </h2> }
           {/* <h2>
             <div style={{textAlign: "center"}}>
               <span style={{fontWeight: "bold", color: "#2AC820"}}>
