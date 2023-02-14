@@ -247,7 +247,7 @@ export default function Rules() {
             Je zakázáno obchodovat či jen nabízet jakoukoliv obchodní nabídku se
             svým účtem nebo s jeho částmi (coiny, VIP, atd.) nebo s VIP kódy. 
             Výjimku tvoří pouze Survival server, kde je povoleno obchodování s částmi účtu 
-            specifickými pro Survival (itemy, Survival peníze)
+            specifickými pro Survival (itemy, Survival peníze).
           </p>
 
           <h3>TeamSpeak3</h3>
