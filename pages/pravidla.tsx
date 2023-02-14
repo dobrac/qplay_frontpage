@@ -58,7 +58,7 @@ export default function Rules() {
           <p>
             Hráč nesmí konat věci, které vedou k jeho obohacení nebo ke škodě
             druhého. Je zakázáno zamlčení podstatné skutečnosti a uvedení hráče v
-            omyl.
+            omyl. 
           </p>
 
           <h3>Nevhodný skin</h3>
@@ -108,7 +108,7 @@ export default function Rules() {
             Hráč musí mít nastaven vhodný skin.<br/>
             Hráč musí respektovat všechna nařízení serveru.<br/>
             Hráč nesmí jakýmkoliv způsobem kazit průběh hry ostatním hráčům (cross
-            teaming, podkopávání spoluhráčů, targetování druhých hráčů aj.).<br/>
+            teaming, podkopávání spoluhráčů, targetování druhých hráčů, TPA-kill aj.).<br/>
             Hráč nesmí zneužít chyby serveru a musí ji nahlásit A-týmu nebo Vedení
             serveru.<br/>
             Hráč nesmí poskytovat žádné informace o tom, jak obejít systém
@@ -240,12 +240,14 @@ export default function Rules() {
           <h3>Obchodování</h3>
           <p>
             Každý hráč, člen A-týmu, Vedení A-týmu a Vedení serveru má zakázáno
-            nabízet hráčům v chatu jakoukoliv obchodní nabídku. Předejdeme tak
+            nabízet hráčům jakoukoliv obchodní nabídku. Předejdeme tak
             několika podvodným dohodám, na které doplatilo v historii Minecraft
             serverů už několik hráčů. Jedná se také o nabídky typu: „Ahoj, pošli
             mi prosím tě určitý počet coins a já ti koupím VIP“.<br/>
             Je zakázáno obchodovat či jen nabízet jakoukoliv obchodní nabídku se
-            svým účtem nebo s jeho částmi (coiny, VIP, atd.) nebo s VIP kódy.
+            svým účtem nebo s jeho částmi (coiny, VIP, atd.) nebo s VIP kódy. 
+            Výjimku tvoří pouze Survival server, kde je povoleno obchodování s částmi účtu 
+            specifickými pro Survival (itemy, Survival peníze)
           </p>
 
           <h3>TeamSpeak3</h3>
@@ -277,7 +279,7 @@ export default function Rules() {
             povinen pravidelně kontrolovat změny těchto pravidel, hraním na
             herním serveru QPlay.cz stvrzuje, že se se všemi pravidly seznámil,
             rozumí jim a zavazuje se je dodržovat. Všechna zde uvedená pravidla
-            jsou platná od <strong>11.12.2022</strong>.
+            jsou platná od <strong>14. 2. 2023</strong>.
           </i>
         </span>
           &nbsp;
