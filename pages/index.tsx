@@ -15,8 +15,6 @@ import survival from '../public/icons/survival.png'
 import imgServerMiniUHC from "../public/imgServers/miniuhc.webp"
 import imgServer1vs1 from "../public/imgServers/1vs1.webp"
 import imgServerBedWars from "../public/imgServers/bedwars.webp"
-import imgServerTeams from "../public/imgServers/teams.webp"
-import teams from '../public/icons/teams.png'
 import {useCallback, useEffect, useState} from "react";
 import {ChangelogEntry} from "../types/ChangelogEntry";
 import ChangelogCard from "../components/ChangelogCard";
@@ -133,7 +131,7 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                 <p>Minecraft server QPlay.cz, který patří mezi největší servery v Česku a Slovensku, byl založen v roce
                   2015 a nabízí spoustu různých miniher.
                   Za své dlouhodobé působení na česko-slovenské scéně se pyšní pokročilým technickým nastavením. Server
-                  vytvořil i své vlastní minihry Teams a MiniAnnihilation. Dále si můžete na serveru zahrát minihry,
+                  vytvořil i svou vlastní minihru MiniAnnihilation. Dále si můžete na serveru zahrát minihry,
                   které jsou známé především ze zahraničí - BedWars, SkyWars, 1vs1 a další.
                   Přijďte si užít hru Minecraft na serveru QPlay.</p>
                 <div className="stats">
@@ -473,37 +471,6 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                       <li>BedWars Solo (1v1v1v1)</li>
                       <li>BedWars Duo (2v2v2v2)</li>
                       <li>BedWars Squad (4v4v4v4)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card">
-                <div className="card-top">
-                  <ImageCard src={imgServerTeams}></ImageCard>
-                  <div className="header">
-                    <div className="imageicon">
-                      <Image
-                        src={teams}
-                        alt="teams"
-                        height={80}
-                        width={80}
-                        quality={100}
-                        style={{
-                          maxWidth: "100%",
-                        }}/>
-                    </div>
-                    <h3>Teams</h3>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <div className="content">
-                    <p>Sbírej speciální itemy, zabíjej bosse, obsaď XP farmu na středu mapy a znič nepřátelské
-                      nexusy.</p>
-                    <h4>Seznam serverů</h4>
-                    <ul>
-                      <li>Teams Squad (4v4v4v4)</li>
                     </ul>
                   </div>
                 </div>
