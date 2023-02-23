@@ -217,7 +217,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
               </p>
               <p>
                 <Link href='/pravidla' className="text-reset">
-                  Obchrana osobních údajů
+                  Ochrana osobních údajů
                 </Link>
               </p>
             </div>
