@@ -33,7 +33,7 @@ export default function Contact() {
           <b>Další možnosti kontaktování</b><br/>
           V případě nefunkčnosti info panelu nás můžete kontaktovat na emailové
           adrese <b>support@qplay.cz</b>. Například na dotazy ohledně žádostí o
-          unban či problémů s platbou v případě funkčního info panelu nemusí být
+          unban či problémů s platbou* v případě funkčního info panelu nemusí být
           na tomto emailu odpovídáno, pro tento druh dotazů prosím využijte
           informační portál{" "}
           <a href="https://info.qplay.cz" target="_blank" rel="noreferrer">
@@ -78,6 +78,12 @@ export default function Contact() {
             <i>vedená u Krajského soudu v Plzni, oddíl C, vložka 39201</i><br/>
             sídlo: Hodonínská 63, 323 00 Plzeň, Česká republika<br/>
           </div>
+
+          <br/><br/>
+          <i>* V případě, kdy se kupující rozhodne otevřít PayPal Dispute, hrozí mu permanentí
+          zabanování účtu. Oficiální cesta řešení problémů s platbou vede přes <a href="https://info.qplay.cz" target="_blank" rel="noreferrer">
+          info.qplay.cz</a>.</i>
+
         </div>
       </section>
     </div>
