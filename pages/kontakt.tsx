@@ -80,7 +80,7 @@ export default function Contact() {
           </div>
 
           <br/><br/>
-          <i>* V případě, kdy se kupující rozhodne otevřít PayPal Dispute, hrozí mu permanentí
+          <i>* V případě, kdy se kupující rozhodne otevřít PayPal Dispute, hrozí mu permanentní
           zabanování účtu. Oficiální cesta řešení problémů s platbou vede přes <a href="https://info.qplay.cz" target="_blank" rel="noreferrer">
           info.qplay.cz</a>.</i>
 
