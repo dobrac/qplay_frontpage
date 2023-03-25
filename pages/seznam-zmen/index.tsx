@@ -15,7 +15,7 @@ export default function ChangeLog({changelogNews}: ChangeLogProps) {
 
   useEffect(() => {
     setPages(Math.round(changelogNews.length / 9))
-  }, []);
+  }, [changelogNews.length]);
 
   function ChangeLogNewsRender() {
     const news = getPaginatedData().map(
