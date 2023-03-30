@@ -55,11 +55,6 @@ export default function Contact() {
             <b>@qplaycz</b>
           </a>
           <br/><br/>
-          <b> Facebook: </b>
-          <a href="https://www.facebook.com/QPlay.cz" target="_blank" rel="noreferrer">
-            <b>https://www.facebook.com/QPlay.cz</b>
-          </a>
-          <br/><br/>
           <b> Discord: </b>
           <a href="https://discord.qplay.cz" target="_blank" rel="noreferrer">
             <b>https://discord.qplay.cz</b>
