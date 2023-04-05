@@ -97,7 +97,7 @@ const sections = [
         legend:
           '<span style="color: #B3000C;"><strong>2 Crates</strong></span>',
       },*/
-      /* {
+       {
         name: '<span style="color: #2AC820;"><strong>Easter Crates</strong></span>',
         default: false,
         basic: false,
@@ -107,7 +107,7 @@ const sections = [
           '<span style="color: #2AC820;"><strong>1 Crate</strong></span>',
         legend:
           '<span style="color: #2AC820;"><strong>2 Crates</strong></span>',
-      },*/ 
+      },
       /* {
         name: '<span style="color: #ff8c00;"><strong>Halloween Crates</strong></span>',
         default: false,
