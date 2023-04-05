@@ -11,10 +11,12 @@ import miniuhc from '../public/icons/miniuhc.png'
 import onevsone from '../public/icons/1vs1.png'
 import bedwars from '../public/icons/bedwars.png'
 import getdown from '../public/icons/getdown.png'
+import eggwars from '../public/icons/eggwars.png'
 import survival from '../public/icons/survival.png'
 import imgServerMiniUHC from "../public/imgServers/miniuhc.webp"
 import imgServer1vs1 from "../public/imgServers/1vs1.webp"
 import imgServerBedWars from "../public/imgServers/bedwars.webp"
+import imgServerEggWars from "../public/imgServers/eggwars.webp"
 import {useCallback, useEffect, useState} from "react";
 import {ChangelogEntry} from "../types/ChangelogEntry";
 import ChangelogCard from "../components/ChangelogCard";
@@ -462,6 +464,37 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                       <li>BedWars Solo (1v1v1v1)</li>
                       <li>BedWars Duo (2v2v2v2)</li>
                       <li>BedWars Squad (4v4v4v4)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 mb-4">
+              <div className="card">
+                <div className="card-top">
+                  <ImageCard src={"/imgServers/eggwars.webp"}></ImageCard>
+                  <div className="header">
+                    <div className="imageicon">
+                      <Image
+                          src={eggwars}
+                          alt="eggwars"
+                          height={80}
+                          width={80}
+                          quality={100}
+                          style={{
+                            maxWidth: "100%",
+                          }}/>
+                    </div>
+                    <h3>EggWars</h3>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="content">
+                    <p>Obestav si své vajíčko, nasbírej ingoty, nakup si věci a znič vajíčko ostatním týmům.</p>
+                    <h4>Seznam serverů</h4>
+                    <ul>
+                      <li>EggWars Solo (1v1v1v1v1v1)</li>
+                      <li>EggWars Duo (2v2v2v2v2v2)</li>
                     </ul>
                   </div>
                 </div>
