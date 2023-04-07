@@ -1,7 +1,7 @@
 import {FC, PropsWithChildren} from "react";
 import Image from "next/image";
-import bannerImage from "../public/images/bannerWinterLobby.png"
-import bannerImageW from "../public/images/bannerWinterLobby.png"
+import bannerImage from "../public/images/BannerEaster.png"
+import bannerImageW from "../public/images/BannerEaster.png"
 
 const Banner: FC<PropsWithChildren<{ sm?: boolean }>> = ({children, sm}) => {
   return (
