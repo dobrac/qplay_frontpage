@@ -37,7 +37,11 @@ export default function Tiktoker() {
 
               <p>- Na TikTok kanále se musí vyskytovat alespoň 3 videa z našeho serveru.</p>
 
-              <p> - TikToker se musí snažit aktivně vydávat každý měsíc alespoň 2 videa z našeho serveru.</p>
+              <p>- TikToker se musí snažit aktivně vydávat každý měsíc alespoň 2 videa z našeho serveru.</p>
+              
+              <p>- Slušně reprezentovat náš server.</p>
+
+              <p>- Dodržovat pravidla našeho serveru.</p>
               <br/>
               <h2>
                 Výhody <span style={{color: "#FF1493"}}>TikTokera</span> na serveru:
