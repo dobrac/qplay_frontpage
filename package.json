@@ -36,8 +36,8 @@
   "devDependencies": {
     "@types/he": "^1.2.0",
     "@types/node": "18.15.8",
-    "@types/react": "18.0.29",
-    "@types/react-dom": "18.0.11",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "sass": "1.60.0",
