@@ -11,6 +11,7 @@ import type {GetStaticProps, NextPage} from 'next'
 import he from "he"
 import Banner from "../../components/Banner";
 import strip from 'strip-markdown'
+import {ParsedUrlQuery} from "querystring";
 
 interface ChangeLogNewProps {
   changelogEntry: ChangelogEntry
@@ -70,15 +71,29 @@ const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogEntry, description}
   )
 }
 
-// @ts-ignore
-export const getStaticProps: GetStaticProps = async (context) => {
+interface StaticPageParams extends ParsedUrlQuery {
+  id?: string
+}
+
+export const getStaticProps: GetStaticProps<ChangeLogNewProps, StaticPageParams> = async (context) => {
+  const changelogId = context.params?.id as (string | undefined)
+  if (!changelogId) {
+    return {
+      redirect: {
+        statusCode: 301,
+        destination: "/seznam-zmen",
+      },
+      revalidate: 10, // In seconds
+    }
+  }
   const data = await axios.get(
-    'https://changelog.qplay.cz/api/changelog/' + context.params?.id
+    'https://changelog.qplay.cz/api/changelog/' + encodeURIComponent(changelogId)
   )
 
   if (!data?.data || !data.data.published) {
     return {
       redirect: {
+        statusCode: 302,
         destination: "/seznam-zmen",
       },
       revalidate: 10, // In seconds
