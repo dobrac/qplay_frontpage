@@ -55,7 +55,6 @@ function MyApp({Component, pageProps}: AppProps) {
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
       />
-      <Component {...pageProps} />
       <CookieConsent
         location="bottom"
         buttonText="Souhlasím"
