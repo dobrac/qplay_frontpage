@@ -46,4 +46,4 @@ EXPOSE 5000
 
 ENV PORT 5000
 
-CMD yarn react-env --prefix NEXT_PUBLIC && node server.js
+CMD npx react-env --prefix NEXT_PUBLIC && node server.js
