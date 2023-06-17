@@ -42,7 +42,7 @@ const questions = [
   ),
   new Question(
     'Chci se stát členem A-Teamu, jak toho mohu docílit?',
-    'Záleží, jakou pozici chceš vykonávat. Nábory na pozici Helper bývají až třikrát do roka formou formuláře a jsou vždy vyvěšeny na <a href="https://discord.qplay.cz" target="_blank">Discordu QPlay.cz</a> nebo <a href="https://instagram.com/qplaycz/" target="_blank">Instagramu QPlay.cz</a>. Chceš-li se stát builderem, musíš si napsat ticket na stránce <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a> s žádostí o osobní pohovor. Podrobnější informace jsou uvedeny v sekci <a href="https://www.qplay.cz/nabor/" target="_blank">pozice</a>'
+    'Záleží, jakou pozici chceš vykonávat. Nábory na pozici Helper bývají až třikrát do roka formou formuláře a jsou vždy vyvěšeny na <a href="https://discord.qplay.cz" target="_blank">Discordu QPlay.cz</a> nebo <a href="https://instagram.com/qplaycz/" target="_blank">Instagramu QPlay.cz</a>. Chceš-li se stát builderem, musíš si napsat ticket na stránce <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a> s žádostí o osobní pohovor. Podrobnější informace jsou uvedeny v sekci <a href="https://www.qplay.cz/pozice/" target="_blank">pozice</a>'
   ),
   new Question(
     'Jakým způsobem mohu podpořit server?',

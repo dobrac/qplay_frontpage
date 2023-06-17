@@ -8,6 +8,9 @@ import {useRouter} from "next/router";
 import Script from "next/script";
 import {GA_TRACKING_ID, pageview} from "../lib/gtag";
 import {useReportWebVitals} from "next/web-vitals";
+import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 function MyApp({Component, pageProps}: AppProps) {
   const router = useRouter()
@@ -69,7 +72,9 @@ function MyApp({Component, pageProps}: AppProps) {
           Více informací
         </a>
       </CookieConsent>
-      <Component {...pageProps} />
+      <QueryClientProvider client={queryClient}>
+        <Component {...pageProps} />
+      </QueryClientProvider>
     </LayoutDefault>
   )
 }

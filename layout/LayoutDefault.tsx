@@ -33,7 +33,7 @@ const menu = [
   new MenuItem("VIP účet", "/vip", false, "special"),
   new MenuItem("Obchod", "https://store.qplay.cz", true, "special"),
   new MenuItem("Seznam změn", "/seznam-zmen"),
-  new MenuItem("Pozice", "/nabor").setItems([
+  new MenuItem("Pozice", "/pozice").setItems([
     new MenuItem("YouTuber", "/yt"),
     new MenuItem("TikToker", "/tiktoker"),
     new MenuItem("Technik", "/nabor/technik"),
@@ -144,7 +144,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
                 style={{
                   maxWidth: "100%",
                   height: "auto"
-                }} />
+                }}/>
             </div>
           </Link>
           <button onClick={(e) => toggleNav()} className="navbar-toggler">

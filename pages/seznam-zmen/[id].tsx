@@ -12,6 +12,7 @@ import he from "he"
 import Banner from "../../components/Banner";
 import strip from 'strip-markdown'
 import {ParsedUrlQuery} from "querystring";
+import {convertDate} from "../../utils/date";
 
 interface ChangeLogNewProps {
   changelogEntry: ChangelogEntry
@@ -19,16 +20,6 @@ interface ChangeLogNewProps {
 }
 
 const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogEntry, description}) => {
-  function convertDate(date: string) {
-    return new Date(date).toLocaleString("cs-CZ", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-      hour12: false,
-      timeZone: "Europe/Prague"
-    })
-  }
-
   function ChangeLogEntryRender() {
     return (
       <div>

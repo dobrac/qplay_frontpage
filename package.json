@@ -3,10 +3,10 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "react-env --prefix NEXT_RUNTIME -- next dev",
     "build": "next build",
     "export": "next build && next export",
-    "start": "next start",
+    "start": "react-env --prefix NEXT_RUNTIME -- next start",
     "lint": "next lint",
     "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES yarn build",
     "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES yarn export",
@@ -14,9 +14,12 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@beam-australia/react-env": "^3.1.1",
+    "@tanstack/react-query": "^4.29.14",
     "axios": "1.4.0",
     "cross-env": "7.0.3",
     "he": "^1.2.0",
+    "lodash": "^4.17.21",
     "next": "13.4.2",
     "next-sitemap": "^4.0.9",
     "react": "18.2.0",
@@ -35,6 +38,7 @@
   "devDependencies": {
     "@types/gtag.js": "^0.0.12",
     "@types/he": "^1.2.0",
+    "@types/lodash": "^4.14.195",
     "@types/node": "18.16.8",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",

@@ -7,6 +7,7 @@ import Link from "next/link";
 import {ChangelogEntry} from "../types/ChangelogEntry";
 import he from "he"
 import ImageCard from "./ImageCard";
+import {convertDate} from "../utils/date";
 
 function getImage(text: string) {
   const image = text.match(/src="(.*?)"/);
@@ -15,16 +16,6 @@ function getImage(text: string) {
 
 function replaceTags(text: string) {
   return text.replace(/<br[^>]*>/gi, '').replace(/<p>(.*)<\/p>/g, '').replace(/<img .*?>/g, '');
-}
-
-function convertDate(date: string) {
-  return new Date(date).toLocaleString("cs-CZ", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    hour12: false,
-    timeZone: "Europe/Prague"
-  })
 }
 
 export default function ChangelogCard({element}: { element: ChangelogEntry }) {

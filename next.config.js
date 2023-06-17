@@ -7,6 +7,11 @@ const nextConfig = {
         domains: ["cloud.n-io.cz"]
     },
     output: 'standalone',
+    modularizeImports: {
+        lodash: {
+            transform: "lodash/{{member}}",
+        },
+    },
 }
 
 module.exports = nextConfig

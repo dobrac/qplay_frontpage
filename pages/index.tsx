@@ -20,6 +20,7 @@ import {ChangelogEntry} from "../types/ChangelogEntry";
 import ChangelogCard from "../components/ChangelogCard";
 import Banner from "../components/Banner";
 import ImageCard from "../components/ImageCard";
+import {publicControllerApi} from "../api/api-client";
 
 interface HomeProps {
   changelogNews: ChangelogEntry[]
@@ -32,12 +33,8 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
   const playersMaxShow = playersMax > -1 ? playersMax : '---'
 
   const fetchPlayers = useCallback(async () => {
-    const data = await axios.get(
-      'https://api.info.qplay.cz/public/players/online'
-    )
-    const dataMax = await axios.get(
-      'https://api.info.qplay.cz/public/players/max'
-    )
+    const data = await publicControllerApi.getPlayersOnline()
+    const dataMax = await publicControllerApi.getPlayersMax()
     if (data?.data) {
       setPlayers(data.data)
     }
