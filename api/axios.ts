@@ -1,4 +1,4 @@
-import axiosLib, { AxiosError } from "axios";
+import axiosLib, {AxiosError} from "axios";
 import env from "@beam-australia/react-env";
 
 let basePathLocal = env("API_URL");
