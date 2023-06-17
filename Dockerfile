@@ -30,10 +30,6 @@ ENV NEXT_TELEMETRY_DISABLED 1
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-COPY package.json package.json
-COPY yarn.lock yarn.lock
-RUN yarn install --pure-lockfile --production --link-duplicates
-
 # You only need to copy next.config.js if you are NOT using the default configuration
 COPY --from=builder /app/next.config.js ./
 COPY --from=builder /app/public ./public
