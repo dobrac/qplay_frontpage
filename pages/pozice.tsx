@@ -44,7 +44,7 @@ export default function Groups({adminTeam, media}: GroupsProps) {
     <div>
       <Head>
         <title>Pozice | QPlay.cz</title>
-        <meta name="description" content="AdminTeam"/>
+        <meta name="description" content="Pozice na serveru QPlay.cz"/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
