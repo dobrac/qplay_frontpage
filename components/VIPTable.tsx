@@ -347,9 +347,9 @@ const sections = [
       {
         name: 'Ranked Pass na 1vs1',
         default: false,
-        basic: true,
-        medium: true,
-        master: true,
+        basic: false,
+        medium: false,
+        master: false,
         legend: true,
       },
     ],
