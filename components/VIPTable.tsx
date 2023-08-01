@@ -345,7 +345,7 @@ const sections = [
         legend: true,
       },
       {
-        name: 'Ranked Pass na 1vs1',
+        name: 'Battle Pass na 1vs1',
         default: false,
         basic: false,
         medium: false,
