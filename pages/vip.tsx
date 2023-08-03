@@ -94,7 +94,7 @@ export default function VIP() {
           <br/>
 
           <p>
-            *Crate Shards je nová měna, kterou vlastní pouze hráč s LEGEND VIP.
+            *Crate Shards je měna, kterou vlastní pouze hráč s LEGEND VIP.
             Získává se místo Coinů hraním miniher. Na Lobby v Crate Factory si lze
             následně Crate Shards proměnit na normální crates (BASIC, MYSTERY,
             LEGEND) a v sezónách i na například Christmas, Valentine, Halloween
