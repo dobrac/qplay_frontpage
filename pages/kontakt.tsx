@@ -17,7 +17,7 @@ export default function Contact() {
       <section className="pagecontent">
         <div className="container">
           <div className="support-container">
-            <h2 style={{margin: "0px"}}>Podpora</h2>
+            <h2 style={{margin: "0px"}}>Podpora</h2> 
             <a href="https://info.qplay.cz" target="_blank" rel="noreferrer">
               <h3>info.qplay.cz (informační portál, ticket systém)</h3>
             </a>
