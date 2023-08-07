@@ -25,11 +25,9 @@ export default function Moderator() {
           <p></p>
           <h4><span style={{color: "#000000"}}>Jak se stát Moderátorem?</span></h4>
           <span style={{color: "#000000"}}> 
-            Se svými herními údaji se přihlásíte na{" "}
-            <a href="https://info.qplay.cz/" target="_blank" rel="noreferrer">Informační Panel</a>.{" "}
-            Kliknete na sekci &quot;Mé tickety&quot; a následně si stačí vytvořit nový
-            ticket s typem &quot;Žádost o Moderátora&quot;, kde vám bude poskytnuto více
-            informací.
+            Pokud byste se chtěli stát Moderátorem, tak je aktuálně <b>otevřený nábor!</b> První kolo probíhá formou formuláře.<br />
+            Formulář nalezneš na → <a href="https://bit.ly/nabormoderatoru23" target="blank_">https://bit.ly/nabormoderatoru23</a> <br />
+            (formulář bude uzavřen v pátek 11.8.2023 ve 23:59)
           </span>
           <p></p>
           <h4><span style={{color: "#000000"}}>Výhody Moderátora</span></h4>
