@@ -257,6 +257,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
           <hr/>
           <p className="text-center">© QPlay.cz. Všechna práva vyhrazena <span className="split">|</span> <span
             className="design">Designed by: <a href="https://skypad6000.eu">Skypad6000</a></span></p>
+          <p className="text-center">Nejsme nijak spojeni s Mojang Studios</p>
         </div>
       </Footer>
     </div>
