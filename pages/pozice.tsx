@@ -22,6 +22,8 @@ function getGroupCategoryName(category: GroupCategory): string {
       return "Builder Team";
     case GroupCategory.TECHNIK_TEAM:
       return "Technik Team";
+    case GroupCategory.CONTENT_TEAM:
+      return "Grafik Team";
     case GroupCategory.CHEATHUNTER_TEAM:
       return "CheatHunter Team";
     case GroupCategory.YOUTUBER:
