@@ -37,7 +37,7 @@ export default function Hire() {
           </li>
           <li>
             <Link href="/nabor/helper" passHref>
-              Helper
+              Helper [Nábor zveřejněn]
             </Link>
           </li>
           <li>
