@@ -57,7 +57,7 @@ export default function Tiktoker() {
 
               <p>5) Může využít možnosti pořádat soutěže s naším serverem.</p>
 
-              <p>6) Jeho kanál je zveřejněn na stránce „Pozice“.</p>
+              <p>6) Jeho kanál je zveřejněn v sekci „Skupiny“ na Info panelu.</p>
 
               <p>7) Skupina TikToker na <a href="https://discord.qplay.cz" target="_blank" rel="noreferrer">Discord
                 serveru</a> (lze o ni
