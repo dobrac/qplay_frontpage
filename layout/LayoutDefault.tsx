@@ -34,6 +34,7 @@ const menu = [
   new MenuItem("Obchod", "https://store.qplay.cz", true, "special"),
   new MenuItem("Seznam změn", "/seznam-zmen"),
   new MenuItem("Pozice", "/pozice").setItems([
+    new MenuItem("Náš tým", "/nabor/team"),
     new MenuItem("YouTuber", "/yt"),
     new MenuItem("TikToker", "/tiktoker"),
     new MenuItem("Technik", "/nabor/technik"),
