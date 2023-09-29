@@ -18,7 +18,7 @@ export default function Builder() {
           <h1 style={{textAlign: "center", fontSize: "xx-large"}}>
             <span style={{color: "#000000"}}><b>Nábor na Buildera</b></span>
           </h1>
-          <h4><span style={{color: "#000000"}}>Jak se stát Builderem?</span></h4>
+          <h4><span style={{color: "#000000"}}>🎯 Jak se stát Builderem?</span></h4>
           <span style={{color: "#000000"}}>
             Se svými herními údaji se přihlásíte na{" "}
             <a href="https://info.qplay.cz/" target="_blank" rel="noreferrer">Informační Panel</a>.{" "}
@@ -28,30 +28,40 @@ export default function Builder() {
           <br />
           <br />
           </span>
-          <h4><span style={{color: "#000000"}}>Výhody Buildera</span></h4>
+          <h4><span style={{color: "#000000"}}>💎 Co získaš jako Builder</span></h4>
           <li>
           <span style={{color: "#000000"}}>
-            Vlastní veškeré MASTER VIP výhody a vybrané LEGEND VIP výhody.
+            Veškeré MASTER VIP výhody a vybrané LEGEND VIP výhody.
           </span>
           </li>
           <li>
           <span style={{color: "#000000"}}>
-            Může se připojit do plného týmu na minihře MiniAnnihilation.
+            Fajn kolektiv, který se na vás už těší. 👐
           </span>
           </li>
           <li>
           <span style={{color: "#000000"}}>
-            Jednou za měsíc může udělat svou velkou akci na Discordu, kam obdrží zdarma
+            Přátelský kolektiv, který Vám pomůže nejen v začátcích.
+          </span>
+          </li>
+          <li>
+          <span style={{color: "#000000"}}>
+            Možnosti kariérního růstu.
+          </span>
+          </li>
+          <li>
+          <span style={{color: "#000000"}}>
+            Jednou za měsíc můžeš udělat svou vlastní akci na Discordu, kam obdrží zdarma
             odměny do soutěže.
           </span>
           </li>
           <li>
           <span style={{color: "#000000"}}>
-            Může pořádat menší akce na Discordu v &quot;QPlay Stage&quot;.
+            Můžeš pořádat menší akce na Discordu v &quot;QPlay Stage&quot;.
           </span>
           </li>
           <br/>
-          <h4><span style={{color: "#000000"}}>Odměna za práci Buildera</span></h4>
+          <h4><span style={{color: "#000000"}}>💰 Odměna za práci Buildera</span></h4>
           <li>
           <span style={{color: "#000000"}}>
             Každý měsíc obdrží určitou sumu coinů za počet postavených map.
@@ -59,28 +69,22 @@ export default function Builder() {
           </li>
           <li>
           <span style={{color: "#000000"}}>
-            Za odvedenou práci obdrží každý měsíc zpravidla 1x Basic VIP.
+            Za odvedenou práci obdržíš VIPčka.
           </span>
           </li>
           <li>
           <span style={{color: "#000000"}}>
-            V závislosti na odvedené práci může každý měsíc získat navíc další
-            druhy VIP.
+            Za odvedenou práci můžeš každý měsíc získat navíc různé typy crates.
           </span>
           </li>
           <li>
           <span style={{color: "#000000"}}>
-            Za odvedenou práci může každý měsíc získat navíc různé typy crates.
+            V závislosti na odvedenou práci můžeš obdržet hmotný balíček. 📦
           </span>
           </li>
           <li>
           <span style={{color: "#000000"}}>
-            V závislosti na odvedené práci může obdržet hmotný balíček.
-          </span>
-          </li>
-          <li>
-          <span style={{color: "#000000"}}>
-            Po rozhodnutí vedení serveru může za svou odvedenou práci získat
+            Po rozhodnutí vedení serveru můžeš za svou odvedenou práci získat
             finanční odměnu.
           </span>
           </li>
