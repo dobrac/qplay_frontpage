@@ -325,7 +325,7 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                     <h4>Seznam serverů</h4>
                     <ul>
                       <li>SkyWars Solo</li>
-                      <li>SkyWars AirDrop</li>
+                      <li>SkyWars Lucky</li>
                       <li>SkyWars Duo</li>
                     </ul>
                   </div>
