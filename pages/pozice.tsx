@@ -1,7 +1,5 @@
 import Head from "next/head"
 import Banner from "../components/Banner";
-import {ParsedUrlQuery} from "querystring";
-import {GetStaticProps} from "next";
 import Link from "next/link";
 
 
@@ -66,19 +64,4 @@ export default function Groups() {
       </section>
     </div>
   )
-}
-
-interface StaticPageParams extends ParsedUrlQuery {
-  id?: string
-}
-
-export const getStaticProps: GetStaticProps<StaticPageParams> = async () => {
- 
-  return {
-    props: {},
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 10 seconds
-    revalidate: 10, // In seconds
-  }
 }
