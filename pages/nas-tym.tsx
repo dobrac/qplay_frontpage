@@ -54,7 +54,6 @@ export default function Groups({adminTeam, media}: GroupsProps) {
       </Banner>
       <section className="pagecontent">
         <div className="container">
-          <hr className="my-5"/>
           {adminTeam?.map((group, index, array) => {
             return (
               <div key={group.category} className="container">
