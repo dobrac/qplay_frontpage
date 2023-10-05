@@ -12,18 +12,20 @@ export async function findAdminTeam(): Promise<
       return new APIResponse<AdminTeamGroupDTO[]>(result.data);
     }
   } catch (e) {
-    return new APIResponse<AdminTeamGroupDTO[]>(null);
+    return new APIResponse<AdminTeamGroupDTO[]>(undefined);
   }
 
   return ErrorAPIResponse;
 }
 
-export function useAdminTeam(): APIDataResponse<AdminTeamGroupDTO[]> {
-  const data = useQuery(["public", "adminteam"], () => findAdminTeam());
+export function useAdminTeam(placeholderData?: AdminTeamGroupDTO[]): APIDataResponse<AdminTeamGroupDTO[]> {
+  const data = useQuery(["public", "adminteam"], () => findAdminTeam(), {
+    placeholderData: new APIResponse(placeholderData)
+  });
   return new APIDataResponse(data);
 }
 
-export async function findMedia(): Promise<
+export async function findMedia(placeholderData?: APIResponse<MediaGroupDTO[]>): Promise<
   APIResponse<MediaGroupDTO[]>
 > {
   try {
@@ -32,13 +34,15 @@ export async function findMedia(): Promise<
       return new APIResponse<MediaGroupDTO[]>(result.data);
     }
   } catch (e) {
-    return new APIResponse<MediaGroupDTO[]>(null);
+    return new APIResponse<MediaGroupDTO[]>(undefined);
   }
 
   return ErrorAPIResponse;
 }
 
-export function useMedia(): APIDataResponse<MediaGroupDTO[]> {
-  const data = useQuery(["public", "adminteam", "media"], () => findMedia());
+export function useMedia(placeholderData?: MediaGroupDTO[]): APIDataResponse<MediaGroupDTO[]> {
+  const data = useQuery(["public", "adminteam", "media"], () => findMedia(), {
+    placeholderData: new APIResponse(placeholderData)
+  });
   return new APIDataResponse(data);
 }

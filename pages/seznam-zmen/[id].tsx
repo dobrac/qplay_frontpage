@@ -125,7 +125,7 @@ export async function getStaticPaths() {
   )
 
   if (!res.data) {
-    return {}
+    return {paths: [], fallback: 'blocking'}
   }
 
   // Get the paths we want to pre-render based on posts

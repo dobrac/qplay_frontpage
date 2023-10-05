@@ -4,8 +4,8 @@ import {AdminTeamGroupDTO, GroupCategory, MediaGroupDTO} from "../api-client";
 import {sortBy} from "lodash";
 import Avatar from "../components/Avatar";
 import {ParsedUrlQuery} from "querystring";
-import {GetStaticProps} from "next";
-import {findAdminTeam, findMedia} from "../api/adminteam";
+import {GetStaticProps, InferGetStaticPropsType} from "next";
+import {findAdminTeam, findMedia, useAdminTeam, useMedia} from "../api/adminteam";
 
 function getGroupCategoryName(category: GroupCategory): string {
   switch (category) {
@@ -31,15 +31,46 @@ function getGroupCategoryName(category: GroupCategory): string {
       return "TikTokeři";
   }
 
-  return "Categorie nenalezena: " + category;
+  return "Kategorie nenalezena: " + category;
+}
+
+interface StaticPageParams extends ParsedUrlQuery {
+  id?: string
 }
 
 interface GroupsProps {
-  adminTeam: AdminTeamGroupDTO[]
-  media: MediaGroupDTO[]
+  adminTeam?: AdminTeamGroupDTO[]
+  media?: MediaGroupDTO[]
 }
 
-export default function Groups({adminTeam, media}: GroupsProps) {
+export const getStaticProps = (async (context) => {
+  const [adminTeam, media] = await Promise.all([findAdminTeam(), findMedia()])
+
+  if (!adminTeam.data || !media.data) {
+    return {
+      props: {},
+      revalidate: true,
+    }
+  }
+
+  return {
+    props: {
+      adminTeam: adminTeam.data,
+      media: media.data
+    },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 60 seconds
+    revalidate: 60, // In seconds
+  }
+}) satisfies GetStaticProps<GroupsProps, StaticPageParams>
+
+export default function Groups({
+                                 adminTeam: adminTeamInitial,
+                                 media: mediaInitial
+                               }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const {data: adminTeam} = useAdminTeam(adminTeamInitial)
+  const {data: media} = useMedia(mediaInitial)
 
   return (
     <div>
@@ -54,6 +85,10 @@ export default function Groups({adminTeam, media}: GroupsProps) {
       </Banner>
       <section className="pagecontent">
         <div className="container">
+          {(!adminTeam || !media) &&
+              <div>Načítání...</div>
+          }
+
           {adminTeam?.map((group, index, array) => {
             return (
               <div key={group.category} className="container">
@@ -150,24 +185,4 @@ export default function Groups({adminTeam, media}: GroupsProps) {
       </section>
     </div>
   )
-}
-
-interface StaticPageParams extends ParsedUrlQuery {
-  id?: string
-}
-
-export const getStaticProps: GetStaticProps<GroupsProps, StaticPageParams> = async () => {
-  const adminTeam = await findAdminTeam()
-  const media = await findMedia()
-
-  return {
-    props: {
-      adminTeam: adminTeam.data ?? [],
-      media: media.data ?? []
-    },
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 10 seconds
-    revalidate: 10, // In seconds
-  }
 }

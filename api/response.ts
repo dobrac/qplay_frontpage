@@ -24,17 +24,17 @@ export class APIDataResponse<T> {
 }
 
 export class APIResponse<T> {
-  data: T | null;
+  data: T | undefined;
   isError: boolean;
   isForbidden: boolean;
 
-  constructor(data: T | null, isError = false, isForbidden = false) {
+  constructor(data: T | undefined, isError = false, isForbidden = false) {
     this.data = data;
     this.isError = isError;
     this.isForbidden = isForbidden;
   }
 }
 
-export const NoDataAPIResponse = new APIResponse<never>(null, false, false);
-export const ErrorAPIResponse = new APIResponse<never>(null, true, false);
-export const ForbiddenAPIResponse = new APIResponse<never>(null, true, true);
+export const NoDataAPIResponse = new APIResponse<never>(undefined, false, false);
+export const ErrorAPIResponse = new APIResponse<never>(undefined, true, false);
+export const ForbiddenAPIResponse = new APIResponse<never>(undefined, true, true);
