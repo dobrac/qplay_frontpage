@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Banner from "../components/Banner";
+import Link from 'next/link';
 
 export default function Youtuber() {
   return (
@@ -101,7 +102,7 @@ export default function Youtuber() {
 
               <p>5) Může využít možnosti pořádat soutěže s naším serverem.</p>
 
-              <p>6) Jeho kanál je zveřejněn na stránce „Pozice“.</p>
+              <p>6) Jeho kanál je zveřejněn na stránce <Link href={"/nas-tym"} passHref>„Náš Tým“</Link>.</p>
 
               <p>7) Skupina YouTuber na <a href="https://discord.qplay.cz" target="_blank" rel="noreferrer">Discord
                 serveru</a> (lze o ni
