@@ -39,7 +39,7 @@ export default function Youtuber() {
 
               <p>
                 - Na YouTube kanále se musí vyskytovat alespoň 2 videa z našeho
-                serveru.
+                serveru. (1 video je ekvivalentní ke 2 YT Shorts)
               </p>
 
               <h3>
