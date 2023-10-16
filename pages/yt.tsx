@@ -38,9 +38,11 @@ export default function Youtuber() {
               <p>- Každé video musí mít převážně více palců nahoru.</p>
 
               <p>
-                - Na YouTube kanále se musí vyskytovat alespoň 2 videa z našeho
-                serveru. (1 video je ekvivalentní ke 2 YT Shorts)
+                - Na YouTube kanále se musí vyskytovat alespoň 2 videa* z našeho
+                serveru
               </p>
+
+              <p><i>*1 video je ekvivalentní ke 2 YT Shorts</i></p>
 
               <h3>
                 Pravidla pro <span style={{color: "red"}}>YouTubery</span> do 2 000
@@ -51,7 +53,7 @@ export default function Youtuber() {
 
               <p>• Dodržovat pravidla našeho serveru.</p>
 
-              <p>• Natáčet každý měsíc alespoň 2 videa z našeho serveru.</p>
+              <p>• Natáčet každý měsíc alespoň 2 videa* z našeho serveru.</p>
 
               <h3>
                 Pravidla pro <span style={{color: "red"}}>YouTubery</span> do 5 000
@@ -62,7 +64,7 @@ export default function Youtuber() {
 
               <p>• Dodržovat pravidla našeho serveru.</p>
 
-              <p>• Natáčet každý měsíc alespoň 1 video z našeho serveru.</p>
+              <p>• Natáčet každý měsíc alespoň 1 video* z našeho serveru.</p>
 
               <h3>
                 Pravidla pro <span style={{color: "red"}}>YouTubery</span> do 20 000
@@ -73,7 +75,7 @@ export default function Youtuber() {
 
               <p>• Dodržovat pravidla našeho serveru.</p>
 
-              <p>• Natočit za dva měsíce alespoň 1 video z našeho serveru.</p>
+              <p>• Natočit za dva měsíce alespoň 1 video* z našeho serveru.</p>
             </div>
 
             <div>
