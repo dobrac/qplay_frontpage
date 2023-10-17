@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@beam-australia/react-env": "^3.1.1",
-    "@tanstack/react-query": "^4.29.14",
+    "@tanstack/react-query": "^5.0.0",
     "axios": "1.4.0",
     "cross-env": "7.0.3",
     "he": "^1.2.0",
