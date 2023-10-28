@@ -108,14 +108,14 @@ const sections = [
         legend:
           '<span style="color: #2AC820;"><strong>2 Crates</strong></span>',
       },*/ 
-      /* {
+      {
         name: '<span style="color: #ff8c00;"><strong>Halloween Crates</strong></span>',
         default: false,
         basic: false,
-        medium: '<span style="color: #ff8c00;"><strong>1 Crate</strong></span>',
-        master: '<span style="color: #ff8c00;"><strong>1 Crate</strong></span>',
-        legend: '<span style="color: #ff8c00;"><strong>2 Crates</strong></span>',
-      },*/
+        medium: '<span style="color: #ff8c00; font-weight: bold;"><strong>1 Crate</strong></span>',
+        master: '<span style="color: #ff8c00; font-weight: bold;"><strong>1 Crate</strong></span>',
+        legend: '<span style="color: #ff8c00; font-weight: bold;"><strong>2 Crates</strong></span>',
+      },
       /* {
         name:
           '<span style="color: #e75480;"><strong>Valentine Crates</strong></span>',
