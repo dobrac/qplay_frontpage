@@ -4,12 +4,27 @@ import {Fragment, useEffect, useState} from "react";
 import {ChangelogEntry} from "../../types/ChangelogEntry";
 import ChangelogCard from "../../components/ChangelogCard";
 import Banner from "../../components/Banner";
+import {useQuery} from "@tanstack/react-query";
+import {take} from "lodash";
 
 interface ChangeLogProps {
   changelogNews: ChangelogEntry[]
 }
 
-export default function ChangeLog({changelogNews}: ChangeLogProps) {
+export default function ChangeLog({changelogNews: changelogNewsInitial}: ChangeLogProps) {
+  const {data: changelogNews} = useQuery({
+    queryKey: ["changelog-news"],
+    queryFn: async () => {
+      const res = await axios.get<ChangelogEntry[]>(
+        'https://changelog.qplay.cz/api/changelog'
+      )
+      if (res?.data) {
+        return res.data.filter((item) => item.published)
+      }
+      return []
+    },
+    initialData: changelogNewsInitial,
+  })
   const [pages, setPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -139,7 +154,7 @@ export async function getStaticProps() {
 
   let changelogNews: ChangelogEntry[] = []
   if (res?.data) {
-    changelogNews = res.data.filter((item) => item.published)
+    changelogNews = take(res.data.filter((item) => item.published), 9)
   }
 
   return {

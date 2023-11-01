@@ -14,6 +14,7 @@ import strip from 'strip-markdown'
 import {ParsedUrlQuery} from "querystring";
 import {convertDate} from "../../utils/date";
 import Image from "next/image";
+import {take} from "lodash";
 
 function ChangeLogEntryRender({changelog}: { changelog: ChangelogEntry }) {
   return (
@@ -152,7 +153,7 @@ export async function getStaticPaths() {
   // We'll pre-render only these paths at build time.
   // { fallback: blocking } will server-render pages
   // on-demand if the path doesn't exist.
-  return {paths, fallback: 'blocking'}
+  return {paths: take(paths, 9 * 3), fallback: 'blocking'}
 }
 
 export default ChangeLogNew
