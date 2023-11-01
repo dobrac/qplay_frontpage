@@ -13,6 +13,7 @@ const Banner: FC<PropsWithChildren<{ sm?: boolean }>> = ({children, sm}) => {
             src={bannerImage}
             alt="banner"
             fill={true}
+            sizes="100vw"
             style={{
               maxWidth: "100%",
               objectFit: "cover",
@@ -27,6 +28,7 @@ const Banner: FC<PropsWithChildren<{ sm?: boolean }>> = ({children, sm}) => {
             src={bannerImageW}
             alt="banner"
             fill={true}
+            sizes="100vw"
             style={{
               maxWidth: "100%",
               objectFit: "cover",

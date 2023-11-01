@@ -9,7 +9,6 @@ export default function Document() {
 
         <link href="/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-
         <script src="/__ENV.js" defer/>
       </Head>
       <body>

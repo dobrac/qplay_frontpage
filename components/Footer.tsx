@@ -11,6 +11,7 @@ const Footer: FC<PropsWithChildren<{}>> = ({children}) => {
           placeholder={"blur"}
           alt="footer"
           fill={true}
+          sizes="100vw"
           style={{
             maxWidth: "100%",
             objectFit: "cover",
