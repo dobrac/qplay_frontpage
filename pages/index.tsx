@@ -21,6 +21,9 @@ import ChangelogCard from "../components/ChangelogCard";
 import Banner from "../components/Banner";
 import ImageCard from "../components/ImageCard";
 import {publicControllerApi} from "../api/api-client";
+import {take} from "lodash";
+
+const NEWS_COUNT = 3
 
 interface HomeProps {
   changelogNews: ChangelogEntry[]
@@ -53,7 +56,7 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
   }, [fetchPlayers])
 
   function ChangeLogNewsRender() {
-    const news = changelogNews.slice(0, 3).map(
+    const news = changelogNews.slice(0, NEWS_COUNT).map(
       (element) => {
         return (
           <ChangelogCard key={element['id']} element={element}/>
@@ -478,7 +481,7 @@ export async function getStaticProps() {
 
   let changelogNews: ChangelogEntry[] = []
   if (res?.data) {
-    changelogNews = res.data.filter((item) => item.published)
+    changelogNews = take(res.data.filter((item) => item.published), NEWS_COUNT)
   }
 
   return {
