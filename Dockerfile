@@ -44,6 +44,9 @@ ENV NODE_ENV production
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
+# Install react-env to inject env vars into the client
+RUN yarn add @beam-australia/react-env
+
 COPY --from=builder /app/public ./public
 
 # Set the correct permission for prerender cache
