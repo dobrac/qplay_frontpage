@@ -28,6 +28,10 @@ COPY . .
 # Uncomment the following line in case you want to disable telemetry during the build.
 ENV NEXT_TELEMETRY_DISABLED 1
 
+# API url
+ARG NEXT_PUBLIC_API_URL
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+
 RUN yarn build
 
 # If using npm comment out above and use below instead
@@ -43,9 +47,6 @@ ENV NODE_ENV production
 
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
-
-# Install react-env to inject env vars into the client
-RUN yarn add @beam-australia/react-env
 
 COPY --from=builder /app/public ./public
 
@@ -65,7 +66,5 @@ EXPOSE 5000
 ENV PORT 5000
 # set hostname to localhost
 ENV HOSTNAME "0.0.0.0"
-
-RUN yarn react-env --prefix NEXT_RUNTIME
 
 CMD ["node", "server.js"]
