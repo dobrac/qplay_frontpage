@@ -63,4 +63,4 @@ ENV PORT 5000
 # set hostname to localhost
 ENV HOSTNAME "0.0.0.0"
 
-CMD ["node", "server.js"]
+CMD ["react-env", "--prefix", "NEXT_RUNTIME", "--", "node", "server.js"]
