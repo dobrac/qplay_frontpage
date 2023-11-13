@@ -159,14 +159,6 @@ const sections = [
         legend: true,
       },
       {
-        name: 'Daň z převodu Coins',
-        default: '50 %',
-        basic: '45 %',
-        medium: '40 %',
-        master: '35 %',
-        legend: '35 %',
-      },
-      {
         name: 'Bonus Coins',
         default: false,
         basic: '10 %',
