@@ -2,24 +2,41 @@ import {Fragment, useState} from "react";
 
 const sections = [
   {
+    header: 'Cena',
+    color: '#5E7594',
+    items: [
+      {
+        name: 'CZK',
+        default: '-',
+        vip: '99 CZK',
+        master: '189 CZK',
+        legend: '249 CZK',
+      },
+      {
+        name: 'EUR',
+        default: '-',
+        vip: '4 EUR',
+        master: '7,5 EUR',
+        legend: '9,9 EUR',
+      },
+    ],
+  },
+  {
     header: 'Detaily skupiny',
     color: '#5E7594',
     items: [
       {
         name: 'Délka trvání výhod',
         default: '-',
-        basic: '30 dní',
-        medium: '30 dní',
+        vip: '30 dní',
         master: '30 dní',
         legend: '30 dní',
       },
       {
         name: 'Prefix v tabu a chatu',
         default: '-',
-        basic:
-          '<span style="color: #ED7727; font-weight: bold;">BASIC</span>',
-        medium:
-          '<span style="color: #ED7727; font-weight: bold;">MEDIUM</span>',
+        vip:
+          '<span style="color: #ED7727; font-weight: bold;">VIP</span>',
         master:
           '<span style="color: #ED7727; font-weight: bold;">MASTER</span>',
         legend:
@@ -32,26 +49,37 @@ const sections = [
     color: '#3C96E0',
     items: [
       {
-        name: '<b>Veškeré kity zdarma</b>',
+        name: '<b>Veškeré Common kity zdarma</b>',
         default: false,
-        basic: false,
-        medium: false,
+        vip: true,
+        master: true,
+        legend: true,
+      },
+      {
+        name: '<b>Veškeré Rare kity zdarma</b>',
+        default: false,
+        vip: false,
+        master: true,
+        legend: true,
+      },
+      {
+        name: '<b>Veškeré Legendary kity zdarma</b>',
+        default: false,
+        vip: false,
         master: false,
         legend: true,
       },
       {
         name: '<b>Game Cosmetics zdarma</b>',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: false,
         legend: true,
       },
       {
         name: 'Legendary Crates',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: false,
         legend: '1 Crate',
       },
@@ -68,8 +96,7 @@ const sections = [
       {
         name: 'Mystery Crates',
         default: false,
-        basic: '1 Crate',
-        medium: '3 Crates',
+        vip: '3 Crates',
         master: '6 Crates',
         legend: '6 Crates',
       },
@@ -127,15 +154,7 @@ const sections = [
           '<span style="color: #e75480; font-weight: bold;">1 Crate</span>',
         legend:
           '<span style="color: #e75480; font-weight: bold;">2 Crates</span>',
-      },*/ 
-      {
-        name: 'Coins při aktivaci',
-        default: false,
-        basic: '10 000 Coins',
-        medium: '25 000 Coins',
-        master: '50 000 Coins',
-        legend: '-',
-      },
+      },*/
     ],
   },
   {
@@ -145,32 +164,21 @@ const sections = [
       {
         name: 'Crate Shards*',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: false,
         legend: true,
       },
       {
         name: 'Týdenní odměny',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
-        name: 'Bonus Coins',
-        default: false,
-        basic: '10 %',
-        medium: '15 %',
-        master: '20 %',
-        legend: '-',
-      },
-      {
         name: 'Odměna na konci hry',
         default: 'Coins',
-        basic: 'Coins',
-        medium: 'Coins',
+        vip: 'Coins',
         master: 'Coins',
         legend: 'Crate Shards*',
       },
@@ -183,48 +191,42 @@ const sections = [
       {
         name: 'Hlasování zdarma o mapě',
         default: '1x',
-        basic: '1x',
-        medium: '1x',
+        vip: '1x',
         master: '2x',
         legend: '4x',
       },
       {
         name: 'Zpráva po připojení na Lobby',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: false,
         legend: true,
       },
       {
         name: 'Emotes ve hře (/emotes)',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Připojení na plný server',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Létání na Lobby (/fly)',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Psaní barevných zpráv',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
@@ -237,55 +239,49 @@ const sections = [
       {
         name: 'Žluté písmo v chatu',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: false,
         legend: true,
       },
       {
         name: 'Možnost pojmenovat si peta',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: true,
         legend: true,
       },
       {
         name: 'Žádný slowmode v chatu',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Velikost party (/party)',
         default: '2 Hráči',
-        basic: '3 Hráči',
-        medium: '4 Hráči',
+        vip: '4 Hráči',
         master: '5 Hráčů',
         legend: '8 Hráčů',
       },
       {
         name: 'Soukromé zprávy (/msg)',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Možnost mít mazlíčka',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Velikost friend listu (/friend)',
         default: '5 Přátel',
-        basic: '10 Přátel',
+        vip: '10 Přátel',
         medium: '15 Přátel',
         master: '20 Přátel',
         legend: '30 Přátel',
@@ -299,48 +295,42 @@ const sections = [
       {
         name: 'Automatické přijímání Questů',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: true,
         legend: true,
       },
       {
         name: 'Sloty v EnderTruhle na MiniAnni',
         default: '9 Slotů',
-        basic: '18 Slotů',
-        medium: '18 Slotů',
+        vip: '18 Slotů',
         master: '18 Slotů',
         legend: '27 Slotů',
       },
       {
         name: 'Posílání věcí (/trade)',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Přenosná anvil (/anvil)',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Přenosný workbench (/wb)',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Battle Pass na 1vs1',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: false,
         legend: true,
       },
@@ -353,200 +343,175 @@ const sections = [
       {
         name: 'Vygenerování vlastní hlavy /head',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: false,
         legend: true,
       },
       {
         name: '15% šance na získání spawneru po vytěžení se silktouchem',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: false,
         legend: true,
       },
       {
         name: 'Zvýraznění se /glow',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: false,
         legend: true,
       },
       {
         name: 'Psaní barevnějších zpráv pomocí HEX + /colorpicker',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: false,
         legend: true,
       },
       {
         name: 'Barvené psaní na cedulky',
         default: false,
-        basic: false,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Psaní barevných zpráv',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Vrátit se na předchozí pozici /back',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: true,
         legend: true,
       },
       {
         name: 'Editace armorstandů /armorstand',
         default: false,
-        basic: false,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Editace vlastního času a počasí /ptime, /pweather',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Editace cedulky za pomocí Shift',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Virtuální ender chest /ec',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Virtuální anvil /anvil',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Virtuální crafting /wb',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Nasazení předmětu v ruce na hlavu /hat',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Skrýt a ukázat se na mapě světa /map hide, /map show',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Sedání na schody a slaby',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Sedání kdekoliv /sit',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: true,
         legend: true,
       },
       {
         name: 'Otevření shulker boxu v ruce (shift+pravé tlačítko myši)',
         default: false,
-        basic: false,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },      
       {
         name: 'Bonusový kit',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Počet rezidencí /res',
         default: '3',
-        basic: '4',
-        medium: '5',
+        vip: '5',
         master: '6',
         legend: '7',
       },
       {
         name: 'Počet možných domovů /sethome',
         default: '1',
-        basic: '2',
-        medium: '2',
+        vip: '2',
         master: '4',
         legend: '6',
       },
       {
         name: 'Počet zaměstnání /jobs',
         default: '1',
-        basic: '2',
-        medium: '2',
+        vip: '2',
         master: '3',
         legend: '3',
       },
       {
         name: 'Počet aukcí /aukce',
         default: '2',
-        basic: '3',
-        medium: '6',
+        vip: '6',
         master: '9',
         legend: '12',
       },
       {
         name: 'Velikost rezidence',
         default: '50x50 bloků',
-        basic: '100x100 bloků',
-        medium: '150x150 bloků',
+        vip: '150x150 bloků',
         master: '200x200 bloků',
         legend: '250x250 bloků',
       },
       {
         name: 'Počet Marketplace',
         default: '30 obchodů',
-        basic: '50 obchodů',
-        medium: '75 obchodů',
+        vip: '75 obchodů',
         master: '100 obchodů',
         legend: '150 obchodů',
       },      
@@ -559,16 +524,14 @@ const sections = [
       {
         name: 'Hodnost na Discordu',
         default: false,
-        basic: true,
-        medium: true,
+        vip: true,
         master: true,
         legend: true,
       },
       {
         name: 'Vytváření reportů zdarma (/report)',
         default: false,
-        basic: false,
-        medium: false,
+        vip: false,
         master: false,
         legend: true,
       },
@@ -687,8 +650,7 @@ export default function VIPTable() {
                   <tr key={index + '-' + indexItem} className="section-row">
                     <td style={{textAlign: "right"}} dangerouslySetInnerHTML={{__html: item.name}}/>
                     <TranslateBool text={item.default}/>
-                    <TranslateBool text={item.basic}/>
-                    <TranslateBool text={item.medium}/>
+                    <TranslateBool text={item.vip}/>
                     <TranslateBool text={item.master}/>
                     <TranslateBool text={item.legend}/>
                   </tr>
@@ -703,18 +665,9 @@ export default function VIPTable() {
           <td/>
           <td/>
           <td>
-            <a href="https://pay.qplay.cz/?produkt=1" className="buy-link">
-              <img
-                src={'/vip/prices/BasicVIP_' + currency + '.png'}
-                alt="BASIC VIP price"
-                style={{width: "100%"}}
-                className="vip-button"
-              /></a>
-          </td>
-          <td>
             <a href="https://pay.qplay.cz/?produkt=2" className="buy-link">
               <img
-                src={'/vip/prices/MediumVIP_' + currency + '.png'}
+                src={'/vip/prices/VIP.png'}
                 alt="MEDIUM VIP price"
                 style={{width: "100%"}}
                 className="vip-button"
@@ -723,7 +676,7 @@ export default function VIPTable() {
           <td>
             <a href="https://pay.qplay.cz/?produkt=3" className="buy-link">
               <img
-                src={'/vip/prices/MasterVIP_' + currency + '.png'}
+                src={'/vip/prices/MasterVIP.png'}
                 alt="MASTER VIP price"
                 style={{width: "100%"}}
                 className="vip-button"
@@ -732,7 +685,7 @@ export default function VIPTable() {
           <td>
             <a href="https://pay.qplay.cz/?produkt=5" className="buy-link">
               <img
-                src={'/vip/prices/LegendVIP_' + currency + '.png'}
+                src={'/vip/prices/LegendVIP.png'}
                 alt="LEGEND VIP price"
                 style={{width: "100%"}}
                 className="vip-button"
