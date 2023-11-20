@@ -3,7 +3,7 @@ import {Fragment, useState} from "react";
 const sections = [
   {
     header: 'Cena',
-    color: '#5E7594',
+    color: '#FFBF00',
     items: [
       {
         name: 'CZK',
