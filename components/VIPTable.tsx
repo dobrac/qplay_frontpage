@@ -148,7 +148,7 @@ const sections = [
           '<span style="color: #2AC820;"><strong>1 Crate</strong></span>',
         legend:
           '<span style="color: #2AC820;"><strong>2 Crates</strong></span>',
-      },*/ 
+      },*/
       /* {
         name: '<span style="color: #ff8c00;"><strong>Halloween Crates</strong></span>',
         default: false,
@@ -452,7 +452,7 @@ const sections = [
         vip: true,
         master: true,
         legend: true,
-      },      
+      },
       {
         name: 'Bonusový kit',
         default: false,
@@ -501,7 +501,7 @@ const sections = [
         vip: '75 obchodů',
         master: '100 obchodů',
         legend: '150 obchodů',
-      },      
+      },
     ],
   },
   {
@@ -531,15 +531,15 @@ enum Currency {
   CZK = "CZK"
 }
 
-function TranslateBool({text}: { text: string | boolean }) {
+function TranslateBool({text, colSpan}: { text: string | boolean, colSpan?: number }) {
   if (typeof text === 'boolean') {
     if (text) {
-      return (<td>✔</td>)
+      return (<td colSpan={colSpan}>✔</td>)
     } else {
-      return (<td style={{color: "lightgray"}}>✘</td>)
+      return (<td colSpan={colSpan} style={{color: "lightgray"}}>✘</td>)
     }
   } else {
-    return (<td dangerouslySetInnerHTML={{__html: text}}/>)
+    return (<td colSpan={colSpan} dangerouslySetInnerHTML={{__html: text}}/>)
   }
 }
 
@@ -552,23 +552,6 @@ export default function VIPTable() {
 
   return (
     <div>
-      <div style={{display: "flex"}}>
-        <div style={{flexGrow: "10"}}>&nbsp;</div>
-        <button
-          className={'btn-currency ' + (currency === Currency.CZK ? 'selected' : '')}
-          style={{marginRight: "10px"}}
-          onClick={() => changeCurrency(Currency.CZK)}
-        >
-          <img src="/vip/switch/CZK.png" alt="CZK"/>
-        </button>
-        <button
-          className={'btn-currency ' + (currency === Currency.EUR ? 'selected' : '')}
-          onClick={() => changeCurrency(Currency.EUR)}
-        >
-          <img src="/vip/switch/EUR.png" alt="EUR"/>
-        </button>
-      </div>
-
       <table className="table-vip" style={{tableLayout: "fixed"}}>
         <thead>
         <tr>
@@ -580,7 +563,7 @@ export default function VIPTable() {
             <a href="https://pay.qplay.cz/?produkt=2" className="buy-link">
               <img
                 src={'/vip/icons/VIP.png'}
-                alt="MEDIUM VIP"
+                alt="VIP"
                 style={{width: "100%"}}
                 className="vip-button"
               />
@@ -590,7 +573,7 @@ export default function VIPTable() {
             <a href="https://pay.qplay.cz/?produkt=3" className="buy-link">
               <img
                 src={'/vip/icons/MasterVIP.png'}
-                alt="MASTER VIP"
+                alt="MASTER"
                 style={{width: "100%"}}
                 className="vip-button"
               />
@@ -600,7 +583,7 @@ export default function VIPTable() {
             <a href="https://pay.qplay.cz/?produkt=5" className="buy-link">
               <img
                 src={'/vip/icons/LegendVIP.png'}
-                alt="LEGEND VIP"
+                alt="LEGEND"
                 style={{width: "100%"}}
                 className="vip-button"
               />
@@ -630,6 +613,7 @@ export default function VIPTable() {
                     <TranslateBool text={item.vip}/>
                     <TranslateBool text={item.master}/>
                     <TranslateBool text={item.legend}/>
+                    <td></td>
                   </tr>
                 )
               })}
@@ -645,7 +629,7 @@ export default function VIPTable() {
             <a href="https://pay.qplay.cz/?produkt=2" className="buy-link">
               <img
                 src={'/vip/prices/MediumVIP_' + currency + '.png'}
-                alt="MEDIUM VIP price"
+                alt="VIP price"
                 style={{width: "100%"}}
                 className="vip-button"
               /></a>
@@ -654,7 +638,7 @@ export default function VIPTable() {
             <a href="https://pay.qplay.cz/?produkt=3" className="buy-link">
               <img
                 src={'/vip/prices/MasterVIP_' + currency + '.png'}
-                alt="MASTER VIP price"
+                alt="MASTER price"
                 style={{width: "100%"}}
                 className="vip-button"
               /></a>
@@ -663,12 +647,36 @@ export default function VIPTable() {
             <a href="https://pay.qplay.cz/?produkt=5" className="buy-link">
               <img
                 src={'/vip/prices/LegendVIP_' + currency + '.png'}
-                alt="LEGEND VIP price"
+                alt="LEGEND price"
                 style={{width: "100%"}}
                 className="vip-button"
               />
             </a>
           </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td/>
+          <td/>
+          <td colSpan={3}>
+            <div style={{display: "flex", justifyContent: "center"}}>
+              <button
+                className={'btn-currency ' + (currency === Currency.CZK ? 'selected' : '')}
+                style={{marginRight: "10px"}}
+                onClick={() => changeCurrency(Currency.CZK)}
+              >
+                <img src="/vip/switch/CZK.png" alt="CZK"/>
+              </button>
+              <button
+                className={'btn-currency ' + (currency === Currency.EUR ? 'selected' : '')}
+                onClick={() => changeCurrency(Currency.EUR)}
+              >
+                <img src="/vip/switch/EUR.png" alt="EUR"/>
+              </button>
+            </div>
+          </td>
+          <td/>
         </tr>
         </tfoot>
       </table>
