@@ -49,10 +49,10 @@ const sections = [
     color: '#3C96E0',
     items: [
       {
-        name: '<b>Veškeré Common kity zdarma</b>',
+        name: '<b>Veškeré Legendary kity zdarma</b>',
         default: false,
-        vip: true,
-        master: true,
+        vip: false,
+        master: false,
         legend: true,
       },
       {
@@ -63,14 +63,35 @@ const sections = [
         legend: true,
       },
       {
-        name: '<b>Veškeré Legendary kity zdarma</b>',
+        name: '<b>Veškeré Common kity zdarma</b>',
+        default: false,
+        vip: true,
+        master: true,
+        legend: true,
+      },
+      {
+        name: '<b>Game Cosmetics zdarma</b>',
         default: false,
         vip: false,
         master: false,
         legend: true,
       },
       {
-        name: '<b>Game Cosmetics zdarma</b>',
+        name: 'Týdenní Coins odměny',
+        default: false,
+        vip: '4 000 Coins měsíčně',
+        master: '8 000 Coins měsíčně',
+        legend: '12 000 Coins měsíčně',
+      },
+      {
+        name: 'Odměna na konci hry',
+        default: 'Coins',
+        vip: 'Coins',
+        master: 'Coins',
+        legend: 'Crate Shards*',
+      },
+      {
+        name: 'Crate Shards*',
         default: false,
         vip: false,
         master: false,
@@ -93,13 +114,6 @@ const sections = [
         legend:
           '<span style="color: indianred; font-weight: bold;">2 Crates</span> <span style="text-decoration: line-through">1 Crate</span>',
       }, */
-      {
-        name: 'Mystery Crates',
-        default: false,
-        vip: '3 Crates',
-        master: '6 Crates',
-        legend: '6 Crates',
-      },
       /* {
         name:
           '<span style="color: indianred;"><strong>Mystery Crates</strong></span>',
@@ -155,33 +169,6 @@ const sections = [
         legend:
           '<span style="color: #e75480; font-weight: bold;">2 Crates</span>',
       },*/
-    ],
-  },
-  {
-    header: 'Ekonomika',
-    color: '#BF3F7F',
-    items: [
-      {
-        name: 'Crate Shards*',
-        default: false,
-        vip: false,
-        master: false,
-        legend: true,
-      },
-      {
-        name: 'Týdenní odměny',
-        default: false,
-        vip: true,
-        master: true,
-        legend: true,
-      },
-      {
-        name: 'Odměna na konci hry',
-        default: 'Coins',
-        vip: 'Coins',
-        master: 'Coins',
-        legend: 'Crate Shards*',
-      },
     ],
   },
   {
@@ -587,22 +574,12 @@ export default function VIPTable() {
         <tr>
           <th/>
           <th>
-            <img src="/vip/icons/Hrac.png" alt="DEFAULT" style={{width: "100%"}}/>
-          </th>
-          <th>
-            <a href="https://pay.qplay.cz/?produkt=1" className="buy-link">
-              <img
-                src={'/vip/icons/BasicVIP_' + currency + '.png'}
-                alt="BASIC VIP"
-                style={{width: "100%"}}
-                className="vip-button"
-              />
-            </a>
+            {/*<img src="/vip/icons/Hrac.png" alt="DEFAULT" style={{width: "100%"}}/>*/}
           </th>
           <th>
             <a href="https://pay.qplay.cz/?produkt=2" className="buy-link">
               <img
-                src={'/vip/icons/MediumVIP_' + currency + '.png'}
+                src={'/vip/icons/VIP.png'}
                 alt="MEDIUM VIP"
                 style={{width: "100%"}}
                 className="vip-button"
@@ -612,7 +589,7 @@ export default function VIPTable() {
           <th>
             <a href="https://pay.qplay.cz/?produkt=3" className="buy-link">
               <img
-                src={'/vip/icons/MasterVIP_' + currency + '.png'}
+                src={'/vip/icons/MasterVIP.png'}
                 alt="MASTER VIP"
                 style={{width: "100%"}}
                 className="vip-button"
@@ -622,7 +599,7 @@ export default function VIPTable() {
           <th>
             <a href="https://pay.qplay.cz/?produkt=5" className="buy-link">
               <img
-                src={'/vip/icons/LegendVIP_' + currency + '.png'}
+                src={'/vip/icons/LegendVIP.png'}
                 alt="LEGEND VIP"
                 style={{width: "100%"}}
                 className="vip-button"
@@ -667,7 +644,7 @@ export default function VIPTable() {
           <td>
             <a href="https://pay.qplay.cz/?produkt=2" className="buy-link">
               <img
-                src={'/vip/prices/VIP.png'}
+                src={'/vip/prices/MediumVIP_' + currency + '.png'}
                 alt="MEDIUM VIP price"
                 style={{width: "100%"}}
                 className="vip-button"
@@ -676,7 +653,7 @@ export default function VIPTable() {
           <td>
             <a href="https://pay.qplay.cz/?produkt=3" className="buy-link">
               <img
-                src={'/vip/prices/MasterVIP.png'}
+                src={'/vip/prices/MasterVIP_' + currency + '.png'}
                 alt="MASTER VIP price"
                 style={{width: "100%"}}
                 className="vip-button"
@@ -685,7 +662,7 @@ export default function VIPTable() {
           <td>
             <a href="https://pay.qplay.cz/?produkt=5" className="buy-link">
               <img
-                src={'/vip/prices/LegendVIP.png'}
+                src={'/vip/prices/LegendVIP_' + currency + '.png'}
                 alt="LEGEND VIP price"
                 style={{width: "100%"}}
                 className="vip-button"
