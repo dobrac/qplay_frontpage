@@ -31,7 +31,7 @@ const menu = [
   new MenuItem("Připojení", "/jak-se-pripojit"),
   new MenuItem("Pravidla", "/pravidla"),
   new MenuItem("VIP účet", "/vip", false, "special"),
-  new MenuItem("Obchod", "https://store.qplay.cz", true, "special"),
+  new MenuItem("Obchod", "https://store.qplay.cz/category/328613", true, "special"),
   new MenuItem("Seznam změn", "/seznam-zmen"),
   new MenuItem("Pozice", "/pozice").setItems([
     new MenuItem("Náš tým", "/nas-tym"),
@@ -202,7 +202,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
                 </Link>
               </p>
               <p>
-                <Link href='https://store.qplay.cz/' className="text-reset">
+                <Link href='https://store.qplay.cz/category/328613' className="text-reset">
                   Obchod
                 </Link>
               </p>
