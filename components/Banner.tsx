@@ -1,7 +1,7 @@
 import {FC, PropsWithChildren} from "react";
 import Image from "next/image";
-import bannerImage from "../public/images/banner-3.jpg"
-import bannerImageW from "../public/images/banner-3.jpg"
+import bannerImage from "../public/images/bannerWinterLobby.png"
+import bannerImageW from "../public/images/bannerWinterHigher.png"
 
 const Banner: FC<PropsWithChildren<{ sm?: boolean }>> = ({children, sm}) => {
   return (
@@ -21,7 +21,7 @@ const Banner: FC<PropsWithChildren<{ sm?: boolean }>> = ({children, sm}) => {
             }}/>
         </div>
         :
-        //<a href="https://vip.qplay.cz">
+        <a href="https://vip.qplay.cz">
         <div className="banner-image-winter">
           <Image
             priority={true}
@@ -35,7 +35,7 @@ const Banner: FC<PropsWithChildren<{ sm?: boolean }>> = ({children, sm}) => {
               objectPosition: "center"
             }}/>
         </div>
-        //</a>
+        </a>
       }
       {children}
     </section>
