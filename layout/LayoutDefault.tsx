@@ -123,7 +123,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
   if (navbarShow) {
     Navbar += ' show';
   }
-  let christmas = false;
+  let christmas = true;
   let Scrollnav = 'navbar navbar-expand-lg';
   if (offset > 0) {
     Scrollnav += ' sticky';
