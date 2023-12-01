@@ -265,6 +265,21 @@ h3 {
   }
 }
 
+.voucher {
+  @include responsive(medium) {
+    align-items: center;
+    max-width: 68vw;
+
+    img {
+      margin-top: 3vh;
+      align-self: center;
+      width: 66vw;
+      height: inherit;
+      transform: scale(1.5);
+    }
+  }
+}
+
 .table-vip {
   width: 100%;
 
