@@ -22,6 +22,7 @@ import Banner from "../components/Banner";
 import ImageCard from "../components/ImageCard";
 import {publicControllerApi} from "../api/api-client";
 import {take} from "lodash";
+import {event} from "../lib/gtag";
 
 const NEWS_COUNT = 3
 
@@ -86,6 +87,11 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                               className="hint"
                               onClick={() => {
                                 navigator.clipboard.writeText('mc.qplay.cz')
+                                event({
+                                  action: 'ipCopy',
+                                  category: 'ip',
+                                  label: 'mc.qplay.cz'
+                                })
                               }}>
                   mc.qplay.cz
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
