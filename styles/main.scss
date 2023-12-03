@@ -767,7 +767,7 @@ nav {
 }
 
 .aboutus {
-  padding-bottom: 50px;
+  margin: 50px 0;
 
   .render {
     @include responsive(mlarge) {
