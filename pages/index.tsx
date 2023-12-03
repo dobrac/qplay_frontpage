@@ -88,7 +88,7 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                               onClick={() => {
                                 navigator.clipboard.writeText('mc.qplay.cz')
                                 event({
-                                  action: 'ipCopy',
+                                  action: 'ip_copy',
                                   category: 'ip',
                                   label: 'mc.qplay.cz'
                                 })
