@@ -242,10 +242,9 @@ export default function Rules() {
             Každý hráč, člen A-týmu, Vedení A-týmu a Vedení serveru má zakázáno
             nabízet hráčům jakoukoliv obchodní nabídku. Předejdeme tak
             několika podvodným dohodám, na které doplatilo v historii Minecraft
-            serverů už několik hráčů. Jedná se také o nabídky typu: „Ahoj, pošli
-            mi prosím tě určitý počet coins a já ti koupím VIP“.<br/>
+            serverů už několik hráčů.<br/>
             Je zakázáno obchodovat či jen nabízet jakoukoliv obchodní nabídku se
-            svým účtem nebo s jeho částmi (coiny, VIP, atd.) nebo s VIP kódy. 
+            svým účtem nebo s jeho částmi nebo s VIP kódy.
             Výjimku tvoří pouze Survival server, kde je povoleno obchodování s částmi účtu 
             specifickými pro Survival (itemy, Survival peníze).
           </p>
