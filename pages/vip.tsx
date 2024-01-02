@@ -1,9 +1,6 @@
 import Head from "next/head";
 import VIPTable from "../components/VIPTable";
 import Banner from "../components/Banner";
-import Voucher from '../public/images/BannerPNGFinal.png'
-import Image from "next/image";
-import { includes } from "lodash";
 
 export default function VIP() {
   return (
@@ -85,9 +82,9 @@ export default function VIP() {
               →{" "}<a
               href="https://store.qplay.cz/category/328613" target="_blank" rel="noreferrer">store.qplay.cz</a>{" "}←</span>
           </h3>
-          {<h4 style={{textAlign: "center"}}>
+          {/*<h4 style={{textAlign: "center"}}>
           <span><a href="#poukaz VIP" className={"voucher"}><Image src={Voucher}  alt={"voucher"}/></a></span>
-        </h4>}
+        </h4>*/}
           <br/>
           <div className="table-responsive">
             <VIPTable/>
