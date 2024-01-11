@@ -57,7 +57,7 @@ export default function Helper() {
           </li>
           <li>
           <span style={{color: "#000000"}}>
-            Za odvedenou práci obdrží každý měsíc zpravidla 1x Basic VIP.
+            Za odvedenou práci obdrží každý měsíc zpravidla 1x VIP.
           </span>
           </li>
           <li>
