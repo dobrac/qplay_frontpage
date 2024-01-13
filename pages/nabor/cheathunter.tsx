@@ -37,7 +37,7 @@ export default function CheatHunter() {
           <ul>
             <li>
             <span style={{color: "#000000"}}
-            >Vlastní veškeré MEDIUM VIP výhody.</span
+            >Vlastní veškeré VIP výhody.</span
             >
             </li>
             <li>
