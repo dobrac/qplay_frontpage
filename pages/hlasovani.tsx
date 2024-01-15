@@ -147,7 +147,7 @@ export default function Hlasovani() {
                     type="text"
                     id="nick"
                     className="form-control"
-                    placeholder="Vložte nick na serveru"
+                    placeholder="Vlož nick na serveru"
                     value={nickname}
                     onChange={(e) => setNickname(e.target.value)}
                     required
