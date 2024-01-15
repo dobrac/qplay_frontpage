@@ -54,7 +54,7 @@ export default function Hlasovani() {
     <>
       <Head>
         <title>Hlasování | QPlay.cz</title>
-        <meta name="description" content="Pozice na serveru QPlay.cz" />
+        <meta name="description" content="Hlasování pro server QPlay.cz" />
       </Head>
       <Banner sm={true}>
         <div className="pagename">
