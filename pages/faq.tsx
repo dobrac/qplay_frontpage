@@ -38,7 +38,7 @@ const questions = [
   ),
   new Question(
     'Jak si mohu převést coiny na jiný účet?',
-    'Coiny si můžeš přeposlat příkazem /coins convert jménohráče částka (50% daň, v případě VIP je daň nižší). Na stránce <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a> nabízíme i migraci celého účtu/změnu jména (coiny, statistiky, VIP atd.).'
+    'Samotné coiny nelze převést. Na stránce <a href="https://info.qplay.cz/" target="_blank">info.qplay.cz</a> nabízíme migraci celého účtu/změnu jména (coiny, statistiky, VIP atd.).'
   ),
   new Question(
     'Chci se stát členem A-Teamu, jak toho mohu docílit?',
@@ -54,7 +54,7 @@ const questions = [
   ),
   new Question(
     'Jaké výhody získám s Permanentním VIP (PVIP)?',
-    'Permanentní VIP vlastní veškeré výhody jako Medium VIP, kromě týdenních odměn, které má oddělené. Každý týden si může vyzvednout 4 000 coinů u Rewards postavičky, která se nachází na hlavním lobby.'
+    'Permanentní VIP vlastní veškeré výhody jako VIP, včetně týdenních odměn. Každý týden si může vyzvednout 1 000 coinů u Rewards postavičky, která se nachází na hlavním lobby.'
   ),
   new Question(
     'Jak se připojím na Discord?',

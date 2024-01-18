@@ -1,7 +1,7 @@
 import {FC, PropsWithChildren} from "react";
 import Image from "next/image";
-import bannerImage from "../public/images/banner-3.jpg"
-import bannerImageW from "../public/images/banner-3.jpg"
+import bannerImage from "../public/images/bannerWinterLobby.png"
+import bannerImageW from "../public/images/bannerWinterLobby.png"
 
 const Banner: FC<PropsWithChildren<{ sm?: boolean }>> = ({children, sm}) => {
   return (
@@ -13,6 +13,7 @@ const Banner: FC<PropsWithChildren<{ sm?: boolean }>> = ({children, sm}) => {
             src={bannerImage}
             alt="banner"
             fill={true}
+            sizes="100vw"
             style={{
               maxWidth: "100%",
               objectFit: "cover",
@@ -27,6 +28,7 @@ const Banner: FC<PropsWithChildren<{ sm?: boolean }>> = ({children, sm}) => {
             src={bannerImageW}
             alt="banner"
             fill={true}
+            sizes="100vw"
             style={{
               maxWidth: "100%",
               objectFit: "cover",

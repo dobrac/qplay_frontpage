@@ -1,7 +1,6 @@
 import axiosLib, {AxiosError} from "axios";
-import env from "@beam-australia/react-env";
 
-let basePathLocal = env("API_URL");
+let basePathLocal = process.env.NEXT_PUBLIC_API_URL;
 if (basePathLocal?.endsWith("/")) {
   basePathLocal = basePathLocal.replace(/\/$/, ""); // Remove trailing slash (/)
 }

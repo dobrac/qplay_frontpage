@@ -13,6 +13,41 @@ import Banner from "../../components/Banner";
 import strip from 'strip-markdown'
 import {ParsedUrlQuery} from "querystring";
 import {convertDate} from "../../utils/date";
+import Image from "next/image";
+import {take} from "lodash";
+
+function ChangeLogEntryRender({changelog}: { changelog: ChangelogEntry }) {
+  return (
+    <div>
+      <div className="newinfo">
+        <span className="tag" style={{backgroundColor: changelog.typecolor}}>{changelog.typename}</span>
+        <time dateTime={changelog.timestamp}>{convertDate(changelog.timestamp)}</time>
+      </div>
+      <h1 className='title'>
+        {changelog.headline}
+      </h1>
+      <div className="notes">
+        <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks, emoji]}
+                       rehypePlugins={[[rehypeRaw]]}
+                       components={{
+                         img({src, alt, title, ...rest}) {
+                           const decodedSrc = src?.replace(/&amp;/g, '&') ?? "";
+                           return <Image src={decodedSrc}
+                                         priority={true}
+                                         alt={alt ?? "changelog image"}
+                                         title={title}
+                                         width={500}
+                                         height={500}
+                                         style={{height: "auto"}}
+                           />
+                         }
+                       }}>
+          {he.decode(changelog.notes)}
+        </ReactMarkdown>
+      </div>
+    </div>
+  )
+}
 
 interface ChangeLogNewProps {
   changelogEntry: ChangelogEntry
@@ -20,26 +55,6 @@ interface ChangeLogNewProps {
 }
 
 const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogEntry, description}) => {
-  function ChangeLogEntryRender() {
-    return (
-      <div>
-        <div className="newinfo">
-          <span className="tag" style={{backgroundColor: changelogEntry.typecolor}}>{changelogEntry.typename}</span>
-          <time dateTime={changelogEntry.timestamp}>{convertDate(changelogEntry.timestamp)}</time>
-        </div>
-        <h1 className='title'>
-          {changelogEntry.headline}
-        </h1>
-        <div className="notes">
-          <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks, emoji]}
-                         rehypePlugins={[rehypeRaw]}>
-            {he.decode(changelogEntry.notes)}
-          </ReactMarkdown>
-        </div>
-      </div>
-    )
-  }
-
   return (
     <div>
       <Head>
@@ -54,7 +69,7 @@ const ChangeLogNew: NextPage<ChangeLogNewProps> = ({changelogEntry, description}
       <section className="pagecontent">
         <section className="news">
           <div className="container">
-            <ChangeLogEntryRender/>
+            <ChangeLogEntryRender changelog={changelogEntry}/>
           </div>
         </section>
       </section>
@@ -138,7 +153,7 @@ export async function getStaticPaths() {
   // We'll pre-render only these paths at build time.
   // { fallback: blocking } will server-render pages
   // on-demand if the path doesn't exist.
-  return {paths, fallback: 'blocking'}
+  return {paths: take(paths, 9 * 3), fallback: 'blocking'}
 }
 
 export default ChangeLogNew
