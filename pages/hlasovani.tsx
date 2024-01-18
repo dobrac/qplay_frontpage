@@ -2,6 +2,7 @@ import Head from "next/head";
 import Banner from "../components/Banner";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Cookies from "js-cookie";
 
 class Website {
   name: string;
@@ -32,16 +33,15 @@ const websites = [
 ];
 
 function getNicknameFromCookies() {
-  const regex = new RegExp(`(^| )voting_username=([^;]+)`)
-  const match = document.cookie.match(regex)
-  if (match) {
-    return decodeURIComponent(match[2])
+  const username = Cookies.get('voting_username');
+  if (username) {
+    return decodeURIComponent(username);
   }
 }
 
 function saveNicknameToCookies(username: string) {
   const encodedUsername = encodeURIComponent(username);
-  document.cookie = "voting_username=" + encodedUsername;
+  Cookies.set('voting_username', encodedUsername);
 }
 
 export default function Hlasovani() {
@@ -59,8 +59,10 @@ export default function Hlasovani() {
     const nickParam = router.query.nick;
 
     if (nickParam) {
-      setNickname(nickParam as string);
+      const nickname = nickParam as string
+      setNickname(nickname);
       setShowModal(true);
+      saveNicknameToCookies(nickname)
       return
     }
 
