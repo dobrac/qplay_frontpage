@@ -31,6 +31,19 @@ const websites = [
   ),
 ];
 
+function getNicknameFromCookies() {
+  const regex = new RegExp(`(^| )voting_username=([^;]+)`)
+  const match = document.cookie.match(regex)
+  if (match) {
+    return decodeURIComponent(match[2])
+  }
+}
+
+function saveNicknameToCookies(username: string) {
+  const encodedUsername = encodeURIComponent(username);
+  document.cookie = "voting_username=" + encodedUsername;
+}
+
 export default function Hlasovani() {
   const router = useRouter();
   const [nickname, setNickname] = useState("");
@@ -38,6 +51,7 @@ export default function Hlasovani() {
 
   function submitForm(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    saveNicknameToCookies(nickname)
     setShowModal(true);
   }
 
@@ -47,6 +61,12 @@ export default function Hlasovani() {
     if (nickParam) {
       setNickname(nickParam as string);
       setShowModal(true);
+      return
+    }
+
+    const cookieUsername = getNicknameFromCookies();
+    if (cookieUsername) {
+      setNickname(cookieUsername)
     }
   }, [router.query]);
 
