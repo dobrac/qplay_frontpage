@@ -34,6 +34,12 @@ a {
   }
 }
 
+.footer-link{
+	&:hover {
+		color: rgba(255,255,255,0.85)
+	}
+}
+
 .CookieConsent {
   background: #212529 !important;
 
@@ -50,6 +56,17 @@ a {
       background: #b1292b !important;
     }
   }
+}
+
+.error-container {
+	text-align: center;
+	padding: 20px;
+}
+
+.error-icon {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
 }
 
 .imagecard {
