@@ -54,6 +54,17 @@ const menu = [
   new MenuItem("Kontakt", "/kontakt"),
   new MenuItem("Přihlášení", "https://info.qplay.cz", true, "special")
 ]
+const usefulLinks = [
+	{ title: 'Domů', href: '/' },
+	{ title: 'Jak se připojit', href: '/jak-se-pripojit' },
+	{ title: 'VIP', href: '/vip' },
+	{ title: 'Obchod', href: 'https://store.qplay.cz/category/328613' }
+];
+const rulesAndTOS = [
+	{ title: 'Pravidla', href: '/pravidla' },
+	{ title: 'Ochrana osobních údajů', href: '/pravidla'}
+
+];
 
 function MenuItemRender({item}: { item: MenuItem }) {
   const router = useRouter()
@@ -165,7 +176,7 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
                       d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
               </svg>
             </button>
-            <img className="logocol" src="/imagesBig/logo.png"/>
+            <img className="logocol" src="/imagesBig/logo.png" alt='qplay.cz logo'/>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               {menu.map(item => {
                 return (
@@ -182,45 +193,29 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
       <Footer>
         <div className="container">
           <div className="row">
-            <div className="col-md-3 mt-4 inview">
-              <h6 className="text-uppercase fw-bold">
-                Užitečné odkazy
-              </h6>
-              <p>
-                <Link href='/' className="text-reset">
-                  Domů
-                </Link>
-              </p>
-              <p>
-                <Link href='/jak-se-pripojit' className="text-reset">
-                  Jak se připojit
-                </Link>
-              </p>
-              <p>
-                <Link href='/vip' className="text-reset">
-                  VIP
-                </Link>
-              </p>
-              <p>
-                <Link href='https://store.qplay.cz/category/328613' className="text-reset">
-                  Obchod
-                </Link>
-              </p>
-            </div>
+			  <div className="col-md-3 mt-4 inview">
+				  <h6 className="text-uppercase fw-bold">
+					  Užitečné odkazy
+				  </h6>
+				  {usefulLinks.map((link, index) => (
+					  <p key={index} className='footer-link'>
+						  <a href={link.href} className="text-reset">
+							  {link.title}
+						  </a>
+					  </p>
+				  ))}
+			  </div>
             <div className="col-md-3 mt-4 inview">
               <h6 className="text-uppercase fw-bold">
                 Pravidla a podmínky
               </h6>
-              <p>
-                <Link href='/pravidla' className="text-reset">
-                  Pravidla
-                </Link>
-              </p>
-              <p>
-                <Link href='/pravidla' className="text-reset">
-                  Ochrana osobních údajů
-                </Link>
-              </p>
+				{rulesAndTOS.map((link, index) => (
+					<p key={index} className='footer-link'>
+						<a href={link.href} className="text-reset">
+							{link.title}
+						</a>
+					</p>
+				))}
             </div>
             <div className="col-md-6 d-flex">
               <div className="responsive-icons">
