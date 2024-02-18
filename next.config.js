@@ -4,7 +4,12 @@ const nextConfig = {
     swcMinify: true,
     trailingSlash: true,
     images: {
-        domains: ["cloud.n-io.cz"]
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'cloud.n-io.cz',
+            },
+        ],
     },
     output: 'standalone',
     modularizeImports: {

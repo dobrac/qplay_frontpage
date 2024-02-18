@@ -38,8 +38,8 @@ export default function Youtuber() {
               <p>- Každé video musí mít převážně více palců nahoru.</p>
 
               <p>
-                - Na YouTube kanále se musí vyskytovat alespoň 2 videa z našeho
-                serveru.
+                - Na YouTube kanále se musí vyskytovat alespoň 2 videa* z našeho
+                serveru
               </p>
 
               <h3>
@@ -51,7 +51,7 @@ export default function Youtuber() {
 
               <p>• Dodržovat pravidla našeho serveru.</p>
 
-              <p>• Natáčet každý měsíc alespoň 2 videa z našeho serveru.</p>
+              <p>• Natáčet každý měsíc alespoň 2 videa* z našeho serveru.</p>
 
               <h3>
                 Pravidla pro <span style={{color: "red"}}>YouTubery</span> do 5 000
@@ -62,7 +62,7 @@ export default function Youtuber() {
 
               <p>• Dodržovat pravidla našeho serveru.</p>
 
-              <p>• Natáčet každý měsíc alespoň 1 video z našeho serveru.</p>
+              <p>• Natáčet každý měsíc alespoň 1 video* z našeho serveru.</p>
 
               <h3>
                 Pravidla pro <span style={{color: "red"}}>YouTubery</span> do 20 000
@@ -73,7 +73,7 @@ export default function Youtuber() {
 
               <p>• Dodržovat pravidla našeho serveru.</p>
 
-              <p>• Natočit za dva měsíce alespoň 1 video z našeho serveru.</p>
+              <p>• Natočit za dva měsíce alespoň 1 video* z našeho serveru.</p>
             </div>
 
             <div>
@@ -112,10 +112,10 @@ export default function Youtuber() {
 
               <br/>
 
-              <i>
-                * Vyhrazujeme si právo na odebrání{" "}
-                <span style={{color: "red"}}>YouTubera</span> bez udání důvodu.
-              </i>
+              <p><i>* 1 video je ekvivalentní ke 2 YT Shorts</i></p>
+              <p><i>Vyhrazujeme si právo na odebrání{" "}
+                <span style={{color: "red"}}>YouTubera</span> bez udání důvodu.</i></p>  
+                
             </div>
           </div>
           {/* <strong>YouTube kanál musí mít více než 1 500 odběratelů a jeho odběratelé musí být aktivní.</strong><br>

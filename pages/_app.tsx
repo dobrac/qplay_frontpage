@@ -39,9 +39,12 @@ function MyApp({Component, pageProps}: AppProps) {
         <meta name="description" content="QPlay Minecraft Server"/>
         <meta name="viewport" content='width=device-width, initial-scale=1'/>
         <link rel="canonical" href={completePath}/>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+      </Head>
+      {/* Global Site Tag (gtag.js) - Google Analytics */}
+      <Script
+        id="gtag-init"
+        dangerouslySetInnerHTML={{
+          __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
@@ -50,10 +53,8 @@ function MyApp({Component, pageProps}: AppProps) {
                 page_path: window.location.pathname,
               });
             `,
-          }}
-        />
-      </Head>
-      {/* Global Site Tag (gtag.js) - Google Analytics */}
+        }}
+      />
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}

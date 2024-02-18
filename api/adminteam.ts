@@ -19,7 +19,9 @@ export async function findAdminTeam(): Promise<
 }
 
 export function useAdminTeam(placeholderData?: AdminTeamGroupDTO[]): APIDataResponse<AdminTeamGroupDTO[]> {
-  const data = useQuery(["public", "adminteam"], () => findAdminTeam(), {
+  const data = useQuery({
+    queryKey: ["public", "adminteam"],
+    queryFn: () => findAdminTeam(),
     placeholderData: new APIResponse(placeholderData)
   });
   return new APIDataResponse(data);
@@ -41,7 +43,9 @@ export async function findMedia(placeholderData?: APIResponse<MediaGroupDTO[]>):
 }
 
 export function useMedia(placeholderData?: MediaGroupDTO[]): APIDataResponse<MediaGroupDTO[]> {
-  const data = useQuery(["public", "adminteam", "media"], () => findMedia(), {
+  const data = useQuery({
+    queryKey: ["public", "adminteam", "media"],
+    queryFn: () => findMedia(),
     placeholderData: new APIResponse(placeholderData)
   });
   return new APIDataResponse(data);

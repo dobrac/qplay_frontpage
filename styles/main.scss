@@ -35,19 +35,19 @@ a {
 }
 
 .CookieConsent {
-  background: #212529!important;
+  background: #212529 !important;
 
   button {
-    border: 0!important;
-    border-radius: 10px!important;
-    color: #fff!important;
-    background: #c82f31!important;
-    padding: 0.75rem 2rem!important;
-    height: fit-content!important;
-    transition: background 0.3s!important;
-  
+    border: 0 !important;
+    border-radius: 10px !important;
+    color: #fff !important;
+    background: #c82f31 !important;
+    padding: 0.75rem 2rem !important;
+    height: fit-content !important;
+    transition: background 0.3s !important;
+
     &:hover {
-      background: #b1292b!important;
+      background: #b1292b !important;
     }
   }
 }
@@ -265,9 +265,24 @@ h3 {
   }
 }
 
+.voucher {
+  @include responsive(medium) {
+    align-items: center;
+    max-width: 68vw;
+
+    img {
+      margin-top: 3vh;
+      align-self: center;
+      width: 66vw;
+      height: inherit;
+      transform: scale(1.5);
+    }
+  }
+}
+
 .table-vip {
   width: 100%;
-  
+
   .section-header {
     td {
       text-align: center;
@@ -752,7 +767,7 @@ nav {
 }
 
 .aboutus {
-  padding-bottom: 50px;
+  margin: 50px 0;
 
   .render {
     @include responsive(mlarge) {
@@ -1263,8 +1278,10 @@ footer {
 .href-offset {
   .offset {
     position: relative;
+
     a {
-      position:absolute; top:-150px;
+      position: absolute;
+      top: -150px;
     }
   }
 }
