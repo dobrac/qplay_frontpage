@@ -560,34 +560,28 @@ export default function VIPTable() {
             {/*<img src="/vip/icons/Hrac.png" alt="DEFAULT" style={{width: "100%"}}/>*/}
           </th>
           <th>
-            <a href="https://pay.qplay.cz/?produkt=2" className="buy-link">
               <img
                 src={'/vip/icons/VIP.png'}
                 alt="VIP"
                 style={{width: "100%"}}
                 className="vip-button"
               />
-            </a>
           </th>
           <th>
-            <a href="https://pay.qplay.cz/?produkt=3" className="buy-link">
               <img
                 src={'/vip/icons/MasterVIP.png'}
                 alt="MASTER"
                 style={{width: "100%"}}
                 className="vip-button"
               />
-            </a>
           </th>
           <th>
-            <a href="https://pay.qplay.cz/?produkt=5" className="buy-link">
               <img
                 src={'/vip/icons/LegendVIP.png'}
                 alt="LEGEND"
                 style={{width: "100%"}}
                 className="vip-button"
               />
-            </a>
           </th>
         </tr>
         </thead>
@@ -621,64 +615,6 @@ export default function VIPTable() {
           )
         })}
         </tbody>
-        <tfoot>
-        <tr>
-          <td/>
-          <td/>
-          <td>
-            <a href="https://pay.qplay.cz/?produkt=2" className="buy-link">
-              <img
-                src={'/vip/prices/MediumVIP_' + currency + '.png'}
-                alt="VIP price"
-                style={{width: "100%"}}
-                className="vip-button"
-              /></a>
-          </td>
-          <td>
-            <a href="https://pay.qplay.cz/?produkt=3" className="buy-link">
-              <img
-                src={'/vip/prices/MasterVIP_' + currency + '.png'}
-                alt="MASTER price"
-                style={{width: "100%"}}
-                className="vip-button"
-              /></a>
-          </td>
-          <td>
-            <a href="https://pay.qplay.cz/?produkt=5" className="buy-link">
-              <img
-                src={'/vip/prices/LegendVIP_' + currency + '.png'}
-                alt="LEGEND price"
-                style={{width: "100%"}}
-                className="vip-button"
-              />
-            </a>
-          </td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td/>
-          <td/>
-          <td colSpan={3}>
-            <div style={{display: "flex", justifyContent: "center"}}>
-              <button
-                className={'btn-currency ' + (currency === Currency.CZK ? 'selected' : '')}
-                style={{marginRight: "10px"}}
-                onClick={() => changeCurrency(Currency.CZK)}
-              >
-                <img src="/vip/switch/CZK.png" alt="CZK"/>
-              </button>
-              <button
-                className={'btn-currency ' + (currency === Currency.EUR ? 'selected' : '')}
-                onClick={() => changeCurrency(Currency.EUR)}
-              >
-                <img src="/vip/switch/EUR.png" alt="EUR"/>
-              </button>
-            </div>
-          </td>
-          <td/>
-        </tr>
-        </tfoot>
       </table>
     </div>
   )
