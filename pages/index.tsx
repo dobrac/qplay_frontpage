@@ -346,7 +346,7 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                                             Povýšení <b>_Spetty_</b> na pozici Vedení
                                         </li>
                                         <li>
-                                            Povýšení <b>ItzTades</b> na pozici Hlavní Helper
+                                            Povýšení <b>ItzTadeas</b> na pozici Hlavní Helper
                                         </li>
                                         <li>
                                             Zveřejnění <b>Survival</b> části serveru
