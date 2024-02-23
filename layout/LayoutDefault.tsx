@@ -32,16 +32,7 @@ const menu = [
   new MenuItem("Pravidla", "/pravidla"),
   new MenuItem("VIP účet", "/vip", false),
   new MenuItem("Hlasování", "/hlasovani"),
-  new MenuItem("Pozice", "/pozice").setItems([
-    new MenuItem("Náš tým", "/nas-tym"),
-    new MenuItem("YouTuber", "/yt"),
-    new MenuItem("TikToker", "/tiktoker"),
-    new MenuItem("Technik", "/nabor/technik"),
-    new MenuItem("Helper", "/nabor/helper"),
-    new MenuItem("Moderátor", "/nabor/moderator"),
-    new MenuItem("Builder", "/nabor/builder"),
-    new MenuItem("CheatHunter", "/nabor/cheathunter"),
-  ]),
+  new MenuItem("Náš tým", "/nas-tym"),
   new MenuItem("Nápověda", "/navod").setItems([
     new MenuItem("FAQ", "/faq"),
     new MenuItem("Můj nick je již zaregistrovaný", "/navod/privlastneni-nicku"),
