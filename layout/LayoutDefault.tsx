@@ -30,7 +30,7 @@ const menu = [
   new MenuItem("Domů", "/"),
   new MenuItem("Připojení", "/jak-se-pripojit"),
   new MenuItem("Pravidla", "/pravidla"),
-  new MenuItem("VIP účet", "/vip", false, "special"),
+  new MenuItem("VIP účet", "/vip", false),
   new MenuItem("Hlasování", "/hlasovani"),
   new MenuItem("Pozice", "/pozice").setItems([
     new MenuItem("Náš tým", "/nas-tym"),
