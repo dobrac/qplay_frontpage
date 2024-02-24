@@ -23,6 +23,7 @@ interface HomeProps {
 const Home: NextPage<HomeProps> = ({changelogNews}) => {
   const [players, setPlayers] = useState(-1)
   const [playersMax, setPlayersMax] = useState(-1)
+  const [timeLeft, setTimeLeft] = useState<string>("")
   const playersShow = players > -1 ? players : '---'
   const playersMaxShow = playersMax > -1 ? playersMax : '---'
 
@@ -38,13 +39,30 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
   }, [])
 
   useEffect(() => {
-    fetchPlayers();
+    const calculateTimeLeft = () => {
+      const targetDate = new Date('2024-03-30').getTime();
+      const now = new Date().getTime();
+      const difference = targetDate - now;
 
-    const timer = setInterval(fetchPlayers, 5000)
-    return () => {
-      clearInterval(timer)
-    }
-  }, [fetchPlayers])
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+        setTimeLeft(`Zdývá: ${days} dní, ${hours} hodin, ${minutes} minut, ${seconds} sekund`);
+      } else {
+        setTimeLeft('Projekt byl ukončen všem moc děkujem za podporu. QPLAY FOREVER ♥️');
+      }
+    };
+
+    calculateTimeLeft();
+
+    const interval = setInterval(() => {
+      calculateTimeLeft();
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   function ChangeLogNewsRender() {
     const news = changelogNews.slice(0, NEWS_COUNT).map(
@@ -69,13 +87,14 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
               content="Minecraft server QPlay.cz, který patří mezi největší servery v Česku a Slovensku, byl založen v roce 2015 a nabízí spoustu různých miniher."/>
       </Head>
         <Banner sm={true}>
-            <div className="pagename">
+            <div className="pagename" style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
                 <h1>Děkujeme za vaši podporu!</h1>
             </div>
         </Banner>
         <section className="aboutus">
             <div className="container">
                 <h1 className="index-title">Byli jsme Minecraftový server <span className="colored">QPLAY.CZ</span></h1>
+                <h1 style={{textAlign: "center", fontWeight: "600"}}>{timeLeft}</h1>
                 <div className="row">
                     <div className="d-flex">
                         <div className="content">
