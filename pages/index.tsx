@@ -3,18 +3,7 @@ import type {NextPage} from 'next'
 import Link from "next/link"
 import axios from "axios";
 import Image from 'next/image'
-import render from '../public/images/render.png'
 import discord from '../public/images/discord.png'
-import miniannihilation from '../public/icons/miniannihilation.png'
-import skywars from '../public/icons/skywars.png'
-import miniuhc from '../public/icons/miniuhc.png'
-import onevsone from '../public/icons/1vs1.png'
-import bedwars from '../public/icons/bedwars.png'
-import getdown from '../public/icons/getdown.png'
-import survival from '../public/icons/survival.png'
-import imgServerMiniUHC from "../public/imgServers/miniuhc.webp"
-import imgServer1vs1 from "../public/imgServers/1vs1.webp"
-import imgServerBedWars from "../public/imgServers/bedwars.webp"
 import {useCallback, useEffect, useState} from "react";
 import {ChangelogEntry} from "../types/ChangelogEntry";
 import ChangelogCard from "../components/ChangelogCard";
@@ -25,6 +14,7 @@ import {take} from "lodash";
 import {event} from "../lib/gtag";
 
 const NEWS_COUNT = 3
+const SKIN_HEIGHT = 350
 
 interface HomeProps {
   changelogNews: ChangelogEntry[]
@@ -78,46 +68,394 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
         <meta name="description"
               content="Minecraft server QPlay.cz, který patří mezi největší servery v Česku a Slovensku, byl založen v roce 2015 a nabízí spoustu různých miniher."/>
       </Head>
-      <Banner>
-        <div className="boxcontainer">
-          <div className="box">
-            <div>
-              <div className="d-flex">
-                <h2>IP: <span data-text="Klikni pro zkopírování!"
-                              className="hint"
-                              onClick={() => {
-                                navigator.clipboard.writeText('mc.qplay.cz')
-                                event({
-                                  action: 'ip_copy',
-                                  category: 'ip',
-                                  label: 'mc.qplay.cz'
-                                })
-                                event({
-                                  action: 'ipCopy',
-                                  category: 'ip',
-                                  label: 'mc.qplay.cz'
-                                })
-                              }}>
-                  mc.qplay.cz
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
-                       className="d-inline">
-                    <path
-                      d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                    <path
-                      d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
-                  </svg>
-                  <span className="hint-text">Klikni pro zkopírování!</span>
-                </span>
-                </h2>
-              </div>
-              <p>Online hráči: {playersShow}/{playersMaxShow}</p>
+        <Banner sm={true}>
+            <div className="pagename">
+                <h1>Děkujeme za vaši podporu!</h1>
             </div>
-            <Link href="/jak-se-pripojit" className="button" passHref>
-              <button>Jak se připojit</button>
-            </Link>
-          </div>
-        </div>
-      </Banner>
+        </Banner>
+        <section className="aboutus">
+            <div className="container">
+                <h1 className="index-title">Byli jsme Minecraftový server <span className="colored">QPLAY.CZ</span></h1>
+                <div className="row">
+                    <div className="d-flex">
+                        <div className="content">
+                            <p>Vážení hráči/Vážené hráčky,<br /> když jsem na podzim roku 2014 odcházel z portálu Survival-Games.cz, byl jsem víc smutný než šťastný. Měl jsem spoustu nápadů a znalostí, které jsem chtěl dále využít. Díky motivaci od majitele Hicoria jsem se rozhodl založit si vlastní server QPlay.cz (tehdy se jmenoval ještě QGames.cz). Vše se vytvářelo od začátku, ale byl kladen velký důraz na detail, propracování věcí a propojení všech miniher. Tahle myšlenka byla od té doby to, v čem byl server odlišný od ostatních. Díky kvalitě jsme se stali unikátními na ČR/SK scéně, a to nejenom kvalitou miniher, ale i infrastrukturou samotných serverů. Ve svém maximu bylo pro chod potřeba 10 fyzických serverů.</p>
+
+                            <p>Bohužel, ne vše trvá věčně. Po 9 letech provozu cítíme, že již nejsme ti stejní nadšení hráči Minecraftu, kteří by trávili hodiny hraním, nebo kteří by měli blízko k aktuálním trendům. Jak už to v životě bývá, tak se každý posouváme a neradi bychom tvořili obsah, ke kterému přestáváme mít blízko. Myslíme si, že nelze tvořit kvalitní obsah bez 100% nasazení a vášně k němu, což již i bylo viditelné v posledních měsících. To je jedním z hlavních důvodů, které nás vedly k rozhodnutí <b>projekt QPlay.cz ke dni 30.3.2024 ukončit.</b></p>
+
+                            <p>Zažili jsme spoustu skvělých milníků. Společně s vámi jsme dosáhli více než 2 milionů zaregistrovaných hráčů, přes 16 miliónů odehraných hodin a na začátku února 2021 jsme pokořili rekord přes 2 500 online hráčů připojených v jeden čas!</p>
+
+                            <p>Děkujeme všem aktuálním, i bývalým členům Admin Teamu, kteří se zasloužili o celý chod server. Děkujeme všem hráčům za důvěru a za nezapomenutelné chvíle v našich životech. Děkujeme všem, kteří nás finančně podporovali a umožnili tak tuhle dlouhou jízdu.
+                            </p>
+                            <p>
+                                Věříme, že jsme zvládli zanechat nezapomenutelnou stopu ve virtuálním světě Minecraftu a doufáme, že jste si hraní na našem serveru užili. Vybudovali jsme společně obrovskou komunitu hráčů a vytvořili spoustu vzpomínek. Jen díky vám jsme patřili mezi největší servery v Česku a na Slovensku!
+                            </p>
+                            <p>Děkujeme za podporu!<br />
+                                <b>Profikk (Majitel) za Tým QPlay.cz</b></p>
+                            <div className="stats">
+                                <div className="row">
+                                    <div className="col-md-3 mb-3">
+                                        <img src="/icons/add-user.svg"/>
+                                        <h2>2,000,000+</h2>
+                                        <p>Registrovaných hráčů</p>
+                                    </div>
+                                    <div className="col-md-3 mb-3">
+                                        <img src="/icons/game.svg"/>
+                                        <h2>16,065,840+</h2>
+                                        <p>Odehraných hodin</p>
+                                    </div>
+                                    <div className="col-md-3 mb-3">
+                                        <img src="/icons/graph-up-arrow.svg"/>
+                                        <h2>2,500+</h2>
+                                        <p>Rekord online hráčů</p>
+                                    </div>
+                                    <div className="col-md-3 mb-3">
+                                        <img src="/icons/chat-dots.svg"/>
+                                        <h2>2,209,307+</h2>
+                                        <p>Odpovědí na ticketech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 className="title">Časová osa projektu QPlay.cz</h1>
+            <div className="container py-5">
+                <div className="main-timeline">
+                    <div className="timeline left">
+                        <div className="card">
+                            <div className="card-body p-4">
+                                <h3>2014</h3>
+                                <ul className="mb-0">
+                                    <li>
+                                        Založení projektu <b>QGames.cz</b>
+                                    </li>
+                                    <img className="hide-on-mobile" src="/images/FB_1.jpeg" width="525" alt="facebook"/>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="timeline right">
+                        <div className="card">
+                            <div className="card-body p-4">
+                                <h3>2015</h3>
+                                <ul className="mb-0">
+                                    <li>
+                                        Přijetí <b>B0hy</b> na pozici vedení
+                                    </li>
+                                    <li>
+                                        Přejmenování projektu na <b>QPlay.cz</b>
+                                    </li>
+                                    <li>
+                                        Zveřejnění minihry <b>MiniAnnihilation</b>
+                                    </li>
+                                    <li>
+                                        Odebrání podpory <b>minecraft verze 1.7 - 1.7.10</b>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="main-timeline">
+                        <div className="timeline left">
+                            <div className="card">
+                                <div className="card-body p-4">
+                                    <h3>2016</h3>
+                                    <ul className="mb-0">
+                                        <li>
+                                            Přijetí <b>Raketka</b> na pozici Hlavní Helper
+                                        </li>
+                                        <li>
+                                            Pokoření hranice <b>2 000 likes</b> na Facebooku QPlay.cz
+                                        </li>
+                                        <li>
+                                            Zveřejnění minihry <b>Crystals</b>
+                                        </li>
+                                        <li>
+                                            Zveřejnění systému podpory <b>info.qplay.cz</b>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="timeline right">
+                        <div className="card">
+                            <div className="card-body p-4">
+                                <h3>2017</h3>
+                                <ul className="mb-0">
+                                    <li>
+                                        Přijetí <b>Mirek_</b> do Technik Teamu
+                                    </li>
+                                    <li>
+                                        Přijetí <b>_Spetty_</b> do Helper Teamu
+                                    </li>
+                                    <li>
+                                        Překonaná hranice <b>6 000 likes</b> na Facebook QPlay.cz
+                                    </li>
+                                    <li>
+                                        Zveřejnění minihry <b>1vs1</b>
+                                    </li>
+                                    <li>
+                                        Zveřejnění minihry <b>UpDown</b>
+                                    </li>
+                                    <li>
+                                        Zveřejnění minihry <b>VillWitch</b>
+                                    </li>
+                                    <li>
+                                        Zveřejnění minihry <b>Modern BedWars</b>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="main-timeline">
+                        <div className="timeline left">
+                            <div className="card">
+                                <div className="card-body p-4">
+                                    <h3>2018</h3>
+                                    <ul className="mb-0">
+                                        <li>
+                                            Zveřejnění minihry <b>MiniAnni-Run</b>
+                                        </li>
+                                        <li>
+                                            Zveřejnění minihry <b>SkyWars</b>
+                                        </li>
+                                        <li>
+                                            Zveřejnění <b>nárámků QPlay.cz</b>
+                                        </li>
+                                        <li>
+                                            Zveřejnění miniher <b>Arcade-Games</b>
+                                        </li>
+                                        <li>
+                                            Zveřejnění minihry <b>Survival-Games</b>
+                                        </li>
+                                        <li>
+                                            Zveřejnění <b>Instagramu QPlay.cz</b>
+                                        </li>
+                                        <li>
+                                            Vznik <b>CheatHunter Teamu</b>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="timeline right">
+                        <div className="card">
+                            <div className="card-body p-4">
+                                <h3>2019</h3>
+                                <ul className="mb-0">
+                                    <li>
+                                        Zveřejnění minihry <b>MiniUHC</b>
+                                    </li>
+                                    <li>
+                                        Odchod <b>Raketka</b> z pozice Hlavní Helper
+                                    </li>
+                                    <li>
+                                        Povýšení <b>_Spetty_</b> na pozici Hlavní Helper
+                                    </li>
+                                    <li>
+                                        Zveřejnění dosavadního <b>Main-Lobby</b>
+                                    </li>
+                                    <li>
+                                        Zveřejnění služby <b>changelog.qplay.cz</b>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="main-timeline">
+                        <div className="timeline left">
+                            <div className="card">
+                                <div className="card-body p-4">
+                                    <h3>2020</h3>
+                                    <ul className="mb-0">
+                                        <li>
+                                            Pokoření rekordu <b>1 500 online hráčů</b> připojených v jeden moment!
+                                        </li>
+                                        <li>
+                                            Zveřejnění <b>LEGEND VIP</b>
+                                        </li>
+                                        <li>
+                                            Pokoření rekordu <b>10 000 sledujících</b> na Instagramu QPlay.cz
+                                        </li>
+                                        <li>
+                                            Odchod <b>TheErikCZ</b> z pozice Hlavní Builder
+                                        </li>
+                                        <li>
+                                            Přijetí <b>Jendik</b> na pozici Hlavní Builder
+                                        </li>
+                                        <li>
+                                            Zveřejnění <b>Hestreng SkyWars Event</b>
+                                        </li>
+                                        <li>
+                                            Zveřejnění Bigeho SkyWars Eventu - později známý jako <b>SkyWars-AirDrop</b>
+                                        </li>
+                                        <li>
+                                            Zveřejnění minihry <b>Murder-Mystery</b>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="timeline right">
+                        <div className="card">
+                            <div className="card-body p-4">
+                                <h3>2021</h3>
+                                <ul className="mb-0">
+                                    <li>
+                                        Rekord přes <b>2 500 online hráčů</b> připojených v jeden moment!
+                                    </li>
+                                    <li>
+                                        Zveřejnění <b>Discordu QPlay.cz</b>
+                                    </li>
+                                    <li>
+                                        Pokoření rekordu <b>15 000 sledujících</b> na Instagramu QPlay.cz
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="main-timeline">
+                        <div className="timeline left">
+                            <div className="card">
+                                <div className="card-body p-4">
+                                    <h3>2022</h3>
+                                    <ul className="mb-0">
+                                        <li>
+                                            Dosažení <b>100 příspěvků</b> na Instagramu QPlay.cz
+                                        </li>
+                                        <li>
+                                            Zveřejnění nové verze systému podpory <b>info.qplay.cz</b>
+                                        </li>
+                                        <li>
+                                            Zveřejnění obchodu <b>store.qplay.cz</b>
+                                        </li>
+                                        <li>
+                                            Odchod <b>Jendik</b> z pozice Hlavní Builder
+                                        </li>
+                                        <li>
+                                            Přijetí <b>Dejviq_</b> na pozici Hlavní Builder
+                                        </li>
+                                        <li>
+                                            Povýšení <b>_Spetty_</b> na pozici Vedení
+                                        </li>
+                                        <li>
+                                            Povýšení <b>ItzTadeas</b> na pozici Hlavní Helper
+                                        </li>
+                                        <li>
+                                            Zveřejnění <b>Survival</b> části serveru
+                                        </li>
+                                        <li>
+                                            Vznik Moderátor Týmu s Hlavním Moderátorem <b>Dastrokk</b>
+                                        </li>
+                                        <li>
+                                            Zveřejnění minihry <b>Teams</b>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="timeline right">
+                        <div className="card">
+                            <div className="card-body p-4">
+                                <h3>2023</h3>
+                                <ul className="mb-0">
+                                    <li>
+                                        Povýšení <b>_razorRalfcz</b> na pozici PR Manager
+                                    </li>
+                                    <li>
+                                        Zveřejnění minihry <b>EggWars</b>
+                                    </li>
+                                    <li>
+                                        Zveřejnění <b>TikTok</b> profilu QPlay.cz
+                                    </li>
+                                    <li>
+                                        Odchod <b>B0hy</b> z pozice Vedení
+                                    </li>
+                                    <li>
+                                        Odchod <b>Dastrokk</b> z pozice Hlavní Moderátor, přesun na pozici Quality Manager
+                                    </li>
+                                    <li>
+                                        Povýšení <b>Ayessha</b> na pozici Hlavní Moderátorka
+                                    </li>
+                                    <li>
+                                        Zveřejnění <b>Survival Infinity</b> Updatu
+                                    </li>
+                                    <li>
+                                        Povýšení <b>Mirek_</b> na pozici Vedení
+                                    </li>
+                                    <li>
+                                        Povýšení <b>_Math3w_</b> na pozici Hlavní Technik
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="main-timeline">
+                        <div className="timeline left">
+                            <div className="card">
+                                <div className="card-body p-4">
+                                    <h3>2024</h3>
+                                    <ul className="mb-0">
+                                        <li>
+                                            Ukončení projektu <b>QPlay.cz</b>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className="discord">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-7">
+                        <h1>Discord</h1>
+                        <p>Připoj se na náš discord a propoj si účet pro získání zajímavých výhod</p>
+                        <ul>
+                            <li>Máte přístup do místnosti #general 🎮</li>
+                            <li>Otevře se vám místnost #pomoc-mezi-hráči, ve které můžete požádat o pomoc druhých hráčů, nebo naopak
+                                druhým hráčům můžete pomoct vy 👥
+                            </li>
+                            <li>Máte přístup do mnoha dalších text channelů pod sekcí Komunita | QPlay a Komunita | Ostatní ✌️</li>
+                            <li>Máte k dispozici několik volných voice místností 🗣️</li>
+                            <li>Máte možnost se zúčastňovat herních akcí! Pokud bude probíhat akce, zjistíte to v místnosti oznámení
+                                🎲
+                            </li>
+                            <li>Pokud na serveru vlastníte jakékoliv VIP, tak automaticky obdržíte roli &quot;VIP&quot;. Navíc
+                                obdržíte přístup do VIP chatu #vip-chat 💎
+                            </li>
+                        </ul>
+                        <a href="https://discord.qplay.cz/">
+                            <button>Přidat se k discordu</button>
+                        </a>
+                    </div>
+                    <div className="col-md-5 d-flex">
+                        <div className="discordimg">
+                            <Image
+                                src={discord}
+                                alt="discord"
+                                width={300}
+                                height={242}
+                                quality={100}
+                                style={{
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                }}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
       <section className="news">
         <div className="container">
           <h1 className="title">Nejnovější změny</h1>
@@ -149,335 +487,6 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                 <h2>YouTube</h2>
               </div>
             </a>
-          </div>
-        </div>
-      </section>
-      <section className="aboutus">
-        <div className="container">
-          <h1 className="title">O nás</h1>
-          <div className="row">
-            <div className="col-lg-5">
-              <div className="render">
-                <Image
-                  alt="figurine"
-                  src={render}
-                  width={277}
-                  height={450}
-                  quality={100}
-                  style={{
-                    maxWidth: "100%",
-                    height: "auto"
-                  }}/>
-              </div>
-            </div>
-            <div className="col-lg-7 d-flex">
-              <div className="content">
-                <h1>O <span className="colored">QPLAY.CZ</span></h1>
-                <p>Minecraft server QPlay.cz, který patří mezi největší servery v Česku a Slovensku, byl založen v roce
-                  2015 a nabízí spoustu různých miniher.
-                  Za své dlouhodobé působení na česko-slovenské scéně se pyšní pokročilým technickým nastavením. Server
-                  vytvořil i svou vlastní minihru MiniAnnihilation. Dále si můžete na serveru zahrát minihry,
-                  které jsou známé především ze zahraničí - BedWars, SkyWars, 1vs1 a další.
-                  Přijďte si užít hru Minecraft na serveru QPlay.</p>
-                <div className="stats">
-                  <div className="row">
-                    <div className="col-md-4 mb-4">
-                      <img src="/icons/add-user.svg"/>
-                      <h2>1,900,000+</h2>
-                      <p>Registrovaných hráčů</p>
-                    </div>
-                    <div className="col-md-4 mb-4">
-                      <img src="/icons/game.svg"/>
-                      <h2>14,000,000+</h2>
-                      <p>Odehraných hodin</p>
-                    </div>
-                    <div className="col-md-4 mb-4">
-                      <img src="/icons/time-circle.svg"/>
-                      <h2>500+</h2>
-                      <p>Online hráčů denně</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="discord">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-7">
-              <h1>Discord</h1>
-              <p>Připoj se na náš discord a propoj si účet pro získání zajímavých výhod</p>
-              <ul>
-                <li>Máte přístup do místnosti #general 🎮</li>
-                <li>Otevře se vám místnost #pomoc-mezi-hráči, ve které můžete požádat o pomoc druhých hráčů, nebo naopak
-                  druhým hráčům můžete pomoct vy 👥
-                </li>
-                <li>Máte přístup do mnoha dalších text channelů pod sekcí Komunita | QPlay a Komunita | Ostatní ✌️</li>
-                <li>Máte k dispozici několik volných voice místností 🗣️</li>
-                <li>Máte možnost se zúčastňovat herních akcí! Pokud bude probíhat akce, zjistíte to v místnosti oznámení
-                  🎲
-                </li>
-                <li>Pokud na serveru vlastníte jakékoliv VIP, tak automaticky obdržíte roli &quot;VIP&quot;. Navíc
-                  obdržíte přístup do VIP chatu #vip-chat 💎
-                </li>
-              </ul>
-              <a href="https://discord.qplay.cz/">
-                <button>Přidat se k discordu</button>
-              </a>
-            </div>
-            <div className="col-md-5 d-flex">
-              <div className="discordimg">
-                <Image
-                  src={discord}
-                  alt="discord"
-                  width={300}
-                  height={242}
-                  quality={100}
-                  style={{
-                    maxWidth: "100%",
-                    height: "auto"
-                  }}/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="games">
-        <div className="container">
-          <h1 className="title">Naše minihry</h1>
-          <div className="row">
-            <div className="col-lg-4 mb-4">
-              <div className="card">
-                <div className="card-top">
-                  <ImageCard src={"/imgServers/minianni.webp"}></ImageCard>
-                  <div className="header">
-                    <div className="imageicon">
-                      <Image
-                        src={miniannihilation}
-                        alt="miniannihilation"
-                        height={80}
-                        width={80}
-                        quality={100}
-                        style={{
-                          maxWidth: "100%",
-                        }}/>
-                    </div>
-                    <h3>MiniAnnihilation</h3>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <div className="content">
-                    <p>Natěž si suroviny, ze kterých si vytvoříš své brnění a nástroje. Ovládni střed mapy, abys získal
-                      i diamantové věci. Poté znič nexus ostatním týmům.</p>
-                    <h4>Seznam serverů</h4>
-                    <ul>
-                      <li>MiniAnni Run (5v5v5v5)</li>
-                      <li>MiniAnni (10v10v10v10)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card">
-                <div className="card-top">
-                  <ImageCard src={"/imgServers/survival.webp"}></ImageCard>
-                  <div className="header">
-                    <div className="imageicon">
-                      <Image
-                        src={survival}
-                        alt="survival"
-                        height={80}
-                        width={80}
-                        quality={100}
-                        style={{
-                          maxWidth: "100%",
-                        }}/>
-                    </div>
-                    <h3>Survival</h3>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <div className="content">
-                    <p>Natěž si suroviny, postav si své obydlí, objevuj svět, vydělávej peníze a relaxuj!</p>
-                    <h4>Seznam serverů</h4>
-                    <ul>
-                      <li>Survival</li>
-                    </ul>
-                    <h4>Mapa světa</h4>
-                    <ul>
-                      <li><a href="https://mapa-survival.qplay.cz/">mapa-survival.qplay.cz</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card">
-                <div className="card-top">
-                  <ImageCard src={"/imgServers/skywars.webp"}></ImageCard>
-                  <div className="header">
-                    <div className="imageicon">
-                      <Image
-                        src={skywars}
-                        alt="skywars"
-                        height={80}
-                        width={80}
-                        quality={100}
-                        style={{
-                          maxWidth: "100%",
-                        }}/>
-                    </div>
-                    <h3>SkyWars</h3>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <div className="content">
-                    <p>Posbírej z truhel na ostrovech ty nejlepší věci pro boj a zabij všechny nepřátele.</p>
-                    <h4>Seznam serverů</h4>
-                    <ul>
-                      <li>SkyWars Solo</li>
-                      <li>SkyWars Lucky</li>
-                      <li>SkyWars Duo</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card">
-                <div className="card-top">
-                  <ImageCard src={"/imgServers/getdown.webp"}></ImageCard>
-                  <div className="header">
-                    <div className="imageicon">
-                      <Image
-                        src={getdown}
-                        alt="getdown"
-                        height={80}
-                        width={80}
-                        quality={100}
-                        style={{
-                          maxWidth: "100%",
-                        }}/>
-                    </div>
-                    <h3>GetDown</h3>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <div className="content">
-                    <p>Seskákej jako první, nasbírej co nejvíce bodů, vyzbroj se a ve finálním boji zůstaň jako poslední
-                      naživu.</p>
-                    <h4>Seznam serverů</h4>
-                    <ul>
-                      <li>GetDown</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card">
-                <div className="card-top">
-                  <ImageCard src={imgServerMiniUHC}></ImageCard>
-                  <div className="header">
-                    <div className="imageicon">
-                      <Image
-                        src={miniuhc}
-                        alt="miniuhc"
-                        height={80}
-                        width={80}
-                        quality={100}
-                        style={{
-                          maxWidth: "100%",
-                        }}/>
-                    </div>
-                    <h3>MiniUHC</h3>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <div className="content">
-                    <p>Natěž si ve volné přírodě co nejlepší suroviny a zabij všechny nepřátele.</p>
-                    <h4>Seznam serverů</h4>
-                    <ul>
-                      <li>MiniUHC Duo</li>
-                      <li>MiniUHC Trio</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card">
-                <div className="card-top">
-                  <ImageCard src={imgServer1vs1}></ImageCard>
-                  <div className="header">
-                    <div className="imageicon">
-                      <Image
-                        src={onevsone}
-                        alt="onevsone"
-                        height={80}
-                        width={80}
-                        quality={100}
-                        style={{
-                          maxWidth: "100%",
-                        }}/>
-                    </div>
-                    <h3>1vs1</h3>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <div className="content">
-                    <p>Myslíš si, že jsi výborný zabiják? Dokaž to! Vyzvi svého kamaráda nebo náhodného hráče na souboj
-                      a zab ho.</p>
-                    <h4>Seznam serverů</h4>
-                    <ul>
-                      <li>Training</li>
-                      <li>Archer</li>
-                      <li>BuildUHC</li>
-                      <li>Ranked</li>
-                      <li>TheBrigde</li>
-                      <li>Sumo</li>
-                      <li>SkyWars</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card">
-                <div className="card-top">
-                  <ImageCard src={imgServerBedWars}></ImageCard>
-                  <div className="header">
-                    <div className="imageicon">
-                      <Image
-                        src={bedwars}
-                        alt="bedwars"
-                        height={80}
-                        width={80}
-                        quality={100}
-                        style={{
-                          maxWidth: "100%",
-                        }}/>
-                    </div>
-                    <h3>BedWars</h3>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <div className="content">
-                    <p>Nasbírej na svém ostrově co nejvíce ingotů (bronze, iron, gold), zakup si věci u vesničana a znič
-                      postel ostatním týmům.</p>
-                    <h4>Seznam serverů</h4>
-                    <ul>
-                      <li>BedWars Solo (1v1v1v1)</li>
-                      <li>BedWars Duo (2v2v2v2)</li>
-                      <li>BedWars Squad (4v4v4v4)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

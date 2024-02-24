@@ -30,19 +30,9 @@ const menu = [
   new MenuItem("Domů", "/"),
   new MenuItem("Připojení", "/jak-se-pripojit"),
   new MenuItem("Pravidla", "/pravidla"),
-  new MenuItem("VIP účet", "/vip", false, "special"),
-  new MenuItem("Obchod", "https://store.qplay.cz/category/328613", true, "special"),
+  new MenuItem("VIP účet", "/vip", false),
   new MenuItem("Hlasování", "/hlasovani"),
-  new MenuItem("Pozice", "/pozice").setItems([
-    new MenuItem("Náš tým", "/nas-tym"),
-    new MenuItem("YouTuber", "/yt"),
-    new MenuItem("TikToker", "/tiktoker"),
-    new MenuItem("Technik", "/nabor/technik"),
-    new MenuItem("Helper", "/nabor/helper"),
-    new MenuItem("Moderátor", "/nabor/moderator"),
-    new MenuItem("Builder", "/nabor/builder"),
-    new MenuItem("CheatHunter", "/nabor/cheathunter"),
-  ]),
+  new MenuItem("Náš tým", "/nas-tym"),
   new MenuItem("Nápověda", "/navod").setItems([
     new MenuItem("FAQ", "/faq"),
     new MenuItem("Můj nick je již zaregistrovaný", "/navod/privlastneni-nicku"),
@@ -199,11 +189,6 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
               <p>
                 <Link href='/vip' className="text-reset">
                   VIP
-                </Link>
-              </p>
-              <p>
-                <Link href='https://store.qplay.cz/category/328613' className="text-reset">
-                  Obchod
                 </Link>
               </p>
             </div>

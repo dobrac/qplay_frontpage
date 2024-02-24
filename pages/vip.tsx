@@ -7,7 +7,7 @@ export default function VIP() {
     <div>
       <Head>
         <title>VIP | QPlay.cz</title>
-        <meta name="description" content="Zakoupení VIP účtu na našem serveru."/>
+        <meta name="description" content="VIP účet na našem serveru."/>
       </Head>
       <Banner sm={true}>
         <div className="pagename">
@@ -26,15 +26,6 @@ export default function VIP() {
     <center>
             <a href="#naramekAkce" style="text-decoration:none;border:none;"><img src="images/WebNaramkyAkce.png?ver=2" ></a><br> <br><br>
     </center>    */}
-          <div className="btnsgroup">
-            <a className="button" href="https://kod.qplay.cz/">
-              <button>AKTIVOVAT VIP KÓD</button>
-            </a>
-            <a className="button" href="#zakoupeniVIP">
-              <button>Zakoupit VIP</button>
-            </a>
-          </div>
-          <br/>
           {/*  <header>
             <center>
               <h2>Jak si koupit VIP?</h2>
@@ -77,11 +68,6 @@ export default function VIP() {
               </span>
             </div>
           </h2> */}
-          <h3 style={{textAlign: "center"}}>
-            <span style={{fontWeight: "bold"}}>Více položek na QPlay Store! <br />
-              →{" "}<a
-              href="https://store.qplay.cz/category/328613" target="_blank" rel="noreferrer">store.qplay.cz</a>{" "}←</span>
-          </h3>
           {/*<h4 style={{textAlign: "center"}}>
           <span><a href="#poukaz VIP" className={"voucher"}><Image src={Voucher}  alt={"voucher"}/></a></span>
         </h4>*/}
@@ -137,46 +123,10 @@ export default function VIP() {
             </p>
           </div>
 
-          <div className="href-offset">
-            <span className="offset"><a id="poukaz VIP"/></span>
-            <a className="darkovyPoukaz"/>
-            <h2>Zakoupení dárkového poukazu na VIP</h2>
-            <p>
-              Sháníte dárek pro svého kamaráda, kamarádku, syna, dceru…? Dárkový
-              poukaz na PREMIUM účet na herním serveru QPlay.cz jistě nebude
-              špatná volba.<br/>
-              <br/>
-              <b>Jak to funguje?</b> <br/>
-              Vyberte si jednu z možností platby: SMS, PayPal či PaySafeCard a
-              postupujte dle pokynů uvedených na této stránce. Po úspěšném
-              zaplacení Vám přijde sms (v případě platby pomocí sms) nebo email (v
-              případě platby pomocí PSC nebo PayPal) s kódem. Tento kód zadejte na
-              stránce <a href="https://kod.qplay.cz" target="_blank" rel="noreferrer">https://kod.qplay.cz</a> a zvolte
-              možnost vygenerovat dárkový poukaz. Tento vygenerovaný
-              dárkový poukaz je možné vytisknout a je platný ihned po
-              zaplacení.<br/><br/>
-              V případě jakýchkoliv dotazů se na nás neváhejte obrátit – jak se
-              dozvíte v sekci Kontakt.
-            </p>
-
-            <div>
-              Další informace k VIP platbě, <em>reklamace</em> atd. můžete řešit
-              pomocí ticketu na
-              <a href="https://info.qplay.cz"><strong> info.qplay.cz</strong></a>
-              , případně napište na email: <strong>support@qplay.cz</strong>,
-              Děkujeme
-            </div>
-          </div>
-
           <div style={{marginTop: "2em"}}>
             <h2>Máte problém s VIP?</h2>
             <ol style={{listStyle: "decimal", listStylePosition: "inside"}}>
               <li>VIP se vám na serveru aktivuje obvykle do 5 minut</li>
-              <li>
-                Pokud VIP i po hodině od odeslání SMS nemáte, zkontrolujte si text
-                a číslo SMS, kterou jste odeslal/a a zda vám byla doručena
-                potvrzovací zpráva o provedení platby
-              </li>
               <li>
                 V případě, že neshledáte chybu na své straně, napište ticket na
                 <a href="https://info.qplay.cz" style={{fontWeight: "bold"}}
@@ -184,12 +134,6 @@ export default function VIP() {
                 >
                 a vše zde s vámi prověříme
               </li>
-              <li>
-                Odeslání SMS může blokovat nedostatečná výše kreditu či zakázané
-                PREMIUM SMS platby, tyto problémy musíte vyřešit s vaším
-                operátorem
-              </li>
-              <li>Za špatně zaslanou SMS neneseme žádnou zodpovědnost</li>
             </ol>
           </div>
 
