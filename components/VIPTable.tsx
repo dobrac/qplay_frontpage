@@ -1,7 +1,7 @@
 import {Fragment, useState} from "react";
 
 const sections = [
-  {
+/*  {
     header: 'Cena',
     color: '#FFBF00',
     items: [
@@ -20,7 +20,7 @@ const sections = [
         legend: '9,9 EUR',
       },
     ],
-  },
+  },*/
   {
     header: 'Detaily skupiny',
     color: '#5E7594',
@@ -28,9 +28,9 @@ const sections = [
       {
         name: 'Délka trvání výhod',
         default: '-',
-        vip: '30 dní',
-        master: '30 dní',
-        legend: '30 dní',
+        vip: 'do 30.3.2024',
+        master: 'do 30.3.2024',
+        legend: 'do 30.3.2024',
       },
       {
         name: 'Prefix v tabu a chatu',
