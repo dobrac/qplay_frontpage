@@ -31,6 +31,7 @@ const menu = [
   new MenuItem("Připojení", "/jak-se-pripojit"),
   new MenuItem("Pravidla", "/pravidla"),
   new MenuItem("VIP účet", "/vip", false),
+  new MenuItem("Obchod", "https://store.qplay.cz/category/328613", true, "special"),
   new MenuItem("Hlasování", "/hlasovani"),
   new MenuItem("Náš tým", "/nas-tym"),
   new MenuItem("Nápověda", "/navod").setItems([

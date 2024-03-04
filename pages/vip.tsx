@@ -68,6 +68,11 @@ export default function VIP() {
               </span>
             </div>
           </h2> */}
+          <h3 style={{textAlign: "center"}}>
+            <span style={{fontWeight: "bold"}}>Do uzavření serveru 30.3.2024 si lze ještě zakoupit položky na: <br />
+              →{" "}<a
+                  href="https://store.qplay.cz/category/328613" target="_blank" rel="noreferrer">store.qplay.cz</a>{" "}←</span>
+          </h3>
           {/*<h4 style={{textAlign: "center"}}>
           <span><a href="#poukaz VIP" className={"voucher"}><Image src={Voucher}  alt={"voucher"}/></a></span>
         </h4>*/}
