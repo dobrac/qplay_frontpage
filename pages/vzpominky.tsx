@@ -22,37 +22,37 @@ export default function Groups() {
           <div>
             <li>
               <Link href="/vzpominky/vedeni" passHref>
-                Vedení
+                Vedení Serveru
               </Link>
             </li>
             <li>
               <Link href="/vzpominky/helper" passHref>
-                Helper Tým
+                Helper Team
               </Link>
             </li>
             <li>
               <Link href="/vzpominky/moderator" passHref>
-                Moderátor Tým
+                Moderátor Team
               </Link>
             </li>
             <li>
               <Link href="/vzpominky/builder" passHref>
-                Builder Tým
+                Builder Team
               </Link>
             </li>
             <li>
               <Link href="/vzpominky/technik" passHref>
-                Technik Tým
+                Technik Team
               </Link>
             </li>
-{/*            <li>
+            <li>
               <Link href="/vzpominky/cheathunter" passHref>
-                CheatHunter Tým
+                CheatHunter Team
               </Link>
-            </li>*/}
+            </li>
             <li>
               <Link href="/vzpominky/content" passHref>
-                Content Tým
+                Content Team
               </Link>
             </li>
           </div>
