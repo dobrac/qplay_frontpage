@@ -531,6 +531,17 @@ nav {
             color: #fff;
           }
         }
+        .dropdown-menu {
+          .dropdown-item {
+            color: #212529;
+            &:hover {
+              color: #212529;
+            }
+            &:focus {
+              color: #212529;
+            }
+          }
+        }
       }
 
       a {
