@@ -31,10 +31,10 @@ const menu = [
   new MenuItem("Připojení", "/jak-se-pripojit"),
   new MenuItem("Pravidla", "/pravidla"),
   new MenuItem("VIP účet", "/vip", false),
-  new MenuItem("Obchod", "https://store.qplay.cz/category/328613", true, "special"),
+  //new MenuItem("Obchod", "https://store.qplay.cz/category/328613", true, "special"),
   new MenuItem("Hlasování", "/hlasovani"),
   new MenuItem("Náš tým", "/nas-tym"),
-  new MenuItem("Vzpomínky Teamu", "/vzpominky").setItems([
+  new MenuItem("Vzpomínky Teamu", "/vzpominky", false, "special").setItems([
     new MenuItem("Vedení Serveru", "/vzpominky/vedeni"),
     new MenuItem("Helper Team", "/vzpominky/helper"),
     new MenuItem("Moderátor Team", "/vzpominky/moderator"),
