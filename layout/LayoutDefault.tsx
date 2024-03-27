@@ -34,13 +34,21 @@ const menu = [
   new MenuItem("Obchod", "https://store.qplay.cz/category/328613", true, "special"),
   new MenuItem("Hlasování", "/hlasovani"),
   new MenuItem("Náš tým", "/nas-tym"),
+  new MenuItem("Vzpomínky Teamu", "/vzpominky").setItems([
+    new MenuItem("Vedení Serveru", "/vzpominky/vedeni"),
+    new MenuItem("Helper Team", "/vzpominky/helper"),
+    new MenuItem("Moderátor Team", "/vzpominky/moderator"),
+    new MenuItem("Builder Team", "/vzpominky/builder"),
+    new MenuItem("Technik Team", "/vzpominky/technik"),
+    //new MenuItem("CheatHunter Team", "/vzpominky/cheathunter"),
+    new MenuItem("Content Team", "/vzpominky/content"),
+  ]),
   new MenuItem("Nápověda", "/navod").setItems([
     new MenuItem("FAQ", "/faq"),
     new MenuItem("Můj nick je již zaregistrovaný", "/navod/privlastneni-nicku"),
     new MenuItem("Přihlašování bez hesla/skin na serveru", "/navod/prihlaseni-bez-hesla"),
     new MenuItem("Změna hesla", "https://heslo.qplay.cz", true),
     new MenuItem("Mapa Survivalu", "https://mapa-survival.qplay.cz", true),
-
   ]),
   new MenuItem("Kontakt", "/kontakt"),
   new MenuItem("Přihlášení", "https://info.qplay.cz", true, "special")
