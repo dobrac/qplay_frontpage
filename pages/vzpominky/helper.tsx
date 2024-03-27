@@ -58,7 +58,7 @@ export default function Memories() {
                 <div className="container">
                     <h1 className="title">Střípky bývalých helperů</h1>
                     <MemberMemory
-                        nick="JSMMKODDSHOTS"
+                        nick="JSMMK"
                         image={JSMMKODDSHOTS}
                         text="Nečakal by som, že moja QPlay kariéra začne tým, že ma Epl, ako vtedajší QPlay builder zavolá na Teamspeak. 😁 Po veľa hodinách hrania, pri ktorých začali vznikať prvé, teraz už spomienky na QPlay s ľuďmi ako Raketka, WaterMelon, LeeTZM a veľa ďalšími, som sa ocitol v AT. Tam prišli tí, s ktorými som to ťahal najviac ako Mr_Furry, MilQanek, ItsMeVeronika a nemôžem asi zabudnúť na už spomínaného Raketku, s ktorým som najviac v kontakte do dnes. Dalo by sa toho napísať veľa, ale je tu obmedzený počet znakov. 😅 Na záver by som sa chcel hlavne poďakovať celému QPlayi, ako hráčom, za to akú sme vytvorili komunitu, tak aj vedeniu za možnosť byť súčasťou AT. Treba sa spätne obzrieť za tým, koľko nových ľudí ste vďaka severi spoznali, koľko ľudí vám ostalo v živote doteraz a uvedomiť si, že bez QPlay by sa nič z toho nestalo. Tak teda naposledy zdraví vás váš bývalý helper JSMMK 👋"
                         imageOnRight={true}
