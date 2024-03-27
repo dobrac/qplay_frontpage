@@ -40,7 +40,7 @@ const menu = [
     new MenuItem("Moderátor Team", "/vzpominky/moderator"),
     new MenuItem("Builder Team", "/vzpominky/builder"),
     new MenuItem("Technik Team", "/vzpominky/technik"),
-    //new MenuItem("CheatHunter Team", "/vzpominky/cheathunter"),
+    new MenuItem("CheatHunter Team", "/vzpominky/cheathunter"),
     new MenuItem("Content Team", "/vzpominky/content"),
   ]),
   new MenuItem("Nápověda", "/navod").setItems([

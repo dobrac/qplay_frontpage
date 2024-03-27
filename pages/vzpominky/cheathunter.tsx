@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Banner from "../../components/Banner";
 import Linuuus from "../../public/images/team/Linuuus.png"
+import M4rtiN from "../../public/images/team/M4rtiN.png"
 import MemberMemory from '../../components/MemberMemory';
 
 export default function Memories() {
@@ -15,7 +16,7 @@ export default function Memories() {
                     <h1>Vzpomínky CheatHunter Teamu</h1>
                 </div>
             </Banner>
-            <section className="aboutus">
+{/*            <section className="aboutus">
                 <div className="container">
                     <h1 className="title">Střípky vedení teamu</h1>
                     <MemberMemory
@@ -34,10 +35,16 @@ export default function Memories() {
                         imageOnRight={false}
                     />
                 </div>
-            </section>
+            </section>*/}
             <section className="aboutus">
                 <div className="container">
                     <h1 className="title">Střípky CheatHunterů</h1>
+                    <MemberMemory
+                        nick="M4rtiN"
+                        image={M4rtiN}
+                        text="Na QPlay jsem se poprvé připojil v roce 2016. Tehdy jsem tady hrál MiniAnni s mým bráchou, ale objevil jsem zde minihru SkyWars, která mě neuvěřitelně začala bavit. Možná se někomu může zdát, že hraní na QPlayi byla ztrátou času, ale já nic nelituji. Bavilo mě dostávat se na přední příčky SkyWars leaderboardů, bavilo mě zde hrát s mými kamarády a nakonec mě bavilo zde pomáhat lidem na pozici cheathuntera. Chtěl bych poděkovat Linusovi, který mi dal tu příležitost připojit se do CheatHunter teamu. Poznal jsem v teamu spoustu úžasných lidí a jsem za to rád. Děkuji vám. Nakonec bych chtěl poděkovat Profikkovi, který vytvořil QPlay. Bez tebe bychom tu dnes nebyli. Jsem rád, že QPlay končí v tom nejlepším. Bude to navždy nejlegendárnější server."
+                        imageOnRight={false}
+                    />
                 </div>
             </section>
         </div>
