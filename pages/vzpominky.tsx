@@ -45,11 +45,11 @@ export default function Groups() {
                 Technik Tým
               </Link>
             </li>
-            <li>
+{/*            <li>
               <Link href="/vzpominky/cheathunter" passHref>
                 CheatHunter Tým
               </Link>
-            </li>
+            </li>*/}
             <li>
               <Link href="/vzpominky/content" passHref>
                 Content Tým

@@ -1,126 +1,37 @@
 import Head from "next/head"
 import Banner from "../../components/Banner";
-import Image from "next/image";
-import profikk from "../../public/images/profikk.png"
-import spetty from "../../public/images/spetty.png"
-import mirek from "../../public/images/mirek.png"
-
-const SKIN_HEIGHT = 350;
+import profikk from "../../public/images/team/profikk.png"
+import spetty from "../../public/images/team/spetty.png"
+import mirek from "../../public/images/team/mirek.png"
+import MemberMemory from '../../components/MemberMemory';
 
 export default function Memories() {
     return (
         <div>
             <Head>
                 <title>Vzpomínky | QPlay.cz</title>
-                <meta name="description" content="Vzpomínky Vedení"/>
+                <meta name="description" content="Vzpomínky Vedení Serveru"/>
             </Head>
             <Banner sm={true}>
                 <div className="pagename">
-                    <h1>Děkujeme za vaši podporu!</h1>
+                    <h1>Vzpomínky Vedení Serveru</h1>
                 </div>
             </Banner>
             <section className="aboutus">
                 <div className="container">
-                    <h1 className="title">Střípky z vedení</h1>
-                    <div className="row">
-                        <div className="col-lg-5">
-                            <div className="render">
-                                <Image
-                                    alt="figurine"
-                                    src={profikk}
-                                    height={SKIN_HEIGHT}
-                                    quality={100}
-                                    style={{
-                                        maxWidth: "100%",
-                                        height: "auto",
-                                        marginLeft: "auto"
-                                    }}/>
-                            </div>
-                        </div>
-                        <div className="col-lg-7 d-flex">
-                            <div className="content">
-                                <h1>PROFIKK</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ipsum velit,
-                                    consectetuer eu lobortis ut, dictum at dui. Duis aute irure dolor in reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Integer malesuada.
-                                    Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Pellentesque
-                                    sapien. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Nulla turpis
-                                    magna, cursus sit amet, suscipit a, interdum id, felis. Morbi leo mi, nonummy eget
-                                    tristique non, rhoncus non leo. Maecenas sollicitudin. Itaque earum rerum hic
-                                    tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-                                    consequatur aut perferendis doloribus asperiores repellat. Maecenas lorem. Nulla non
-                                    arcu lacinia neque faucibus fringilla.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-7 d-flex">
-                            <div className="content">
-                                <h1>_SPETTY_</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ipsum velit,
-                                    consectetuer eu lobortis ut, dictum at dui. Duis aute irure dolor in reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Integer malesuada.
-                                    Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Pellentesque
-                                    sapien. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Nulla turpis
-                                    magna, cursus sit amet, suscipit a, interdum id, felis. Morbi leo mi, nonummy eget
-                                    tristique non, rhoncus non leo. Maecenas sollicitudin. Itaque earum rerum hic
-                                    tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-                                    consequatur aut perferendis doloribus asperiores repellat. Maecenas lorem. Nulla non
-                                    arcu lacinia neque faucibus fringilla.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-lg-5">
-                            <div className="render">
-                                <Image
-                                    alt="figurine"
-                                    src={spetty}
-                                    height={SKIN_HEIGHT}
-                                    quality={100}
-                                    style={{
-                                        maxWidth: "100%",
-                                        height: "auto"
-                                    }}/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-5">
-                            <div className="render">
-                                <Image
-                                    alt="figurine"
-                                    src={mirek}
-                                    height={SKIN_HEIGHT}
-                                    quality={100}
-                                    style={{
-                                        maxWidth: "100%",
-                                        height: "auto",
-                                        marginLeft: "auto"
-                                    }}/>
-                            </div>
-                        </div>
-                        <div className="col-lg-7 d-flex">
-                            <div className="content">
-                                <h1>MIREK_</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ipsum velit,
-                                    consectetuer eu lobortis ut, dictum at dui. Duis aute irure dolor in reprehenderit
-                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Integer malesuada.
-                                    Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Pellentesque
-                                    sapien. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Nulla turpis
-                                    magna, cursus sit amet, suscipit a, interdum id, felis. Morbi leo mi, nonummy eget
-                                    tristique non, rhoncus non leo. Maecenas sollicitudin. Itaque earum rerum hic
-                                    tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-                                    consequatur aut perferendis doloribus asperiores repellat. Maecenas lorem. Nulla non
-                                    arcu lacinia neque faucibus fringilla.
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
+                    <h1 className="title">Střípky vedení serveru</h1>
+                    <MemberMemory
+                        nick="_Spetty_"
+                        image={spetty}
+                        text="O QPlay jsem poprvé slyšel v roce 2016, v té době mi bylo 14 let a s kamarády jsme chodili po různých multiplayer serverech hrát minihry. Do QPlay Týmu jsem se dostal až na 3. pokus skrz nábor na Helpery, po 2 letech jsem byl povýšen na Hlavního Helpera a po dalších 2 letech na Vedení Serveru. Ne vždy bylo jednoduché pracovat na vývoji serveru, vzpomínám si například na spoustu &quot;večerů&quot;, kdy jsme kvůli nahrávání updatu šli spát až okolo 6 hodin ráno. Jelikož jsem si prošel opravdu hodně pozicemi, tak jsem si zvládl vyzkoušet spoustu věcí. Vždycky jsme byl nadšený, že stačilo na QPlay projevit o něco zájem, přiblížit svoji vizi a mohl jsem se tomu věnovat. Mimo podpory hráčům a vedení jsem si vyzkoušel i technickou stránku serveru, PR záležitosti, nebo například jsem postavil pár map na již zrušenou minihru Colors! QPlay pro mě bylo místo, kde jsem získal nespočet zkušeností, kontaktů a vzpomínek. Děkuji všem, co se na tomto projektu podíleli!"
+                        imageOnRight={false}
+                    />
+                    <MemberMemory
+                        nick="Mirek_"
+                        image={mirek}
+                        text="Na Minecraft minihrové scéně jsem se objevil v roce 2014, kdy jsem společně s B0hym založil server Games-Land.cz. Na začátku roku 2015 byl server Games-Land spojen se serverem QGames a já odešel na Survival-Games. Rok poté mě kontaktoval Bohy, zda bych nechtěl pro QPlay naprogramovat minihru - Crystals. Jak už asi všichni víte, nabídku jsem přijal a rok na to jsem se dokonce připojil do Technik Týmu. Od té doby jsem věnoval skoro veškerý svůj volný čas vývoji miniher a novinek na QPlay. Za těch 7 let se pro mě QPlay stal srdcovou záležitostí, a získal jsem spoustu zkušenosti, ze kterých budu čerpat po celý zbytek svého pracovního života. Získal jsem nové přátele, poznal spoustu nových lidí a zjistil jaké to je vést takto velký projekt. Chtěl bych poděkovat všem technikům, kteří se za dobu mojí působnosti v týmu vystřídali, a kteří svou prací přispěli k tomu všemu, čeho QPlay dosáhl."
+                        imageOnRight={true}
+                    />
                 </div>
             </section>
         </div>
