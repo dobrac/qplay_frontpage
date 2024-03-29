@@ -14,7 +14,7 @@ export default function Memories() {
             </Head>
             <Banner sm={true}>
                 <div className="pagename">
-                    <h1>Vzpomínky Moderátor Teamu</h1>
+                    <h1>Vzpomínky Builder Teamu</h1>
                 </div>
             </Banner>
             <section className="aboutus">
