@@ -54,7 +54,7 @@ export default function Memories() {
                     />
                 </div>
             </section>
-{/*            <section className="aboutus">
+            <section className="aboutus">
                 <div className="container">
                     <h1 className="title">Střípky bývalých cheathunterů</h1>
                     <MemberMemory
@@ -64,7 +64,7 @@ export default function Memories() {
                         imageOnRight={false}
                     />
                 </div>
-            </section>*/}
+            </section>
         </div>
     )
 }
