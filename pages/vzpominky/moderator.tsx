@@ -4,8 +4,8 @@ import Ayessha from "../../public/images/team/Ayessha.png"
 import iArthurekk from "../../public/images/team/iArthurekk.png"
 import DarkBanan from "../../public/images/team/DarkBanan.png"
 import stepanpanik from "../../public/images/team/stepanpanik.png"
-
 import MemberMemory from '../../components/MemberMemory';
+import _Histo_ from "../../public/images/team/_Histo_.png";
 
 export default function Memories() {
     return (
@@ -50,6 +50,17 @@ export default function Memories() {
                         image={stepanpanik}
                         text="Asi žádný ze serverů mi nepřirostl k srdci tak jako QPlay. Bohužel dnem 30. 3. 2024 bude ukončen, ale navždy zůstane v našich srdcích společně se vzpomínkami na něj. Na tomto projektu jsem působil v Moderátor týmu od 30. 8. 2023 na pozici Zkušebního Moderátora a 5. 9. 2023 jsem byl povýšen na pozici Moderátora, na které působím až do samého konce tohoto nenahraditelného projektu. Na tomto serveru mám nahráno přes 60 dní a ani jedné chvíle nelituji. Načerpal jsem zde mnoho zkušeností, poznal nespočet úžasných přátel a zažil nespočet úžasných chvil, na které budu vzpomínat i za několik let. Za tuto příležitost bych chtěl poděkovat hlavně Hlavní Moderátorce Ayesshe, vedení za vytvoření tohoto projektu, ale i celému zbytku tohoto úžasného týmu."
                         imageOnRight={true}
+                    />
+                </div>
+            </section>
+            <section className="aboutus">
+                <div className="container">
+                    <h1 className="title">Střípky bývalých moderátorů</h1>
+                    <MemberMemory
+                        nick="_Histo_"
+                        image={_Histo_}
+                        text="Ahoj, přesně před rokem 30.3.2023 jsem po dvou letech opustil A-Team, nikdy by mě nenapadlo, že o rok později bude projekt QPlay končit. Ačkoliv už Minecraft nehraji, tak je to pro mě dost emotivní moment. Jako malý kluk, který začínal na minihře Annihilation, jsem vždy obdivoval členy A-Teamu. Proto jsem vděčný za možnost být 3x členem teamu, splnil jsem si díky tomu svůj dětský sen. Děkuji všem bývalým kolegům, kamarádům a fanouškům za krásné vzpomínky. Přeji Vám hodně štěstí a úspěchů do budoucna, mějte se krásně. Váš Cheathunter & Mod Hisťo."
+                        imageOnRight={false}
                     />
                 </div>
             </section>
