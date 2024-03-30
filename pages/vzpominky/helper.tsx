@@ -7,7 +7,9 @@ import SeptunLover from "../../public/images/team/SeptunLover.png"
 import _Curse_Of_Dead_ from "../../public/images/team/_Curse_Of_Dead_.png"
 import Shirahoshi from "../../public/images/team/Shirahoshi.png"
 import MemberMemory from '../../components/MemberMemory';
-import petricekk from "../../public/images/team/petricekk.png";
+import M1che_ from "../../public/images/team/M1che_.png";
+import Veverka14 from "../../public/images/team/Veverka14.png";
+import KwenT_ from "../../public/images/team/KwenT_.png";
 
 export default function Memories() {
     return (
@@ -36,9 +38,21 @@ export default function Memories() {
                 <div className="container">
                     <h1 className="title">Střípky helperů</h1>
                     <MemberMemory
+                        nick="KwenT_"
+                        image={KwenT_}
+                        text="O Qplayi som sa prvýkrát dozvedel v roku 2016. V tú dobu bol Qplay od ostatných serverov dosť unikátny. Unikátnosť serveru sa bez pochýb zachovala až dodnes. Moje začiatky boli prosté. Pôsobil som na menších serveroch, kde som nabral pomerne dosť skúseností a hlavne odvahu. Odvahu, vďaka ktorej som sa dostal až sem. Na pozíciu Senior Helpera. Strávil som tu nespočet hodín a určite toho neľutujem. Za toto všetko ďakujem hlavne Tadeášovi, vďaka ktorému som sa za rok pôsobenia na serveri mohol spoznať s naozaj veľkým množstvom ľudí, s ktorými sa bavím až dodnes. Nabral som skúsenosti, ktoré už teraz uplatňujem v reálnom živote. Toto všetko končí a za všetko Qplayi moc ďakujem. ❤️"
+                        imageOnRight={true}
+                    />
+                    <MemberMemory
                         nick="SeptunLover"
                         image={SeptunLover}
                         text="QPlay sice mizí, ale né zážitky, které jsem zde prožila. Na QPlayi hraji od roku 2018 a za ten čas jsem poznala spoustu lidí, jak své kamarády, se kterýma trávíme čas do teď nebo lidi ze samotného Admin-Teamu. Musím říct, že mé působení na QPlayi jako Helperka, mi změnilo život o dost velká procenta. Samozřejmě, že QPlay nebyl jenom procházka růžovou zahradou, ale taky hodně stresu a nervů. Za mé zážitky a za prožití část života vděčím hlavně QPlayi."
+                        imageOnRight={false}
+                    />
+                    <MemberMemory
+                        nick="Veverka14"
+                        image={Veverka14}
+                        text="Ahoj, na začiatok tohto by som chcel poďakovať celému Admin-Teamu za veľa super spomienok a zážitkov strávene s Helper Teamom. Veľke Ďakujem pratrí Tademu za to, že mi umožnil byť v Helper Teamu, kde som sa naučil veľa nových veci. Po nieakom čase som spoznal nie len Helperov ale aj iných členov Admin-Teamu. Nikdy nebudem ľutovať ten strávený čas hraním a volaním s ostatnými na Qplayi. Bude mi to chýbať ale je čas sa posunuť ďalej a spomínať na to v dobrom."
                         imageOnRight={true}
                     />
                 </div>
@@ -75,7 +89,12 @@ export default function Memories() {
                         text="Zdravím všetkých, ktorý čítaju tento odkaz v mojom mene, na začiatku tohto by som chcel poďakovať celému QPlay Teamu za množstvo spomienok a taktiež Ďakujem práve Tadeášovi za to, že mi umožnil byť súčasťou Helper Teamu, kde som spoznal nespočet dobrých ľudí a postupom času som spoznal nie len Helperov ale aj iných členov Teamu, či už Moderátorov alebo Builderov. Za čias keď som bol v Teame tak si dovolím povedať, že som vychádzal s každým. Nespočet hodín, ktoré sme po nociach strávili na TeamSpeaku s Dejviqom, Michem, Linuuusom, Baruskou, Ayesshou, petrickom, KwenTom, Pewoxom a ďalšími . Jednoducho sme spolu trávili všetok náš volný čas, za ktorý som vďačny. Spomienka na to, že tento projekt, kde som si to svoje “Helperstvo” skúsil po prvý krát je na konci zamrzí, pretože je to moje detstvo, nespočet strávenych hodín hraním SkyWars, MiniAnni, MiniUHC. Ďakujem všetkým za tu príležitosť!"
                         imageOnRight={true}
                     />
-
+                    <MemberMemory
+                        nick="M1che_"
+                        image={M1che_}
+                        text="Zdravím všechny! Když se ke mně dostala zpráva o ukončení projektu, zpočátku se mi nechtělo ani věřit, že by QPlay, v novodobých dějinách minecraftu vždy 2. největší Československý server, mohl končit. Bohužel však nic nemá nekonečného trvání a QPlay není výjimkou. Každý si zde zažil své, někdo zde trávil spousty hodin denně, někdo se jen párkrát na server připojil. :video_game: Troufám si ale říct, že tento projekt zanechal v každém minecraft-multiplayer hráči nezapomenutelnou vzpomínku, ke které se vždy rád vrátí. :sparkles:Já osobně jsem zde poznal nespočet skvělých lidí. Po téměř dvou letech na pozici Helpera jsem si odnesl nesmírné množství zkušeností, které dennodenně uplatňuji v reálném životě a jsem přesvědčen, že mi přijdou vhod i v mém budoucím zaměstnání. I v mém srdci QPlay zůstane navždy, a to jen díky odvaze a odhodlání Profikka, který to v roce 2014 pořádně rozjel. 💙 Ukončeme to tedy lehce s humorem mou oblíbenou větou. &quot;Bylo to krásné a bylo toho dost. Sbohem a šáteček.&quot; M1che_ ✌️"
+                        imageOnRight={false}
+                    />
                 </div>
             </section>
         </div>
