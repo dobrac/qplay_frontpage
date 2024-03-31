@@ -178,16 +178,6 @@ const LayoutDefault: NextPage<{ children: ReactChild | ReactChild[] }> = ({child
                   Domů
                 </Link>
               </p>
-              <p>
-                <Link href='/jak-se-pripojit' className="text-reset">
-                  Jak se připojit
-                </Link>
-              </p>
-              <p>
-                <Link href='/vip' className="text-reset">
-                  VIP
-                </Link>
-              </p>
             </div>
             <div className="col-md-3 mt-4 inview">
               <h6 className="text-uppercase fw-bold">
