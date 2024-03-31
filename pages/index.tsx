@@ -420,21 +420,8 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
                 <div className="row">
                     <div className="col-md-7">
                         <h1>Discord</h1>
-                        <p>Připoj se na náš discord a propoj si účet pro získání zajímavých výhod</p>
-                        <ul>
-                            <li>Máte přístup do místnosti #general 🎮</li>
-                            <li>Otevře se vám místnost #pomoc-mezi-hráči, ve které můžete požádat o pomoc druhých hráčů, nebo naopak
-                                druhým hráčům můžete pomoct vy 👥
-                            </li>
-                            <li>Máte přístup do mnoha dalších text channelů pod sekcí Komunita | QPlay a Komunita | Ostatní ✌️</li>
-                            <li>Máte k dispozici několik volných voice místností 🗣️</li>
-                            <li>Máte možnost se zúčastňovat herních akcí! Pokud bude probíhat akce, zjistíte to v místnosti oznámení
-                                🎲
-                            </li>
-                            <li>Pokud na serveru vlastníte jakékoliv VIP, tak automaticky obdržíte roli &quot;VIP&quot;. Navíc
-                                obdržíte přístup do VIP chatu #vip-chat 💎
-                            </li>
-                        </ul>
+                        <p>Připoj se na náš discord. </p>
+                        
                         <a href="https://discord.qplay.cz/">
                             <button>Přidat se k discordu</button>
                         </a>
@@ -458,7 +445,7 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
         </section>
       <section className="news">
         <div className="container">
-          <h1 className="title">Nejnovější změny</h1>
+          <h1 className="title">Historie změn</h1>
           <ChangeLogNewsRender/>
           <Link href="/seznam-zmen" passHref className="button">
             <button className="mt-2">Zobrazit všechny změny</button>
