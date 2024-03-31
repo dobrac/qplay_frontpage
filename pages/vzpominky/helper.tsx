@@ -10,6 +10,7 @@ import MemberMemory from '../../components/MemberMemory';
 import M1che_ from "../../public/images/team/M1che_.png";
 import Veverka14 from "../../public/images/team/Veverka14.png";
 import KwenT_ from "../../public/images/team/KwenT_.png";
+import pewoxcz from "../../public/images/team/pewoxcz.png";
 
 export default function Memories() {
     return (
@@ -94,6 +95,12 @@ export default function Memories() {
                         image={M1che_}
                         text="Zdravím všechny! Když se ke mně dostala zpráva o ukončení projektu, zpočátku se mi nechtělo ani věřit, že by QPlay, v novodobých dějinách minecraftu vždy 2. největší Československý server, mohl končit. Bohužel však nic nemá nekonečného trvání a QPlay není výjimkou. Každý si zde zažil své, někdo zde trávil spousty hodin denně, někdo se jen párkrát na server připojil. :video_game: Troufám si ale říct, že tento projekt zanechal v každém minecraft-multiplayer hráči nezapomenutelnou vzpomínku, ke které se vždy rád vrátí. ✨Já osobně jsem zde poznal nespočet skvělých lidí. Po téměř dvou letech na pozici Helpera jsem si odnesl nesmírné množství zkušeností, které dennodenně uplatňuji v reálném životě a jsem přesvědčen, že mi přijdou vhod i v mém budoucím zaměstnání. I v mém srdci QPlay zůstane navždy, a to jen díky odvaze a odhodlání Profikka, který to v roce 2014 pořádně rozjel. 💙 Ukončeme to tedy lehce s humorem mou oblíbenou větou. &quot;Bylo to krásné a bylo toho dost. Sbohem a šáteček.&quot; M1che_ ✌️"
                         imageOnRight={false}
+                    />
+                    <MemberMemory
+                        nick="pewoxcz"
+                        image={pewoxcz}
+                        text="Psal se rok 2017 a já díky YouTube objevil server QPlay.cz. Na serveru jsem strávil velmi hodně hodin, jak za hráče, tak za YouTubera a nakonec za Helpera. Děkuji těm, díky kterým mám mnoho kladných vzpomínek na tento server. QPlay byl vždy srdcovka. Díky moc."
+                        imageOnRight={true}
                     />
                 </div>
             </section>

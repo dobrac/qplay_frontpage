@@ -4,6 +4,7 @@ import II_MrSunnyCz_II from "../../public/images/team/II_MrSunnyCz_II.png"
 import M4rtiN from "../../public/images/team/M4rtiN.png"
 import MemberMemory from '../../components/MemberMemory';
 import _Histo_ from "../../public/images/team/_Histo_.png";
+import LeqitsDemon from "../../public/images/team/LeqitsDemon.png";
 
 export default function Memories() {
     return (
@@ -62,6 +63,12 @@ export default function Memories() {
                         image={_Histo_}
                         text="Ahoj, přesně před rokem 30.3.2023 jsem po dvou letech opustil A-Team, nikdy by mě nenapadlo, že o rok později bude projekt QPlay končit. Ačkoliv už Minecraft nehraji, tak je to pro mě dost emotivní moment. Jako malý kluk, který začínal na minihře Annihilation, jsem vždy obdivoval členy A-Teamu. Proto jsem vděčný za možnost být 3x členem teamu, splnil jsem si díky tomu svůj dětský sen. Děkuji všem bývalým kolegům, kamarádům a fanouškům za krásné vzpomínky. Přeji Vám hodně štěstí a úspěchů do budoucna, mějte se krásně. Váš Cheathunter & Mod Hisťo."
                         imageOnRight={false}
+                    />
+                    <MemberMemory
+                        nick="LeqitsDemon"
+                        image={LeqitsDemon}
+                        text="Na QPlay jsem hrál už od dětství a byl jsem fascinován širokou škálou zajímavých miniher, které tento server nabízel a které jinde nenajdete. Asi kolem roku 2019 jsem začal s přáteli aktivně hrát na Qplay a postupně jsem si ho oblíbil nejvíce.  V té době jsme hodně hráli s ItzTadeas crystals kde jsme často narazili na hráče, kteří mají cheaty, což mě přimělo stát se CHH. Po měsíci úsilí jsem se nakonec stal cheathunterem a musím říct, že jsem za tuto příležitost vděčný. Díky této roli jsem poznal spoustu úžasných lidí a zažil radost z toho, že jsem pomohl zachránit hru několika hráčům před cheatery. Doufám, že jste si všichni užívali hraní na serveru stejně jako já. S pozdravem, LeqitsDemon."
+                        imageOnRight={true}
                     />
                 </div>
             </section>
