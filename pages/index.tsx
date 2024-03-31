@@ -445,10 +445,8 @@ const Home: NextPage<HomeProps> = ({changelogNews}) => {
         </section>
       <section className="news">
         <div className="container">
-          <h1 className="title">Historie změn</h1>
-          <ChangeLogNewsRender/>
           <Link href="/seznam-zmen" passHref className="button">
-            <button className="mt-2">Zobrazit všechny změny</button>
+            <button className="mt-2">Chci si zavzpomínat</button>
           </Link>
         </div>
       </section>
