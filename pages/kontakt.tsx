@@ -59,11 +59,9 @@ export default function Contact() {
           <a href="https://discord.qplay.cz" target="_blank" rel="noreferrer">
             <b>https://discord.qplay.cz</b>
           </a>
-          <br/><br/>
-          <b> TeamSpeak3: </b>
-          ts3.qplay.cz
+          
 
-          <br/><br/><br/><br/>
+          <br/><br/><br/>
           <div>
             <b>Provozovatel: </b>
             <br/>
