@@ -11,6 +11,7 @@ import M1che_ from "../../public/images/team/M1che_.png";
 import Veverka14 from "../../public/images/team/Veverka14.png";
 import KwenT_ from "../../public/images/team/KwenT_.png";
 import pewoxcz from "../../public/images/team/pewoxcz.png";
+import Gamer_SVK from "../../public/images/team/Gamer_SVK.png";
 
 export default function Memories() {
     return (
@@ -101,6 +102,12 @@ export default function Memories() {
                         image={pewoxcz}
                         text="Psal se rok 2017 a já díky YouTube objevil server QPlay.cz. Na serveru jsem strávil velmi hodně hodin, jak za hráče, tak za YouTubera a nakonec za Helpera. Děkuji těm, díky kterým mám mnoho kladných vzpomínek na tento server. QPlay byl vždy srdcovka. Díky moc."
                         imageOnRight={true}
+                    />
+                    <MemberMemory
+                        nick="Gamer_SVK"
+                        image={Gamer_SVK}
+                        text="Tak a je to tu. Nikdy som si nevedel predstaviť, že tento server bude končiť ale opak je pravdou. Pamätám si ešte ako som sa pripojil na server s kamarátom, vtedy mi bolo tak 14 alebo 15 rokov, ešte keď QPlay bol QGames. Server mi priniesol veľké množstvo kamarátov, ktorých rád stretávam a je o čom sa rozprávať a spomínať.(určite nebudem jediný, kto to tak cíti) Na Helpera som sa hlásil veľa krát, ale sen sa mi splnil a stal som sa Helperom. Taktiež chcem poďakovať Bývalému Hlavnému Helperovi Raketke za to, že ma nabral do Teamu a dal mi šancu. Chcem poďakovať _Spetty_ za rady alebo pomoc pri Helperovani. Bol som tiež zvolený Hlavným CheatHunterom, keď odchádzal Raketka z A-Teamu. Vďaka QPlay som si tiež našiel najlepšiu kamarátku Youtuberku Lostku, vďaka nej mám priateľku, s ktorou sme už roky. Ďakujem QPlay, že ste server na ktorý nikto nikdy nezabudne. Ďakujem za všetko QPlay. ❤️"
+                        imageOnRight={false}
                     />
                 </div>
             </section>
