@@ -5,6 +5,7 @@ import M4rtiN from "../../public/images/team/M4rtiN.png"
 import MemberMemory from '../../components/MemberMemory';
 import _Histo_ from "../../public/images/team/_Histo_.png";
 import LeqitsDemon from "../../public/images/team/LeqitsDemon.png";
+import ejdamyk from "../../public/images/team/ejdamyk.png";
 
 export default function Memories() {
     return (
@@ -69,6 +70,12 @@ export default function Memories() {
                         image={LeqitsDemon}
                         text="Na QPlay jsem hrál už od dětství a byl jsem fascinován širokou škálou zajímavých miniher, které tento server nabízel a které jinde nenajdete. Asi kolem roku 2019 jsem začal s přáteli aktivně hrát na Qplay a postupně jsem si ho oblíbil nejvíce.  V té době jsme hodně hráli s ItzTadeas crystals kde jsme často narazili na hráče, kteří mají cheaty, což mě přimělo stát se CHH. Po měsíci úsilí jsem se nakonec stal cheathunterem a musím říct, že jsem za tuto příležitost vděčný. Díky této roli jsem poznal spoustu úžasných lidí a zažil radost z toho, že jsem pomohl zachránit hru několika hráčům před cheatery. Doufám, že jste si všichni užívali hraní na serveru stejně jako já. S pozdravem, LeqitsDemon."
                         imageOnRight={true}
+                    />
+                    <MemberMemory
+                        nick="ejdamyk"
+                        image={ejdamyk}
+                        text="Keby mi niekto pred 8 rokmi povedal že cez minecraft nájdem toľko kamarátov a niektorých aj osobne stretnem a spoznám neveril by som. Napriek tomu že hry už dlhodobo nehrávam tak s QPlayom som sa posledný mesiac lúčil nie smutný, ale šťastný že som mohol byť jeho súčasťou ako Cheathunter(dream job). Veľmi si vážim túto možnosť, ktorá mi dala do života dosť. BIFFovi a Spettymu patrí jedno veľké ďakujem<3 Kolegom a kamarátom ďakujem za hodiny strávené spolu. Bola to dobrá 'jízda'. Mějte se fanfárově!"
+                        imageOnRight={false}
                     />
                 </div>
             </section>
