@@ -5,7 +5,7 @@ import iArthurekk from "../../public/images/team/iArthurekk.png"
 import DarkBanan from "../../public/images/team/DarkBanan.png"
 import stepanpanik from "../../public/images/team/stepanpanik.png"
 import MemberMemory from '../../components/MemberMemory';
-import _Histo_ from "../../public/images/team/_Histo_.png";
+import gerwyyn from "../../public/images/team/gerwyyn.png";
 
 export default function Memories() {
     return (
@@ -53,17 +53,17 @@ export default function Memories() {
                     />
                 </div>
             </section>
-{/*            <section className="aboutus">
+            <section className="aboutus">
                 <div className="container">
                     <h1 className="title">Střípky bývalých moderátorů</h1>
                     <MemberMemory
-                        nick="_Histo_"
-                        image={_Histo_}
-                        text="Ahoj, přesně před rokem 30.3.2023 jsem po dvou letech opustil A-Team, nikdy by mě nenapadlo, že o rok později bude projekt QPlay končit. Ačkoliv už Minecraft nehraji, tak je to pro mě dost emotivní moment. Jako malý kluk, který začínal na minihře Annihilation, jsem vždy obdivoval členy A-Teamu. Proto jsem vděčný za možnost být 3x členem teamu, splnil jsem si díky tomu svůj dětský sen. Děkuji všem bývalým kolegům, kamarádům a fanouškům za krásné vzpomínky. Přeji Vám hodně štěstí a úspěchů do budoucna, mějte se krásně. Váš Cheathunter & Mod Hisťo."
+                        nick="gerwyyn"
+                        image={gerwyyn}
+                        text="Ahoooj, někteří mě možná znáte spíše z projektu Survival-Games.cz, kde jsem působil jako Helper, ale hodně vás ani nezapomnělo, že jsem taktéž působil jako jeden z prvních moderátorů na serveru. Na projektu Qplay.cz jsem hrál nejvíce od té doby co jsem minecraft poprvé stáhnul. I když se to nemusí zdát, tak Qplay vždy byl pro mě na prvním místě jakožto CZ/SK server. Když jsem se dozvěděl, že server bude končit, tak mě to velice zasáhlo. Ale jak říkám, je to pochopitelné. Vedení serveru pomalu stárne a má jiné záliby než jen hrát minecraft. Bohužel, minecraft komunita bohužel taktéž umírá, takže byl ten správný čas projekt ukončit. Na projektu Qplay.cz jsem poznal neskutečně mnoho fajn lidí, ať už když jsem působil v Admin-Týmu či jsem na serveru byl pouhý hráč. Na projekt mám jen samé dobré vzpomínky a na server budu vzpomínat jen v dobrém. Mějte se všichni hezky, Qplay navždy v srdci. 💜"
                         imageOnRight={false}
                     />
                 </div>
-            </section>*/}
+            </section>
         </div>
     )
 }
