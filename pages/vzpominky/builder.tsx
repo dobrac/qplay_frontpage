@@ -6,6 +6,7 @@ import MemberMemory from '../../components/MemberMemory';
 import _yCoN_ from "../../public/images/team/_yCoN_.png";
 import TREM_27 from "../../public/images/team/TREM_27.png";
 import vadys_ from "../../public/images/team/vadys_.png";
+import Pazlousek from "../../public/images/team/Pazlousek.png";
 
 
 export default function Memories() {
@@ -65,6 +66,12 @@ Server nám všem určitě bude chybět. Už nebudeme mít to naše safe místo,
                         image={vadys_}
                         text="Když jsem se hlásil na QPlay, tak jsem nečekal, že se dostanu. Když jsem se dostal, tak jsem nedokázal uvěřit tomu, že jsem si splnil svůj dětský sen dostat se na QPlay, a za to bych chtěl velmi poděkovat Dejviqovi. Přesto, že jsem se hlásil s tím, že neumím stavět, tak i přesto mě po prvním kole nezamítl. Bohužel jsem v týmu moc dlouho nebyl, ale přesto to byl nezapomenutelný zážitek. Dne 30.3. pro mě QPlay končí po druhé. Poprvé, když jsem byl vyhozen z týmu a dnes podruhé, když oficiálně končí. Věřím, že i přesto, že QPlay skončil, tak ti lidé, ať už z technik, builder, moderátor, cheathunter nebo helper týmu, se posunou dál a nezahodí svůj talent."
                         imageOnRight={false}
+                    />
+                    <MemberMemory
+                        nick="Pazlousek"
+                        image={Pazlousek}
+                        text="Když jsem se doslechl o konci Qplaye, nevěřil jsem a pousmál jsem se tomu a o to větší to pro mě bylo překvapení když jsem zjistil že je to pravda. Začal jsem vzpomínat a zjistil že odchází čast mého dětství. Na Qplayi jsem začal hrát snad před 7-8 lety, kdy jsem ještě zdaleka nevěděl o tom, co to stavění map vlastně znamená. Pamatuji si tehdy annihilation s tématickou mapou desert canyon, staré lobby a vše okolo do posledního detailu. K mé pozici na qplayi uběhlo od jeho začátku 6 let, mezi tím jsem se postupem času dostal k youtube a roku 2020, konkrétně 21.ledna stal členem builder týmu na který mám ty nejlepší vzpomínky, ať už jsme byli v dobrém i ve zlém. Byl jsem přijat Erikem, poznal Luty a Strifera. Časem se lidi v týmu proházeli, bylo pár nešťastných odchodů, ale i fajn příchodů nových lidí. Vyzkoušel jsem si mnoho týmů na různých serverech, ale nikdy jsem nebyl nikde víc spokojený jak v týmu na qplay kde jsme tvořili snad tu nejlepší partu od začátku až dokonce na kterou do teď vzpomínám."
+                        imageOnRight={true}
                     />
                 </div>
             </section>
