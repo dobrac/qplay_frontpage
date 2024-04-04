@@ -42,7 +42,7 @@ export default function Memories() {
                     <MemberMemory
                         nick="KwenT_"
                         image={KwenT_}
-                        text="O Qplayi som sa prvýkrát dozvedel v roku 2016. V tú dobu bol Qplay od ostatných serverov dosť unikátny. Unikátnosť serveru sa bez pochýb zachovala až dodnes. Moje začiatky boli prosté. Pôsobil som na menších serveroch, kde som nabral pomerne dosť skúseností a hlavne odvahu. Odvahu, vďaka ktorej som sa dostal až sem. Na pozíciu Senior Helpera. Strávil som tu nespočet hodín a určite toho neľutujem. Za toto všetko ďakujem hlavne Tadeášovi, vďaka ktorému som sa za rok pôsobenia na serveri mohol spoznať s naozaj veľkým množstvom ľudí, s ktorými sa bavím až dodnes. Nabral som skúsenosti, ktoré už teraz uplatňujem v reálnom živote. Toto všetko končí a za všetko Qplayi moc ďakujem. ❤️"
+                        text="O QPlayi som sa prvýkrát dozvedel v roku 2016. V tú dobu bol QPlay od ostatných serverov dosť unikátny. Unikátnosť serveru sa bez pochýb zachovala až dodnes. Moje začiatky boli prosté. Pôsobil som na menších serveroch, kde som nabral pomerne dosť skúseností a hlavne odvahu. Odvahu, vďaka ktorej som sa dostal až sem. Na pozíciu Senior Helpera. Strávil som tu nespočet hodín a určite toho neľutujem. Za toto všetko ďakujem hlavne Tadeášovi, vďaka ktorému som sa za rok pôsobenia na serveri mohol spoznať s naozaj veľkým množstvom ľudí, s ktorými sa bavím až dodnes. Nabral som skúsenosti, ktoré už teraz uplatňujem v reálnom živote. Toto všetko končí a za všetko QPlayi moc ďakujem. ❤️"
                         imageOnRight={true}
                     />
                     <MemberMemory
@@ -54,7 +54,7 @@ export default function Memories() {
                     <MemberMemory
                         nick="Veverka14"
                         image={Veverka14}
-                        text="Ahoj, na začiatok tohto by som chcel poďakovať celému Admin-Teamu za veľa super spomienok a zážitkov strávene s Helper Teamom. Veľke Ďakujem pratrí Tademu za to, že mi umožnil byť v Helper Teamu, kde som sa naučil veľa nových veci. Po nieakom čase som spoznal nie len Helperov ale aj iných členov Admin-Teamu. Nikdy nebudem ľutovať ten strávený čas hraním a volaním s ostatnými na Qplayi. Bude mi to chýbať ale je čas sa posunuť ďalej a spomínať na to v dobrom."
+                        text="Ahoj, na začiatok tohto by som chcel poďakovať celému Admin-Teamu za veľa super spomienok a zážitkov strávene s Helper Teamom. Veľke Ďakujem pratrí Tademu za to, že mi umožnil byť v Helper Teamu, kde som sa naučil veľa nových veci. Po nieakom čase som spoznal nie len Helperov ale aj iných členov Admin-Teamu. Nikdy nebudem ľutovať ten strávený čas hraním a volaním s ostatnými na QPlayi. Bude mi to chýbať ale je čas sa posunuť ďalej a spomínať na to v dobrom."
                         imageOnRight={true}
                     />
                 </div>
