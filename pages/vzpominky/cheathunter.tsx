@@ -68,7 +68,7 @@ export default function Memories() {
                     <MemberMemory
                         nick="LeqitsDemon"
                         image={LeqitsDemon}
-                        text="Na QPlay jsem hrál už od dětství a byl jsem fascinován širokou škálou zajímavých miniher, které tento server nabízel a které jinde nenajdete. Asi kolem roku 2019 jsem začal s přáteli aktivně hrát na Qplay a postupně jsem si ho oblíbil nejvíce.  V té době jsme hodně hráli s ItzTadeas crystals kde jsme často narazili na hráče, kteří mají cheaty, což mě přimělo stát se CHH. Po měsíci úsilí jsem se nakonec stal cheathunterem a musím říct, že jsem za tuto příležitost vděčný. Díky této roli jsem poznal spoustu úžasných lidí a zažil radost z toho, že jsem pomohl zachránit hru několika hráčům před cheatery. Doufám, že jste si všichni užívali hraní na serveru stejně jako já. S pozdravem, LeqitsDemon."
+                        text="Na QPlay jsem hrál už od dětství a byl jsem fascinován širokou škálou zajímavých miniher, které tento server nabízel a které jinde nenajdete. Asi kolem roku 2019 jsem začal s přáteli aktivně hrát na QPlay a postupně jsem si ho oblíbil nejvíce.  V té době jsme hodně hráli s ItzTadeas crystals kde jsme často narazili na hráče, kteří mají cheaty, což mě přimělo stát se CHH. Po měsíci úsilí jsem se nakonec stal cheathunterem a musím říct, že jsem za tuto příležitost vděčný. Díky této roli jsem poznal spoustu úžasných lidí a zažil radost z toho, že jsem pomohl zachránit hru několika hráčům před cheatery. Doufám, že jste si všichni užívali hraní na serveru stejně jako já. S pozdravem, LeqitsDemon."
                         imageOnRight={true}
                     />
                     <MemberMemory
