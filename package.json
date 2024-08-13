@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.4.3",
-    "axios": "1.6.0",
+    "axios": "1.7.4",
     "cross-env": "7.0.3",
     "he": "^1.2.0",
     "lodash": "^4.17.21",
