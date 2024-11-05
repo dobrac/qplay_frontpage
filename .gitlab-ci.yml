@@ -13,7 +13,7 @@ build:
       --cache=true \
       --context $CI_PROJECT_DIR \
       --dockerfile $CI_PROJECT_DIR/Dockerfile \
-      --destination $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA \
+      --destination $CI_REGISTRY_IMAGE:$CI_COMMIT_BRANCH-$CI_COMMIT_SHORT_SHA \
       --build-arg NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
 
 deploy:
@@ -31,5 +31,5 @@ deploy:
       when: never
     - when: manual
   script:
-    - kubectl --token=${KUBE_TOKEN} --server=${KUBE_SERVER} set image deployment/qplay-frontpage qplay-frontpage=$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA --namespace=$KUBE_NAMESPACE --record --insecure-skip-tls-verify=true
+    - kubectl --token=${KUBE_TOKEN} --server=${KUBE_SERVER} set image deployment/qplay-frontpage qplay-frontpage=$CI_REGISTRY_IMAGE:$CI_COMMIT_BRANCH-$CI_COMMIT_SHORT_SHA --namespace=$KUBE_NAMESPACE --record --insecure-skip-tls-verify=true
     - kubectl --token=${KUBE_TOKEN} --server=${KUBE_SERVER} --namespace=$KUBE_NAMESPACE --insecure-skip-tls-verify=true rollout status deployment qplay-frontpage
