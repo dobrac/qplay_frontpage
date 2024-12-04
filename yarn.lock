@@ -214,9 +214,9 @@
     "@types/unist" "*"
 
 "@types/he@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@types/he/-/he-1.2.2.tgz#feff24b8b7fd24a5f6b0eb88e57243ed65bdca4e"
-  integrity sha512-v2gT1gRK65k9nz8SVSXo3lh7AHnRPL3mRcYNhhsqL/L2S1xt/MGyEI5a7vJPXWik/IxTtAktXf8/HlCxDR1nsw==
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@types/he/-/he-1.2.3.tgz#c33ca3096f30cbd5d68d78211572de3f9adff75a"
+  integrity sha512-q67/qwlxblDzEDvzHhVkwc1gzVWxaNxeyHUBF4xElrvjL11O+Ytze+1fGpBHlr/H9myiBUaUXNnNPmBHxxfAcA==
 
 "@types/json5@^0.0.29":
   version "0.0.29"
@@ -224,9 +224,9 @@
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
 "@types/lodash@^4.14.200":
-  version "4.14.200"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.200.tgz#435b6035c7eba9cdf1e039af8212c9e9281e7149"
-  integrity sha512-YI/M/4HRImtNf3pJgbF+W6FrXovqj+T+/HpENLTooK9PnkacBsDpeP3IpHab40CClUfhNmdM2WTNP2sa2dni5Q==
+  version "4.17.13"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.13.tgz#786e2d67cfd95e32862143abe7463a7f90c300eb"
+  integrity sha512-lfx+dftrEZcdBPczf9d0Qv0x+j/rfNCMuC6OcfXmO8gkfeNAY88PgKUbvG56whcN23gc27yenwF6oJZXGFpYxg==
 
 "@types/mdast@^4.0.0", "@types/mdast@^4.0.2":
   version "4.0.2"
